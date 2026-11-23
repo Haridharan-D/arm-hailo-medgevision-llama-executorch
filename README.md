@@ -2,6 +2,8 @@
 
 Offline pharmaceutical optical-inspection research station: Raspberry Pi 5 + Hailo-8 YOLO, three EfficientAD CPU models, and ExecuTorch Llama advisory. Two dashboard designs, camera/upload/local-image inspection, anomaly heatmaps, SQLite evidence and a synchronized second HDMI verdict screen.
 
+**Start here: [reproducible setup and demo commands](QUICKSTART.md).** CPU model inference and all 64 regression tests were verified from this organized checkout. Fresh Pi installation still requires the vendor runtime and a native Llama build; see the explicit validation limits below.
+
 ## Quick start: CPU vision
 
 Python 3.11 is the tested Windows development interpreter. On a 64-bit Pi use the supported system Python and matching Hailo packages.
@@ -25,7 +27,7 @@ MVTec-derived models/samples retain CC BY-NC-SA 4.0 restrictions: this bundle is
 
 ## Native Pi advisory setup
 
-`llama/build_runtime.sh` is the pinned ExecuTorch v1.0.0 baseline build recipe. It requires Linux/Arm build tools and network access during installation. The final instrumented worker additionally uses native/blistertrace_instrumented.cpp, native/json_boundary.h and tools/build_instrumented_pi.py. That historical tool assumes the original station paths; inspect and adapt those paths for a clean machine. **The original station's final Arm binary is not backed up here. A fresh native build has not been verified from this clone.** Set llama_runtime and llama_artifacts in config.json to real absolute paths. Windows Llama requires the Linux x86-64 worker under WSL; the EXE alone is not standalone.
+`llama/build_runtime.sh` is the pinned ExecuTorch v1.0.0 baseline build recipe. It requires Linux build tools and network access during installation. The final instrumented worker additionally uses native/blistertrace_instrumented.cpp, native/json_boundary.h and tools/build_instrumented_pi.py. The instrumented build now discovers the checkout and supports explicit --project/--executorch paths. **The original station's final Arm binary is not backed up here. A fresh native build has not been verified from this clone.** Configure the runtime with tools/configure_station.py. Windows Llama requires the Linux x86-64 worker under WSL; the EXE alone is not standalone.
 
 ## Hailo
 

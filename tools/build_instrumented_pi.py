@@ -1,9 +1,13 @@
 """Add a distinct executable target; never overwrite baseline worker or model."""
 from pathlib import Path
 import subprocess,hashlib,json
-root=Path.home()/'blistertrace_llm_build/executorch'
-project=Path.home()/'BlisterTrace/releases/hardening_20261122'
-if not project.exists():project=Path.home()/'BlisterTrace/BlisterTrace_App'
+import argparse,os
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--executorch',type=Path,default=Path(os.environ.get('BT_LLM_BUILD_ROOT',str(Path.home()/'blistertrace_llm_build')))/'executorch')
+parser.add_argument('--project',type=Path,default=Path(__file__).resolve().parents[1])
+args=parser.parse_args()
+root=args.executorch.resolve();project=args.project.resolve()
+if not (root/'CMakeLists.txt').is_file():raise SystemExit('First run: bash llama/build_runtime.sh')
 src=project/'native/blistertrace_instrumented.cpp'
 target=root/'examples/models/llama/blistertrace_instrumented.cpp';target.write_bytes(src.read_bytes())
 (target.parent/'json_boundary.h').write_bytes((src.parent/'json_boundary.h').read_bytes())

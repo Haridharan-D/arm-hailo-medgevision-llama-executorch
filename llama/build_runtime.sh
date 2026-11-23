@@ -62,6 +62,7 @@ cmake --build cmake-out/examples/models/llama --parallel "$JOBS" --config Releas
 mkdir -p "$PROJECT_DIR/bin/$(uname -m)"
 cp cmake-out/examples/models/llama/llama_main "$PROJECT_DIR/bin/$(uname -m)/"
 cp cmake-out/examples/models/llama/blistertrace_worker "$PROJECT_DIR/bin/$(uname -m)/"
+cp cmake-out/examples/models/llama/runner/libllama_runner.so "$PROJECT_DIR/bin/$(uname -m)/"
 python - "$PROJECT_DIR" "$PIN" <<'PY'
 import hashlib,json,platform,subprocess,sys
 from pathlib import Path
