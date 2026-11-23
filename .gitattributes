@@ -1,0 +1,13 @@
+*.sh text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.cmd text eol=crlf
+*.part binary
+*.small binary
+*.hef binary
+*.onnx binary
+*.png binary
+*.jpg binary
+*.ttf binary

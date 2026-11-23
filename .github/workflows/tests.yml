@@ -16,3 +16,5 @@ jobs:
       - run: python -m pip install -r requirements.txt pytest httpx
       - run: python tools/verify_repository_artifacts.py
       - run: python -m pytest tests -q
+      - name: Native JSON generation-boundary regression
+        run: g++ -std=c++17 tests/json_boundary_test.cpp -o /tmp/medge-json-boundary && /tmp/medge-json-boundary

@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
-APP="$HOME/BlisterTrace/BlisterTrace_App"
+APP="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 URL="http://127.0.0.1:8765"
 cd "$APP"
+"$APP/.venv/bin/python" "$APP/tools/verify_repository_artifacts.py"
 if ! curl -fsS "$URL/api/health" >/dev/null 2>&1; then
   nohup "$APP/.venv/bin/python" "$APP/main.py" --no-browser > /tmp/blistertrace-dashboard.log 2>&1 < /dev/null &
 fi

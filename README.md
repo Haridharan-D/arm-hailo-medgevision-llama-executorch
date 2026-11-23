@@ -8,6 +8,8 @@ Offline pharmaceutical optical-inspection research station: Raspberry Pi 5 + Hai
 
 After setup, launch with `python run.py`. Read the [three-minute hackathon demo](docs/HACKATHON_DEMO.md), [recorded CPU smoke results](evidence/clone_cpu_smoke.json), and [verification report](docs/REPOSITORY_VERIFICATION.md).
 
+For a distributable desktop folder, follow the [Windows EXE build guide](docs/WINDOWS_BUILD.md). Keep its model/runtime sidecars with the executable.
+
 ## Quick start: CPU vision
 
 Python 3.11 is the tested Windows development interpreter. On a 64-bit Pi use the supported system Python and matching Hailo packages.
