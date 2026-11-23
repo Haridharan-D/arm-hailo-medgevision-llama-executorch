@@ -2,6 +2,8 @@
 from pathlib import Path
 import hashlib,json,sys
 root=Path(__file__).resolve().parents[1]
+from materialize_models import materialize
+materialize(root)
 failed=False
 for item in json.loads((root/'ARTIFACT_MANIFEST.json').read_text()):
  p=root/item['path']

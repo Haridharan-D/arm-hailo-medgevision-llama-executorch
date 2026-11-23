@@ -1,0 +1,106 @@
+[
+  {
+    "path": "models/anomaly/mvtec_capsule/model.onnx",
+    "bytes": 32261612,
+    "sha256": "c8110349b6c52a148be7da5442445a32031911ebf64d8d1fbcad2afb0902a157",
+    "included_in_git": true,
+    "parts": [
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.000.part",
+        "sha256": "9f993b343fc26eef49a7615c32286a6491c3158187e7584adcc9589303b39f2c"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.001.part",
+        "sha256": "e3e734bf73aae38df29ff7f4ed578d0c2423c996925e15e8f4dc4e4a90de0149"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.002.part",
+        "sha256": "7e26bc6ac341dc2ff306b33791fb8e5b39c2fdd1db7dda28a796c111968faec2"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.003.part",
+        "sha256": "8021278541a0b9d0ea64a155468fa21a266faf63e194b47a6b0cf0c5f397167e"
+      }
+    ]
+  },
+  {
+    "path": "models/anomaly/mvtec_pill/model.onnx",
+    "bytes": 32261612,
+    "sha256": "4670cd45c0d465bfbcdbdea2ca2711dd21e0b1eb026beb308e484b4f2e99c220",
+    "included_in_git": true,
+    "parts": [
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.000.part",
+        "sha256": "9ee742440d1ac97420b393dd5860088d26f58040aa57144ff2a2d363546b3b5e"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.001.part",
+        "sha256": "6586f73cc0a1b9a6d6d7dee24ed67a67e286db5550b2fddea3685f224043443b"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.002.part",
+        "sha256": "9c79a24881d86c3d19cd09e2cdb085e5a8130d1a88cff694a4f68e1c2868a756"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.003.part",
+        "sha256": "e7ee71d902e96dfe3e9412b07833da0aeccab6896044e16fcb1f91424e55ce8e"
+      }
+    ]
+  },
+  {
+    "path": "models/anomaly/visa_capsules/model.onnx",
+    "bytes": 32261612,
+    "sha256": "ff414f1e16b12f5a9eac9ac0b12886773645279eae61e2123c0a45ac70dcccbf",
+    "included_in_git": true,
+    "parts": [
+      {
+        "path": "model_parts/visa_capsules/model.onnx.000.part",
+        "sha256": "9fc96a423c83ac988c50a9f7ab8257586cb93ae1d694834f253115d1c495020a"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.001.part",
+        "sha256": "b7cbc9087f5defa6045abcb87c0915758a18d76af618d126162dce6a03994acd"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.002.part",
+        "sha256": "1229300a5355c65480f557a03cec3953b84c5c1b05cc82a823ef319ec2686442"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.003.part",
+        "sha256": "c641c219e40761f4c2d721ac40a6359ccfe17b8ca496a54222388926cf18c196"
+      }
+    ]
+  },
+  {
+    "path": "assets/blistertrace_yolov8s.onnx",
+    "bytes": 44738475,
+    "sha256": "114bddd21ff853747036591cf7d76c5523a7d8dc95d770221795de8f36691db0",
+    "included_in_git": true,
+    "parts": [
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.000.part",
+        "sha256": "fd34ea7254846a5d176c4307ec170157caa6882330e0a8a58eb33e5518eef613"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.001.part",
+        "sha256": "6801581c23e8e75873aca0ad5637a415a7ab83c1b321761e6a3d6f7e0c36d2ea"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.002.part",
+        "sha256": "969743a7554d5dafd787137d19f404da6455f67546b657f874ecc384aa044fce"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.003.part",
+        "sha256": "0447d68c7715d1a08896ab8dde8b216e1dede72b14e126a7f47c6deb7b5a7e1c"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.004.part",
+        "sha256": "49873600db5d5824dad62331d1f1e0ea8e656cb44e394b73376fe99067a1fe63"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.005.part",
+        "sha256": "59dbb2ae3d726571a91027dcdbd94fc4c5124dbb3045f9c99bb8b4e12840f2a1"
+      }
+    ]
+  }
+]

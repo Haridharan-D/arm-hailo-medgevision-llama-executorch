@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": "~/medge-demo start",
+      "exit_code": 0,
+      "elapsed_s": 0.23
+    },
+    {
+      "command": "~/medge-demo models",
+      "exit_code": 0,
+      "elapsed_s": 0.13
+    },
+    {
+      "command": "~/medge-demo test 1",
+      "exit_code": 0,
+      "elapsed_s": 12.58
+    },
+    {
+      "command": "~/medge-demo test 2",
+      "exit_code": 0,
+      "elapsed_s": 7.72
+    },
+    {
+      "command": "~/medge-demo test 3",
+      "exit_code": 0,
+      "elapsed_s": 11.15
+    },
+    {
+      "command": "~/medge-demo test 4",
+      "exit_code": 0,
+      "elapsed_s": 10.79
+    },
+    {
+      "command": "~/medge-demo test 5",
+      "exit_code": 0,
+      "elapsed_s": 10.92
+    },
+    {
+      "command": "~/medge-demo summary",
+      "exit_code": 0,
+      "elapsed_s": 0.65
+    }
+  ],
+  "session": {
+    "batch": "TERMINAL-20261123-120315",
+    "folder": "/home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261123-120315",
+    "records": [
+      {
+        "test": "1",
+        "title": "YOLO: crack",
+        "inspection_id": "41039582dc434afb977019c89a73bc1e",
+        "visual": "DEFECTIVE",
+        "expected": "DEFECTIVE",
+        "matched": true,
+        "file": "/home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261123-120315/test_1_41039582dc434afb977019c89a73bc1e.json"
+      },
+      {
+        "test": "2",
+        "title": "YOLO: clear SCOA strip",
+        "inspection_id": "d6a20a821b9048f4a6ab1cf7367c42a8",
+        "visual": "SAFE",
+        "expected": "SAFE",
+        "matched": true,
+        "file": "/home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261123-120315/test_2_d6a20a821b9048f4a6ab1cf7367c42a8.json"
+      },
+      {
+        "test": "3",
+        "title": "EfficientAD: MVTec pill",
+        "inspection_id": "4c8d1c7edc264f38be434a21e54be902",
+        "visual": "DEFECTIVE",
+        "expected": "DEFECTIVE",
+        "matched": true,
+        "file": "/home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261123-120315/test_3_4c8d1c7edc264f38be434a21e54be902.json"
+      },
+      {
+        "test": "4",
+        "title": "EfficientAD: MVTec capsule",
+        "inspection_id": "75b3c8438c004af2b6a06a813f5dfbce",
+        "visual": "DEFECTIVE",
+        "expected": "DEFECTIVE",
+        "matched": true,
+        "file": "/home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261123-120315/test_4_75b3c8438c004af2b6a06a813f5dfbce.json"
+      },
+      {
+        "test": "5",
+        "title": "EfficientAD: VisA capsules",
+        "inspection_id": "fcd64e4a8f4940bbb4dd5382f7f48e18",
+        "visual": "DEFECTIVE",
+        "expected": "DEFECTIVE",
+        "matched": true,
+        "file": "/home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261123-120315/test_5_fcd64e4a8f4940bbb4dd5382f7f48e18.json"
+      }
+    ]
+  },
+  "scope": "Actual Pi Hailo/ONNX/ExecuTorch CLI demonstration; selected five images, not accuracy benchmark."
+}

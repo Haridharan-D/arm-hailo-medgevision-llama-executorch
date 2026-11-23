@@ -1,0 +1,85 @@
+{
+  "scope": "Selected real-model CPU demo smoke test; not held-out accuracy or Hailo/Llama validation",
+  "all_matched": true,
+  "results": [
+    {
+      "pipeline": "yolo",
+      "image": "defective/crack/crack.jpg",
+      "detections": [
+        {
+          "class_id": 3,
+          "type": "crack",
+          "confidence": 0.9353,
+          "box_xyxy": [
+            309.76,
+            339.91,
+            371.57,
+            440.22
+          ]
+        }
+      ],
+      "elapsed_ms": 188.63,
+      "expected_defect": true,
+      "matched": true
+    },
+    {
+      "pipeline": "yolo",
+      "image": "safe/safe_01.jpg",
+      "detections": [],
+      "elapsed_ms": 169.88,
+      "expected_defect": false,
+      "matched": true
+    },
+    {
+      "pipeline": "mvtec_pill",
+      "profile": "mvtec_pill",
+      "score": 0.6374080777168274,
+      "threshold": 0.35005301237106323,
+      "pixel_threshold": 0.07457666099071503,
+      "flagged": true,
+      "classification": "ANOMALY",
+      "backend": "ONNX Runtime CPU",
+      "model_sha256": "4670cd45c0d465bfbcdbdea2ca2711dd21e0b1eb026beb308e484b4f2e99c220",
+      "elapsed_ms": 1226.53,
+      "validated_for_local_camera": false,
+      "scope": "Category benchmark; local-camera/product validation required",
+      "score_note": "Uncalibrated anomaly score, not probability or drug safety",
+      "color_scale_note": "Color scale is fixed at 0 to twice the saved pixel threshold; not a probability map",
+      "matched": true
+    },
+    {
+      "pipeline": "mvtec_capsule",
+      "profile": "mvtec_capsule",
+      "score": 3.637528657913208,
+      "threshold": 0.2682838439941406,
+      "pixel_threshold": 0.06018669530749321,
+      "flagged": true,
+      "classification": "ANOMALY",
+      "backend": "ONNX Runtime CPU",
+      "model_sha256": "c8110349b6c52a148be7da5442445a32031911ebf64d8d1fbcad2afb0902a157",
+      "elapsed_ms": 3182.67,
+      "validated_for_local_camera": false,
+      "scope": "Category benchmark; local-camera/product validation required",
+      "score_note": "Uncalibrated anomaly score, not probability or drug safety",
+      "color_scale_note": "Color scale is fixed at 0 to twice the saved pixel threshold; not a probability map",
+      "matched": true
+    },
+    {
+      "pipeline": "visa_capsules",
+      "profile": "visa_capsules",
+      "score": 2.262270212173462,
+      "threshold": 0.20281894505023956,
+      "pixel_threshold": 0.03946321830153465,
+      "flagged": true,
+      "classification": "ANOMALY",
+      "backend": "ONNX Runtime CPU",
+      "model_sha256": "ff414f1e16b12f5a9eac9ac0b12886773645279eae61e2123c0a45ac70dcccbf",
+      "elapsed_ms": 2791.75,
+      "validated_for_local_camera": false,
+      "scope": "Low VisA image recall at saved threshold; benchmark/research only",
+      "score_note": "Uncalibrated anomaly score, not probability or drug safety",
+      "color_scale_note": "Color scale is fixed at 0 to twice the saved pixel threshold; not a probability map",
+      "matched": true
+    }
+  ]
+}

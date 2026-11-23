@@ -21,7 +21,7 @@ The dashboard is http://127.0.0.1:8765/ . Alternate design: /classic. Second ver
 
 ## Models and licenses
 
-YOLO ONNX, Hailo-8 HEF and three anomaly ONNX files are included. ARTIFACT_MANIFEST.json records exact sizes/hashes. The 1.14 GB gated Llama PTE, tokenizer and platform binaries are intentionally separate. Accept the upstream Llama 3.2 license/access conditions before downloading. See llama/artifacts/README.md and llama/download_model.py. The tested PTE must match the manifest; another export is not interchangeable. Do not redistribute credentials.
+YOLO ONNX, Hailo-8 HEF and three anomaly ONNX models are included. ONNX files are stored as small Git blobs under model_parts to tolerate interrupted uploads; `python tools/verify_repository_artifacts.py` automatically reassembles and verifies them without internet. ARTIFACT_MANIFEST.json records exact sizes/hashes. The 1.14 GB Llama PTE, tokenizer and platform binaries are separate. Accept upstream Llama 3.2 license conditions before downloading. See llama/artifacts/README.md and llama/download_model.py. The tested PTE must match the manifest; another export is not interchangeable. Do not redistribute credentials.
 
 MVTec-derived models/samples retain CC BY-NC-SA 4.0 restrictions: this bundle is not licensed for unrestricted commercial use. VisA is CC BY 4.0; EfficientAD source attribution is in models/anomaly/ATTRIBUTION.md. Ultralytics-derived model use requires its applicable license (including AGPL/commercial terms); see THIRD_PARTY_NOTICES.md.
 

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "actual_second_monitor": true,
+  "cases": [
+    {
+      "case": "safe",
+      "inspection_id": "6aa1beed29d542879e1915d948caf472",
+      "display": "SAFE",
+      "observed_after_response_ms": 141.0
+    },
+    {
+      "case": "crack",
+      "inspection_id": "e58fa6552fc845ac8a24462d9e03a9b6",
+      "display": "REJECTED",
+      "observed_after_response_ms": 313.0
+    },
+    {
+      "case": "warning",
+      "inspection_id": "b5502bc417c7407bb0a4a957898709cc",
+      "display": "WARNING",
+      "observed_after_response_ms": 297.0
+    },
+    {
+      "case": "anomaly",
+      "inspection_id": "a0ec0ea7375746af97ea6f607612e65f",
+      "display": "REJECTED",
+      "observed_after_response_ms": 453.0
+    },
+    {
+      "case": "safe_repeat",
+      "inspection_id": "f2d599b9024546a986e9058c1d9abf11",
+      "display": "SAFE",
+      "observed_after_response_ms": 437.0
+    }
+  ],
+  "transient_failure_recovered": true,
+  "page_errors": []
+}

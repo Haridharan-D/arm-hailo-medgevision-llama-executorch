@@ -12,3 +12,8 @@ llama/artifacts/*.pte
 llama/artifacts/tokenizer.model
 llama/bin/
 native/bin/
+
+# ONNX models are reassembled from verified small Git blobs.
+*.onnx
+*.json.before_setup
+smoke_results.json
