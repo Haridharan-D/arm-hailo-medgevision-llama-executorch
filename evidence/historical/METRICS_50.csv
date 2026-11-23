@@ -1,0 +1,51 @@
+﻿id,metric,result,scope
+1,Overall accuracy,mvtec_pill: 0.88024; visa_capsules: 0.51875; mvtec_capsule: 0.82576,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+2,Precision,mvtec_pill: 1.0; visa_capsules: 0.96; mvtec_capsule: 0.98864,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+3,Recall/sensitivity,mvtec_pill: 0.85816; visa_capsules: 0.24; mvtec_capsule: 0.79817,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+4,F1,mvtec_pill: 0.92366; visa_capsules: 0.384; mvtec_capsule: 0.88325,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+5,Specificity,mvtec_pill: 1.0; visa_capsules: 0.98333; mvtec_capsule: 0.95652,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+6,AUROC,mvtec_pill: 0.98336; visa_capsules: 0.65017; mvtec_capsule: 0.94854,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+7,Average precision / AUPR,mvtec_pill: 0.99705; visa_capsules: 0.80102; mvtec_capsule: 0.98867,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+8,Confusion matrices,"{'mvtec_pill': [26, 0, 20, 121], 'visa_capsules': [59, 1, 76, 24], 'mvtec_capsule': [22, 1, 22, 87]}","Anomaly: [TN, FP, FN, TP]; detection has no well-defined box TN"
+9,Per-class accuracy,N/A for box detection,Use class precision/recall; box TN undefined
+10,Per-class precision,"{'black_dot': 0.97665, 'broken': 0.98301, 'color_mismatch': 0.97867, 'crack': 0.97489, 'dual_cap': 0.98182, 'empty': 0.97731, 'foreign_particle': 0.97912}",Historical YOLO FP32 frozen operating point
+11,Per-class recall,"{'black_dot': 0.98239, 'broken': 0.99509, 'color_mismatch': 0.98333, 'crack': 0.98843, 'dual_cap': 0.97297, 'empty': 0.9511, 'foreign_particle': 0.95692}",Historical YOLO FP32 frozen operating point
+12,Per-class F1,"{'black_dot': 0.97951, 'broken': 0.98901, 'color_mismatch': 0.981, 'crack': 0.98161, 'dual_cap': 0.97738, 'empty': 0.96403, 'foreign_particle': 0.96789}",Historical YOLO FP32 frozen operating point
+13,mAP@0.5,0.9922056323347459,Historical YOLO FP32 source test; not target INT8
+14,mAP@0.5:0.95,0.8918653665404637,Historical YOLO FP32 source test; not target INT8
+15,Pixel Dice,mvtec_pill: 0.69257; visa_capsules: 0.37084; mvtec_capsule: 0.40288,Historical anomaly mask F1 = Dice; no YOLO segmentation model
+16,Image AUROC,mvtec_pill: 0.98336; visa_capsules: 0.65017; mvtec_capsule: 0.94854,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+17,Pixel AUROC,mvtec_pill: 0.98491; visa_capsules: 0.9779; mvtec_capsule: 0.95884,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+18,AUPRO,mvtec_pill: 0.95572; visa_capsules: 0.69846; mvtec_capsule: 0.83077,"Region/pixel localization metric, NOT image-level AUPRO; original max-FPR 0.3"
+19,Pixel AP,N/A: not present in retained evaluation,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+20,False-positive rate,mvtec_pill: 0.0; visa_capsules: 0.01667; mvtec_capsule: 0.04348,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+21,False-negative rate,mvtec_pill: 0.14184; visa_capsules: 0.76; mvtec_capsule: 0.20183,"Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+22,Unknown defect detection rate,N/A,No separately defined unseen-type evaluation; no claim inferred from normal-only training
+23,Detector-path latency,CPU 580.115 ms; Hailo 15.197 ms,Preprocessing + model + postprocessing together; stage timings not exposed
+24,Image API latency,"{'n': 3, 'mean': 57.546, 'p50': 47.996, 'p95': 75.486, 'min': 46.101, 'max': 78.541}","3 actual Hailo image requests: includes image I/O, DB, response; excludes async Llama/camera"
+25,Throughput,CPU 1.724; Hailo 65.789 images/s,"Same unannotated training-source demo images; latency and agreement, NOT target ground-truth accuracy"
+26,Camera FPS,N/A: CSI camera not detected,Detector throughput must not be labeled camera FPS
+27,P95 latency,"{'onnx': 580.855, 'hailo': 15.526}","Detector path, ms; CPU n=35, Hailo n=3948"
+28,P99 latency,"{'onnx': 588.748, 'hailo': 15.635}","Detector path, ms; CPU n=35, Hailo n=3948"
+29,Vision artifact size MB,"{'ONNX': 44.738, 'HEF': 10.106}",Decimal MB; HEF and ONNX are different execution formats
+30,Detector loading time,"{'onnx': 0.1081, 'hailo': 0.0915}","Seconds; constructor/session setup, warm-up excluded"
+31,CPU utilization %,"{'onnx': {'mean': 48.990243902439026, 'peak': 50.7}, 'hailo': {'mean': 10.849579831932774, 'peak': 30.1}}",System CPU 0-100%; benchmark-process RSS; thermal sensor
+32,Benchmark process RSS MiB,"{'onnx': {'mean': 254.0705030487805, 'peak': 256.03125}, 'hailo': {'mean': 206.4293592436975, 'peak': 206.9375}}",System CPU 0-100%; benchmark-process RSS; thermal sensor
+33,NPU utilization,N/A,No supported utilization sampler captured
+34,Electrical power W,N/A,No power meter connected
+35,Energy per inspection J,N/A,Requires measured electrical power
+36,Operating temperature Celsius,"{'onnx': {'mean': 48.40609756097561, 'peak': 52.9}, 'hailo': {'mean': 41.47016806722689, 'peak': 50.15}}",System CPU 0-100%; benchmark-process RSS; thermal sensor
+37,Sustained Hailo performance,"{'duration_s': 60.00991958299983, 'n': 3948, 'first_quarter_ms': 14.972449360680569, 'last_quarter_ms': 15.280024859174125}",60-second detector test; not long-duration reliability
+38,Llama artifact MB,1135.951,Actual INT4 ExecuTorch artifact
+39,Prompt processing latency,N/A,Native worker returns final JSON; prefill/decode/first-token timing not instrumented
+40,Response tokens/second,N/A,Native worker returns final JSON; prefill/decode/first-token timing not instrumented
+41,TTFT,N/A,Native worker returns final JSON; prefill/decode/first-token timing not instrumented
+42,Expert advisory correctness,N/A,"No expert sign-off; engineering sample: 2/3 accepted, 1/3 fallback; mean observed advisory 19854.6 ms"
+43,Defective product rejection accuracy,N/A,Physical product rejection ground truth absent; benchmark recall is separate
+44,Good product false rejection rate,N/A,No independently labeled healthy blister test cohort
+45,Inspection coverage,N/A,No counted production input stream
+46,Batch inspection time,"{'CPU_benchmark_s': 20.30413515700002, 'Hailo_benchmark_s': 60.00991958299983}",Repeated image workload; not a physical production batch
+47,Inspection logging reliability,3/3 image records retrieved; JSON/CSV/append-only review checks passed,"Small integration sample, not long-duration logging SLA"
+48,Lighting robustness,N/A,No controlled labeled robustness or multi-hour reliability run performed
+49,Orientation robustness,N/A,No controlled labeled robustness or multi-hour reliability run performed
+50,Long-duration reliability,N/A,No controlled labeled robustness or multi-hour reliability run performed

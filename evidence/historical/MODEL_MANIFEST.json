@@ -1,0 +1,61 @@
+{
+  "frozen_artifacts": [
+    {
+      "path": "/home/saul/BlisterTrace/BlisterTrace_App/assets/thresholds.json",
+      "expected": "f6d92ab69317404610867347eb6268f493569ad908eeb02fc6eb7bc906331c27",
+      "actual": "f6d92ab69317404610867347eb6268f493569ad908eeb02fc6eb7bc906331c27",
+      "matched": true
+    },
+    {
+      "path": "/home/saul/BlisterTrace/BlisterTrace_App/assets/blistertrace_yolov8s.onnx",
+      "expected": "114bddd21ff853747036591cf7d76c5523a7d8dc95d770221795de8f36691db0",
+      "actual": "114bddd21ff853747036591cf7d76c5523a7d8dc95d770221795de8f36691db0",
+      "matched": true
+    },
+    {
+      "path": "/home/saul/BlisterTrace/BlisterTrace_App/models/blistertrace.hef",
+      "expected": "43abc3f520b97894504d7d99f209846c9f0cc73542eb7b29e9546e7b6def8018",
+      "actual": "43abc3f520b97894504d7d99f209846c9f0cc73542eb7b29e9546e7b6def8018",
+      "matched": true
+    },
+    {
+      "path": "/home/saul/BlisterTrace/Llama_ExecuTorch/artifacts/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8.pte",
+      "expected": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+      "actual": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+      "matched": true
+    },
+    {
+      "path": "/home/saul/BlisterTrace/Llama_ExecuTorch/bin/aarch64/blistertrace_worker",
+      "expected": "212ca6ceaa62f3179217f6f3db6e663a53ea31467c2a22359449f3bdca871f2b",
+      "actual": "212ca6ceaa62f3179217f6f3db6e663a53ea31467c2a22359449f3bdca871f2b",
+      "matched": true
+    },
+    {
+      "path": "/home/saul/BlisterTrace/BlisterTrace_App/models/anomaly/visa_capsules/model.onnx",
+      "expected": "ff414f1e16b12f5a9eac9ac0b12886773645279eae61e2123c0a45ac70dcccbf",
+      "actual": "ff414f1e16b12f5a9eac9ac0b12886773645279eae61e2123c0a45ac70dcccbf",
+      "matched": true
+    },
+    {
+      "path": "/home/saul/BlisterTrace/BlisterTrace_App/models/anomaly/mvtec_pill/model.onnx",
+      "expected": "4670cd45c0d465bfbcdbdea2ca2711dd21e0b1eb026beb308e484b4f2e99c220",
+      "actual": "4670cd45c0d465bfbcdbdea2ca2711dd21e0b1eb026beb308e484b4f2e99c220",
+      "matched": true
+    },
+    {
+      "path": "/home/saul/BlisterTrace/BlisterTrace_App/models/anomaly/mvtec_capsule/model.onnx",
+      "expected": "c8110349b6c52a148be7da5442445a32031911ebf64d8d1fbcad2afb0902a157",
+      "actual": "c8110349b6c52a148be7da5442445a32031911ebf64d8d1fbcad2afb0902a157",
+      "matched": true
+    }
+  ],
+  "challenger": {
+    "repository": "MediaTek-Research/Llama-3.2-3B-Instruct-SpinQuant_INT4_EO8-executorch",
+    "revision": "c2ac31ba586e93aad76b2f72aeaf0ecb7d061661",
+    "filename": "llama3_2-2048-spin.pte",
+    "bytes": 2553367552,
+    "sha256": "55d7f829f13063331c3d421816128553b545847628e1f0c71f44a78cb9229271"
+  },
+  "not_in_source_zip": "Large PTE/ONNX/HEF files and raw datasets remain in the preserved installation; retain original licenses and gated access.",
+  "selected": "Existing1B SpinQuant PTE, adaptive-v1 prompt; vision thresholds unchanged"
+}

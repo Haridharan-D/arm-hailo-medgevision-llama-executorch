@@ -1,0 +1,617 @@
+{
+  "primary": "Existing Llama3.2 1B Instruct SpinQuant INT4 EO8, adaptive-v1 prompt",
+  "production_config": {
+    "llama_prompt_mode": "adaptive-v1",
+    "llama_output_tokens": 128,
+    "llama_prompt_budget": 1536,
+    "llama_threads": 3
+  },
+  "frozen_model_unchanged": true,
+  "automated_revalidation": [
+    {
+      "case_id": 1,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 2,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 3,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 4,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 5,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 6,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 7,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 8,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 9,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 10,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 11,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 12,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 13,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 14,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 15,
+      "status": "fallback",
+      "fallback": "Extra data: line 3 column 1 (char 245)"
+    },
+    {
+      "case_id": 16,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 17,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 18,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 19,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 20,
+      "status": "fallback",
+      "fallback": "Extra data: line 3 column 1 (char 245)"
+    },
+    {
+      "case_id": 21,
+      "status": "fallback",
+      "fallback": "Unsupported advisory claim"
+    },
+    {
+      "case_id": 22,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 23,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 24,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 25,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 26,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 27,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 28,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 29,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 30,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 31,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 32,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 33,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 34,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 35,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 36,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 48,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 49,
+      "status": "llama_validated",
+      "fallback": null
+    },
+    {
+      "case_id": 50,
+      "status": "llama_validated",
+      "fallback": null
+    }
+  ],
+  "human_review_complete": false,
+  "baseline_accepted": 26,
+  "selected_accepted": 36,
+  "observed_experiment_guard_accepted": 37,
+  "bounded_cases": 39,
+  "rejected_invalid_inputs": 11,
+  "other_candidate_final_guards": {
+    "1b_baseline": {
+      "accepted": 26,
+      "cases": [
+        {
+          "case_id": 1,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 2,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 3,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 4,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 5,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 6,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 7,
+          "status": "fallback",
+          "reason": "Advisory invents an unobserved defect type"
+        },
+        {
+          "case_id": 8,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 9,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 10,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 11,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 12,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 13,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 14,
+          "status": "fallback",
+          "reason": "Advisory invents an unobserved defect type"
+        },
+        {
+          "case_id": 15,
+          "status": "fallback",
+          "reason": "Extra data: line 3 column 1 (char 268)"
+        },
+        {
+          "case_id": 16,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 17,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 18,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 19,
+          "status": "fallback",
+          "reason": "Advisory invents a capture-quality issue"
+        },
+        {
+          "case_id": 20,
+          "status": "fallback",
+          "reason": "Advisory invents an unobserved defect type"
+        },
+        {
+          "case_id": 21,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 22,
+          "status": "fallback",
+          "reason": "Advisory asserts an anomaly without an observation"
+        },
+        {
+          "case_id": 23,
+          "status": "fallback",
+          "reason": "Advisory asserts an anomaly without an observation"
+        },
+        {
+          "case_id": 24,
+          "status": "fallback",
+          "reason": "Advisory asserts an anomaly without an observation"
+        },
+        {
+          "case_id": 25,
+          "status": "fallback",
+          "reason": "Advisory asserts an anomaly without an observation"
+        },
+        {
+          "case_id": 26,
+          "status": "fallback",
+          "reason": "Advisory asserts an anomaly without an observation"
+        },
+        {
+          "case_id": 27,
+          "status": "fallback",
+          "reason": "Advisory asserts an anomaly without an observation"
+        },
+        {
+          "case_id": 28,
+          "status": "fallback",
+          "reason": "Advisory asserts an anomaly without an observation"
+        },
+        {
+          "case_id": 29,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 30,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 31,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 32,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 33,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 34,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 35,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 36,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 48,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 49,
+          "status": "fallback",
+          "reason": "Advisory invents an unobserved defect type"
+        },
+        {
+          "case_id": 50,
+          "status": "llama_validated",
+          "reason": null
+        }
+      ]
+    },
+    "3b_baseline": {
+      "accepted": 39,
+      "cases": [
+        {
+          "case_id": 1,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 2,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 3,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 4,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 5,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 6,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 7,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 8,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 9,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 10,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 11,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 12,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 13,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 14,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 15,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 16,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 17,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 18,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 19,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 20,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 21,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 22,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 23,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 24,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 25,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 26,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 27,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 28,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 29,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 30,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 31,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 32,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 33,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 34,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 35,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 36,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 48,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 49,
+          "status": "llama_validated",
+          "reason": null
+        },
+        {
+          "case_id": 50,
+          "status": "llama_validated",
+          "reason": null
+        }
+      ]
+    }
+  },
+  "reason": "Retain the1B artifact and persistent ExecuTorch Arm runtime. The relevant-example prompt improved automated guard acceptance from26/39 to36/39 while reducing observed advisory latency. Keep3B as an evaluated quality challenger because its~39s warm generation has a substantial latency cost and human semantic review remains unavailable. Original prompt/source/binary stay recoverable. These counts are not pharmaceutical or human-judged accuracy.",
+  "revalidation_scope": "Replay of the actually observed candidate raw text through the final conservative guards; no fabricated new generation timings."
+}

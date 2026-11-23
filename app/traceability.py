@@ -1,7 +1,7 @@
 """Evidence metadata around the frozen decision engine; never modifies it."""
 import hashlib,json,platform,shutil,os
 from pathlib import Path
-VERSION='2026.11.23-display-sync-v1'
+VERSION='2026.11.23-reproducibility-v2'
 def save_image(path,image):
     import cv2
     tmp=path.with_name(path.stem+'.tmp'+path.suffix)
@@ -27,6 +27,8 @@ def outcome(record):
     if not record.get('profile_validated',False):return 'MANUAL_REVIEW'
     return 'NO_VISIBLE_DEFECT_DETECTED'
 def enrich(record,config,store):
+    from .severity import explanation
+    record['severity_explanation']=explanation(record)
     from .visual_result import visual_result
     record['visual_result']=visual_result(record)
     original=config['data_dir']/'images'/(record['inspection_id']+'_original.jpg')

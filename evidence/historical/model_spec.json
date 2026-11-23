@@ -1,0 +1,71 @@
+{
+  "model": "YOLOv8s custom blister defects",
+  "classes": {
+    "0": "black_dot",
+    "1": "broken",
+    "2": "color_mismatch",
+    "3": "crack",
+    "4": "dual_cap",
+    "5": "empty",
+    "6": "foreign_particle"
+  },
+  "defect_classes": [
+    "black_dot",
+    "broken",
+    "color_mismatch",
+    "crack",
+    "dual_cap",
+    "empty",
+    "foreign_particle"
+  ],
+  "context_classes": [],
+  "input": {
+    "shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "dtype": "float32",
+    "layout": "NCHW",
+    "color": "RGB",
+    "range": [
+      0,
+      1
+    ],
+    "resize": "Aspect-preserving letterbox; pad RGB 114; preserve scale and padding.",
+    "calibration_note": "Follow Hailo model script normalization ownership, not this tensor contract blindly."
+  },
+  "output": {
+    "raw_shape": [
+      1,
+      11,
+      8400
+    ],
+    "nms_embedded": false,
+    "description": "YOLOv8 decoded raw boxes/scores, model-specific head; inspect exported tensor contract.",
+    "postprocess": "class-aware NMS at IoU 0.7; frozen per-class confidence thresholds; map coordinates back."
+  },
+  "severity_policy_demo": {
+    "black_dot": "major",
+    "broken": "major",
+    "color_mismatch": "major",
+    "crack": "major",
+    "dual_cap": "major",
+    "empty": "major",
+    "foreign_particle": "major"
+  },
+  "decision_note": "All seven labels are defect observations; absence alone does not establish PASS. Empty needs the expected-fill recipe. Severity is a demo policy requiring reviewed SOP rules.",
+  "target": {
+    "vision": "Hailo-8 / HailoRT after compile and INT8 validation",
+    "advisory": "Separate Llama-family .pte / ExecuTorch / Pi Arm CPU"
+  },
+  "unsupported": [
+    "packaging/foil damage",
+    "drug identity or chemistry",
+    "unvalidated camera/SKU domains"
+  ],
+  "calibration_images": 512,
+  "training_source": "Roboflow SastraAji Basler blister / version 4",
+  "source_preprocessing": "Publisher v4 applies stretch to 640x640 before export. Source image aspect ratios are not recoverable from the export; validate the local camera ROI pipeline."
+}

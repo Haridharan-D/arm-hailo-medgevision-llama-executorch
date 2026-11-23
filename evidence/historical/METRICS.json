@@ -1,0 +1,477 @@
+{
+  "date": "2026-11-21",
+  "hardware": {
+    "scope": "Same unannotated training-source demo images; latency and agreement, NOT target ground-truth accuracy",
+    "camera": "CSI unavailable: no camera detected",
+    "backends": {
+      "onnx": {
+        "n": 35,
+        "seconds": 20.30413515700002,
+        "loading_seconds": 0.10805600699995921,
+        "mean_ms": 580.1146623142943,
+        "p95_ms": 580.8548077000978,
+        "p99_ms": 588.7482663399805,
+        "throughput_images_s": 1.7237867916739837,
+        "first_quarter_mean_ms": 580.7912206249739,
+        "last_quarter_mean_ms": 580.0117105000595,
+        "resources": {
+          "cpu_percent": {
+            "mean": 48.990243902439026,
+            "peak": 50.7
+          },
+          "rss_mib": {
+            "mean": 254.0705030487805,
+            "peak": 256.03125
+          },
+          "temperature_c": {
+            "mean": 48.40609756097561,
+            "peak": 52.9
+          }
+        }
+      },
+      "hailo": {
+        "n": 3948,
+        "seconds": 60.00991958299983,
+        "loading_seconds": 0.09148604600022736,
+        "mean_ms": 15.196512435158102,
+        "p95_ms": 15.526185100043222,
+        "p99_ms": 15.63486785008081,
+        "throughput_images_s": 65.78912332217867,
+        "first_quarter_mean_ms": 14.972449360680569,
+        "last_quarter_mean_ms": 15.280024859174125,
+        "resources": {
+          "cpu_percent": {
+            "mean": 10.849579831932774,
+            "peak": 30.1
+          },
+          "rss_mib": {
+            "mean": 206.4293592436975,
+            "peak": 206.9375
+          },
+          "temperature_c": {
+            "mean": 41.47016806722689,
+            "peak": 50.15
+          }
+        }
+      }
+    },
+    "hailo_activation": "Actual inference succeeded; dashboard configured for Hailo"
+  },
+  "agreement": {
+    "backend": "Actual HailoRT / Hailo-8",
+    "hef": "/home/saul/BlisterTrace/BlisterTrace_App/models/blistertrace.hef",
+    "images": 18,
+    "reference": "Frozen FP32 ONNX with identical preprocessing, thresholds and NMS",
+    "agreement_matches": 37,
+    "int8_only_detections": 2,
+    "fp32_only_detections": 1,
+    "agreement_precision": 0.9487179487179487,
+    "agreement_recall": 0.9736842105263158,
+    "warm_hailo_ms_p50": 14.74,
+    "ground_truth_accuracy_verified": false,
+    "scope": "Unannotated training-source demo samples; agreement is not defect recall, mAP or independent test evidence"
+  },
+  "anomaly_historical": {
+    "mvtec_pill": {
+      "images": 167,
+      "defects": 141,
+      "image_auroc": 0.9833606110201855,
+      "image_f1": 0.9236641221374046,
+      "image_confusion_matrix_tn_fp_fn_tp": [
+        26,
+        0,
+        20,
+        121
+      ],
+      "pixel_auroc": 0.9849134047367899,
+      "pixel_f1": 0.6925722635510605,
+      "aupro": 0.9557222113880817,
+      "pixel_confusion_matrix_tn_fp_fn_tp": [
+        10311026,
+        266099,
+        31816,
+        335571
+      ],
+      "annotated_images": 167,
+      "aupro_max_fpr": 0.3,
+      "aupro_steps": 200,
+      "image_aupr": 0.9970465973253823,
+      "image_precision": 1.0,
+      "image_recall": 0.8581560283687943,
+      "normal_false_alarm_rate": 0.0,
+      "accuracy": 0.8802395209580839,
+      "specificity": 1.0,
+      "false_negative_rate": 0.14184397163120568,
+      "dice": 0.6925722635510605
+    },
+    "visa_capsules": {
+      "images": 160,
+      "defects": 100,
+      "image_auroc": 0.6501666666666668,
+      "image_f1": 0.384,
+      "image_confusion_matrix_tn_fp_fn_tp": [
+        59,
+        1,
+        76,
+        24
+      ],
+      "pixel_auroc": 0.9778969728350375,
+      "pixel_f1": 0.37084012534518307,
+      "aupro": 0.6984590887255195,
+      "pixel_confusion_matrix_tn_fp_fn_tp": [
+        10376322,
+        73758,
+        10769,
+        24911
+      ],
+      "annotated_images": 160,
+      "aupro_max_fpr": 0.3,
+      "aupro_steps": 200,
+      "image_aupr": 0.8010200622842942,
+      "image_precision": 0.96,
+      "image_recall": 0.24,
+      "normal_false_alarm_rate": 0.016666666666666666,
+      "accuracy": 0.51875,
+      "specificity": 0.9833333333333333,
+      "false_negative_rate": 0.76,
+      "dice": 0.37084012534518307
+    },
+    "mvtec_capsule": {
+      "images": 132,
+      "defects": 109,
+      "image_auroc": 0.9485440765855604,
+      "image_f1": 0.883248730964467,
+      "image_confusion_matrix_tn_fp_fn_tp": [
+        22,
+        1,
+        22,
+        87
+      ],
+      "pixel_auroc": 0.9588387940773243,
+      "pixel_f1": 0.40287908913452064,
+      "aupro": 0.830766946322705,
+      "pixel_confusion_matrix_tn_fp_fn_tp": [
+        8386478,
+        185102,
+        12508,
+        66664
+      ],
+      "annotated_images": 132,
+      "aupro_max_fpr": 0.3,
+      "aupro_steps": 200,
+      "image_aupr": 0.9886672938058669,
+      "image_precision": 0.9886363636363636,
+      "image_recall": 0.7981651376146789,
+      "normal_false_alarm_rate": 0.043478260869565216,
+      "accuracy": 0.8257575757575758,
+      "specificity": 0.9565217391304348,
+      "false_negative_rate": 0.2018348623853211,
+      "dice": 0.40287908913452064
+    }
+  },
+  "metrics": [
+    {
+      "id": 1,
+      "metric": "Overall accuracy",
+      "result": "mvtec_pill: 0.88024; visa_capsules: 0.51875; mvtec_capsule: 0.82576",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 2,
+      "metric": "Precision",
+      "result": "mvtec_pill: 1.0; visa_capsules: 0.96; mvtec_capsule: 0.98864",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 3,
+      "metric": "Recall/sensitivity",
+      "result": "mvtec_pill: 0.85816; visa_capsules: 0.24; mvtec_capsule: 0.79817",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 4,
+      "metric": "F1",
+      "result": "mvtec_pill: 0.92366; visa_capsules: 0.384; mvtec_capsule: 0.88325",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 5,
+      "metric": "Specificity",
+      "result": "mvtec_pill: 1.0; visa_capsules: 0.98333; mvtec_capsule: 0.95652",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 6,
+      "metric": "AUROC",
+      "result": "mvtec_pill: 0.98336; visa_capsules: 0.65017; mvtec_capsule: 0.94854",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 7,
+      "metric": "Average precision / AUPR",
+      "result": "mvtec_pill: 0.99705; visa_capsules: 0.80102; mvtec_capsule: 0.98867",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 8,
+      "metric": "Confusion matrices",
+      "result": "{'mvtec_pill': [26, 0, 20, 121], 'visa_capsules': [59, 1, 76, 24], 'mvtec_capsule': [22, 1, 22, 87]}",
+      "scope": "Anomaly: [TN, FP, FN, TP]; detection has no well-defined box TN"
+    },
+    {
+      "id": 9,
+      "metric": "Per-class accuracy",
+      "result": "N/A for box detection",
+      "scope": "Use class precision/recall; box TN undefined"
+    },
+    {
+      "id": 10,
+      "metric": "Per-class precision",
+      "result": "{'black_dot': 0.97665, 'broken': 0.98301, 'color_mismatch': 0.97867, 'crack': 0.97489, 'dual_cap': 0.98182, 'empty': 0.97731, 'foreign_particle': 0.97912}",
+      "scope": "Historical YOLO FP32 frozen operating point"
+    },
+    {
+      "id": 11,
+      "metric": "Per-class recall",
+      "result": "{'black_dot': 0.98239, 'broken': 0.99509, 'color_mismatch': 0.98333, 'crack': 0.98843, 'dual_cap': 0.97297, 'empty': 0.9511, 'foreign_particle': 0.95692}",
+      "scope": "Historical YOLO FP32 frozen operating point"
+    },
+    {
+      "id": 12,
+      "metric": "Per-class F1",
+      "result": "{'black_dot': 0.97951, 'broken': 0.98901, 'color_mismatch': 0.981, 'crack': 0.98161, 'dual_cap': 0.97738, 'empty': 0.96403, 'foreign_particle': 0.96789}",
+      "scope": "Historical YOLO FP32 frozen operating point"
+    },
+    {
+      "id": 13,
+      "metric": "mAP@0.5",
+      "result": "0.9922056323347459",
+      "scope": "Historical YOLO FP32 source test; not target INT8"
+    },
+    {
+      "id": 14,
+      "metric": "mAP@0.5:0.95",
+      "result": "0.8918653665404637",
+      "scope": "Historical YOLO FP32 source test; not target INT8"
+    },
+    {
+      "id": 15,
+      "metric": "Pixel Dice",
+      "result": "mvtec_pill: 0.69257; visa_capsules: 0.37084; mvtec_capsule: 0.40288",
+      "scope": "Historical anomaly mask F1 = Dice; no YOLO segmentation model"
+    },
+    {
+      "id": 16,
+      "metric": "Image AUROC",
+      "result": "mvtec_pill: 0.98336; visa_capsules: 0.65017; mvtec_capsule: 0.94854",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 17,
+      "metric": "Pixel AUROC",
+      "result": "mvtec_pill: 0.98491; visa_capsules: 0.9779; mvtec_capsule: 0.95884",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 18,
+      "metric": "AUPRO",
+      "result": "mvtec_pill: 0.95572; visa_capsules: 0.69846; mvtec_capsule: 0.83077",
+      "scope": "Region/pixel localization metric, NOT image-level AUPRO; original max-FPR 0.3"
+    },
+    {
+      "id": 19,
+      "metric": "Pixel AP",
+      "result": "N/A: not present in retained evaluation",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 20,
+      "metric": "False-positive rate",
+      "result": "mvtec_pill: 0.0; visa_capsules: 0.01667; mvtec_capsule: 0.04348",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 21,
+      "metric": "False-negative rate",
+      "result": "mvtec_pill: 0.14184; visa_capsules: 0.76; mvtec_capsule: 0.20183",
+      "scope": "Original held-out anomaly benchmark, NOT newly measured Hailo accuracy"
+    },
+    {
+      "id": 22,
+      "metric": "Unknown defect detection rate",
+      "result": "N/A",
+      "scope": "No separately defined unseen-type evaluation; no claim inferred from normal-only training"
+    },
+    {
+      "id": 23,
+      "metric": "Detector-path latency",
+      "result": "CPU 580.115 ms; Hailo 15.197 ms",
+      "scope": "Preprocessing + model + postprocessing together; stage timings not exposed"
+    },
+    {
+      "id": 24,
+      "metric": "Image API latency",
+      "result": "{'n': 3, 'mean': 57.546, 'p50': 47.996, 'p95': 75.486, 'min': 46.101, 'max': 78.541}",
+      "scope": "3 actual Hailo image requests: includes image I/O, DB, response; excludes async Llama/camera"
+    },
+    {
+      "id": 25,
+      "metric": "Throughput",
+      "result": "CPU 1.724; Hailo 65.789 images/s",
+      "scope": "Same unannotated training-source demo images; latency and agreement, NOT target ground-truth accuracy"
+    },
+    {
+      "id": 26,
+      "metric": "Camera FPS",
+      "result": "N/A: CSI camera not detected",
+      "scope": "Detector throughput must not be labeled camera FPS"
+    },
+    {
+      "id": 27,
+      "metric": "P95 latency",
+      "result": "{'onnx': 580.855, 'hailo': 15.526}",
+      "scope": "Detector path, ms; CPU n=35, Hailo n=3948"
+    },
+    {
+      "id": 28,
+      "metric": "P99 latency",
+      "result": "{'onnx': 588.748, 'hailo': 15.635}",
+      "scope": "Detector path, ms; CPU n=35, Hailo n=3948"
+    },
+    {
+      "id": 29,
+      "metric": "Vision artifact size MB",
+      "result": "{'ONNX': 44.738, 'HEF': 10.106}",
+      "scope": "Decimal MB; HEF and ONNX are different execution formats"
+    },
+    {
+      "id": 30,
+      "metric": "Detector loading time",
+      "result": "{'onnx': 0.1081, 'hailo': 0.0915}",
+      "scope": "Seconds; constructor/session setup, warm-up excluded"
+    },
+    {
+      "id": 31,
+      "metric": "CPU utilization %",
+      "result": "{'onnx': {'mean': 48.990243902439026, 'peak': 50.7}, 'hailo': {'mean': 10.849579831932774, 'peak': 30.1}}",
+      "scope": "System CPU 0-100%; benchmark-process RSS; thermal sensor"
+    },
+    {
+      "id": 32,
+      "metric": "Benchmark process RSS MiB",
+      "result": "{'onnx': {'mean': 254.0705030487805, 'peak': 256.03125}, 'hailo': {'mean': 206.4293592436975, 'peak': 206.9375}}",
+      "scope": "System CPU 0-100%; benchmark-process RSS; thermal sensor"
+    },
+    {
+      "id": 33,
+      "metric": "NPU utilization",
+      "result": "N/A",
+      "scope": "No supported utilization sampler captured"
+    },
+    {
+      "id": 34,
+      "metric": "Electrical power W",
+      "result": "N/A",
+      "scope": "No power meter connected"
+    },
+    {
+      "id": 35,
+      "metric": "Energy per inspection J",
+      "result": "N/A",
+      "scope": "Requires measured electrical power"
+    },
+    {
+      "id": 36,
+      "metric": "Operating temperature Celsius",
+      "result": "{'onnx': {'mean': 48.40609756097561, 'peak': 52.9}, 'hailo': {'mean': 41.47016806722689, 'peak': 50.15}}",
+      "scope": "System CPU 0-100%; benchmark-process RSS; thermal sensor"
+    },
+    {
+      "id": 37,
+      "metric": "Sustained Hailo performance",
+      "result": "{'duration_s': 60.00991958299983, 'n': 3948, 'first_quarter_ms': 14.972449360680569, 'last_quarter_ms': 15.280024859174125}",
+      "scope": "60-second detector test; not long-duration reliability"
+    },
+    {
+      "id": 38,
+      "metric": "Llama artifact MB",
+      "result": "1135.951",
+      "scope": "Actual INT4 ExecuTorch artifact"
+    },
+    {
+      "id": 39,
+      "metric": "Prompt processing latency",
+      "result": "N/A",
+      "scope": "Native worker returns final JSON; prefill/decode/first-token timing not instrumented"
+    },
+    {
+      "id": 40,
+      "metric": "Response tokens/second",
+      "result": "N/A",
+      "scope": "Native worker returns final JSON; prefill/decode/first-token timing not instrumented"
+    },
+    {
+      "id": 41,
+      "metric": "TTFT",
+      "result": "N/A",
+      "scope": "Native worker returns final JSON; prefill/decode/first-token timing not instrumented"
+    },
+    {
+      "id": 42,
+      "metric": "Expert advisory correctness",
+      "result": "N/A",
+      "scope": "No expert sign-off; engineering sample: 2/3 accepted, 1/3 fallback; mean observed advisory 19854.6 ms"
+    },
+    {
+      "id": 43,
+      "metric": "Defective product rejection accuracy",
+      "result": "N/A",
+      "scope": "Physical product rejection ground truth absent; benchmark recall is separate"
+    },
+    {
+      "id": 44,
+      "metric": "Good product false rejection rate",
+      "result": "N/A",
+      "scope": "No independently labeled healthy blister test cohort"
+    },
+    {
+      "id": 45,
+      "metric": "Inspection coverage",
+      "result": "N/A",
+      "scope": "No counted production input stream"
+    },
+    {
+      "id": 46,
+      "metric": "Batch inspection time",
+      "result": "{'CPU_benchmark_s': 20.30413515700002, 'Hailo_benchmark_s': 60.00991958299983}",
+      "scope": "Repeated image workload; not a physical production batch"
+    },
+    {
+      "id": 47,
+      "metric": "Inspection logging reliability",
+      "result": "3/3 image records retrieved; JSON/CSV/append-only review checks passed",
+      "scope": "Small integration sample, not long-duration logging SLA"
+    },
+    {
+      "id": 48,
+      "metric": "Lighting robustness",
+      "result": "N/A",
+      "scope": "No controlled labeled robustness or multi-hour reliability run performed"
+    },
+    {
+      "id": 49,
+      "metric": "Orientation robustness",
+      "result": "N/A",
+      "scope": "No controlled labeled robustness or multi-hour reliability run performed"
+    },
+    {
+      "id": 50,
+      "metric": "Long-duration reliability",
+      "result": "N/A",
+      "scope": "No controlled labeled robustness or multi-hour reliability run performed"
+    }
+  ],
+  "actual_target_accuracy_verified": false,
+  "camera_available": false,
+  "speedup": 38.17419719093981
+}

@@ -1,0 +1,6 @@
+yolo OK
+yolo OK
+mvtec_pill OK
+mvtec_capsule OK
+visa_capsules OK
+Saved: C:\Arm_B_PS5\Arm_Hailo_Models\MedgeVision_Repository\evidence\final_cpu_smoke.json

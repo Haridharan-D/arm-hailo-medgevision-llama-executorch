@@ -1,0 +1,714 @@
+{
+  "archives": [
+    {
+      "path": "model_new_kggle\\model\\mvtec_pill_Recovery.zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "77b8e26a19113f4e6d168a5c32d91f2808f8d09d04a35424f435958e31afba39",
+      "checkpoint_status": {
+        "bytes": 75210435,
+        "sha256": "5ec8af3e9f2ba54cdbfc752b7a7d881760c5e9b307752b54834bee299be48ec9",
+        "step": 10,
+        "training_complete": false,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_mvtec_pill/runs/mvtec_pill/last.pt",
+        "run_name": "mvtec_pill",
+        "external_copy_configured": false
+      },
+      "best_present": false
+    },
+    {
+      "path": "model_new_kggle\\model\\mvtec_pill_Submission (1).zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "7ef8f23ddce88dba3a9b0e0c91dff4e479f281a9f404f2f30651a5d8c4554f36",
+      "checkpoint_status": {
+        "bytes": 32250649,
+        "sha256": "8e6f5990c66870d1c1419fba457d0281c1913e4e4b72ed5bf38fc4e36e2a5c46",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_mvtec_pill/runs/mvtec_pill/best.pt",
+        "run_name": "mvtec_pill",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    },
+    {
+      "path": "model_new_kggle\\model\\mvtec_pill_Submission.zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "7ef8f23ddce88dba3a9b0e0c91dff4e479f281a9f404f2f30651a5d8c4554f36",
+      "checkpoint_status": {
+        "bytes": 32250649,
+        "sha256": "8e6f5990c66870d1c1419fba457d0281c1913e4e4b72ed5bf38fc4e36e2a5c46",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_mvtec_pill/runs/mvtec_pill/best.pt",
+        "run_name": "mvtec_pill",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    },
+    {
+      "path": "model_new_kggle\\model\\mvtec_pill_Weights.zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "95f8cfb693d14b52f66264490beb70c709f6d0bc4ebc36f6cf40094faf2d31b8",
+      "checkpoint_status": {
+        "bytes": 32250649,
+        "sha256": "8e6f5990c66870d1c1419fba457d0281c1913e4e4b72ed5bf38fc4e36e2a5c46",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_mvtec_pill/runs/mvtec_pill/best.pt",
+        "run_name": "mvtec_pill",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    },
+    {
+      "path": "New folder\\visa_capsules_Recovery (1).zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "78323e6bbed1724424ec1d96ed2deb4c0d41b14364a809f690598cc6f9cd082b",
+      "checkpoint_status": {
+        "bytes": 107459303,
+        "sha256": "cf652a8f84df6dd93d0d091b215a61966e4983b26dc7c63ee44b0dbeaab97de0",
+        "step": 70000,
+        "training_complete": false,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_visa_capsules/runs/visa_capsules/last.pt",
+        "run_name": "visa_capsules",
+        "external_copy_configured": false
+      },
+      "best_present": false
+    },
+    {
+      "path": "New folder\\visa_capsules_Submission (1).zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "6b76258012f45e12dca8bdf11b7771efc663d7881baa7bcfbef8762b4793fb9d",
+      "checkpoint_status": {
+        "bytes": 32250713,
+        "sha256": "c7fc7b93bd08a1ea3d29a315d1c3842d40de0a590f2d5ac6fc8086c6750945dc",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_visa_capsules/runs/visa_capsules/best.pt",
+        "run_name": "visa_capsules",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    },
+    {
+      "path": "New folder\\visa_capsules_Submission.zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "6b76258012f45e12dca8bdf11b7771efc663d7881baa7bcfbef8762b4793fb9d",
+      "checkpoint_status": {
+        "bytes": 32250713,
+        "sha256": "c7fc7b93bd08a1ea3d29a315d1c3842d40de0a590f2d5ac6fc8086c6750945dc",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_visa_capsules/runs/visa_capsules/best.pt",
+        "run_name": "visa_capsules",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    },
+    {
+      "path": "New folder\\visa_capsules_Weights.zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "fe4370b5c46f1fedfce2bc678fc5f5d4f954af9c0e9ce91899b800fed2af05ce",
+      "checkpoint_status": {
+        "bytes": 32250713,
+        "sha256": "c7fc7b93bd08a1ea3d29a315d1c3842d40de0a590f2d5ac6fc8086c6750945dc",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_visa_capsules/runs/visa_capsules/best.pt",
+        "run_name": "visa_capsules",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    },
+    {
+      "path": "New folder (2)\\mvtec_capsule_Recovery (2).zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "9173c9d232e34d4442a5bd7e619b473897a9f7325a9c954c1cd7cb853d9184ff",
+      "checkpoint_status": {
+        "bytes": 107458727,
+        "sha256": "532a77f21cad7f46412f017cad1377587eaf7e0c5866c8fa67962ea3ad655e52",
+        "step": 70000,
+        "training_complete": false,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_mvtec_capsule/runs/mvtec_capsule/last.pt",
+        "run_name": "mvtec_capsule",
+        "external_copy_configured": false
+      },
+      "best_present": false
+    },
+    {
+      "path": "New folder (2)\\mvtec_capsule_Submission (1).zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "650af43fd29ff0b5d4f01a8de6e4035b598ab484e1e09c59e0fba06a4fcb2123",
+      "checkpoint_status": {
+        "bytes": 32250713,
+        "sha256": "2ffa8bf6f8b825291b294e646cb2e5b2bcc73b9e05f8b35d5e5dbbfb327cf629",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_mvtec_capsule/runs/mvtec_capsule/best.pt",
+        "run_name": "mvtec_capsule",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    },
+    {
+      "path": "New folder (2)\\mvtec_capsule_Weights.zip",
+      "zip_crc_ok": true,
+      "archive_sha256": "f87bad64b35aa5419c000247dc96c62f7673f683efc0d84dfb67de77dd8fac24",
+      "checkpoint_status": {
+        "bytes": 32250713,
+        "sha256": "2ffa8bf6f8b825291b294e646cb2e5b2bcc73b9e05f8b35d5e5dbbfb327cf629",
+        "step": 70000,
+        "training_complete": true,
+        "checkpoint": "/kaggle/working/blistertrace_efficientad_mvtec_capsule/runs/mvtec_capsule/best.pt",
+        "run_name": "mvtec_capsule",
+        "external_copy_configured": false
+      },
+      "best_present": true
+    }
+  ],
+  "models": [
+    {
+      "archive": "model_new_kggle\\model\\mvtec_pill_Submission.zip",
+      "run": "mvtec_pill",
+      "contract": {
+        "model": "EfficientAD-S: pretrained PDN teacher, trainable student and feature autoencoder",
+        "run_name": "mvtec_pill",
+        "training_steps": 70000,
+        "training_batch_size": 1,
+        "amp": false,
+        "input": {
+          "shape": [
+            1,
+            3,
+            256,
+            256
+          ],
+          "dtype": "float32",
+          "color": "RGB",
+          "preprocessing": "Pillow bilinear resize, /255, ImageNet normalization once",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ]
+        },
+        "output": "Anomaly heatmap and maximum image score; not defect identity, probability or severity",
+        "thresholds": {
+          "image": 0.35005301237106323,
+          "pixel": 0.07457666099071503,
+          "method": "normal_quantile",
+          "normal_quantile": 0.995,
+          "calibration_images": 40,
+          "calibration_defects": 0
+        },
+        "best_step": 69000,
+        "split_fingerprint": "2392e0e71c746122c7767de278dab806e748d32b20800af4bbf9d8664f4a94af",
+        "checkpoint_sha256": "8e6f5990c66870d1c1419fba457d0281c1913e4e4b72ed5bf38fc4e36e2a5c46",
+        "acceptance_limit": "Category benchmark; no claim of local blister-camera accuracy or Hailo deployment",
+        "evaluation": {
+          "per_category": {
+            "mvtec/pill": {
+              "images": 167,
+              "defects": 141,
+              "image_auroc": 0.9833606110201855,
+              "image_f1": 0.9236641221374046,
+              "image_confusion_matrix_tn_fp_fn_tp": [
+                26,
+                0,
+                20,
+                121
+              ],
+              "pixel_auroc": 0.9849134047367899,
+              "pixel_f1": 0.6925722635510605,
+              "aupro": 0.9557222113880817,
+              "pixel_confusion_matrix_tn_fp_fn_tp": [
+                10311026,
+                266099,
+                31816,
+                335571
+              ],
+              "annotated_images": 167,
+              "aupro_max_fpr": 0.3,
+              "aupro_steps": 200,
+              "image_aupr": 0.9970465973253823,
+              "image_precision": 1.0,
+              "image_recall": 0.8581560283687943,
+              "normal_false_alarm_rate": 0.0
+            }
+          },
+          "overall_macro": {
+            "image_auroc": 0.9833606110201855,
+            "image_f1": 0.9236641221374046,
+            "pixel_auroc": 0.9849134047367899,
+            "pixel_f1": 0.6925722635510605,
+            "aupro": 0.9557222113880817
+          },
+          "counts": {
+            "images": 167,
+            "defects": 141
+          },
+          "summed_image_confusion_matrix_tn_fp_fn_tp": [
+            26,
+            0,
+            20,
+            121
+          ],
+          "note": "Unweighted macro across available categories; undefined metrics are null. All thresholds fixed before test."
+        }
+      },
+      "best_sha256": "8e6f5990c66870d1c1419fba457d0281c1913e4e4b72ed5bf38fc4e36e2a5c46",
+      "matches_contract_sha256": true,
+      "matches_receipt": null,
+      "matches_status": true,
+      "receipts": {
+        "runs/mvtec_pill/best.pt.sha256.json": {
+          "bytes": 32250649,
+          "sha256": "8e6f5990c66870d1c1419fba457d0281c1913e4e4b72ed5bf38fc4e36e2a5c46",
+          "step": 70000,
+          "training_complete": true
+        }
+      },
+      "checkpoint_fields": [
+        "format_version",
+        "model_id",
+        "config",
+        "model",
+        "best_step",
+        "finished_step",
+        "training_complete",
+        "normalization",
+        "thresholds",
+        "split_fingerprint",
+        "penalty_fingerprint",
+        "teacher_sha256",
+        "source_payload_sha256"
+      ],
+      "completion": {
+        "step": null,
+        "best_step": 69000,
+        "finished_step": 70000,
+        "training_complete": true,
+        "schema_version": null
+      },
+      "tensor_count": 46,
+      "nonfinite_tensors": 0,
+      "tensor_groups": {
+        "config": 10,
+        "model": 46,
+        "normalization": 2,
+        "thresholds": 6
+      },
+      "safe_load_ok": true,
+      "training_log_tail": [],
+      "cpu_synthetic_forward": {
+        "passed": true,
+        "strict_state_load": true,
+        "source_architecture_matches": true,
+        "branch_shapes": [
+          [
+            1,
+            384,
+            56,
+            56
+          ],
+          [
+            1,
+            768,
+            56,
+            56
+          ],
+          [
+            1,
+            384,
+            56,
+            56
+          ]
+        ],
+        "raw_map_shape": [
+          1,
+          2,
+          56,
+          56
+        ],
+        "final_map_shape": [
+          1,
+          1,
+          256,
+          256
+        ],
+        "finite_maps": true,
+        "normalization_positive_ranges": true,
+        "host_only_elapsed_seconds": 6.602,
+        "scope": "Random synthetic input: execution check only, not an accuracy or Pi performance benchmark"
+      },
+      "deployment_exports": []
+    },
+    {
+      "archive": "New folder\\visa_capsules_Submission.zip",
+      "run": "visa_capsules",
+      "contract": {
+        "model": "EfficientAD-S: pretrained PDN teacher, trainable student and feature autoencoder",
+        "run_name": "visa_capsules",
+        "training_steps": 70000,
+        "training_batch_size": 1,
+        "amp": false,
+        "input": {
+          "shape": [
+            1,
+            3,
+            256,
+            256
+          ],
+          "dtype": "float32",
+          "color": "RGB",
+          "preprocessing": "Pillow bilinear resize, /255, ImageNet normalization once",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ]
+        },
+        "output": "Anomaly heatmap and maximum image score; not defect identity, probability or severity",
+        "thresholds": {
+          "image": 0.20281894505023956,
+          "pixel": 0.03946321830153465,
+          "method": "normal_quantile",
+          "normal_quantile": 0.995,
+          "calibration_images": 81,
+          "calibration_defects": 0
+        },
+        "best_step": 70000,
+        "split_fingerprint": "4eba53f3f21519d4b16bac0615ccc8d89b1640442638ccfe42fac85932cd4ea2",
+        "checkpoint_sha256": "c7fc7b93bd08a1ea3d29a315d1c3842d40de0a590f2d5ac6fc8086c6750945dc",
+        "acceptance_limit": "Category benchmark; no claim of local blister-camera accuracy or Hailo deployment",
+        "evaluation": {
+          "per_category": {
+            "visa/capsules": {
+              "images": 160,
+              "defects": 100,
+              "image_auroc": 0.6501666666666668,
+              "image_f1": 0.384,
+              "image_confusion_matrix_tn_fp_fn_tp": [
+                59,
+                1,
+                76,
+                24
+              ],
+              "pixel_auroc": 0.9778969728350375,
+              "pixel_f1": 0.37084012534518307,
+              "aupro": 0.6984590887255195,
+              "pixel_confusion_matrix_tn_fp_fn_tp": [
+                10376322,
+                73758,
+                10769,
+                24911
+              ],
+              "annotated_images": 160,
+              "aupro_max_fpr": 0.3,
+              "aupro_steps": 200,
+              "image_aupr": 0.8010200622842942,
+              "image_precision": 0.96,
+              "image_recall": 0.24,
+              "normal_false_alarm_rate": 0.016666666666666666
+            }
+          },
+          "overall_macro": {
+            "image_auroc": 0.6501666666666668,
+            "image_f1": 0.384,
+            "pixel_auroc": 0.9778969728350375,
+            "pixel_f1": 0.37084012534518307,
+            "aupro": 0.6984590887255195
+          },
+          "counts": {
+            "images": 160,
+            "defects": 100
+          },
+          "summed_image_confusion_matrix_tn_fp_fn_tp": [
+            59,
+            1,
+            76,
+            24
+          ],
+          "note": "Unweighted macro across available categories; undefined metrics are null. All thresholds fixed before test."
+        }
+      },
+      "best_sha256": "c7fc7b93bd08a1ea3d29a315d1c3842d40de0a590f2d5ac6fc8086c6750945dc",
+      "matches_contract_sha256": true,
+      "matches_receipt": null,
+      "matches_status": true,
+      "receipts": {
+        "runs/visa_capsules/best.pt.sha256.json": {
+          "bytes": 32250713,
+          "sha256": "c7fc7b93bd08a1ea3d29a315d1c3842d40de0a590f2d5ac6fc8086c6750945dc",
+          "step": 70000,
+          "training_complete": true
+        }
+      },
+      "checkpoint_fields": [
+        "format_version",
+        "model_id",
+        "config",
+        "model",
+        "best_step",
+        "finished_step",
+        "training_complete",
+        "normalization",
+        "thresholds",
+        "split_fingerprint",
+        "penalty_fingerprint",
+        "teacher_sha256",
+        "source_payload_sha256"
+      ],
+      "completion": {
+        "step": null,
+        "best_step": 70000,
+        "finished_step": 70000,
+        "training_complete": true,
+        "schema_version": null
+      },
+      "tensor_count": 46,
+      "nonfinite_tensors": 0,
+      "tensor_groups": {
+        "config": 10,
+        "model": 46,
+        "normalization": 2,
+        "thresholds": 6
+      },
+      "safe_load_ok": true,
+      "training_log_tail": [],
+      "cpu_synthetic_forward": {
+        "passed": true,
+        "strict_state_load": true,
+        "source_architecture_matches": true,
+        "branch_shapes": [
+          [
+            1,
+            384,
+            56,
+            56
+          ],
+          [
+            1,
+            768,
+            56,
+            56
+          ],
+          [
+            1,
+            384,
+            56,
+            56
+          ]
+        ],
+        "raw_map_shape": [
+          1,
+          2,
+          56,
+          56
+        ],
+        "final_map_shape": [
+          1,
+          1,
+          256,
+          256
+        ],
+        "finite_maps": true,
+        "normalization_positive_ranges": true,
+        "host_only_elapsed_seconds": 24.606,
+        "scope": "Random synthetic input: execution check only, not an accuracy or Pi performance benchmark"
+      },
+      "deployment_exports": []
+    },
+    {
+      "archive": "New folder (2)\\mvtec_capsule_Submission (1).zip",
+      "run": "mvtec_capsule",
+      "contract": {
+        "model": "EfficientAD-S: pretrained PDN teacher, trainable student and feature autoencoder",
+        "run_name": "mvtec_capsule",
+        "training_steps": 70000,
+        "training_batch_size": 1,
+        "amp": false,
+        "input": {
+          "shape": [
+            1,
+            3,
+            256,
+            256
+          ],
+          "dtype": "float32",
+          "color": "RGB",
+          "preprocessing": "Pillow bilinear resize, /255, ImageNet normalization once",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ]
+        },
+        "output": "Anomaly heatmap and maximum image score; not defect identity, probability or severity",
+        "thresholds": {
+          "image": 0.2682838439941406,
+          "pixel": 0.06018669530749321,
+          "method": "normal_quantile",
+          "normal_quantile": 0.995,
+          "calibration_images": 33,
+          "calibration_defects": 0
+        },
+        "best_step": 69000,
+        "split_fingerprint": "eea9129427c3c3872a623e6bb46b29133578ddf050c6f503eef065b06fa16ed8",
+        "checkpoint_sha256": "2ffa8bf6f8b825291b294e646cb2e5b2bcc73b9e05f8b35d5e5dbbfb327cf629",
+        "acceptance_limit": "Category benchmark; no claim of local blister-camera accuracy or Hailo deployment",
+        "evaluation": {
+          "per_category": {
+            "mvtec/capsule": {
+              "images": 132,
+              "defects": 109,
+              "image_auroc": 0.9485440765855604,
+              "image_f1": 0.883248730964467,
+              "image_confusion_matrix_tn_fp_fn_tp": [
+                22,
+                1,
+                22,
+                87
+              ],
+              "pixel_auroc": 0.9588387940773243,
+              "pixel_f1": 0.40287908913452064,
+              "aupro": 0.830766946322705,
+              "pixel_confusion_matrix_tn_fp_fn_tp": [
+                8386478,
+                185102,
+                12508,
+                66664
+              ],
+              "annotated_images": 132,
+              "aupro_max_fpr": 0.3,
+              "aupro_steps": 200,
+              "image_aupr": 0.9886672938058669,
+              "image_precision": 0.9886363636363636,
+              "image_recall": 0.7981651376146789,
+              "normal_false_alarm_rate": 0.043478260869565216
+            }
+          },
+          "overall_macro": {
+            "image_auroc": 0.9485440765855604,
+            "image_f1": 0.883248730964467,
+            "pixel_auroc": 0.9588387940773243,
+            "pixel_f1": 0.40287908913452064,
+            "aupro": 0.830766946322705
+          },
+          "counts": {
+            "images": 132,
+            "defects": 109
+          },
+          "summed_image_confusion_matrix_tn_fp_fn_tp": [
+            22,
+            1,
+            22,
+            87
+          ],
+          "note": "Unweighted macro across available categories; undefined metrics are null. All thresholds fixed before test."
+        }
+      },
+      "best_sha256": "2ffa8bf6f8b825291b294e646cb2e5b2bcc73b9e05f8b35d5e5dbbfb327cf629",
+      "matches_contract_sha256": true,
+      "matches_receipt": null,
+      "matches_status": true,
+      "receipts": {
+        "runs/mvtec_capsule/best.pt.sha256.json": {
+          "bytes": 32250713,
+          "sha256": "2ffa8bf6f8b825291b294e646cb2e5b2bcc73b9e05f8b35d5e5dbbfb327cf629",
+          "step": 70000,
+          "training_complete": true
+        }
+      },
+      "checkpoint_fields": [
+        "format_version",
+        "model_id",
+        "config",
+        "model",
+        "best_step",
+        "finished_step",
+        "training_complete",
+        "normalization",
+        "thresholds",
+        "split_fingerprint",
+        "penalty_fingerprint",
+        "teacher_sha256",
+        "source_payload_sha256"
+      ],
+      "completion": {
+        "step": null,
+        "best_step": 69000,
+        "finished_step": 70000,
+        "training_complete": true,
+        "schema_version": null
+      },
+      "tensor_count": 46,
+      "nonfinite_tensors": 0,
+      "tensor_groups": {
+        "config": 10,
+        "model": 46,
+        "normalization": 2,
+        "thresholds": 6
+      },
+      "safe_load_ok": true,
+      "training_log_tail": [],
+      "cpu_synthetic_forward": {
+        "passed": true,
+        "strict_state_load": true,
+        "source_architecture_matches": true,
+        "branch_shapes": [
+          [
+            1,
+            384,
+            56,
+            56
+          ],
+          [
+            1,
+            768,
+            56,
+            56
+          ],
+          [
+            1,
+            384,
+            56,
+            56
+          ]
+        ],
+        "raw_map_shape": [
+          1,
+          2,
+          56,
+          56
+        ],
+        "final_map_shape": [
+          1,
+          1,
+          256,
+          256
+        ],
+        "finite_maps": true,
+        "normalization_positive_ranges": true,
+        "host_only_elapsed_seconds": 29.28,
+        "scope": "Random synthetic input: execution check only, not an accuracy or Pi performance benchmark"
+      },
+      "deployment_exports": []
+    }
+  ]
+}

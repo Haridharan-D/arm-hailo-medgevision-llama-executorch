@@ -1,0 +1,17 @@
+{
+  "file": "../Hailo/hailo_dataflow_compiler-3.34.0-py3-none-linux_x86_64.whl",
+  "package_metadata_name": "hailo-dataflow-compiler",
+  "package_metadata_version": "3.34.0",
+  "bytes": 524392901,
+  "sha256": "f539ebb5997149ec68ca443a547196a03d28c624fbb072fdcd22a7d37fad9fb1",
+  "zip_crc_check": "passed",
+  "sdk_package_present": true,
+  "independent_publisher_checksum": null,
+  "matched_model_zoo_tag": "v2.19.1",
+  "matched_model_zoo_commit": "b5aaad19f7353b96fce06905e34effa28a64d03a",
+  "matching_basis": "The pinned upstream setup.py declares CUR_DFC_VERSION=3.34.0",
+  "compiler_environment": "Isolated WSL Ubuntu 24.04 x86-64 Python 3.11.18",
+  "python_312_attempt": "Stopped because tensorflow-addons is unavailable for Python 3.12; completed wheel downloads retained in pip cache",
+  "hef_compilation_verified": true,
+  "compilation_receipt": "output/compile_receipt.json"
+}

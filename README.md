@@ -2,6 +2,8 @@
 
 Offline pharmaceutical optical-inspection research station: Raspberry Pi 5 + Hailo-8 YOLO, three EfficientAD CPU models, and ExecuTorch Llama advisory. Two dashboard designs, camera/upload/local-image inspection, anomaly heatmaps, SQLite evidence and a synchronized second HDMI verdict screen.
 
+**Current audit:** [PASS / FAIL / NOT TESTED report](docs/FINAL_RELEASE_AUDIT.md), [architecture](docs/architecture.svg), [model training-to-deployment dossier](docs/MODEL_LIFECYCLE.md), [historical benchmarks](evidence/historical/BENCHMARKS.json), [Drive mirror status](docs/DRIVE_MIRROR.md).
+
 **Start here: [reproducible setup and demo commands](QUICKSTART.md).** CPU model inference and all 67 regression tests were verified from this organized checkout. Fresh Pi installation still requires the vendor runtime and a native Llama build; see the explicit validation limits below.
 
 ![Actual Medge Vision station](evidence/original_pi/station_safe.png)

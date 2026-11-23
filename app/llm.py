@@ -43,6 +43,8 @@ class LlamaManager:
         binary=Path(self.config.get('llama_runtime',''))
         for p in (model,tokenizer,binary):
             if not p.is_file():raise FileNotFoundError(f'LLM asset/runtime missing: {p}')
+        from .integrity import verify,verify_runtime
+        verify(model);verify(tokenizer);verify_runtime(binary)
         counter=token_counter(tokenizer)
         threads=self.target_threads()
         worker=NativeWorker(binary,model,tokenizer,threads)

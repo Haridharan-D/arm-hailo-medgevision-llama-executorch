@@ -33,6 +33,9 @@ def nms(boxes,scores,iou=.7):
 
 class Detector:
     def __init__(self,config):
+        from .integrity import verify
+        verify(config['asset_dir']/'thresholds.json')
+        verify(config['asset_dir']/'blistertrace_yolov8s.onnx' if config['vision_backend']=='onnx' else config['hef'])
         self.config=config;self.lock=threading.Lock();self.session=None;self.hailo=None
         self.thresholds=json.loads((config['asset_dir']/'thresholds.json').read_text())
         self.backend=config['vision_backend']
@@ -47,6 +50,8 @@ class Detector:
         else:raise ValueError('vision_backend must be onnx or hailo')
 
     def predict(self,image):
+        if image is None or image.dtype!=np.uint8 or image.ndim!=3 or image.shape[2]!=3 or min(image.shape[:2])<1:
+            raise ValueError('Detector input must be a nonempty uint8 BGR image')
         start=time.perf_counter()
         rgb,scale,left,top=letterbox(image)
         rgb=cv2.cvtColor(rgb,cv2.COLOR_BGR2RGB)

@@ -1,0 +1,158 @@
+{
+  "mAP": {
+    "metrics/precision(B)": 0.9973990464520981,
+    "metrics/recall(B)": 0.9953258592777231,
+    "metrics/mAP50(B)": 0.9949906568167705,
+    "metrics/mAP50-95(B)": 0.8954238019505977,
+    "fitness": 0.9053804874372149
+  },
+  "per_class": [
+    {
+      "Class": "black_dot",
+      "Images": "224",
+      "Instances": "517",
+      "Box-P": 0.99794,
+      "Box-R": 0.99033,
+      "Box-F1": 0.99412,
+      "mAP50": 0.99498,
+      "mAP50-95": 0.8987
+    },
+    {
+      "Class": "broken",
+      "Images": "178",
+      "Instances": "433",
+      "Box-P": 0.99529,
+      "Box-R": 0.99769,
+      "Box-F1": 0.99649,
+      "mAP50": 0.995,
+      "mAP50-95": 0.89454
+    },
+    {
+      "Class": "color_mismatch",
+      "Images": "238",
+      "Instances": "469",
+      "Box-P": 0.99922,
+      "Box-R": 0.98934,
+      "Box-F1": 0.99425,
+      "mAP50": 0.99498,
+      "mAP50-95": 0.8931
+    },
+    {
+      "Class": "crack",
+      "Images": "188",
+      "Instances": "410",
+      "Box-P": 0.99724,
+      "Box-R": 0.99512,
+      "Box-F1": 0.99618,
+      "mAP50": 0.99498,
+      "mAP50-95": 0.9017
+    },
+    {
+      "Class": "dual_cap",
+      "Images": "38",
+      "Instances": "111",
+      "Box-P": 0.99744,
+      "Box-R": 1.0,
+      "Box-F1": 0.99872,
+      "mAP50": 0.995,
+      "mAP50-95": 0.90596
+    },
+    {
+      "Class": "empty",
+      "Images": "212",
+      "Instances": "577",
+      "Box-P": 0.99705,
+      "Box-R": 0.9948,
+      "Box-F1": 0.99592,
+      "mAP50": 0.995,
+      "mAP50-95": 0.88814
+    },
+    {
+      "Class": "foreign_particle",
+      "Images": "178",
+      "Instances": "426",
+      "Box-P": 0.99762,
+      "Box-R": 1.0,
+      "Box-F1": 0.99881,
+      "mAP50": 0.995,
+      "mAP50-95": 0.88583
+    }
+  ],
+  "operating_point": {
+    "per_class": {
+      "black_dot": {
+        "tp": 513,
+        "fp": 9,
+        "fn": 4,
+        "support": 517,
+        "precision": 0.9827586206896551,
+        "recall": 0.9922630560928434,
+        "f2": 0.9903474903474904
+      },
+      "broken": {
+        "tp": 424,
+        "fp": 7,
+        "fn": 9,
+        "support": 433,
+        "precision": 0.9837587006960556,
+        "recall": 0.9792147806004619,
+        "f2": 0.9801202034211742
+      },
+      "color_mismatch": {
+        "tp": 457,
+        "fp": 7,
+        "fn": 12,
+        "support": 469,
+        "precision": 0.9849137931034483,
+        "recall": 0.9744136460554371,
+        "f2": 0.9764957264957264
+      },
+      "crack": {
+        "tp": 407,
+        "fp": 12,
+        "fn": 3,
+        "support": 410,
+        "precision": 0.9713603818615751,
+        "recall": 0.9926829268292683,
+        "f2": 0.9883438562408937
+      },
+      "dual_cap": {
+        "tp": 111,
+        "fp": 2,
+        "fn": 0,
+        "support": 111,
+        "precision": 0.9823008849557522,
+        "recall": 1.0,
+        "f2": 0.9964093357271094
+      },
+      "empty": {
+        "tp": 566,
+        "fp": 11,
+        "fn": 11,
+        "support": 577,
+        "precision": 0.9809358752166378,
+        "recall": 0.9809358752166378,
+        "f2": 0.9809358752166378
+      },
+      "foreign_particle": {
+        "tp": 416,
+        "fp": 12,
+        "fn": 10,
+        "support": 426,
+        "precision": 0.9719626168224299,
+        "recall": 0.9765258215962441,
+        "f2": 0.975609756097561
+      }
+    },
+    "image_level": {
+      "defective_images": 1256,
+      "negative_images": 1,
+      "false_pass_images": 3,
+      "false_hold_images": 1,
+      "false_pass_rate": 0.0023885350318471337,
+      "false_hold_rate": 1.0
+    },
+    "unit_note": "Image-level metrics, not per-strip production measurements."
+  },
+  "threshold_selection": "Validation only; precision subject to recall target, else max F2."
+}

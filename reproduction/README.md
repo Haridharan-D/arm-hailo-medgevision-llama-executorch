@@ -1,0 +1,1 @@
+Original training/export/conversion references copied from C:/arm_bharath_soc_2027. Notebook outputs were stripped only in the repository copy. See docs/FINAL_RELEASE_AUDIT.md for external dataset, calibration, vendor wheel and version prerequisites. Installation uses the frozen artifacts and does not retrain. Historical benchmark JSON is under evidence/historical.

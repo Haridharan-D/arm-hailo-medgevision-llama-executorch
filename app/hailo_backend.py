@@ -29,6 +29,7 @@ class HailoDetector:
             self.stack.close();raise
 
     def predict(self,rgb):
+        if rgb.shape!=(640,640,3) or rgb.dtype!=np.uint8:raise ValueError('HEF input requires 640x640 uint8 RGB')
         outputs=self.pipeline.infer({self.input_name:np.ascontiguousarray(rgb)[None]})
         value=outputs[self.output_name][0]
         if len(value)!=7:raise RuntimeError('HEF NMS output class count must be seven')
@@ -37,6 +38,8 @@ class HailoDetector:
             for row in rows:
                 if len(row)!=5:raise RuntimeError('Unexpected Hailo NMS detection layout')
                 y1,x1,y2,x2,score=map(float,row)
+                if not np.isfinite([y1,x1,y2,x2,score]).all() or not 0<=score<=1:
+                    raise RuntimeError('Invalid Hailo detection values')
                 if score>0:result.append([x1*640,y1*640,x2*640,y2*640,score,cls])
         return result
 

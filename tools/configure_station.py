@@ -16,10 +16,11 @@ value = json.loads(path.read_text()) if path.exists() else {}
 if path.exists():
     shutil.copy2(path, path.with_suffix('.json.before_setup'))
 runtime = args.runtime
+machine=platform.machine().lower()
+arch='aarch64' if machine in {'arm64','aarch64'} else 'x86_64' if machine in {'amd64','x86_64'} else machine
 if runtime is None:
-    for candidate in [root/'native/bin'/platform.machine()/'blistertrace_instrumented',
-                      root/'llama/bin'/platform.machine()/'blistertrace_worker',
-                      root/'llama/bin/x86_64/blistertrace_worker']:
+    for candidate in [root/'native/bin'/arch/'blistertrace_instrumented',
+                      root/'llama/bin'/arch/'blistertrace_worker']:
         if candidate.is_file():
             runtime = candidate
             break
@@ -29,6 +30,10 @@ value.update(vision_backend=args.backend, auth_required=False,
              llama_output_tokens=128, llama_prompt_budget=1536,
              llama_artifacts=str(root/'llama/artifacts'))
 if runtime:
+    import sys
+    sys.path.insert(0,str(root))
+    from app.integrity import verify_runtime
+    verify_runtime(runtime)
     value['llama_runtime'] = str(runtime.resolve())
 path.write_text(json.dumps(value, indent=2))
 print('Configured:', path, 'backend:', args.backend)

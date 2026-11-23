@@ -1,0 +1,39 @@
+{
+  "service": "active",
+  "ready": true,
+  "platform": "Linux-6.18.50+rpt-rpi-2712-aarch64-with-glibc2.41",
+  "files": {
+    "/home/saul/BlisterTrace/releases/hardening_20261122/native/bin/aarch64/blistertrace_instrumented": {
+      "bytes": 8708784,
+      "sha256": "db9f7014a9251896563bd6be60d05cf13114946d7c5d9a16c15c771df4df4804"
+    },
+    "/home/saul/BlisterTrace/releases/hardening_20261122/native/bin/aarch64/libllama_runner.so": {
+      "bytes": 4070248,
+      "sha256": "54259931ef638f0f18d9bacb976d7bfbc80f55b4373cb179e118b65c4562ad1a"
+    },
+    "/home/saul/BlisterTrace/Llama_ExecuTorch/artifacts/tokenizer.model": {
+      "bytes": 2183982,
+      "sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55"
+    },
+    "/home/saul/BlisterTrace/releases/hardening_20261122/advisor_src/advisor.py": {
+      "bytes": 26268,
+      "sha256": "8e8619ad9d2f4fddc7b8f9196b1cbced029b47829c707d8699294ca86699249d"
+    },
+    "/home/saul/BlisterTrace/releases/hardening_20261122/advisor_src/sop.json": {
+      "bytes": 1622,
+      "sha256": "d33d42e9da214eac2b46a47036e40905cba6d41f30b6601547076189faa71674"
+    }
+  },
+  "runtime": "ExecuTorch v1.0.0, 8c84780911e7f4e9eb19395181b04761392a4b56",
+  "settings": {
+    "vision_backend": "hailo",
+    "camera_source": "0",
+    "auth_required": true,
+    "llama_prompt_mode": "adaptive-v1",
+    "llama_output_tokens": 128,
+    "llama_prompt_budget": 1536,
+    "llama_threads": 3
+  },
+  "baseline_preserved": "/home/saul/BlisterTrace/BlisterTrace_App",
+  "no_model_or_threshold_changes": true
+}

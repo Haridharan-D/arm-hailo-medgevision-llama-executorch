@@ -1,0 +1,1134 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "machine": "AMD64",
+  "scope": "Windows CPU five-model cold smoke subprocess; not Raspberry Pi, Hailo or Llama",
+  "elapsed_s": 28.47019910000381,
+  "returncode": 0,
+  "peak_rss_mib": 4.84765625,
+  "peak_cpu_percent": 0.0,
+  "cpu_units": "process percent; 100% is one logical core",
+  "samples": [
+    {
+      "rss_mib": 2.12109375,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    },
+    {
+      "rss_mib": 4.84765625,
+      "cpu_percent": 0.0
+    }
+  ],
+  "valid_resource_measurement": false,
+  "reason": "Sampler observed Windows venv bootstrap parent only; child inference process was omitted. Retained failure evidence, not a model resource result."
+}

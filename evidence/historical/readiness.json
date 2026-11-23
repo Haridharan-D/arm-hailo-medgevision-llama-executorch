@@ -1,0 +1,48 @@
+{
+  "test_targets": {
+    "black_dot": {
+      "support_sufficient": true,
+      "recall_target_met": true,
+      "precision_target_met": true
+    },
+    "broken": {
+      "support_sufficient": true,
+      "recall_target_met": true,
+      "precision_target_met": true
+    },
+    "color_mismatch": {
+      "support_sufficient": true,
+      "recall_target_met": true,
+      "precision_target_met": true
+    },
+    "crack": {
+      "support_sufficient": true,
+      "recall_target_met": true,
+      "precision_target_met": true
+    },
+    "dual_cap": {
+      "support_sufficient": true,
+      "recall_target_met": true,
+      "precision_target_met": true
+    },
+    "empty": {
+      "support_sufficient": true,
+      "recall_target_met": true,
+      "precision_target_met": true
+    },
+    "foreign_particle": {
+      "support_sufficient": true,
+      "recall_target_met": true,
+      "precision_target_met": true
+    }
+  },
+  "fp32_export": "fp32_raw_tensor_parity_passed",
+  "physical_group_ids_supplied": false,
+  "negative_test_images": 0,
+  "hailo_int8_parity": "pending",
+  "pi_performance": "pending",
+  "local_camera_generalization": "pending",
+  "llama_executorch_advisory": "pending",
+  "full_ps5_submission_ready": false,
+  "note": "This bundle is a measured vision candidate, not proof of production readiness or complete PS5 compliance."
+}

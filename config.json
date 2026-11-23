@@ -4,5 +4,8 @@
   "advice_enabled": true,
   "auth_required": false,
   "llama_threads": 3,
+  "llama_prompt_mode": "adaptive-v1",
+  "llama_output_tokens": 128,
+  "llama_prompt_budget": 1536,
   "port": 8765
 }

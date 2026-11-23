@@ -13,7 +13,7 @@ def settings():
     config_path=Path(os.environ.get('BLISTERTRACE_CONFIG',str(INSTALL/'config.json')))
     value=json.loads(config_path.read_text()) if config_path.is_file() else {}
     defaults={'vision_backend':'onnx','profile_validated':False,'camera_source':'0',
-              'llama_threads':2,'advice_enabled':True,'port':8765,
+              'llama_threads':3,'llama_prompt_mode':'adaptive-v1','llama_output_tokens':128,'llama_prompt_budget':1536,'advice_enabled':True,'port':8765,
               'test_images':str(INSTALL/'test_images'),'hef':str(INSTALL/'models/blistertrace.hef'),
               'anomaly_models':str(INSTALL/'models/anomaly'),
               'llama_artifacts':str(INSTALL/'llama/artifacts')}

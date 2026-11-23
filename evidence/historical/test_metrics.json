@@ -1,0 +1,158 @@
+{
+  "mAP": {
+    "metrics/precision(B)": 0.9945710202445136,
+    "metrics/recall(B)": 0.992601834542291,
+    "metrics/mAP50(B)": 0.9922056323347459,
+    "metrics/mAP50-95(B)": 0.8918653665404637,
+    "fitness": 0.901899393119892
+  },
+  "per_class": [
+    {
+      "Class": "black_dot",
+      "Images": "235",
+      "Instances": "511",
+      "Box-P": 0.99489,
+      "Box-R": 0.99217,
+      "Box-F1": 0.99353,
+      "mAP50": 0.99498,
+      "mAP50-95": 0.8995
+    },
+    {
+      "Class": "broken",
+      "Images": "167",
+      "Instances": "407",
+      "Box-P": 0.99505,
+      "Box-R": 0.99754,
+      "Box-F1": 0.9963,
+      "mAP50": 0.995,
+      "mAP50-95": 0.89086
+    },
+    {
+      "Class": "color_mismatch",
+      "Images": "218",
+      "Instances": "420",
+      "Box-P": 0.99896,
+      "Box-R": 1.0,
+      "Box-F1": 0.99948,
+      "mAP50": 0.995,
+      "mAP50-95": 0.89772
+    },
+    {
+      "Class": "crack",
+      "Images": "204",
+      "Instances": "432",
+      "Box-P": 0.99766,
+      "Box-R": 0.98903,
+      "Box-F1": 0.99333,
+      "mAP50": 0.99435,
+      "mAP50-95": 0.89626
+    },
+    {
+      "Class": "dual_cap",
+      "Images": "46",
+      "Instances": "111",
+      "Box-P": 0.99986,
+      "Box-R": 0.97297,
+      "Box-F1": 0.98623,
+      "mAP50": 0.98459,
+      "mAP50-95": 0.88672
+    },
+    {
+      "Class": "empty",
+      "Images": "238",
+      "Instances": "634",
+      "Box-P": 0.98234,
+      "Box-R": 0.99842,
+      "Box-F1": 0.99032,
+      "mAP50": 0.98863,
+      "mAP50-95": 0.88586
+    },
+    {
+      "Class": "foreign_particle",
+      "Images": "195",
+      "Instances": "441",
+      "Box-P": 0.99323,
+      "Box-R": 0.99808,
+      "Box-F1": 0.99565,
+      "mAP50": 0.99289,
+      "mAP50-95": 0.88613
+    }
+  ],
+  "operating_point": {
+    "per_class": {
+      "black_dot": {
+        "tp": 502,
+        "fp": 12,
+        "fn": 9,
+        "support": 511,
+        "precision": 0.9766536964980544,
+        "recall": 0.9823874755381604,
+        "f2": 0.9812353401094605
+      },
+      "broken": {
+        "tp": 405,
+        "fp": 7,
+        "fn": 2,
+        "support": 407,
+        "precision": 0.9830097087378641,
+        "recall": 0.995085995085995,
+        "f2": 0.9926470588235295
+      },
+      "color_mismatch": {
+        "tp": 413,
+        "fp": 9,
+        "fn": 7,
+        "support": 420,
+        "precision": 0.9786729857819905,
+        "recall": 0.9833333333333333,
+        "f2": 0.9823977164605138
+      },
+      "crack": {
+        "tp": 427,
+        "fp": 11,
+        "fn": 5,
+        "support": 432,
+        "precision": 0.9748858447488584,
+        "recall": 0.9884259259259259,
+        "f2": 0.9856879039704524
+      },
+      "dual_cap": {
+        "tp": 108,
+        "fp": 2,
+        "fn": 3,
+        "support": 111,
+        "precision": 0.9818181818181818,
+        "recall": 0.972972972972973,
+        "f2": 0.9747292418772563
+      },
+      "empty": {
+        "tp": 603,
+        "fp": 14,
+        "fn": 31,
+        "support": 634,
+        "precision": 0.9773095623987034,
+        "recall": 0.9511041009463722,
+        "f2": 0.9562321598477641
+      },
+      "foreign_particle": {
+        "tp": 422,
+        "fp": 9,
+        "fn": 19,
+        "support": 441,
+        "precision": 0.9791183294663574,
+        "recall": 0.9569160997732427,
+        "f2": 0.9612756264236904
+      }
+    },
+    "image_level": {
+      "defective_images": 1303,
+      "negative_images": 0,
+      "false_pass_images": 6,
+      "false_hold_images": 0,
+      "false_pass_rate": 0.004604758250191865,
+      "false_hold_rate": null
+    },
+    "unit_note": "Image-level metrics, not per-strip production measurements."
+  },
+  "scope": "Curated public subset excluding unresolved conflict/invalid families; source-family/perceptually grouped split; not the publishers benchmark or proof of physical independence."
+}
