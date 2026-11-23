@@ -1,0 +1,13 @@
+{
+  "verified_commit": "bf147d4c6ca3ba667dd69eaee6f154d6651e9643",
+  "source": "Fresh shallow clone downloaded from GitHub",
+  "python_regression_tests_passed": 67,
+  "selected_cpu_model_cases_passed": 5,
+  "artifact_hashes_matched": 5,
+  "native_cpp_json_boundary_passed": true,
+  "ci_run": "https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/runs/45214477586",
+  "ci_conclusion": "success",
+  "hardware_retest": false,
+  "llama_fresh_clone_generation_tested": false,
+  "sd_erasure_cleared": false
+}
