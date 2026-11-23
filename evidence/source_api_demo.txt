@@ -1,0 +1,155 @@
+
+MEDGE VISION | START LOCAL PIPELINE
+-----------------------------------------------------------------
+Service             READY; local loopback only
+Vision              onnx / YOLOv8s � 7 blister defect classes
+Advisory            ExecuTorch Llama / Arm CPU / idle
+Anomaly profiles    mvtec_capsule, mvtec_pill, visa_capsules
+Batch               TERMINAL-20261123-204830
+Reports             C:\Users\PRIYAD~1\AppData\Local\Temp\medge-source-api-verification\terminal_demos\TERMINAL-20261123-204830
+No browser opened. Same persistent runtime; no second Hailo owner.
+
+MEDGE VISION | MODEL AND HARDWARE INVENTORY
+-----------------------------------------------------------------
+Vision backend      onnx
+Detector            YOLOv8s � 7 blister defect classes
+Device present      None
+Llama               Llama3.2 1B Instruct SpinQuant INT4 / ExecuTorch v1.0.0
+CPU threads         3
+Advisory state      idle
+Llama SHA256        missing...
+Temperature C       None
+Available RAM MiB   2260
+mvtec_capsule       ONNX CPU | threshold 0.268284
+mvtec_pill          ONNX CPU | threshold 0.350053
+visa_capsules       ONNX CPU | threshold 0.202819
+Vision/HailoRT, anomaly/ONNX CPU and Llama/ExecuTorch CPU are separate.
+VisA is a low-recall research profile; these examples are selected demos.
+
+MEDGE VISION | TEST 1 | YOLO: crack
+-----------------------------------------------------------------
+Inspection          d200e2d4727c4ad193abafc12e158e4d
+Input               acceptance_demo/defective/crack/crack.jpg
+Backend             onnx
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      HOLD (independent; original decision retained)
+Inference ms        176.07
+Capture usable      True
+Finding: crack | confidence 0.935 | bbox [309.76, 339.91, 371.57, 440.22]
+Waiting for local Llama / SOP advice
+Advisory status     fallback
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Keep the pack on HOLD. Preserve the evidence and request QA review.
+QA draft            Draft: HOLD recorded. Preserve evidence and obtain QA review.
+SOP citation        BT-DEMO-SOP-01 / BT-02
+Advisory ms         0.0
+Fallback reason     RuntimeError
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    0.3
+Saved evidence      C:\Users\PRIYAD~1\AppData\Local\Temp\medge-source-api-verification\terminal_demos\TERMINAL-20261123-204830\test_1_d200e2d4727c4ad193abafc12e158e4d.json
+
+MEDGE VISION | TEST 2 | YOLO: clear SCOA strip
+-----------------------------------------------------------------
+Inspection          52d58ae120824a798edb604f6c18fa1f
+Input               acceptance_demo/safe/safe_01.jpg
+Backend             onnx
+Visual result       SAFE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        165.48
+Capture usable      True
+Finding: no configured defect detected.
+Waiting for local Llama / SOP advice
+Advisory status     fallback
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Keep the pack pending REVIEW. Check capture conditions and request human review.
+QA draft            Draft: REVIEW recorded. Preserve evidence and obtain QA review.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         0.0
+Fallback reason     RuntimeError
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    0.34
+Saved evidence      C:\Users\PRIYAD~1\AppData\Local\Temp\medge-source-api-verification\terminal_demos\TERMINAL-20261123-204830\test_2_52d58ae120824a798edb604f6c18fa1f.json
+
+MEDGE VISION | TEST 3 | EfficientAD: MVTec pill
+-----------------------------------------------------------------
+Inspection          3bd3324b08814405bd6bb39ddcf98109
+Input               demo/defective/defective_01.png
+Backend             anomaly_onnx_cpu
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        1173.75
+Capture usable      True
+Anomaly score       0.637408 / threshold 0.350053
+Flagged             True
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice
+Advisory status     fallback
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Keep the pack pending REVIEW. Check capture conditions and request human review.
+QA draft            Draft: REVIEW recorded. Preserve evidence and obtain QA review.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         0.0
+Fallback reason     RuntimeError
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    1.41
+Saved evidence      C:\Users\PRIYAD~1\AppData\Local\Temp\medge-source-api-verification\terminal_demos\TERMINAL-20261123-204830\test_3_3bd3324b08814405bd6bb39ddcf98109.json
+
+MEDGE VISION | TEST 4 | EfficientAD: MVTec capsule
+-----------------------------------------------------------------
+Inspection          a2cb4b0328a84ef7a2a978c75ef3b387
+Input               demo/defective/defective_01.png
+Backend             anomaly_onnx_cpu
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        3087.96
+Capture usable      True
+Anomaly score       3.637529 / threshold 0.268284
+Flagged             True
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice
+Advisory status     fallback
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Keep the pack pending REVIEW. Check capture conditions and request human review.
+QA draft            Draft: REVIEW recorded. Preserve evidence and obtain QA review.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         0.0
+Fallback reason     RuntimeError
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    3.36
+Saved evidence      C:\Users\PRIYAD~1\AppData\Local\Temp\medge-source-api-verification\terminal_demos\TERMINAL-20261123-204830\test_4_a2cb4b0328a84ef7a2a978c75ef3b387.json
+
+MEDGE VISION | TEST 5 | EfficientAD: VisA capsules
+-----------------------------------------------------------------
+Inspection          359a1bea118d47619267948a4f168beb
+Input               demo/defective/defective_01.png
+Backend             anomaly_onnx_cpu
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        2931.8
+Capture usable      True
+Anomaly score       2.262270 / threshold 0.202819
+Flagged             True
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice
+Advisory status     fallback
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Keep the pack pending REVIEW. Check capture conditions and request human review.
+QA draft            Draft: REVIEW recorded. Preserve evidence and obtain QA review.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         0.0
+Fallback reason     RuntimeError
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    3.27
+Saved evidence      C:\Users\PRIYAD~1\AppData\Local\Temp\medge-source-api-verification\terminal_demos\TERMINAL-20261123-204830\test_5_359a1bea118d47619267948a4f168beb.json
+
+MEDGE VISION | SAVED RESULTS AND AUDIT
+-----------------------------------------------------------------
+Test       1 | DEFECTIVE  | YOLO: crack | d200e2d4727c
+Test       2 | SAFE       | YOLO: clear SCOA strip | 52d58ae12082
+Test       3 | DEFECTIVE  | EfficientAD: MVTec pill | 3bd3324b0881
+Test       4 | DEFECTIVE  | EfficientAD: MVTec capsule | a2cb4b0328a8
+Test       5 | DEFECTIVE  | EfficientAD: VisA capsules | 359a1bea118d
+Audit chain         VERIFIED
+Checked events      20
+Evidence folder     C:\Users\PRIYAD~1\AppData\Local\Temp\medge-source-api-verification\terminal_demos\TERMINAL-20261123-204830
+Selected demonstration outcomes only, not independent accuracy. SAFE = visual check.

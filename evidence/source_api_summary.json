@@ -1,0 +1,41 @@
+{
+  "all_five_matched": true,
+  "advisory_scope": "No native worker installed: explicit fallback expected, not Llama validation",
+  "records": [
+    {
+      "test": "1",
+      "matched": true,
+      "visual": "DEFECTIVE",
+      "decision": "HOLD",
+      "advice_status": "fallback"
+    },
+    {
+      "test": "2",
+      "matched": true,
+      "visual": "SAFE",
+      "decision": "REVIEW",
+      "advice_status": "fallback"
+    },
+    {
+      "test": "3",
+      "matched": true,
+      "visual": "DEFECTIVE",
+      "decision": "REVIEW",
+      "advice_status": "fallback"
+    },
+    {
+      "test": "4",
+      "matched": true,
+      "visual": "DEFECTIVE",
+      "decision": "REVIEW",
+      "advice_status": "fallback"
+    },
+    {
+      "test": "5",
+      "matched": true,
+      "visual": "DEFECTIVE",
+      "decision": "REVIEW",
+      "advice_status": "fallback"
+    }
+  ]
+}

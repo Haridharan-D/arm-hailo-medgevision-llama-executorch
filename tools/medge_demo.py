@@ -17,17 +17,19 @@ def call(path,value=None,timeout=120):
     with urllib.request.urlopen(req,timeout=timeout) as response:return json.load(response)
 def heading(title):print('\nMEDGE VISION | '+title+'\n'+'-'*65,flush=True)
 def field(name,value):print(f'{name:19} {value}',flush=True)
+def data_dir():
+    return Path(os.environ.get('BLISTERTRACE_DATA',str(Path.home()/'BlisterTrace_Data'))).expanduser()
 def state():
-    p=Path.home()/'BlisterTrace_Data/terminal_demo_state.json'
+    p=data_dir()/'terminal_demo_state.json'
     return p,json.loads(p.read_text()) if p.exists() else {}
 def save_state(value):
     p,_=state();p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix('.tmp');tmp.write_text(json.dumps(value,indent=2));tmp.replace(p)
 def ready():
     try:return call('/api/ready',timeout=3)
     except (OSError,urllib.error.URLError):raise RuntimeError('First run: ~/medge-demo start') from None
-def start():
+def start(use_service=True):
     heading('START LOCAL PIPELINE')
-    subprocess.run(['systemctl','--user','start','blistertrace.service'],check=True)
+    if use_service:subprocess.run(['systemctl','--user','start','blistertrace.service'],check=True)
     for i in range(90):
         try:
             r=call('/api/ready',timeout=2)
@@ -41,7 +43,7 @@ def start():
     name='TERMINAL-'+datetime.now().strftime('%Y%m%d-%H%M%S')
     call('/api/batches',dict(batch_id=name,sku='SELECTED-DEMO',description='Selected five-image terminal demo; not an accuracy benchmark',category='blister',operator='local-operator'))
     call('/api/batches/'+name+'/select',{})
-    folder=Path.home()/'BlisterTrace_Data/terminal_demos'/name;folder.mkdir(parents=True)
+    folder=data_dir()/'terminal_demos'/name;folder.mkdir(parents=True)
     save_state({'batch':name,'folder':str(folder),'records':[]})
     field('Service','READY; local loopback only')
     field('Vision',status['vision_backend']+' / '+status['model'])
@@ -115,8 +117,9 @@ def main():
     parser=argparse.ArgumentParser(description='Medge Vision offline terminal demo')
     parser.add_argument('command',choices=['start','models','test','summary','web','all']);parser.add_argument('case',nargs='?',choices=list(CASES));parser.add_argument('--fresh',action='store_true',help='Request new Llama generation instead of permitting cached advice');parser.add_argument('--timeout',type=int,default=100)
     parser.add_argument('--base',default=BASE,help='Existing local HTTP service URL; default127.0.0.1:8765')
+    parser.add_argument('--no-service',action='store_true',help='Use an already running source server without systemd')
     a=parser.parse_args();BASE=a.base.rstrip('/')
-    if a.command=='start':start()
+    if a.command=='start':start(not a.no_service)
     elif a.command=='models':models()
     elif a.command=='test':
         if not a.case:parser.error('Use: test 1 (or2,3,4,5,warning)')
@@ -124,7 +127,7 @@ def main():
     elif a.command=='summary':summary()
     elif a.command=='web':subprocess.run([str(Path.home()/'medge-vision')],check=True)
     elif a.command=='all':
-        start();models()
+        start(not a.no_service);models()
         for n in ['1','2','3','4','5']:run_case(n,a.timeout,a.fresh)
         summary()
     return 0

@@ -46,7 +46,9 @@ python main.py --inspect test_images/acceptance_demo/defective/crack/crack.jpg -
 python main.py --desktop
 ```
 
-The supplied HEF targets Hailo-8, not Hailo-8L. Configuration does not prove hardware readiness. Stop the desktop service before running an independent Hailo terminal inspector; one process must own the device. The USB/CSI camera and second-monitor procedures are in `docs/DUAL_DISPLAY_KIOSK.md`; historical migration tools assume the old station and should not be blindly executed on a new machine.
+The supplied HEF targets Hailo-8, not Hailo-8L. Configuration does not prove hardware readiness. Stop the desktop service before running an independent Hailo terminal inspector; one process must own the device.
+
+For a new Pi desktop with Chromium, XWayland and wlr-randr installed, run `python tools/install_clone_pi.py --install`, then `~/medge-vision`. This creates a service for the actual checkout and opens the main monitor plus verdict monitor. Existing service/launchers are preserved rather than overwritten. Run from a logged-in desktop session; this does not configure unattended pre-login startup. Historical migration tools assume the old station and should not be blindly executed on a new machine.
 
 ## Standalone terminal demonstration
 
@@ -55,7 +57,20 @@ python main.py --inspect test_images/acceptance_demo/defective/crack/crack.jpg -
 python main.py --inspect test_images/acceptance_demo/safe/safe_01.jpg --wait-advice --output clear.json
 ```
 
-With the local server running, `python tools/medge_demo.py test 1` through `test 5` exercise two YOLO cases and all three EfficientAD profiles. Add `--help` to inspect options. The `start` subcommand expects an installed systemd service; source users launch `python main.py --no-browser` instead. Do not call fallback output successful Llama generation.
+With `python main.py --no-browser` running in one terminal, initialize a source demonstration in another:
+
+```sh
+python tools/medge_demo.py start --no-service
+python tools/medge_demo.py models
+python tools/medge_demo.py test 1
+python tools/medge_demo.py test 2
+python tools/medge_demo.py test 3
+python tools/medge_demo.py test 4
+python tools/medge_demo.py test 5
+python tools/medge_demo.py summary
+```
+
+These exercise two YOLO cases and all three EfficientAD profiles. Add `--help` to inspect options. The installed `~/medge-demo start` can start systemd automatically. Do not call fallback output successful Llama generation.
 
 ## Submission boundaries
 
