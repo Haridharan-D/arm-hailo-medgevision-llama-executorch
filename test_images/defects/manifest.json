@@ -1,0 +1,2247 @@
+[
+  {
+    "file": "defects/black_dot/CASE-001.jpg",
+    "group": "black_dot",
+    "sha256": "8d7a0a761663dd6d2ef9288219092040eb8672f02fbd71e6e6565dbdae3a6aa8",
+    "source_file": "000048_ed25ac5ec64d.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-001"
+  },
+  {
+    "file": "defects/black_dot/CASE-002.jpg",
+    "group": "black_dot",
+    "sha256": "fa282afab796ea831d47bc02140a84f8b3642d983fbc5a4e971c4082682ec210",
+    "source_file": "000049_d976862fbc55.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-002"
+  },
+  {
+    "file": "defects/black_dot/CASE-003.jpg",
+    "group": "black_dot",
+    "sha256": "4d3e1e77bf5fc8e81c2f0fb5377288def4f5d567c117658d7dde905436661e99",
+    "source_file": "000052_368655002bf0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-003"
+  },
+  {
+    "file": "defects/black_dot/CASE-004.jpg",
+    "group": "black_dot",
+    "sha256": "55c6f375b2df9955977b2e17faee9ea279f89ad914f694b18c04ae0990d90b0f",
+    "source_file": "000073_e3460680e246.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-004"
+  },
+  {
+    "file": "defects/black_dot/CASE-005.jpg",
+    "group": "black_dot",
+    "sha256": "d7af4a01f6fe108e574a86fb92f95d2a2abc4fb8b44cbb58e7bf421053163195",
+    "source_file": "000088_a4b156af0878.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-005"
+  },
+  {
+    "file": "defects/black_dot/CASE-006.jpg",
+    "group": "black_dot",
+    "sha256": "83b6d8eea8294806f8d500f118e25c1d959ccc7e2cee25e03d438c508ebee688",
+    "source_file": "000094_2e0a5c13bf96.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-006"
+  },
+  {
+    "file": "defects/black_dot/CASE-007.jpg",
+    "group": "black_dot",
+    "sha256": "75dfd4d96b2c106a19cbff80c8b0e3c5ed5aeb302be6552b70c7eba20bf61928",
+    "source_file": "000209_c1950c167ded.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-007"
+  },
+  {
+    "file": "defects/black_dot/CASE-008.jpg",
+    "group": "black_dot",
+    "sha256": "b91419dbea2c02e8edb4131675d6922ff787450b5f89e7832c1ba01d3ae292bf",
+    "source_file": "000289_777dff5ed6fd.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-008"
+  },
+  {
+    "file": "defects/black_dot/CASE-009.jpg",
+    "group": "black_dot",
+    "sha256": "82d634a7c56d057c7af0b4e9bd0cfa8bf85f50e7d7d9504fa765a1eb79d02170",
+    "source_file": "000429_d6cc6d3b0326.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-009"
+  },
+  {
+    "file": "defects/black_dot/CASE-010.jpg",
+    "group": "black_dot",
+    "sha256": "3676b2e81ad90945f9b786c43d7e294ba7af2aaffe5b8d73d6fcf52bac217c77",
+    "source_file": "000488_8d5ba2138517.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-010"
+  },
+  {
+    "file": "defects/black_dot/CASE-011.jpg",
+    "group": "black_dot",
+    "sha256": "5a093bc5443d3def7a9511705ba13834b062b43dc93c674b239880bfa2d3298b",
+    "source_file": "000514_5faddd8ad5b7.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-011"
+  },
+  {
+    "file": "defects/black_dot/CASE-012.jpg",
+    "group": "black_dot",
+    "sha256": "2b92e9986242c661c0c1442fee31f017b0d7335d20954083116040178e38adfb",
+    "source_file": "000520_775cc41d2fb6.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-012"
+  },
+  {
+    "file": "defects/black_dot/CASE-013.jpg",
+    "group": "black_dot",
+    "sha256": "6e747e910a79e0f902d696a3be08c3423dca154e46a8eec66105a0f011db7fa7",
+    "source_file": "000530_096cc62d80d3.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-013"
+  },
+  {
+    "file": "defects/black_dot/CASE-014.jpg",
+    "group": "black_dot",
+    "sha256": "4553a9a1a0e553c3ee9ddb761db71ca5ca3044832f4354ade0df0ccaafe84309",
+    "source_file": "000597_40b0e405b356.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-014"
+  },
+  {
+    "file": "defects/black_dot/CASE-015.jpg",
+    "group": "black_dot",
+    "sha256": "8c430b3ac3fcab3c38d960e4af28650350b4ea251ce0b9cbd0e55f6895ba3036",
+    "source_file": "000638_73825aa77c54.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-015"
+  },
+  {
+    "file": "defects/black_dot/CASE-016.jpg",
+    "group": "black_dot",
+    "sha256": "b929acb420d3b0eb8b375bd7d31c1a8587a15af249cc12ce584fa08901e75fd8",
+    "source_file": "000685_267a21b9c3e1.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-016"
+  },
+  {
+    "file": "defects/black_dot/CASE-017.jpg",
+    "group": "black_dot",
+    "sha256": "852a6c70b0787815babcfe8c6f4f6a34bf6d78298e9acab480c6d7572d80fd0c",
+    "source_file": "000747_e3bbc0d30775.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-017"
+  },
+  {
+    "file": "defects/black_dot/CASE-018.jpg",
+    "group": "black_dot",
+    "sha256": "46710d292fa2ed04fc12f668abe1b7c6da3a2e8fd3645b7582366e84160bbd06",
+    "source_file": "000762_88b6c2ef5776.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-018"
+  },
+  {
+    "file": "defects/black_dot/CASE-019.jpg",
+    "group": "black_dot",
+    "sha256": "07122aa5d2e72367f0d04c77578768b1dd2cd7849b05a234cfd69995d2c08ffd",
+    "source_file": "000774_a584f494f8b8.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-019"
+  },
+  {
+    "file": "defects/black_dot/CASE-020.jpg",
+    "group": "black_dot",
+    "sha256": "dc983ce26d4a25bfc3ebb37ced0458150df1fd9f96f0efe7f2fb68b7783351c5",
+    "source_file": "000798_1345af232495.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "black_dot"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-020"
+  },
+  {
+    "file": "defects/broken/CASE-001.jpg",
+    "group": "broken",
+    "sha256": "6b4f163dfb993ab0bb66df86f4cf7fb9bcb41d1f3f8406420c2782fdd88e8c84",
+    "source_file": "000000_c7aa17370159.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-001"
+  },
+  {
+    "file": "defects/broken/CASE-002.jpg",
+    "group": "broken",
+    "sha256": "b4da716b8a33aedc745a0a5d0fc635bdc7f101557b833a5964dcaab998d348c6",
+    "source_file": "000017_fbf39826584e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-002"
+  },
+  {
+    "file": "defects/broken/CASE-003.jpg",
+    "group": "broken",
+    "sha256": "413996b931f6c6ea0754ce4ea2fcdfc5127edc35c27d17cf3ac29f175eb88ead",
+    "source_file": "000061_86a5277a9476.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-003"
+  },
+  {
+    "file": "defects/broken/CASE-004.jpg",
+    "group": "broken",
+    "sha256": "d8a4ea38396b32dea4c1d73c3816b68868d79335eafa1e2b619d89d613795442",
+    "source_file": "000155_cc9711d8eb1e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-004"
+  },
+  {
+    "file": "defects/broken/CASE-005.jpg",
+    "group": "broken",
+    "sha256": "3ba1cffecf0854572e5ed288d002d4d3d7dd80895f0434e9e92c979c15755f9c",
+    "source_file": "000182_f364616e30e8.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-005"
+  },
+  {
+    "file": "defects/broken/CASE-006.jpg",
+    "group": "broken",
+    "sha256": "b8a47d847a073b5ea62e9c72991a87ce6fa3ebe59e3f34c02d027bf0e2da28ad",
+    "source_file": "000261_1adc73b71c66.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-006"
+  },
+  {
+    "file": "defects/broken/CASE-007.jpg",
+    "group": "broken",
+    "sha256": "64022412e178e87f949bf7bcd51d102815bea3afe699809fa209dd28f5b083b1",
+    "source_file": "000266_6f4c3823f772.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-007"
+  },
+  {
+    "file": "defects/broken/CASE-008.jpg",
+    "group": "broken",
+    "sha256": "50a03ab73b281003beda33a112bf996fdc8e4928d90a306609d8259d4cc66c93",
+    "source_file": "000361_acd846d9f639.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-008"
+  },
+  {
+    "file": "defects/broken/CASE-009.jpg",
+    "group": "broken",
+    "sha256": "8655fbd87060c2989877fff38cbd3d1b2267ce029769882f9929647b8c87f343",
+    "source_file": "000379_141a19a6f45a.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-009"
+  },
+  {
+    "file": "defects/broken/CASE-010.jpg",
+    "group": "broken",
+    "sha256": "7126d16819dd1b84395859933121d64fd879e2f5edae14fe06c9b7b0d01e2ad1",
+    "source_file": "000478_e84e6d3d285c.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-010"
+  },
+  {
+    "file": "defects/broken/CASE-011.jpg",
+    "group": "broken",
+    "sha256": "9cd0bdb25d9928326f0e4dc60ddf7be50af920e361490a029e136528d29a08f3",
+    "source_file": "000480_ba1df0d93e99.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-011"
+  },
+  {
+    "file": "defects/broken/CASE-012.jpg",
+    "group": "broken",
+    "sha256": "3b3d6e18862e920c11187ba9e96782536b4f6b5473a6b1394a67e6088efa835a",
+    "source_file": "000544_2c89421f029e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-012"
+  },
+  {
+    "file": "defects/broken/CASE-013.jpg",
+    "group": "broken",
+    "sha256": "75b82ccdec7b1068b77b346b5966c448760f7bdfdb4f7edcb08cdb225fee765a",
+    "source_file": "000760_12668a1fe8da.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-013"
+  },
+  {
+    "file": "defects/broken/CASE-014.jpg",
+    "group": "broken",
+    "sha256": "e39e91a98522e8f72856db436edde83aee93a0e3ff91550592fcd856e2c760d8",
+    "source_file": "000789_146662cf4f3e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-014"
+  },
+  {
+    "file": "defects/broken/CASE-015.jpg",
+    "group": "broken",
+    "sha256": "230d3b8089b0fc2a7e484d3c52c860882114c6ba1b45df91a320b83b640cd0d8",
+    "source_file": "000821_5bee05447d40.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-015"
+  },
+  {
+    "file": "defects/broken/CASE-016.jpg",
+    "group": "broken",
+    "sha256": "a85c3e0480799e5d50effe9d1a1c3868f97f36e39dccf7c15d2eb86526f9a539",
+    "source_file": "000916_52957f3198b2.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-016"
+  },
+  {
+    "file": "defects/broken/CASE-017.jpg",
+    "group": "broken",
+    "sha256": "49f7f20dd1d1c2c2e91ed470f0794e5a01b7fa7dc8d8305f7f78dda328676479",
+    "source_file": "001047_2d5782f27e29.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-017"
+  },
+  {
+    "file": "defects/broken/CASE-018.jpg",
+    "group": "broken",
+    "sha256": "06219b14b4af50c5181d07985af4d3b5f52be0ad848d054a9c5c86dc67a9e636",
+    "source_file": "001071_ea2ac5fa2a02.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-018"
+  },
+  {
+    "file": "defects/broken/CASE-019.jpg",
+    "group": "broken",
+    "sha256": "354b350869b9f936f7f3e2c1f2df4ae2075137c3cec69eccb22b4f11128959ad",
+    "source_file": "001079_2b24d12e138c.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-019"
+  },
+  {
+    "file": "defects/broken/CASE-020.jpg",
+    "group": "broken",
+    "sha256": "24549c07123104bdc4f4b8d213581a29dcc427eded8144195a3ef0320914799e",
+    "source_file": "001197_d63d40bdbe7c.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "broken"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-020"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-001.jpg",
+    "group": "color_mismatch",
+    "sha256": "0468cff09218af288ff3ec01bb4e456beb1f7fc2e76131c414eb23f99966124b",
+    "source_file": "000003_e188142b6040.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-001"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-002.jpg",
+    "group": "color_mismatch",
+    "sha256": "39191eeadc872fed3d0e39c97e94d941796427bd4a8c8c0ab2bf5171fcbb4303",
+    "source_file": "000040_8fbd2a6a607d.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-002"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-003.jpg",
+    "group": "color_mismatch",
+    "sha256": "8466f81112c535b4138002482ee0faf525808569cd0910e254d3a15829f38398",
+    "source_file": "000043_baf96e68c937.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-003"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-004.jpg",
+    "group": "color_mismatch",
+    "sha256": "8ad2da2a1c15c294aff540bc619698b3405e857c4dee925b3b62262291b8e6f9",
+    "source_file": "000112_7f48ec84a1f0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-004"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-005.jpg",
+    "group": "color_mismatch",
+    "sha256": "4ff522116a4bf6dd5b89f4f671dbe4f6de5166c343e6e47053c8e929ecea1e10",
+    "source_file": "000175_382233fd5c9f.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-005"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-006.jpg",
+    "group": "color_mismatch",
+    "sha256": "29f141026c8f5921c9b9f6b416a8cd81cbe4b0b251b8e1e59a624450ca1af5db",
+    "source_file": "000212_148fa39c9068.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-006"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-007.jpg",
+    "group": "color_mismatch",
+    "sha256": "a48f8bd79b72ece3f4d3d99f3e1c0404bb3852418d1a56df6dd8093a6c146d25",
+    "source_file": "000235_0c4c0ab0e016.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-007"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-008.jpg",
+    "group": "color_mismatch",
+    "sha256": "44b36a8f158a21ccc2bfaa47bfe042623ba3b9c6882064b6e740c26395fb4e88",
+    "source_file": "000380_a5f720b1078c.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-008"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-009.jpg",
+    "group": "color_mismatch",
+    "sha256": "f293659c38028b2e09dbc244553db5064b0e2e0f0ba595a7f1e77a79064f2aad",
+    "source_file": "000396_9b1f6c60f4e7.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-009"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-010.jpg",
+    "group": "color_mismatch",
+    "sha256": "6dc55fa541334113d75bfcbf7136f8f23f7c27b51961982adcd20f5ff4049302",
+    "source_file": "000415_8fb14914b01b.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-010"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-011.jpg",
+    "group": "color_mismatch",
+    "sha256": "f6ecc8274f37941c7eefc3f48711dd106ce915ad865b480f2f365a3ae3f4da68",
+    "source_file": "000486_f0618eb656f5.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-011"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-012.jpg",
+    "group": "color_mismatch",
+    "sha256": "67d5dbffa4bbbbf3ed8a4775680789afb38046835c68342bb8079665f51be5b3",
+    "source_file": "000505_3ed7713b3a13.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-012"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-013.jpg",
+    "group": "color_mismatch",
+    "sha256": "b81620c0f7f8b759be667c699b3eaf4ad3c8f1baacfa9466de50fc7eb2763c21",
+    "source_file": "000537_8cdd8ee3e95e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-013"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-014.jpg",
+    "group": "color_mismatch",
+    "sha256": "d9846637f9385558d00c6cee7a749aa34668264b9ed6bf6d3b725f419d59184a",
+    "source_file": "000548_c052747a5956.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-014"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-015.jpg",
+    "group": "color_mismatch",
+    "sha256": "74b886a561959b0d50c68ebb3013e6d4feee3aee41991f83bbee432a2dfe32a6",
+    "source_file": "000600_1e6d9b4c4cdd.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-015"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-016.jpg",
+    "group": "color_mismatch",
+    "sha256": "7d4b30ef187998f09baf1ae3d681c2aa88168e3f605390fb781d670b2030c989",
+    "source_file": "000659_9ab7f9e892af.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-016"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-017.jpg",
+    "group": "color_mismatch",
+    "sha256": "101d4d0b89f6274f3f9ed7aae322b26f0062a0b8244eeebaebdc0a09e783318d",
+    "source_file": "000702_d30e422ed681.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-017"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-018.jpg",
+    "group": "color_mismatch",
+    "sha256": "6a66a6da5ca267e69c9b1bdb84d32f4c029a30db1a3884347470083fd4ff22d4",
+    "source_file": "000715_378343b4a030.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-018"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-019.jpg",
+    "group": "color_mismatch",
+    "sha256": "a132b7f27958f09323885f2ea1d73205ed0c5e6d2b8a167e3ac41b992a4548b4",
+    "source_file": "000716_2c8483be1094.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-019"
+  },
+  {
+    "file": "defects/color_mismatch/CASE-020.jpg",
+    "group": "color_mismatch",
+    "sha256": "8b7abba2aeea20e62ea027d5949c5f802ff51aa0efce81e9673b3aa60241392a",
+    "source_file": "000729_9eae9d8e29a4.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "color_mismatch"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-020"
+  },
+  {
+    "file": "defects/crack/CASE-001.jpg",
+    "group": "crack",
+    "sha256": "9d95613e973a202fd55d29312ca01939cc6b7bf82726df5c8f206b8cd427c00d",
+    "source_file": "000059_bba6d7c8e335.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-001"
+  },
+  {
+    "file": "defects/crack/CASE-002.jpg",
+    "group": "crack",
+    "sha256": "2a3c2e465b55a6d19c461b3b005ebc5609bb5168ee47d444c4aa23e592d48e74",
+    "source_file": "000072_1bca94533bba.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-002"
+  },
+  {
+    "file": "defects/crack/CASE-003.jpg",
+    "group": "crack",
+    "sha256": "575b35691442adac44b1a4c476cad00b0fc1ff3911a10cdf6123d0136b58c163",
+    "source_file": "000140_c0caa0e27d39.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-003"
+  },
+  {
+    "file": "defects/crack/CASE-004.jpg",
+    "group": "crack",
+    "sha256": "416ff596d5d164a0215d1d4d5bd8421a67005c993325259d180f2f4836d96fdb",
+    "source_file": "000193_a6913f7b4eaa.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-004"
+  },
+  {
+    "file": "defects/crack/CASE-005.jpg",
+    "group": "crack",
+    "sha256": "f9a9f318efea2d9622643f8f099fbafb3acb62a4c7ae3ca0ed9b168e9c291208",
+    "source_file": "000196_a6c026c48242.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-005"
+  },
+  {
+    "file": "defects/crack/CASE-006.jpg",
+    "group": "crack",
+    "sha256": "3e8365f31f72fc93b7e21e25068272a48ec3a34f81e337ca7709306334932f5a",
+    "source_file": "000259_34a10a995260.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-006"
+  },
+  {
+    "file": "defects/crack/CASE-007.jpg",
+    "group": "crack",
+    "sha256": "b201c1273a37f446334cfbae2e4743a2669c7f0986952a04c104f46e103d1334",
+    "source_file": "000352_8c3035f5b981.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-007"
+  },
+  {
+    "file": "defects/crack/CASE-008.jpg",
+    "group": "crack",
+    "sha256": "f1f9e25ea38482b78df00567958cead705c58331e2d72db3917292037286f3c1",
+    "source_file": "000371_2745be30bd25.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-008"
+  },
+  {
+    "file": "defects/crack/CASE-009.jpg",
+    "group": "crack",
+    "sha256": "078de966b813640ec810f7d1715b7c26db22794396082f6cb6571a6212d7d322",
+    "source_file": "000554_8ae2279fe7dd.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-009"
+  },
+  {
+    "file": "defects/crack/CASE-010.jpg",
+    "group": "crack",
+    "sha256": "3ad5410bd9e3c20e34a8bc051229c277d57d4debb2e6c8f5423777fb947c833b",
+    "source_file": "000561_d33a30031b6f.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-010"
+  },
+  {
+    "file": "defects/crack/CASE-011.jpg",
+    "group": "crack",
+    "sha256": "7c2bb11c5351daae1055d05358e70dc52f153e4cafc60f4ea0ee9a2fff080c28",
+    "source_file": "000667_e0a43eebeec9.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-011"
+  },
+  {
+    "file": "defects/crack/CASE-012.jpg",
+    "group": "crack",
+    "sha256": "4ec5c8f84779c0f9642c96ebebdfd0c46dd9fac577484f1941abd5be6ea8a0f3",
+    "source_file": "000683_c00274593d6d.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-012"
+  },
+  {
+    "file": "defects/crack/CASE-013.jpg",
+    "group": "crack",
+    "sha256": "c0cbc6b7a3a32a5ddaf57522b8aa3590235cfe996beb520a8e6d0380e75f1d19",
+    "source_file": "000723_731b53f95c7a.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-013"
+  },
+  {
+    "file": "defects/crack/CASE-014.jpg",
+    "group": "crack",
+    "sha256": "251a797c70074059eeb360c07f04f27af1caf33199cc017da18c084681779b4e",
+    "source_file": "000724_4375af3e87c0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-014"
+  },
+  {
+    "file": "defects/crack/CASE-015.jpg",
+    "group": "crack",
+    "sha256": "e73639de73ad449b4992cfd4103449abb96c5fc98e340d46ba10351b4231c0f6",
+    "source_file": "000811_9477a1fa79b2.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-015"
+  },
+  {
+    "file": "defects/crack/CASE-016.jpg",
+    "group": "crack",
+    "sha256": "803c69d6001748315244dfe040187460c062d5972a67f01de176447fc7b3bc07",
+    "source_file": "000818_2bb867095778.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-016"
+  },
+  {
+    "file": "defects/crack/CASE-017.jpg",
+    "group": "crack",
+    "sha256": "1aafc04b54424f10e28c832be7167d20bde0cd87c69f43f8115d4c70eb3cb641",
+    "source_file": "000859_c280156f6dff.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-017"
+  },
+  {
+    "file": "defects/crack/CASE-018.jpg",
+    "group": "crack",
+    "sha256": "fd7492c3764fee2f8c37fa6d3f7fc9835746f9bde523c4242fcc561db5eebf85",
+    "source_file": "000895_d484f0539ff3.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-018"
+  },
+  {
+    "file": "defects/crack/CASE-019.jpg",
+    "group": "crack",
+    "sha256": "ca0ce642541db4e8f52399e135120d1d390d72e70edacceddcbde22e2aa09df1",
+    "source_file": "001247_459131eb396d.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-019"
+  },
+  {
+    "file": "defects/crack/CASE-020.jpg",
+    "group": "crack",
+    "sha256": "fbd543922e2f974e8c2e3c835bc5d557d9e0b92b7d8b4996ba5af147b633c72f",
+    "source_file": "001257_13c0181f88f2.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "crack"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-020"
+  },
+  {
+    "file": "defects/dual_cap/CASE-001.jpg",
+    "group": "dual_cap",
+    "sha256": "199afbe2800fc30a2474be40748afd58707d89d50e35bf230775a156791bffc8",
+    "source_file": "000174_5560d72e2f87.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-001"
+  },
+  {
+    "file": "defects/dual_cap/CASE-002.jpg",
+    "group": "dual_cap",
+    "sha256": "0119a5079bd01a4759ea154d07fb2e0196f7958f1b40935e084addd2d13aa7eb",
+    "source_file": "000434_635cffdf43c0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-002"
+  },
+  {
+    "file": "defects/dual_cap/CASE-003.jpg",
+    "group": "dual_cap",
+    "sha256": "dc86d6aab86fcaa64c0c73d6f0e852ea9672150a5c362fbb1b0c97c254184211",
+    "source_file": "000726_7e4f91f3433e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-003"
+  },
+  {
+    "file": "defects/dual_cap/CASE-004.jpg",
+    "group": "dual_cap",
+    "sha256": "d4448e34ce11e3924deb0417fba3ef174a7c5282060c793c4e17cdcc365c4bc2",
+    "source_file": "001264_3487438c022b.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-004"
+  },
+  {
+    "file": "defects/dual_cap/CASE-005.jpg",
+    "group": "dual_cap",
+    "sha256": "cdb921ee15c437159bb457ef569ac28353d1c9c350eadc951a6b5c07181f776c",
+    "source_file": "001523_759051c0c2ea.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-005"
+  },
+  {
+    "file": "defects/dual_cap/CASE-006.jpg",
+    "group": "dual_cap",
+    "sha256": "bb6982638ba1cd6013edaa9067ce215cfd1d1b8535b91c64d2898d37d84bf906",
+    "source_file": "001539_c63c4644bf08.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-006"
+  },
+  {
+    "file": "defects/dual_cap/CASE-007.jpg",
+    "group": "dual_cap",
+    "sha256": "b0b5f2c6971f8e7c00b030751a88c50067baa7f878c5df841f8b8b0b9b88463a",
+    "source_file": "002198_561fcb8351ff.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-007"
+  },
+  {
+    "file": "defects/dual_cap/CASE-008.jpg",
+    "group": "dual_cap",
+    "sha256": "91fe9dd4a6db3f388d994a838504d7fc99c069d13206653a7f453941ec63680e",
+    "source_file": "002231_fe297564cff8.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-008"
+  },
+  {
+    "file": "defects/dual_cap/CASE-009.jpg",
+    "group": "dual_cap",
+    "sha256": "bef75e9b6a6378c448a458517feb4e27853c4a993c1fbf5d258907ac61f11b07",
+    "source_file": "002335_68e374187326.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-009"
+  },
+  {
+    "file": "defects/dual_cap/CASE-010.jpg",
+    "group": "dual_cap",
+    "sha256": "8d9583ae52968bcc4d568e25d7f3508c81443176977e1fe3e1ad8ee8f296cb99",
+    "source_file": "002838_3fe7a41de2e8.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-010"
+  },
+  {
+    "file": "defects/dual_cap/CASE-011.jpg",
+    "group": "dual_cap",
+    "sha256": "9052c020558951dd77c1a9d1db6f1225ad3409494983243f82b905585454eb2b",
+    "source_file": "002863_e49c49259e5f.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-011"
+  },
+  {
+    "file": "defects/dual_cap/CASE-012.jpg",
+    "group": "dual_cap",
+    "sha256": "907f862b21094779cd9a0dec9592d535fd02f5fde65c9e24b0478412ad255445",
+    "source_file": "002877_02078bb6ce18.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-012"
+  },
+  {
+    "file": "defects/dual_cap/CASE-013.jpg",
+    "group": "dual_cap",
+    "sha256": "ab4966aaf0ff63d0dff98dd3bb8cc33c75ca2ac26c23a26dc209c8009ba4da51",
+    "source_file": "003168_57c84176a576.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-013"
+  },
+  {
+    "file": "defects/dual_cap/CASE-014.jpg",
+    "group": "dual_cap",
+    "sha256": "e56c5e1ba2cdfc31f2abe3ca5fc2cbe8184338a4beebf1f3bc74ae7d05be3c97",
+    "source_file": "003280_d3cfe6c95abe.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-014"
+  },
+  {
+    "file": "defects/dual_cap/CASE-015.jpg",
+    "group": "dual_cap",
+    "sha256": "1a70ddbd846ad6f3f2874e194c93eba84e1ce1592761d4914295517b54bfd1f0",
+    "source_file": "003471_11b22a7a13bc.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-015"
+  },
+  {
+    "file": "defects/dual_cap/CASE-016.jpg",
+    "group": "dual_cap",
+    "sha256": "5e1e62b5d8c0ea0f4a843912fe5877c1ec19f80bd49cb3e2b316f9aaac713054",
+    "source_file": "000174_5560d72e2f87.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen prediction on derived training-source demo; not ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "transform": "Horizontal flip of the named original; not an independent image",
+    "case_id": "CASE-016"
+  },
+  {
+    "file": "defects/dual_cap/CASE-017.jpg",
+    "group": "dual_cap",
+    "sha256": "27dfd91fd2f5414059d3dd947b9f1632fc36b9edf800a229b3cb8f4bd5eba59f",
+    "source_file": "000434_635cffdf43c0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen prediction on derived training-source demo; not ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "transform": "Horizontal flip of the named original; not an independent image",
+    "case_id": "CASE-017"
+  },
+  {
+    "file": "defects/dual_cap/CASE-018.jpg",
+    "group": "dual_cap",
+    "sha256": "98f8eb37f91811d7454b88c05a78791e917d737aa89f51350bb62f9c6d6cc79e",
+    "source_file": "000726_7e4f91f3433e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen prediction on derived training-source demo; not ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "transform": "Horizontal flip of the named original; not an independent image",
+    "case_id": "CASE-018"
+  },
+  {
+    "file": "defects/dual_cap/CASE-019.jpg",
+    "group": "dual_cap",
+    "sha256": "31e544d6fec97dbeb868261f636df844ad70a00cc2f7b5a9b9a46fbabda01a34",
+    "source_file": "001264_3487438c022b.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen prediction on derived training-source demo; not ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "transform": "Horizontal flip of the named original; not an independent image",
+    "case_id": "CASE-019"
+  },
+  {
+    "file": "defects/dual_cap/CASE-020.jpg",
+    "group": "dual_cap",
+    "sha256": "701b11aa727722c20363a54578afd0a181623f55e38734944d795ea6e28b0efe",
+    "source_file": "001539_c63c4644bf08.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen prediction on derived training-source demo; not ground truth",
+    "predicted_types": [
+      "dual_cap"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "transform": "Horizontal flip of the named original; not an independent image",
+    "case_id": "CASE-020"
+  },
+  {
+    "file": "defects/empty/CASE-001.jpg",
+    "group": "empty",
+    "sha256": "71d2ab72706102cf6e62fa7302f8f85e778859026cfd333f76cfad430622c33b",
+    "source_file": "000020_3b9f2e31794c.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-001"
+  },
+  {
+    "file": "defects/empty/CASE-002.jpg",
+    "group": "empty",
+    "sha256": "85feaf758d405c132a30a46323b0bc5b7faad61021a6bfcbe51dae5a56183a14",
+    "source_file": "000036_9c3fb10c878c.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-002"
+  },
+  {
+    "file": "defects/empty/CASE-003.jpg",
+    "group": "empty",
+    "sha256": "f97bbe6a7bea31eeec9188990fedae2e08a306cc69541348918a13a97ff7692a",
+    "source_file": "000081_bb5c1555a2e3.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-003"
+  },
+  {
+    "file": "defects/empty/CASE-004.jpg",
+    "group": "empty",
+    "sha256": "14f4772fc59db1b156d9b71d1890a937473b92b727d045207f7caa92b990ce99",
+    "source_file": "000146_9ab65042cff0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-004"
+  },
+  {
+    "file": "defects/empty/CASE-005.jpg",
+    "group": "empty",
+    "sha256": "a6d5a888c51d751672253817b82d40ec8ab601d04c31800b27ed770b66e69b31",
+    "source_file": "000148_c14bd52bb756.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-005"
+  },
+  {
+    "file": "defects/empty/CASE-006.jpg",
+    "group": "empty",
+    "sha256": "ed95a1b42965c6b397992b5ad063f55efa8e0c3266b69c43d3851e5288b3c036",
+    "source_file": "000194_fbac63b42191.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-006"
+  },
+  {
+    "file": "defects/empty/CASE-007.jpg",
+    "group": "empty",
+    "sha256": "2819e4f796cc7625cfd641b5eb6846c01723ebee35b8ddb90bab35853b2af74d",
+    "source_file": "000228_c330e5f5728e.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-007"
+  },
+  {
+    "file": "defects/empty/CASE-008.jpg",
+    "group": "empty",
+    "sha256": "841d282382412939ab6a672663745ecef25b0b893365fe0d0c78ba9eff00b743",
+    "source_file": "000325_e9c7f479d512.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-008"
+  },
+  {
+    "file": "defects/empty/CASE-009.jpg",
+    "group": "empty",
+    "sha256": "411d52c37c0630239986e1454deba2ef467131c7e6520f3151744153ce1ce1d8",
+    "source_file": "000357_30acc0a61852.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-009"
+  },
+  {
+    "file": "defects/empty/CASE-010.jpg",
+    "group": "empty",
+    "sha256": "db04deb2548e8952a3e97c9e2adeeb9649c4fbeba61fcd4a9e4fa6db6ba837e4",
+    "source_file": "000437_b28f3c4125dd.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-010"
+  },
+  {
+    "file": "defects/empty/CASE-011.jpg",
+    "group": "empty",
+    "sha256": "c05b381aacf95b6163a269ea4e07384dec261451c7e39f811295ccfa1185ceb0",
+    "source_file": "000557_ed3592744d26.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-011"
+  },
+  {
+    "file": "defects/empty/CASE-012.jpg",
+    "group": "empty",
+    "sha256": "9f2d5177f9aa3df963fd8f47d42341293d947aa0a1849d6b912977bf8889c25b",
+    "source_file": "000595_e50ad9f0d6dc.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-012"
+  },
+  {
+    "file": "defects/empty/CASE-013.jpg",
+    "group": "empty",
+    "sha256": "77a6ccba88b49e8eb38f1070b7250c0f33bb1f33b4aa9490975448849663ae5a",
+    "source_file": "000639_bf8a500c4ebf.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-013"
+  },
+  {
+    "file": "defects/empty/CASE-014.jpg",
+    "group": "empty",
+    "sha256": "9b62ee8001588838cc0a6c9dfd0e54456a3903bf2b0ac995996b5e8dce48f363",
+    "source_file": "000697_62ec6cdc49cd.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-014"
+  },
+  {
+    "file": "defects/empty/CASE-015.jpg",
+    "group": "empty",
+    "sha256": "5c1844b9cabaddc0a9bd19668bf1cb9e4083c75c60e9a0c45d52ceba9dbc9287",
+    "source_file": "000745_b7365e647081.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-015"
+  },
+  {
+    "file": "defects/empty/CASE-016.jpg",
+    "group": "empty",
+    "sha256": "aa4b58218148db8d19d7ff0c3a32f7d3831fd4c1f248016bb222829be7a58ca3",
+    "source_file": "000775_69d4436ae713.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-016"
+  },
+  {
+    "file": "defects/empty/CASE-017.jpg",
+    "group": "empty",
+    "sha256": "8f91803f2621e0c5726e2ba65e4b13cfec02815e10964dbe36ae91408503279c",
+    "source_file": "000832_cd3bc1a3b5c2.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-017"
+  },
+  {
+    "file": "defects/empty/CASE-018.jpg",
+    "group": "empty",
+    "sha256": "85861d9dbfdd2fcdbcb1417053f054d7f60e4f88024a344b2a889193925f8317",
+    "source_file": "000878_6757499feb74.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-018"
+  },
+  {
+    "file": "defects/empty/CASE-019.jpg",
+    "group": "empty",
+    "sha256": "6d7335bb05154f3f1b43569a5351eee6259b4eaf6b698a57eace7876a3bd5b7c",
+    "source_file": "000949_2911fecbe2ce.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-019"
+  },
+  {
+    "file": "defects/empty/CASE-020.jpg",
+    "group": "empty",
+    "sha256": "01241bbdc3bf76cd131325d7ee6e82ea37583125f3c70c78231197b735a62daa",
+    "source_file": "001007_f975972f8b76.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "empty"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-020"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-001.jpg",
+    "group": "foreign_particle",
+    "sha256": "9825a8f235c3321a1beb57c8b56bc533c6db8f0fa89109449dacf24bb0263edc",
+    "source_file": "000015_3a9f546686b0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-001"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-002.jpg",
+    "group": "foreign_particle",
+    "sha256": "b8647d362fe37aadbb97a33455858cbe2d44c8b62dc13494ab2a7e71cfba5b49",
+    "source_file": "000055_cb89ffff9cc0.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-002"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-003.jpg",
+    "group": "foreign_particle",
+    "sha256": "3d5004f1fc7d6289b64156fc053a58438d8fae430f54221cf0f5ebb9b265d538",
+    "source_file": "000106_a3e6ce1ebb84.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-003"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-004.jpg",
+    "group": "foreign_particle",
+    "sha256": "ad6a6422af47e89e492852ff3d86333b9119e3fa2f0ea43174cb5040a3781024",
+    "source_file": "000236_75539f7b2dee.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-004"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-005.jpg",
+    "group": "foreign_particle",
+    "sha256": "d743297b4c7ac62f641ae4b5851aca26bb89568af9eae647d702f891e4360177",
+    "source_file": "000391_a553185f59e5.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-005"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-006.jpg",
+    "group": "foreign_particle",
+    "sha256": "caf78238df4a5803d43b8ffd6268d4c0550f1a1a57acf96504673ab56b62bc4d",
+    "source_file": "000399_112f8938666a.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-006"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-007.jpg",
+    "group": "foreign_particle",
+    "sha256": "8c4821652df243a551e937fe8d569b0b3d3e900949eda5f5f86fe65613b6e94e",
+    "source_file": "000404_a531c17f9752.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-007"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-008.jpg",
+    "group": "foreign_particle",
+    "sha256": "555a40d7aee2944edc60bf240f13ddb7e02b8940b9bc4525d1513476f39358da",
+    "source_file": "000419_bf23819a59b3.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-008"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-009.jpg",
+    "group": "foreign_particle",
+    "sha256": "3eeb99a3875152639739f413df8a59c953ea35eec78aacca39c5547272ce747d",
+    "source_file": "000426_3470c3c570cc.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-009"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-010.jpg",
+    "group": "foreign_particle",
+    "sha256": "b84971ba8d41b465f32fb438362af79540a0d084a99a370c4a998c117d18fc6b",
+    "source_file": "000430_66f5800cff35.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-010"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-011.jpg",
+    "group": "foreign_particle",
+    "sha256": "2367b455657e9bfe403979744a790c82d83eb73a07a0e7396d17ae39d0c52243",
+    "source_file": "000457_9db25d0ef9a3.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-011"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-012.jpg",
+    "group": "foreign_particle",
+    "sha256": "5ac7b7c01dd8797e007c869a23532448d91878c0c5b7268df11d2572340e2bef",
+    "source_file": "000672_91686fb82205.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-012"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-013.jpg",
+    "group": "foreign_particle",
+    "sha256": "eb63249d2168a65932f8c65a1aec3a2811489dd2aa2dafe1b934d5ecfbdb7722",
+    "source_file": "000699_9ccd563d66f3.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-013"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-014.jpg",
+    "group": "foreign_particle",
+    "sha256": "e7f877bedd31d5df63e13879c40f1f518ce88d8047bf2e3255e442e20b439f04",
+    "source_file": "000727_1749ddf98320.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-014"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-015.jpg",
+    "group": "foreign_particle",
+    "sha256": "16a788b7f7fab5c187477ec8fd3496cacf85cddaf754e6f4189cfd5604625dc8",
+    "source_file": "000829_747c53bec6de.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-015"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-016.jpg",
+    "group": "foreign_particle",
+    "sha256": "f8bbdfab73535f90242586f6472cc38a7e51d2843ade154f45fa604b41b2ad99",
+    "source_file": "000901_f541bfaed91b.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-016"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-017.jpg",
+    "group": "foreign_particle",
+    "sha256": "a14c29273feb844d6ab8e692961a20c83d0333970688a307292ee8a350caf73c",
+    "source_file": "000923_bfa7ecf9e694.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-017"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-018.jpg",
+    "group": "foreign_particle",
+    "sha256": "b4302a680d1d7a416673e5fad1aed45aad8daa0b898ab337ae387e913249f6ce",
+    "source_file": "001009_a4e99b3f7de9.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-018"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-019.jpg",
+    "group": "foreign_particle",
+    "sha256": "02ee0431c7168412ebc4818024370c81d418f51f704e47b7e84128bd0f752f2b",
+    "source_file": "001017_5c8e0c6b724b.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-019"
+  },
+  {
+    "file": "defects/foreign_particle/CASE-020.jpg",
+    "group": "foreign_particle",
+    "sha256": "b66c5a1102ca2ef5b3e12774655dcf09c6989c4f2ece844128f918c61c7b8e6c",
+    "source_file": "001030_caebe764b43b.jpg",
+    "split": "train/calibration",
+    "label_origin": "Frozen YOLO prediction; not human ground truth",
+    "predicted_types": [
+      "foreign_particle"
+    ],
+    "selection": "First distinct source images with a prediction above the unchanged class threshold; not accuracy evidence",
+    "dataset": "SastraAji Basler v4",
+    "license": "CC BY 4.0",
+    "source_url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+    "case_id": "CASE-020"
+  }
+]
