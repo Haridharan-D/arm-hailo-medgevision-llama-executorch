@@ -1,0 +1,8 @@
+{
+  "vision_backend": "onnx",
+  "profile_validated": false,
+  "advice_enabled": true,
+  "auth_required": false,
+  "llama_threads": 3,
+  "port": 8765
+}

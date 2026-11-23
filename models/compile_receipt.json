@@ -1,0 +1,22 @@
+{
+  "architecture": "hailo8",
+  "classes": 7,
+  "source_onnx_sha256": "114bddd21ff853747036591cf7d76c5523a7d8dc95d770221795de8f36691db0",
+  "hef_sha256": "43abc3f520b97894504d7d99f209846c9f0cc73542eb7b29e9546e7b6def8018",
+  "hef_bytes": 10105866,
+  "model_zoo": "v2.19.1",
+  "compiler": "3.34.0",
+  "available_calibration_images": 512,
+  "actual_calibration_entries": 64,
+  "cpu_only_optimization_level_zero": true,
+  "int8_accuracy_verified": false,
+  "target_inference_verified": true,
+  "target_runtime": "HailoRT 4.23.0, Pi 5, actual Hailo-8",
+  "fp32_agreement_sanity_check": {
+    "images": 18,
+    "agreement_precision": 0.9487179487179487,
+    "agreement_recall": 0.9736842105263158,
+    "warm_hailo_ms_p50": 15.27,
+    "ground_truth_accuracy_verified": false
+  }
+}

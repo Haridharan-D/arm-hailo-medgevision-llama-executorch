@@ -1,0 +1,132 @@
+{
+  "model": "EfficientAD-S: pretrained PDN teacher, trainable student and feature autoencoder",
+  "run_name": "visa_capsules",
+  "training_steps": 70000,
+  "training_batch_size": 1,
+  "amp": false,
+  "input": {
+    "shape": [
+      1,
+      3,
+      256,
+      256
+    ],
+    "dtype": "float32",
+    "color": "RGB",
+    "preprocessing": "Pillow bilinear resize, /255, ImageNet normalization once",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "output": "Anomaly heatmap and maximum image score; not defect identity, probability or severity",
+  "thresholds": {
+    "image": 0.20281894505023956,
+    "pixel": 0.03946321830153465,
+    "method": "normal_quantile",
+    "normal_quantile": 0.995,
+    "calibration_images": 81,
+    "calibration_defects": 0
+  },
+  "best_step": 70000,
+  "split_fingerprint": "4eba53f3f21519d4b16bac0615ccc8d89b1640442638ccfe42fac85932cd4ea2",
+  "checkpoint_sha256": "c7fc7b93bd08a1ea3d29a315d1c3842d40de0a590f2d5ac6fc8086c6750945dc",
+  "acceptance_limit": "Category benchmark; no claim of local blister-camera accuracy or Hailo deployment",
+  "evaluation": {
+    "per_category": {
+      "visa/capsules": {
+        "images": 160,
+        "defects": 100,
+        "image_auroc": 0.6501666666666668,
+        "image_f1": 0.384,
+        "image_confusion_matrix_tn_fp_fn_tp": [
+          59,
+          1,
+          76,
+          24
+        ],
+        "pixel_auroc": 0.9778969728350375,
+        "pixel_f1": 0.37084012534518307,
+        "aupro": 0.6984590887255195,
+        "pixel_confusion_matrix_tn_fp_fn_tp": [
+          10376322,
+          73758,
+          10769,
+          24911
+        ],
+        "annotated_images": 160,
+        "aupro_max_fpr": 0.3,
+        "aupro_steps": 200,
+        "image_aupr": 0.8010200622842942,
+        "image_precision": 0.96,
+        "image_recall": 0.24,
+        "normal_false_alarm_rate": 0.016666666666666666
+      }
+    },
+    "overall_macro": {
+      "image_auroc": 0.6501666666666668,
+      "image_f1": 0.384,
+      "pixel_auroc": 0.9778969728350375,
+      "pixel_f1": 0.37084012534518307,
+      "aupro": 0.6984590887255195
+    },
+    "counts": {
+      "images": 160,
+      "defects": 100
+    },
+    "summed_image_confusion_matrix_tn_fp_fn_tp": [
+      59,
+      1,
+      76,
+      24
+    ],
+    "note": "Unweighted macro across available categories; undefined metrics are null. All thresholds fixed before test."
+  },
+  "profile": "visa_capsules",
+  "artifact": "model.onnx",
+  "artifact_sha256": "ff414f1e16b12f5a9eac9ac0b12886773645279eae61e2123c0a45ac70dcccbf",
+  "deployment_input": {
+    "shape": [
+      1,
+      3,
+      256,
+      256
+    ],
+    "dtype": "float32",
+    "color": "RGB",
+    "range": [
+      0,
+      1
+    ],
+    "resize": "Pillow bilinear; ImageNet normalization is inside ONNX"
+  },
+  "deployment_output": {
+    "heatmap": [
+      1,
+      1,
+      256,
+      256
+    ],
+    "score": [
+      1
+    ]
+  },
+  "onnx_parity": {
+    "passed": true,
+    "random_seed": 42,
+    "max_abs_differences": [
+      8.344650268554688e-07,
+      2.384185791015625e-07
+    ]
+  },
+  "validated_for_local_camera": false,
+  "quality_warning": "Low VisA image recall at saved threshold; benchmark/research only",
+  "license": "CC BY 4.0 dataset",
+  "architecture_source": "EfficientAD PDN-S teacher/student/autoencoder; source provenance retained in audited Submission archive"
+}

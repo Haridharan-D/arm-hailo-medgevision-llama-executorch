@@ -1,0 +1,8 @@
+{
+  "title": "SastraAji Basler blister defects",
+  "author": "SastraAji",
+  "url": "https://universe.roboflow.com/sastraaji/basler_blisterpack_01.08.2024",
+  "license_as_listed": "CC BY 4.0",
+  "version": 4,
+  "changes": "Bounded-rounding deduplication; unresolved conflict/invalid source families excluded; source-family alias/perceptual grouping; new held-out splits; online training augmentation."
+}

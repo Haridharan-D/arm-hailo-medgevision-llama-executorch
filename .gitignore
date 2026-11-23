@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+build*/
+dist*/
+*.sqlite3*
+*.log
+.env*
+*token*.txt
+llama/artifacts/*.pte
+llama/artifacts/tokenizer.model
+llama/bin/
+native/bin/

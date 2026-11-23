@@ -1,0 +1,11 @@
+{
+  "document_id": "BT-DEMO-SOP-01",
+  "revision": "1",
+  "status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "clauses": [
+    {"id":"BT-01","tags":["black_dot","foreign_particle"],"decisions":["HOLD"],"actions":["ISOLATE_AND_QA_REVIEW"],"text":"Keep the indicated pack on HOLD. Isolate it for QA review and preserve its inspection evidence. Appearance alone does not establish chemical contamination or root cause."},
+    {"id":"BT-02","tags":["broken","crack","dual_cap","empty","color_mismatch"],"decisions":["HOLD"],"actions":["ISOLATE_AND_REINSPECT","ISOLATE_AND_QA_REVIEW"],"text":"Keep the indicated pack on HOLD. Preserve the image and defect record. Reinspect against the configured pack recipe; QA reviews disposition. Do not infer drug identity or diagnose a manufacturing root cause."},
+    {"id":"BT-03","tags":["unknown_anomaly","capture_invalid","review"],"decisions":["REVIEW"],"actions":["RECAPTURE_AND_REVIEW","REQUEST_QA_REVIEW"],"text":"Keep the pack pending REVIEW. Check camera alignment and lighting, recapture if needed, and request human review. An anomaly is an appearance deviation, not a confirmed defect type."},
+    {"id":"BT-04","tags":["pass"],"decisions":["PASS"],"actions":["RECORD_INSPECTION"],"text":"Record the existing rule-engine PASS and its evidence. This assistant cannot approve product release, certify drug safety, or change the inspection decision."}
+  ]
+}

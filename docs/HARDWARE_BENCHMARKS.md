@@ -1,0 +1,13 @@
+# Hardware benchmarks
+
+Historical21November evidence stays under `BlisterTrace_Deliverables/Hailo_Metrics_20261121`. Its60-second Hailo detector path made3948calls, mean15.197/P95 15.526/P99 15.635ms and65.789images/s. ONNX CPU detector mean580.115ms; detector-path speedup38.17×. Hailo run CPU average10.85%, RSS206.43MiB, temperature41.47°C. These values are not camera FPS, complete API throughput or production-line capacity.
+
+New22November native timings and resource samples are separate. `tools/benchmark_native_matrix.py` appends/fsyncs each trial and skips completed trial keys when resuming.1B uses30trials per thread/load pair, split equally between short/medium prompts. Temperature0 and output limit24 are fixed. Threads1,2,3,4 are tested with vision idle and with the real Hailo image API/SQLite work active. Both prompt sizes and each sample count are explicit. The3B sweep is a bounded pilot with6trials per cell/48total; its descriptive P95/P99 cannot be treated as robust tails.
+
+Initial21November concurrent attempts failed their load setup (device already owned, then premature503 before runtime readiness). Raw failed results are preserved and excluded from valid active-load comparisons. The corrected setup waits for a ready image API and uses a single Hailo owner. No CSI validation is included. USB acquisition measurements are recorded separately after model timing experiments.
+
+Native instrumentation records model load, tokenization, prefill, first emitted token, decode interval, actual generated count and final latency. Decode tokens/s is computed from tokens after the first token over the decode interval; it is never inferred from total application time. Resource arrays sample native-process RSS, process CPU, temperature, system available memory and swap. Process CPU uses100% per core, so a four-core process can exceed100%; API system-CPU values use a different denominator.
+
+Model-load measurements are process cold starts with the observed OS page-cache state. They are not claimed as storage cold-cache results. No unsupported frequency/priority/affinity setting or overclock is imposed. The production service uses moderate priority and a bounded worker count, and exposes thermal/disk warnings.
+
+Read generated `Hardening_20261122/REPORT.md`, BENCHMARKS.csv/JSON, model_comparison.png and raw evidence for actual completed measurements, model selection, USB camera scope, stability and recovery outcomes. Power, energy and NPU utilization remain unavailable without a meter/supported sampler; no estimated values are substituted. A short stability soak is functional evidence, not an8-hour factory endurance validation.

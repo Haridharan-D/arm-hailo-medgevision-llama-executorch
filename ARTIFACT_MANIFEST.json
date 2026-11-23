@@ -1,0 +1,44 @@
+[
+  {
+    "path": "models/anomaly/mvtec_capsule/model.onnx",
+    "bytes": 32261612,
+    "sha256": "c8110349b6c52a148be7da5442445a32031911ebf64d8d1fbcad2afb0902a157",
+    "included_in_git": true
+  },
+  {
+    "path": "models/anomaly/mvtec_pill/model.onnx",
+    "bytes": 32261612,
+    "sha256": "4670cd45c0d465bfbcdbdea2ca2711dd21e0b1eb026beb308e484b4f2e99c220",
+    "included_in_git": true
+  },
+  {
+    "path": "models/anomaly/visa_capsules/model.onnx",
+    "bytes": 32261612,
+    "sha256": "ff414f1e16b12f5a9eac9ac0b12886773645279eae61e2123c0a45ac70dcccbf",
+    "included_in_git": true
+  },
+  {
+    "path": "models/blistertrace.hef",
+    "bytes": 10105866,
+    "sha256": "43abc3f520b97894504d7d99f209846c9f0cc73542eb7b29e9546e7b6def8018",
+    "included_in_git": true
+  },
+  {
+    "path": "assets/blistertrace_yolov8s.onnx",
+    "bytes": 44738475,
+    "sha256": "114bddd21ff853747036591cf7d76c5523a7d8dc95d770221795de8f36691db0",
+    "included_in_git": true
+  },
+  {
+    "path": "llama/artifacts/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8.pte",
+    "bytes": 1135951488,
+    "sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+    "included_in_git": false
+  },
+  {
+    "path": "llama/artifacts/tokenizer.model",
+    "bytes": 2183982,
+    "sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
+    "included_in_git": false
+  }
+]

@@ -1,0 +1,25 @@
+[Unit]
+Description=Medge Vision offline quality inspection
+After=network.target
+StartLimitIntervalSec=120
+StartLimitBurst=5
+
+[Service]
+Type=simple
+WorkingDirectory=%h/BlisterTrace/releases/hardening_20261122
+Environment=BLISTERTRACE_CONFIG=%h/BlisterTrace/releases/hardening_20261122/production_config.json
+Environment=BLISTERTRACE_DATA=%h/BlisterTrace_Data
+ExecStart=%h/BlisterTrace/BlisterTrace_App/.venv/bin/python %h/BlisterTrace/releases/hardening_20261122/main.py --no-browser
+ExecStartPost=%h/BlisterTrace/BlisterTrace_App/.venv/bin/python %h/BlisterTrace/releases/hardening_20261122/tools/wait_ready.py
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillMode=control-group
+UMask=0077
+NoNewPrivileges=true
+Nice=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

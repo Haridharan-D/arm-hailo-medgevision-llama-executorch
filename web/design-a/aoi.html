@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="BlisterTrace offline pharmaceutical optical inspection workspace. Hailo vision and ExecuTorch advisory run in separate on-device pipelines.">
+<title>BlisterTrace · Inspection workspace</title>
+<link rel="icon" href="/static/design-a/assets/logo.svg" type="image/svg+xml">
+<link rel="preload" href="/static/design-a/assets/fonts/Inter.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/static/design-a/assets/fonts/JetBrainsMono.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/static/design-a/css/tokens.css">
+<link rel="stylesheet" href="/static/design-a/css/components.css">
+<link rel="stylesheet" href="/static/design-a/css/app.css">
+<link rel="stylesheet" href="/static/design-a/css/motion.css"><link rel="stylesheet" href="/static/design-a/css/console.css"></head>
+<body>
+<a class="sr-only" href="#workspace" id="skip-link" style="z-index:1001">Skip to workspace</a>
+<div id="app"><main class="empty"><strong>Loading local inspection workspace…</strong></main></div>
+<div id="splash" class="splash" aria-label="Station startup" role="region">
+ <div class="boot-panel">
+  <div class="splash-logo"><img id="splash-logo" alt="BlisterTrace logo"></div>
+  <div class="eyebrow mb-16">ON-DEVICE OPTICAL INSPECTION</div>
+  <h1>BlisterTrace<span style="color:var(--accent)">.</span></h1>
+  <p class="muted mt-8">Every detail. Accounted for.</p>
+  <div class="boot-list" id="boot-list" aria-live="polite"></div>
+  <div class="boot-foot"><span>Local intelligence. Traceable quality.</span><button class="btn ghost small-btn" id="skip-boot">Skip intro</button></div>
+ </div>
+</div>
+<div id="toasts" class="toasts" role="status" aria-live="polite" aria-atomic="false"></div>
+<dialog id="result-dialog" class="result-dialog" aria-labelledby="result-title"></dialog>
+<dialog id="detail-drawer" class="drawer" aria-labelledby="drawer-title">
+ <div class="modal-head"><h2 id="drawer-title">Inspection details</h2><button class="btn icon-only ghost" data-close="detail-drawer" aria-label="Close details">✕</button></div>
+ <div class="modal-body" id="drawer-body"></div>
+</dialog>
+<dialog id="command-dialog" aria-label="Command palette">
+ <input id="command-input" class="command-input" placeholder="Search commands or screens…" aria-label="Search commands" autocomplete="off" autofocus>
+ <div id="command-list" class="command-list"></div>
+ <div class="modal-actions tiny">↑ ↓ to navigate · Enter to choose · Esc to close</div>
+</dialog>
+<dialog id="shortcuts-dialog" aria-labelledby="shortcuts-title">
+ <div class="modal-head"><h2 id="shortcuts-title">Keyboard shortcuts</h2><button class="btn icon-only ghost" data-close="shortcuts-dialog" aria-label="Close shortcuts">✕</button></div>
+ <div class="modal-body">
+  <div class="list-option"><span>Command palette</span><span class="kbd">Ctrl / ⌘ K</span></div>
+  <div class="list-option"><span>Inspect / History</span><span class="kbd">I / H</span></div>
+  <div class="list-option"><span>Zoom in / out</span><span class="kbd">+ / −</span></div>
+  <div class="list-option"><span>Fit / original pixel scale</span><span class="kbd">F / 1</span></div>
+  <div class="list-option"><span>Run inspection / snapshot</span><span class="kbd">Ctrl / ⌘ Enter</span></div>
+  <div class="list-option"><span>Dismiss dialog</span><span class="kbd">Esc</span></div>
+  <div class="list-option"><span>Show shortcuts</span><span class="kbd">?</span></div>
+  <p class="tiny mt-16">Wheel to zoom · drag to pan · pinch on touch · arrow keys move the before/after handle. Native dialogs retain keyboard focus.</p>
+ </div>
+</dialog>
+<dialog id="operator-dialog" aria-labelledby="operator-title">
+ <form id="operator-form">
+  <div class="modal-head"><h2 id="operator-title">Local operator identity</h2><button type="button" class="btn icon-only ghost" data-close="operator-dialog" aria-label="Close operator identity">✕</button></div>
+  <div class="modal-body">
+   <div class="field"><label for="operator-name">Display ID · not authenticated</label><input id="operator-name" maxlength="80" required autocomplete="off"></div>
+   <div class="field mt-16"><label for="operator-pin">Demo station PIN</label><input id="operator-pin" type="password" inputmode="numeric" maxlength="8" autocomplete="off" aria-describedby="pin-note"></div>
+   <div class="pin-grid" id="pin-grid"></div>
+   <p class="tiny mt-16" id="pin-note"></p>
+  </div>
+  <div class="modal-actions"><button type="button" class="btn" data-close="operator-dialog">Cancel</button><button class="btn primary" type="submit">Set display identity</button></div>
+ </form>
+</dialog>
+<noscript><main class="card card-body" style="position:fixed;inset:20px;z-index:200">JavaScript is required for the offline AOI dashboard. No inference is triggered until you run it.</main></noscript>
+<script type="module" src="/static/design-a/js/app.js"></script>
+</body>
+</html>
+

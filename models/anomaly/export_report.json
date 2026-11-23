@@ -1,0 +1,41 @@
+[
+  {
+    "profile": "mvtec_pill",
+    "path": "C:\\arm_bharath_soc_2027\\BlisterTrace_App\\models\\anomaly\\mvtec_pill\\model.onnx",
+    "bytes": 32261612,
+    "parity": {
+      "passed": true,
+      "random_seed": 42,
+      "max_abs_differences": [
+        3.5762786865234375e-06,
+        9.5367431640625e-07
+      ]
+    }
+  },
+  {
+    "profile": "visa_capsules",
+    "path": "C:\\arm_bharath_soc_2027\\BlisterTrace_App\\models\\anomaly\\visa_capsules\\model.onnx",
+    "bytes": 32261612,
+    "parity": {
+      "passed": true,
+      "random_seed": 42,
+      "max_abs_differences": [
+        8.344650268554688e-07,
+        2.384185791015625e-07
+      ]
+    }
+  },
+  {
+    "profile": "mvtec_capsule",
+    "path": "C:\\arm_bharath_soc_2027\\BlisterTrace_App\\models\\anomaly\\mvtec_capsule\\model.onnx",
+    "bytes": 32261612,
+    "parity": {
+      "passed": true,
+      "random_seed": 42,
+      "max_abs_differences": [
+        5.245208740234375e-06,
+        4.291534423828125e-06
+      ]
+    }
+  }
+]

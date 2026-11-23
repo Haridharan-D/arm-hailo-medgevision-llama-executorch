@@ -1,0 +1,20 @@
+.splash{background:radial-gradient(ellipse at 25% 20%,#12343b 0,transparent 52%),radial-gradient(ellipse at 80% 75%,#201a39 0,transparent 50%),#080d14}
+.boot-panel{width:min(580px,calc(100% - 48px));padding:40px;border:1px solid #83ceff30;border-radius:24px;background:#101821e8;box-shadow:0 32px 100px #0007}
+.boot-panel h1{font-size:46px}.boot-panel .splash-logo{width:64px;height:64px;margin-bottom:20px}.boot-list{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;margin:24px 0;padding:18px 0}.boot-item{font-size:12px}.boot-foot{flex-direction:column;align-items:stretch;gap:18px}.enter-workspace{min-height:50px;font-size:15px}.boot-foot>span{font-size:12px;text-align:center}.splash-logo::after{animation-iteration-count:1}
+.viewer-stage{cursor:grab;overscroll-behavior:contain}.viewer-content{transition:none!important}.viewer-stage:focus-visible{outline:2px solid var(--info)}
+.model-check{display:inline-flex;gap:7px;align-items:center;font-size:11px;line-height:1.5;margin:3px 0;color:var(--info)}.model-check.clear{color:var(--pass)}.model-check.flagged{color:var(--review)}
+.blind-result{font-size:12px;line-height:1.6;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2)}
+.blind-result strong{color:var(--text)}.viewer-help{font-size:10px;color:var(--muted);white-space:nowrap}
+@media(max-width:1100px){.viewer-help{display:none}.boot-panel{padding:28px}}
+@media(prefers-reduced-motion:reduce){.splash-logo::after{animation:none}}
+/* Use the complete viewport at native screen resolution. */
+html,body,#app{width:100%;max-width:none;margin:0;min-width:0}
+.app-shell{width:100%;max-width:none;margin:0;grid-template-columns:80px minmax(0,1fr)}
+.workspace,.vision-column,.advice-column,.viewer-card,.assistant-workbench{min-width:0}
+#operator-badge{display:none}
+@media(min-width:1000px) and (min-height:500px){
+ .console-inspect .app-shell{width:100%;max-width:none;grid-template-columns:56px minmax(0,1fr)}
+ .console-inspect .inspect-grid{grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr)}
+ .console-inspect .viewer-stage{min-height:120px}
+ .console-inspect .viewer-toolbar{gap:4px}
+}

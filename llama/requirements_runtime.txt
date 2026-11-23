@@ -1,0 +1,2 @@
+# Runtime orchestration only; no PyTorch or model export dependency on the Pi.
+tiktoken==0.8.0

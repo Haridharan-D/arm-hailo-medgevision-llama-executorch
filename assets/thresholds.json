@@ -1,0 +1,93 @@
+{
+  "black_dot": {
+    "tp": 513,
+    "fp": 9,
+    "fn": 4,
+    "support": 517,
+    "precision": 0.9827586206896551,
+    "recall": 0.9922630560928434,
+    "f2": 0.9903474903474904,
+    "threshold": 0.9,
+    "class_id": 0,
+    "target_recall_met": true,
+    "role": "defect"
+  },
+  "broken": {
+    "tp": 424,
+    "fp": 7,
+    "fn": 9,
+    "support": 433,
+    "precision": 0.9837587006960556,
+    "recall": 0.9792147806004619,
+    "f2": 0.9801202034211742,
+    "threshold": 0.9,
+    "class_id": 1,
+    "target_recall_met": true,
+    "role": "defect"
+  },
+  "color_mismatch": {
+    "tp": 457,
+    "fp": 7,
+    "fn": 12,
+    "support": 469,
+    "precision": 0.9849137931034483,
+    "recall": 0.9744136460554371,
+    "f2": 0.9764957264957264,
+    "threshold": 0.89,
+    "class_id": 2,
+    "target_recall_met": true,
+    "role": "defect"
+  },
+  "crack": {
+    "tp": 407,
+    "fp": 12,
+    "fn": 3,
+    "support": 410,
+    "precision": 0.9713603818615751,
+    "recall": 0.9926829268292683,
+    "f2": 0.9883438562408937,
+    "threshold": 0.86,
+    "class_id": 3,
+    "target_recall_met": true,
+    "role": "defect"
+  },
+  "dual_cap": {
+    "tp": 111,
+    "fp": 2,
+    "fn": 0,
+    "support": 111,
+    "precision": 0.9823008849557522,
+    "recall": 1.0,
+    "f2": 0.9964093357271094,
+    "threshold": 0.91,
+    "class_id": 4,
+    "target_recall_met": true,
+    "role": "defect"
+  },
+  "empty": {
+    "tp": 566,
+    "fp": 11,
+    "fn": 11,
+    "support": 577,
+    "precision": 0.9809358752166378,
+    "recall": 0.9809358752166378,
+    "f2": 0.9809358752166378,
+    "threshold": 0.91,
+    "class_id": 5,
+    "target_recall_met": true,
+    "role": "defect"
+  },
+  "foreign_particle": {
+    "tp": 416,
+    "fp": 12,
+    "fn": 10,
+    "support": 426,
+    "precision": 0.9719626168224299,
+    "recall": 0.9765258215962441,
+    "f2": 0.975609756097561,
+    "threshold": 0.9,
+    "class_id": 6,
+    "target_recall_met": true,
+    "role": "defect"
+  }
+}

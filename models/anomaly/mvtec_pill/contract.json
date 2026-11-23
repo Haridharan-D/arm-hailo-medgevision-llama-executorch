@@ -1,0 +1,132 @@
+{
+  "model": "EfficientAD-S: pretrained PDN teacher, trainable student and feature autoencoder",
+  "run_name": "mvtec_pill",
+  "training_steps": 70000,
+  "training_batch_size": 1,
+  "amp": false,
+  "input": {
+    "shape": [
+      1,
+      3,
+      256,
+      256
+    ],
+    "dtype": "float32",
+    "color": "RGB",
+    "preprocessing": "Pillow bilinear resize, /255, ImageNet normalization once",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "output": "Anomaly heatmap and maximum image score; not defect identity, probability or severity",
+  "thresholds": {
+    "image": 0.35005301237106323,
+    "pixel": 0.07457666099071503,
+    "method": "normal_quantile",
+    "normal_quantile": 0.995,
+    "calibration_images": 40,
+    "calibration_defects": 0
+  },
+  "best_step": 69000,
+  "split_fingerprint": "2392e0e71c746122c7767de278dab806e748d32b20800af4bbf9d8664f4a94af",
+  "checkpoint_sha256": "8e6f5990c66870d1c1419fba457d0281c1913e4e4b72ed5bf38fc4e36e2a5c46",
+  "acceptance_limit": "Category benchmark; no claim of local blister-camera accuracy or Hailo deployment",
+  "evaluation": {
+    "per_category": {
+      "mvtec/pill": {
+        "images": 167,
+        "defects": 141,
+        "image_auroc": 0.9833606110201855,
+        "image_f1": 0.9236641221374046,
+        "image_confusion_matrix_tn_fp_fn_tp": [
+          26,
+          0,
+          20,
+          121
+        ],
+        "pixel_auroc": 0.9849134047367899,
+        "pixel_f1": 0.6925722635510605,
+        "aupro": 0.9557222113880817,
+        "pixel_confusion_matrix_tn_fp_fn_tp": [
+          10311026,
+          266099,
+          31816,
+          335571
+        ],
+        "annotated_images": 167,
+        "aupro_max_fpr": 0.3,
+        "aupro_steps": 200,
+        "image_aupr": 0.9970465973253823,
+        "image_precision": 1.0,
+        "image_recall": 0.8581560283687943,
+        "normal_false_alarm_rate": 0.0
+      }
+    },
+    "overall_macro": {
+      "image_auroc": 0.9833606110201855,
+      "image_f1": 0.9236641221374046,
+      "pixel_auroc": 0.9849134047367899,
+      "pixel_f1": 0.6925722635510605,
+      "aupro": 0.9557222113880817
+    },
+    "counts": {
+      "images": 167,
+      "defects": 141
+    },
+    "summed_image_confusion_matrix_tn_fp_fn_tp": [
+      26,
+      0,
+      20,
+      121
+    ],
+    "note": "Unweighted macro across available categories; undefined metrics are null. All thresholds fixed before test."
+  },
+  "profile": "mvtec_pill",
+  "artifact": "model.onnx",
+  "artifact_sha256": "4670cd45c0d465bfbcdbdea2ca2711dd21e0b1eb026beb308e484b4f2e99c220",
+  "deployment_input": {
+    "shape": [
+      1,
+      3,
+      256,
+      256
+    ],
+    "dtype": "float32",
+    "color": "RGB",
+    "range": [
+      0,
+      1
+    ],
+    "resize": "Pillow bilinear; ImageNet normalization is inside ONNX"
+  },
+  "deployment_output": {
+    "heatmap": [
+      1,
+      1,
+      256,
+      256
+    ],
+    "score": [
+      1
+    ]
+  },
+  "onnx_parity": {
+    "passed": true,
+    "random_seed": 42,
+    "max_abs_differences": [
+      3.5762786865234375e-06,
+      9.5367431640625e-07
+    ]
+  },
+  "validated_for_local_camera": false,
+  "quality_warning": "Category benchmark; local-camera/product validation required",
+  "license": "MVTec AD CC BY-NC-SA 4.0 dataset; non-commercial research",
+  "architecture_source": "EfficientAD PDN-S teacher/student/autoencoder; source provenance retained in audited Submission archive"
+}
