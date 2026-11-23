@@ -1,0 +1,79 @@
+[
+  {
+    "file": "acceptance_demo/safe/safe_01.jpg",
+    "group": "demo_safe",
+    "case_id": "SAFE \u00b7 safe_01",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "996c7ed5d1634a98212fd5d074680c58fdce49d89906ba88f122efa79695ad77"
+  },
+  {
+    "file": "acceptance_demo/warning/warning_01.png",
+    "group": "demo_warning",
+    "case_id": "WARNING \u00b7 warning_01",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "a2de95cf919fe2f6fc69b947be214b40cbeece0ca9217d128c1f89c3e3cd1383"
+  },
+  {
+    "file": "acceptance_demo/safe/safe_02.jpg",
+    "group": "demo_safe",
+    "case_id": "SAFE \u00b7 safe_02",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "8dca175690645ec72761e10e91aebe0d241bbaa2448b6ce4b569e1d6d51948d5"
+  },
+  {
+    "file": "acceptance_demo/warning/warning_02.png",
+    "group": "demo_warning",
+    "case_id": "WARNING \u00b7 warning_02",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "89efe816970e6dadb255c3a65f266144794cc54ba83e97e52859ea173ef4180a"
+  },
+  {
+    "file": "acceptance_demo/defective/black_dot/black_dot.jpg",
+    "group": "demo_black_dot",
+    "case_id": "DEFECTIVE \u00b7 black_dot",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "8d7a0a761663dd6d2ef9288219092040eb8672f02fbd71e6e6565dbdae3a6aa8"
+  },
+  {
+    "file": "acceptance_demo/defective/broken/broken.jpg",
+    "group": "demo_broken",
+    "case_id": "DEFECTIVE \u00b7 broken",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "6b4f163dfb993ab0bb66df86f4cf7fb9bcb41d1f3f8406420c2782fdd88e8c84"
+  },
+  {
+    "file": "acceptance_demo/defective/color_mismatch/color_mismatch.jpg",
+    "group": "demo_color_mismatch",
+    "case_id": "DEFECTIVE \u00b7 color_mismatch",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "0468cff09218af288ff3ec01bb4e456beb1f7fc2e76131c414eb23f99966124b"
+  },
+  {
+    "file": "acceptance_demo/defective/crack/crack.jpg",
+    "group": "demo_crack",
+    "case_id": "DEFECTIVE \u00b7 crack",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "9d95613e973a202fd55d29312ca01939cc6b7bf82726df5c8f206b8cd427c00d"
+  },
+  {
+    "file": "acceptance_demo/defective/dual_cap/dual_cap.jpg",
+    "group": "demo_dual_cap",
+    "case_id": "DEFECTIVE \u00b7 dual_cap",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "cdb921ee15c437159bb457ef569ac28353d1c9c350eadc951a6b5c07181f776c"
+  },
+  {
+    "file": "acceptance_demo/defective/empty/empty.jpg",
+    "group": "demo_empty",
+    "case_id": "DEFECTIVE \u00b7 empty",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "71d2ab72706102cf6e62fa7302f8f85e778859026cfd333f76cfad430622c33b"
+  },
+  {
+    "file": "acceptance_demo/defective/foreign_particle/foreign_particle.jpg",
+    "group": "demo_foreign_particle",
+    "case_id": "DEFECTIVE \u00b7 foreign_particle",
+    "label_origin": "Selected demonstration; visual model result only; see provenance",
+    "sha256": "9825a8f235c3321a1beb57c8b56bc533c6db8f0fa89109449dacf24bb0263edc"
+  }
+]

@@ -1,0 +1,12 @@
+SCOA Pharmaceutical Blister Images Public Release
+
+The image files and accompanying dataset documentation in this release are
+licensed under the Creative Commons Attribution 4.0 International license
+(CC BY 4.0), as authorized by the data provider.
+
+License deed: https://creativecommons.org/licenses/by/4.0/
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+For attribution, use the creators, dataset title, version and DOI shown on the
+Zenodo record page. The license applies to this distributed image release;
+no undistributed annotations, split manifests or experimental records are granted.
