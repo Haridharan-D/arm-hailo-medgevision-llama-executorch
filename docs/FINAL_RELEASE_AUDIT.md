@@ -1,10 +1,10 @@
-# Final reproducibility audit — 23 November 2026
+# Final reproducibility audit â€” 23 November 2026
 
 ## Acceptance status
 
-PASS — 73 Python regression tests after fixes; original 67 plus six integrity/preprocessing/QA tests. PASS — five real CPU model demo cases on the Windows workstation. PASS — native C++ JSON boundary test (previous release execution, unchanged source). PASS — trained deployment model hashes preserved. PASS — conservative HOLD/REVIEW decisions preserved with additive severity explanations. PASS — app defaults now adaptive-v1, three threads, 128 output tokens, 1536 prompt budget under the 2048 graph capacity. PASS — architecture-specific worker selection and model/tokenizer/runtime-sidecar checks. PASS — shared YOLO letterbox path for CPU and Hailo; input contracts and non-finite HEF outputs now rejected.
+PASS â€” 73 Python regression tests after fixes; original 67 plus six integrity/preprocessing/QA tests. PASS â€” five real CPU model demo cases on the Windows workstation. PASS â€” native C++ JSON boundary test (previous release execution, unchanged source). PASS â€” trained deployment model hashes preserved. PASS â€” conservative HOLD/REVIEW decisions preserved with additive severity explanations. PASS â€” app defaults now adaptive-v1, three threads, 128 output tokens, 1536 prompt budget under the 2048 graph capacity. PASS â€” architecture-specific worker selection and model/tokenizer/runtime-sidecar checks. PASS â€” shared YOLO letterbox path for CPU and Hailo; input contracts and non-finite HEF outputs now rejected.
 
-NOT TESTED — new Pi Hailo/USB/CSI inference, Pi Llama latency/RAM/CPU after this change, and fresh native build: SSH to the last known Pi address timed out. NOT TESTED — optional Drive upload/download. NOT TESTED — fresh Windows executable build. NOT TESTED — long-shift endurance, production camera/product generalization, clinical severity, approved production SOP and regulatory release validation. FAIL — complete SD-card backup clearance: the original root filesystem and final Pi-only binaries/data have not been backed up here. Keep the card intact.
+NOT TESTED â€” new Pi Hailo/USB/CSI inference, Pi Llama latency/RAM/CPU after this change, and fresh native build: SSH to the last known Pi address timed out. NOT TESTED â€” optional Drive upload/download. NOT TESTED â€” fresh Windows executable build. NOT TESTED â€” long-shift endurance, production camera/product generalization, clinical severity, approved production SOP and regulatory release validation. FAIL â€” complete SD-card backup clearance: the original root filesystem and final Pi-only binaries/data have not been backed up here. Keep the card intact.
 
 ## Critical changes and boundaries
 
@@ -31,3 +31,6 @@ The reproduction folder contains original YOLO training helpers/notebook with ou
 ## Release readiness
 
 The research demo is reproducible on CPU with documented native/hardware prerequisites. A claim of complete industrial/production acceptance would be false until the NOT TESTED items are executed. Historical measurements, deployment identities and failure evidence remain visible rather than being relabeled as fresh release passes.
+
+
+New host resource sample: 78.72 s cold five-case window; aggregate peak RSS 427.56 MiB; peak summed CPU 340.9%. Includes loading and multiple models. Shared RSS pages can be counted more than once. The bootstrap-only sample is explicitly retained as INVALID_parent_only_resources.json.
