@@ -1,0 +1,31 @@
+{
+  "release": "2026.11.23-reproducibility-v2",
+  "status": "RESEARCH_DEMO_WITH_EXPLICIT_ACCEPTANCE_GAPS",
+  "regression_tests": {
+    "status": "PASS",
+    "passed": 73
+  },
+  "cpu_smoke": {
+    "status": "PASS",
+    "matched": 5
+  },
+  "frozen_artifacts": {
+    "status": "PASS",
+    "deployment_model_hashes_unchanged": true
+  },
+  "pi_hailo_camera_and_llama_current_release": {
+    "status": "NOT TESTED",
+    "reason": "Pi SSH timeout; no hardware execution claimed"
+  },
+  "drive_mirror": {
+    "status": "NOT TESTED",
+    "reason": "No Drive upload connector; no uploaded file IDs verified"
+  },
+  "sd_backup": {
+    "status": "FAIL",
+    "reason": "Complete Pi rootfs/runtime/evidence backup not verified"
+  },
+  "historical_evidence": "evidence/historical",
+  "ci_verified_code_commit": "f6e1fc495ab69fcba1f056c67d38cc6e0c57e4a2",
+  "ci_run": "https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/runs/45227285941"
+}
