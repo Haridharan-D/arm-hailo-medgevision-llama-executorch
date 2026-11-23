@@ -6,20 +6,68 @@
     "included_in_git": true,
     "parts": [
       {
-        "path": "model_parts/mvtec_capsule/model.onnx.000.part",
-        "sha256": "9f993b343fc26eef49a7615c32286a6491c3158187e7584adcc9589303b39f2c"
+        "path": "model_parts/mvtec_capsule/model.onnx.000.part.00.small",
+        "sha256": "df224f215e73e857b5e64f205bb2a697190bfa135c5d931c0b8ef64cb5eb35df"
       },
       {
-        "path": "model_parts/mvtec_capsule/model.onnx.001.part",
-        "sha256": "e3e734bf73aae38df29ff7f4ed578d0c2423c996925e15e8f4dc4e4a90de0149"
+        "path": "model_parts/mvtec_capsule/model.onnx.000.part.01.small",
+        "sha256": "06707aeade71993cdb2ec4ee0e98b6257038609172dff838d2032ba11ee69843"
       },
       {
-        "path": "model_parts/mvtec_capsule/model.onnx.002.part",
-        "sha256": "7e26bc6ac341dc2ff306b33791fb8e5b39c2fdd1db7dda28a796c111968faec2"
+        "path": "model_parts/mvtec_capsule/model.onnx.000.part.02.small",
+        "sha256": "c9f458f1d39ef21e6616236204178efb6e6ac039a8fc1eac501055960f7d987b"
       },
       {
-        "path": "model_parts/mvtec_capsule/model.onnx.003.part",
-        "sha256": "8021278541a0b9d0ea64a155468fa21a266faf63e194b47a6b0cf0c5f397167e"
+        "path": "model_parts/mvtec_capsule/model.onnx.000.part.03.small",
+        "sha256": "e642747bf9137b614c818a9b099dfa34b883dad4485425b4813827794ba780ee"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.001.part.00.small",
+        "sha256": "44395515ff98ef456eced9742fc7eaa9e45e9feeb13e20cb082d949745844527"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.001.part.01.small",
+        "sha256": "fced24e8c8792409658a79218447cbce560f1cc8152d79cab454f0e76390fe05"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.001.part.02.small",
+        "sha256": "d3c193288236b87b826965aa823835fdbe3cedbce9c3500d769cac4464c0850f"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.001.part.03.small",
+        "sha256": "634cd6dc5b348c531afd0123c9a849f8f6cf14991675ebe14b184469b373dc71"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.002.part.00.small",
+        "sha256": "c645779d9d0db4fdac0526f170f57751daca1f903b5fd26b75a24389b8e2c805"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.002.part.01.small",
+        "sha256": "3a2e71be4dd053b2a580acadb22b52531fa1c1ceb76a718d9b302b2463e7c08d"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.002.part.02.small",
+        "sha256": "2ab474d64d66684ef327a4b5d04c6445fffc52267dfbc04b3b7949feb7330b1b"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.002.part.03.small",
+        "sha256": "bf9360c31185c1848e2c04201af08caefbd26a3852addecbcb3627fc9bced908"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.003.part.00.small",
+        "sha256": "935a6c2cbe273893da8c9605b50a1cd041ddceb4afd4ee8705b9c1370401e3de"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.003.part.01.small",
+        "sha256": "48773f804dab4e10a30512699bc5c32dd5844f5afa75022d3db4f252b6f38e3b"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.003.part.02.small",
+        "sha256": "859af9237c995ddca2d7b0aec87378228613990e3bf6fea9094d66f319e9ff57"
+      },
+      {
+        "path": "model_parts/mvtec_capsule/model.onnx.003.part.03.small",
+        "sha256": "4360108915ed31ed4732e1191e841a58cc30913b204f319d3f7a7bd18521378e"
       }
     ]
   },
@@ -30,20 +78,68 @@
     "included_in_git": true,
     "parts": [
       {
-        "path": "model_parts/mvtec_pill/model.onnx.000.part",
-        "sha256": "9ee742440d1ac97420b393dd5860088d26f58040aa57144ff2a2d363546b3b5e"
+        "path": "model_parts/mvtec_pill/model.onnx.000.part.00.small",
+        "sha256": "a5e61a2568e47dbc6f9570205753165195e625c75e4706046de66326bb9f751d"
       },
       {
-        "path": "model_parts/mvtec_pill/model.onnx.001.part",
-        "sha256": "6586f73cc0a1b9a6d6d7dee24ed67a67e286db5550b2fddea3685f224043443b"
+        "path": "model_parts/mvtec_pill/model.onnx.000.part.01.small",
+        "sha256": "06707aeade71993cdb2ec4ee0e98b6257038609172dff838d2032ba11ee69843"
       },
       {
-        "path": "model_parts/mvtec_pill/model.onnx.002.part",
-        "sha256": "9c79a24881d86c3d19cd09e2cdb085e5a8130d1a88cff694a4f68e1c2868a756"
+        "path": "model_parts/mvtec_pill/model.onnx.000.part.02.small",
+        "sha256": "c9f458f1d39ef21e6616236204178efb6e6ac039a8fc1eac501055960f7d987b"
       },
       {
-        "path": "model_parts/mvtec_pill/model.onnx.003.part",
-        "sha256": "e7ee71d902e96dfe3e9412b07833da0aeccab6896044e16fcb1f91424e55ce8e"
+        "path": "model_parts/mvtec_pill/model.onnx.000.part.03.small",
+        "sha256": "e642747bf9137b614c818a9b099dfa34b883dad4485425b4813827794ba780ee"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.001.part.00.small",
+        "sha256": "44395515ff98ef456eced9742fc7eaa9e45e9feeb13e20cb082d949745844527"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.001.part.01.small",
+        "sha256": "19f72d180d8445714d99cf3da5255d7511bd29efa436190737839407e8ffb065"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.001.part.02.small",
+        "sha256": "bba2a309e95645fec128cae88643b631ce92aa5a304bd7d882e133cf0fc29871"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.001.part.03.small",
+        "sha256": "19156c728435014049c0fd6a01a56dec50df2a0d772d9372342db518cac64fbb"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.002.part.00.small",
+        "sha256": "da9dd3e1997ca1d81ca77d8c9e36ae1ec4d7415bc2a99d816bb4adf406736c05"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.002.part.01.small",
+        "sha256": "4271885535eadec650186aecdc3079ca0143cd1fa3eb9efdb161f65ba221253b"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.002.part.02.small",
+        "sha256": "01cfcb3a5d8121e5a858c730506a20a8d9f8a5d527d6ce8896548fd95f71c578"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.002.part.03.small",
+        "sha256": "930eab677a0109d090835250464d35c62ff9c95c0916743c20ae9366a4f612fb"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.003.part.00.small",
+        "sha256": "89593470800cfd6b178c55e823096c2d24de9420b42f34eb85df05fe8e420a95"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.003.part.01.small",
+        "sha256": "7e1f7adb9db369f7908b1408e5cfcd5b757493a2997f3972a1ad364c14cbd168"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.003.part.02.small",
+        "sha256": "50bca4a6b3fa54bbf7fff6037ca476678e2072b6cc4674645198849758be6011"
+      },
+      {
+        "path": "model_parts/mvtec_pill/model.onnx.003.part.03.small",
+        "sha256": "446730de13b59a6cfab267a7e2239c91c1675e7863e4a7b0013a3ff624a1d623"
       }
     ]
   },
@@ -54,20 +150,68 @@
     "included_in_git": true,
     "parts": [
       {
-        "path": "model_parts/visa_capsules/model.onnx.000.part",
-        "sha256": "9fc96a423c83ac988c50a9f7ab8257586cb93ae1d694834f253115d1c495020a"
+        "path": "model_parts/visa_capsules/model.onnx.000.part.00.small",
+        "sha256": "e99d35c9b4ab089507e8150337b1c19115b5ca44fb545e772e905100c4899f5c"
       },
       {
-        "path": "model_parts/visa_capsules/model.onnx.001.part",
-        "sha256": "b7cbc9087f5defa6045abcb87c0915758a18d76af618d126162dce6a03994acd"
+        "path": "model_parts/visa_capsules/model.onnx.000.part.01.small",
+        "sha256": "06707aeade71993cdb2ec4ee0e98b6257038609172dff838d2032ba11ee69843"
       },
       {
-        "path": "model_parts/visa_capsules/model.onnx.002.part",
-        "sha256": "1229300a5355c65480f557a03cec3953b84c5c1b05cc82a823ef319ec2686442"
+        "path": "model_parts/visa_capsules/model.onnx.000.part.02.small",
+        "sha256": "c9f458f1d39ef21e6616236204178efb6e6ac039a8fc1eac501055960f7d987b"
       },
       {
-        "path": "model_parts/visa_capsules/model.onnx.003.part",
-        "sha256": "c641c219e40761f4c2d721ac40a6359ccfe17b8ca496a54222388926cf18c196"
+        "path": "model_parts/visa_capsules/model.onnx.000.part.03.small",
+        "sha256": "e642747bf9137b614c818a9b099dfa34b883dad4485425b4813827794ba780ee"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.001.part.00.small",
+        "sha256": "44395515ff98ef456eced9742fc7eaa9e45e9feeb13e20cb082d949745844527"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.001.part.01.small",
+        "sha256": "80d3c0c7478c8092b309d92e7f67f3093fec8aa2dfe92bd8e68f05bc7b302863"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.001.part.02.small",
+        "sha256": "0375ff5edc7c092f03687351b374184d5203cd7284e22fc82bd721fbde15da2e"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.001.part.03.small",
+        "sha256": "02cb6c96def29dc4e76dfe1903cf5b532618e027c9f45ab9230040d140f1a7c0"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.002.part.00.small",
+        "sha256": "4c1e69a1fdbaa2a80b84d03e3c27d27a0d94957410014780244843db5b5f7bc9"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.002.part.01.small",
+        "sha256": "9e369754078b70100913d4e28f8978c3d971faa29b2ea73fd27a948c2cf0c062"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.002.part.02.small",
+        "sha256": "592f9d3bafdbe982f8e88cf82b34558f0bcfd2cda4010c4d44ec2a1635981e13"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.002.part.03.small",
+        "sha256": "d4510a92592a5db116e892b35846e74d53ae128806c89dfbb7529fc43e30f53a"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.003.part.00.small",
+        "sha256": "b4eecc7d82807eeae631a29918eb94fbbf0acbe20c7f40bb4a4e1139b73ee19a"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.003.part.01.small",
+        "sha256": "578d7b1ba5c98ef71ff7acc27be2288cc4f2ace9d66874b36f77307339ff2690"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.003.part.02.small",
+        "sha256": "0b2f993cbc3eed05281c29feb57afd2ff8b251b34d760112a04e2709256a3b0a"
+      },
+      {
+        "path": "model_parts/visa_capsules/model.onnx.003.part.03.small",
+        "sha256": "be6633c596be8c158b9203f990b6ddbd870547395aca5a456e70519dc198450b"
       }
     ]
   },
@@ -90,16 +234,44 @@
         "sha256": "969743a7554d5dafd787137d19f404da6455f67546b657f874ecc384aa044fce"
       },
       {
-        "path": "model_parts/assets/blistertrace_yolov8s.onnx.003.part",
-        "sha256": "0447d68c7715d1a08896ab8dde8b216e1dede72b14e126a7f47c6deb7b5a7e1c"
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.003.part.00.small",
+        "sha256": "bef04742d59851afaa08b849a25021a72bb80d13f27ad010972ec7a1bdd6eb61"
       },
       {
-        "path": "model_parts/assets/blistertrace_yolov8s.onnx.004.part",
-        "sha256": "49873600db5d5824dad62331d1f1e0ea8e656cb44e394b73376fe99067a1fe63"
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.003.part.01.small",
+        "sha256": "22056a2ae2891339bf58f23d8ef7db9b0e335cd82dd878a22332fde56b23d96a"
       },
       {
-        "path": "model_parts/assets/blistertrace_yolov8s.onnx.005.part",
-        "sha256": "59dbb2ae3d726571a91027dcdbd94fc4c5124dbb3045f9c99bb8b4e12840f2a1"
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.003.part.02.small",
+        "sha256": "f1480802446aa5474cdd8522ecb11c49d1cfc4525fda41484e946164b2bbde7b"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.003.part.03.small",
+        "sha256": "0793e00a7e67ca8b1f2b52aadd0b66194f799e92897fcddec319ffdbd8d6e002"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.004.part.00.small",
+        "sha256": "619e8b5366709e2e933ac57c9eb2477a97eb3afe801a041291a4745abf27bcdd"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.004.part.01.small",
+        "sha256": "4cec1ba51b18bf4af0337d22ff2995e5a8aa4a7531d3a5d298b0a5db9f63409f"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.004.part.02.small",
+        "sha256": "4b8b522674194ae4846452bbe3c901ad2bccbf3c9e8707f0ad8b16d76bdf7401"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.004.part.03.small",
+        "sha256": "b4796516b8939cc86904ae07402739c4f1a42c542285cc447efcd93af5cbd7bb"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.005.part.00.small",
+        "sha256": "c7c12a7f84c1d4280230b593d17d3a88206b7b2466d09f67720254c00d2c42ad"
+      },
+      {
+        "path": "model_parts/assets/blistertrace_yolov8s.onnx.005.part.01.small",
+        "sha256": "3e9a911a59a16ed6d699cf5583738de08bf22463f51481d740a53e20a422d063"
       }
     ]
   }
