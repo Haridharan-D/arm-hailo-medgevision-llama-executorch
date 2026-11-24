@@ -1,0 +1,61 @@
+{
+  "scope": "Screenshots from actual Pi Chromium through loopback SSH CDP; original measured records loaded read-only, no model outputs edited",
+  "cases": [
+    {
+      "file": "01_yolo_safe.png",
+      "inspection_id": "8cfa5fe51aa5476a9dc14571f2f01cd6",
+      "visual": "SAFE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    },
+    {
+      "file": "02_yolo_defective.png",
+      "inspection_id": "cf5cdda27c304cd9a47988165bc8fc99",
+      "visual": "DEFECTIVE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    },
+    {
+      "file": "03_anomaly_safe.png",
+      "inspection_id": "d9f0249c6b4b489b8ab8a108c04f9a94",
+      "visual": "SAFE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    },
+    {
+      "file": "04_anomaly_defective.png",
+      "inspection_id": "91eace7edcf6408ebbe06ce70c2ec309",
+      "visual": "DEFECTIVE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    },
+    {
+      "file": "05_anomaly_safe.png",
+      "inspection_id": "3b033dd2ba7d45918c516737afb35d30",
+      "visual": "SAFE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    },
+    {
+      "file": "06_anomaly_defective.png",
+      "inspection_id": "3014b011b7d24476afc250269b3a67af",
+      "visual": "DEFECTIVE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    },
+    {
+      "file": "07_anomaly_safe.png",
+      "inspection_id": "535a14f89cf54198a8f6c03c20f03e82",
+      "visual": "SAFE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    },
+    {
+      "file": "08_anomaly_defective.png",
+      "inspection_id": "7b9ab267a4c4469eb0137f4e7ca8318c",
+      "visual": "DEFECTIVE",
+      "advice_status": "llama_validated",
+      "scope": "Actual Pi Chromium showing the selected original measured inspection"
+    }
+  ]
+}

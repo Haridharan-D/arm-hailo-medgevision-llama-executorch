@@ -1,0 +1,30 @@
+{
+  "scope": "Physical Pi terminal screenshot of paginated original measured test output. Recorded-result replay, not new inference or synthetic terminal rendering.",
+  "pages": [
+    "terminal_case_01_01",
+    "terminal_case_01_02",
+    "terminal_case_01_03",
+    "terminal_case_02_01",
+    "terminal_case_02_02",
+    "terminal_case_02_03",
+    "terminal_case_03_01",
+    "terminal_case_03_02",
+    "terminal_case_03_03",
+    "terminal_case_04_01",
+    "terminal_case_04_02",
+    "terminal_case_04_03",
+    "terminal_case_05_01",
+    "terminal_case_05_02",
+    "terminal_case_05_03",
+    "terminal_case_06_01",
+    "terminal_case_06_02",
+    "terminal_case_06_03",
+    "terminal_case_07_01",
+    "terminal_case_07_02",
+    "terminal_case_07_03",
+    "terminal_case_08_01",
+    "terminal_case_08_02",
+    "terminal_case_08_03",
+    "terminal_summary"
+  ]
+}

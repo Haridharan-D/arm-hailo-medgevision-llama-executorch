@@ -1,0 +1,32 @@
+{
+  "archive": "medge_demo_recovery_20261124.zip",
+  "sha256": "d99bc932f6af705dfefea5cf6a84de3d418ad2c192bed2e2cca6ecafb77f36ad",
+  "bytes": 9717870,
+  "parts": [
+    {
+      "file": "demo_recovery.000.part",
+      "bytes": 2097152,
+      "sha256": "09d1cbb7c5773ff80cc88dc4be2219e65cbac1cb7fa372e6381efd6afddcf3b9"
+    },
+    {
+      "file": "demo_recovery.001.part",
+      "bytes": 2097152,
+      "sha256": "50b2b917ca9141d227c6557d710b3f6b19f48e021069c8706af7dd01bf2838f5"
+    },
+    {
+      "file": "demo_recovery.002.part",
+      "bytes": 2097152,
+      "sha256": "5abe21fd4fca94f101695aa8b4685e2cc0f86550900b25ef6bd91025259bde4a"
+    },
+    {
+      "file": "demo_recovery.003.part",
+      "bytes": 2097152,
+      "sha256": "c076e4bfd9adb97fd3255616160139022023a57e79fa89033e17e3636c50ca72"
+    },
+    {
+      "file": "demo_recovery.004.part",
+      "bytes": 1329262,
+      "sha256": "11d480c7097b52f434cddce8dbd3db807d9770df98bafcc2a118866069e2d4f4"
+    }
+  ]
+}

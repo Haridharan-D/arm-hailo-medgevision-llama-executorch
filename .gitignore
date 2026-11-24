@@ -17,3 +17,4 @@ native/bin/
 *.onnx
 *.json.before_setup
 smoke_results.json
+backups/demo_20261124/

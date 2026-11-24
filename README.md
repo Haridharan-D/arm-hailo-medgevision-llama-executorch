@@ -1,5 +1,8 @@
 # Medge Vision
 
+**Evidence and backups:** [complete screenshot gallery](evidence/gallery/README.md) · [included portable backup and restore commands](backups/README.md) · [full submission report](SUBMISSION_REPORT.md).
+
+
 **24 November target release:** [full submission report](SUBMISSION_REPORT.md), [eight-case target evidence](evidence/target_20261124/summary.json), [verified project backup status](BACKUP_STATUS.md). Actual Pi: 73 regressions passed, 8/8 selected outcomes and 8/8 genuine Llama responses; no cache reuse. Exact aarch64 runtime is now shipped as verified parts. Earlier pending-hardware statements below refer to the earlier release. Camera/endurance/Drive gaps remain explicit.
 
 
@@ -9,7 +12,7 @@ Offline pharmaceutical optical-inspection research station: Raspberry Pi 5 + Hai
 
 **Start here: [reproducible setup and demo commands](QUICKSTART.md).** CPU model inference and all 67 regression tests were verified from this organized checkout. Fresh Pi installation still requires the vendor runtime and a native Llama build; see the explicit validation limits below.
 
-![Actual Medge Vision station](evidence/original_pi/station_safe.png)
+![Actual measured Hailo defect and Llama advisory](evidence/gallery/dashboard/02_yolo_defective.png)
 
 After setup, launch with `python run.py`. Read the [three-minute hackathon demo](docs/HACKATHON_DEMO.md), [recorded CPU smoke results](evidence/clone_cpu_smoke.json), and [verification report](docs/REPOSITORY_VERIFICATION.md).
 
