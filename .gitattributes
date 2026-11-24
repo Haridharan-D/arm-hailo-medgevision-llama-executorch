@@ -12,3 +12,4 @@
 *.jpg binary
 *.ttf binary
 assets/thresholds.json -text
+*.pdf binary

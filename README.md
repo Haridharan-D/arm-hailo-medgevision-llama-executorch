@@ -1,16 +1,22 @@
 # Medge Vision
 
-**Evidence and backups:** [complete screenshot gallery](evidence/gallery/README.md) · [included portable backup and restore commands](backups/README.md) · [full submission report](SUBMISSION_REPORT.md).
+Medge Vision is an offline visual inspection station for pharmaceutical blister packs. It detects configured defects, flags anomalies, records inspections in SQLite, and gives operators SOP-linked recommendations.
 
+## Start here for PS5 judging
 
-**24 November target release:** [full submission report](SUBMISSION_REPORT.md), [eight-case target evidence](evidence/target_20261124/summary.json), [verified project backup status](BACKUP_STATUS.md). Actual Pi: 76 regressions passed, 8/8 selected outcomes and 8/8 genuine Llama responses; no cache reuse. Exact aarch64 runtime is now shipped as verified parts. Camera/endurance/Drive gaps remain explicit.
+- [Quickstart](QUICKSTART.md) covers CPU reproduction and the Raspberry Pi 5 + Hailo-8 setup.
+- [24 November Raspberry Pi run](evidence/target_20261124/eight_test_report.json) contains the exact eight inspection records and timings. See the [run summary](evidence/target_20261124/summary.json) and [target status](evidence/target_20261124/target_status.json).
+- [Screenshot gallery](evidence/gallery/README.md) shows the Pi dashboard, saved inspections, and labeled terminal replay.
+- [Final project report (PDF)](docs/MEDGE_VISION_Final_Project_Report.pdf) covers methodology, hardware utilization, optimization, and results.
+- [Passing GitHub CI on the submission commit](https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/runs/45326193221) covers artifact verification, CPU regressions, backup restore, and CPU smoke inference.
 
+The Raspberry Pi 5 uses **Hailo-8 via HailoRT** for the custom seven-class YOLOv8s detector. The **Pi Arm CPU** runs three EfficientAD-S models via ONNX Runtime and runs Llama 3.2 1B Instruct SpinQuant via ExecuTorch v1.0.0 for asynchronous advisory. Inference runs locally after provisioning.
 
-Offline pharmaceutical optical-inspection research station: Raspberry Pi 5 + Hailo-8 YOLO, three EfficientAD CPU models, and ExecuTorch Llama advisory. Two dashboard designs, camera/upload/local-image inspection, anomaly heatmaps, SQLite evidence and a synchronized second HDMI verdict screen.
+The selected-image run matched all **8/8 visual outcomes** and returned **8/8 fresh validated Llama responses** with zero cache reuse. The Pi suite had **73 passing regression tests** at that stage. It reached **76 passing tests on the Pi and laptop** after the portable restore checks were added. See the [later Pi regression log](evidence/gallery/target_regression_with_restore.txt) and [engineering report](SUBMISSION_REPORT.md).
 
-**Current audit:** [PASS / FAIL / NOT TESTED report](SUBMISSION_REPORT.md), [architecture](docs/architecture.svg), [model training-to-deployment dossier](docs/MODEL_LIFECYCLE.md), [historical benchmarks](evidence/historical/BENCHMARKS.json), [Drive mirror status](docs/DRIVE_MIRROR.md).
+**Live-camera validation and sustained throughput: NOT TESTED.** The [historical detector benchmark](evidence/historical/METRICS.json) measures repeated-image backend performance. The eight-case run measures selected-image inspection and advisory separately. For a localized configured defect, the [QA severity rule](app/severity.py) assigns major inspection priority and calls for HOLD and human review. Anomaly profiles report a score and rule outcome. Clinical severity remains unvalidated.
 
-**Start here: [reproducible setup and demo commands](QUICKSTART.md).** All 76 regression tests passed on the Pi and laptop. The portable demo backup was restored and its images/advice were read through the application API. Fresh Pi installation requires matching vendor packages; the original tested Arm runtime is included, with source build available for other OS/ABI combinations.
+See the [architecture](docs/architecture.svg), [model lifecycle](docs/MODEL_LIFECYCLE.md), and [portable backup and restore commands](backups/README.md) for deployment and evidence details.
 
 ![Actual measured Hailo defect and Llama advisory](evidence/gallery/dashboard/02_yolo_defective.png)
 
