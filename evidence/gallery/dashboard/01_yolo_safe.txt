@@ -1,0 +1,92 @@
+Skip to workspace
+Medge Vision.
+All recent inspections
+TERMINAL-20261124-093134 · SELECTED-DEMO · OPEN
+TERMINAL-20261124-091227 · SELECTED-DEMO · OPEN
+TERMINAL-20261124-091204 · SELECTED-DEMO · OPEN
+TERMINAL-20261124-085509 · SELECTED-DEMO · OPEN
+TERMINAL-20261123-125108 · SELECTED-DEMO · OPEN
+TERMINAL-20261123-123321 · SELECTED-DEMO · OPEN
+TERMINAL-20261123-123317 · SELECTED-DEMO · OPEN
+TERMINAL-20261123-120315 · SELECTED-DEMO · OPEN
+VISUAL-DEMO-1795335077463634183 · SELECTED-DEMO · OPEN
+VISUAL-DEMO-1795335036506529243 · SELECTED-DEMO · OPEN
+VISUAL-DEMO-1795334919445665792 · SELECTED-DEMO · OPEN
+TARGET-1795329532962901726 · DEMO-SKU · OPEN
+TARGET-1795329343167946602 · DEMO-SKU · OPEN
+LEGACY · unspecified · OPEN
+Camera
+Hailo
+Llama
+DB
+OFFLINE DESIGN
+Fullscreen
+Design B
+Inspect
+History
+Batches
+SOP library
+Audit log
+Settings
+Health
+Shortcuts
+Vision / Hailo-8
+HAILO ACTIVE
+Advisory / Arm CPU
+IDLE
+SAFE
+36.98 ms
+
+No configured defect detected · visual check only · QA: REVIEW
+
+Vision / HailoRT
+36.98 ms
+Defect detection
+Anomaly heatmap
+Change image
+Original
+Annotated
+Side-by-side
+Heatmap
+Opacity
+INSPECTED · 8cfa5fe51aa5
+YOLO regions + deterministic rules
+PINNED · 8cfa5fe51aa5476a9dc14571f2f01cd6
+1279 × 2275 px
+19%
+Fit
+Fill
+1:1
+Loupe
+VISUAL CHECK: SAFE
+No configured defect above the class thresholds
+QA disposition: REVIEW
+0 detection regions
+View details
+Auto advice
+Ask / steps
+QA draft
+QA review
+ExecuTorch Llama
+
+Llama 3.2 1B · INT4 · 3 threads · automatic advice
+
+ADVISORY ONLY
+VALIDATED RESPONSE
+11.7 s
+RECOMMENDED OPERATOR ACTION
+Check camera alignment and lighting, recapture if needed, and request human review.
+SOP grounding
+BT-DEMO-SOP-01 / BT-03
+Priority: unknown · from inspection rules
+
+TTFT 4.44 s · Prefill 4.44 s · Decode 11.2 tok/s · 48 tokens
+
+Demonstration SOP · unapproved for operations. Consult an approved procedure.
+
+Ask / suggested next steps
+Advice is generated automatically after either inspection mode.
+AI advice is informational. Final disposition rests with QA personnel.
+Advisory only. Final disposition by authorized QA personnel.
+LOCAL STATION CONNECTED
+Batch records · Audit
