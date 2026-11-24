@@ -1,1 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420"><rect width="1100" height="420" fill="#0b1522"/><g fill="white" font-family="sans-serif"><text x="30" y="40" font-size="25">MEDGE VISION - fully offline architecture</text><rect x="30" y="85" width="250" height="70" rx="10" fill="#155e75"/><text x="42" y="111" font-size="18">Image / USB / CSI</text><text x="42" y="135" font-size="13">Original + capture checks</text><rect x="320" y="85" width="310" height="70" rx="10" fill="#155e75"/><text x="332" y="111" font-size="18">Vision</text><text x="332" y="135" font-size="13">YOLO: Hailo-8 or ONNX CPU</text><rect x="670" y="85" width="400" height="70" rx="10" fill="#155e75"/><text x="682" y="111" font-size="18">QA rule engine</text><text x="682" y="135" font-size="13">PASS / REVIEW / HOLD - immutable</text><rect x="320" y="215" width="310" height="70" rx="10" fill="#155e75"/><text x="332" y="241" font-size="18">Anomaly</text><text x="332" y="265" font-size="13">Three EfficientAD CPU profiles</text><rect x="670" y="215" width="400" height="70" rx="10" fill="#5b347f"/><text x="682" y="241" font-size="18">Advisory</text><text x="682" y="265" font-size="13">ExecuTorch Llama on Arm CPU</text><rect x="30" y="325" width="1040" height="70" rx="10" fill="#263849"/><text x="42" y="351" font-size="18">SQLite evidence and audit chain</text><text x="42" y="375" font-size="13">Originals, runtime hashes, fixed thresholds, append-only QA and advice</text><text x="286" y="125">-&gt;</text><text x="637" y="125">-&gt;</text><text x="760" y="185">Recorded facts only; no override</text><text x="30" y="305">Dashboard + second display read recorded results. Human QA retains final disposition.</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="756" viewBox="0 0 1280 756" role="img" aria-labelledby="title desc">
+<title id="title">Medge Vision offline deployment architecture</title>
+<desc id="desc">A selected image or fresh camera frame enters either YOLO on Hailo-8 or CPU, or a category-specific EfficientAD model on CPU. Deterministic QA rules record findings in SQLite. A separate Arm ExecuTorch Llama worker reads recorded facts and a demo SOP to return guarded advice. It cannot change QA disposition. The main dashboard and secondary verdict display read recorded results.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0c1729"/><stop offset="1" stop-color="#17223a"/></linearGradient>
+  <marker id="cyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#66d9d0"/></marker>
+  <marker id="violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#b6a3ff"/></marker>
+</defs>
+<rect width="1280" height="756" rx="20" fill="url(#bg)"/>
+<g font-family="Arial, sans-serif" fill="#edf5ff">
+  <text x="32" y="43" font-size="27" font-weight="700">MEDGE VISION</text>
+  <text x="32" y="73" font-size="15" fill="#b7c8dd">Offline inspection station / independent vision and advisory runtimes</text>
+  <rect x="945" y="25" width="303" height="38" rx="19" fill="#173839" stroke="#376764"/>
+  <text x="968" y="49" font-size="14" fill="#80eee0">Raspberry Pi 5 + Hailo-8 + Arm CPU</text>
+
+  <rect x="32" y="126" width="240" height="338" rx="14" fill="#15273c" stroke="#35516d"/>
+  <text x="52" y="161" font-size="13" fill="#81dcd5">01 / ACQUIRE</text>
+  <text x="52" y="194" font-size="23" font-weight="700">Image sources</text>
+  <text x="52" y="232" font-size="16">Upload / stored images</text>
+  <text x="52" y="262" font-size="16">USB or CSI camera</text>
+  <path d="M52 287H252" stroke="#35516d"/>
+  <text x="52" y="319" font-size="15" fill="#b7c8dd">Fresh-frame capture gate</text>
+  <text x="52" y="347" font-size="15" fill="#b7c8dd">Source identity + checks</text>
+  <text x="52" y="402" font-size="15" font-weight="700">Choose inspection mode</text>
+  <text x="52" y="432" font-size="13" fill="#b7c8dd">Detection OR anomaly</text>
+
+  <rect x="320" y="126" width="390" height="156" rx="14" fill="#10343e" stroke="#3c8c94"/>
+  <text x="340" y="160" font-size="13" fill="#8be8df">02A / DETECTION LANE</text>
+  <text x="340" y="194" font-size="23" font-weight="700">YOLOv8s / seven defects</text>
+  <text x="340" y="225" font-size="16">Hailo-8 INT8 HEF via HailoRT</text>
+  <text x="340" y="254" font-size="14" fill="#b7d7df">Alternative: FP32 ONNX CPU / shared geometry</text>
+
+  <rect x="320" y="308" width="390" height="156" rx="14" fill="#10343e" stroke="#3c8c94"/>
+  <text x="340" y="342" font-size="13" fill="#8be8df">02B / ANOMALY LANE</text>
+  <text x="340" y="376" font-size="23" font-weight="700">EfficientAD-S / Arm CPU</text>
+  <text x="340" y="407" font-size="16">Pill / capsule / VisA category profiles</text>
+  <text x="340" y="436" font-size="14" fill="#b7d7df">ONNX score + heatmap / frozen thresholds</text>
+
+  <rect x="760" y="126" width="488" height="156" rx="14" fill="#203345" stroke="#57738b"/>
+  <text x="782" y="160" font-size="13" fill="#c5d9e9">03 / RULES AND DISPOSITION</text>
+  <text x="782" y="194" font-size="23" font-weight="700">Deterministic QA rules</text>
+  <text x="782" y="225" font-size="16">PASS / REVIEW / HOLD + rule explanation</text>
+  <text x="782" y="254" font-size="14" fill="#b7c8dd">Visual SAFE / WARNING / DEFECTIVE is a separate field</text>
+
+  <rect x="760" y="320" width="488" height="144" rx="14" fill="#203345" stroke="#57738b"/>
+  <text x="782" y="353" font-size="13" fill="#c5d9e9">04 / PERSIST BEFORE ADVICE</text>
+  <text x="782" y="386" font-size="23" font-weight="700">SQLite evidence and audit</text>
+  <text x="782" y="417" font-size="15">Source / model / config hashes; original findings</text>
+  <text x="782" y="443" font-size="14" fill="#b7c8dd">Append-only QA reviews and advisory history</text>
+
+  <rect x="320" y="528" width="390" height="152" rx="14" fill="#2b2447" stroke="#8270bf"/>
+  <text x="340" y="560" font-size="13" fill="#c8baff">05 / ASYNC ADVISORY LANE</text>
+  <text x="340" y="594" font-size="23" font-weight="700">ExecuTorch Llama / Arm CPU</text>
+  <text x="340" y="623" font-size="15">Recorded facts + versioned demo SOP</text>
+  <text x="340" y="651" font-size="14" fill="#cfc3ec">Guarded JSON / explicit fallback / no override</text>
+
+  <rect x="760" y="528" width="488" height="152" rx="14" fill="#173c39" stroke="#4b8177"/>
+  <text x="782" y="560" font-size="13" fill="#9be7ce">06 / OPERATOR AND QA</text>
+  <text x="782" y="594" font-size="23" font-weight="700">Dashboard + verdict display</text>
+  <text x="782" y="623" font-size="15">Images / boxes / heatmaps / advice / exports</text>
+  <text x="782" y="651" font-size="14" fill="#bddfd1">Authorized QA retains final disposition</text>
+
+  <g fill="none" stroke="#66d9d0" stroke-width="2.5" marker-end="url(#cyan)">
+    <path d="M272 294H295V204H320"/>
+    <path d="M295 294V386H320"/>
+    <path d="M710 204H760"/>
+    <path d="M710 386H735V246H760"/>
+    <path d="M1004 282V320"/>
+    <path d="M1175 464V528"/>
+  </g>
+  <g fill="none" stroke="#b6a3ff" stroke-width="2.5" marker-end="url(#violet)">
+    <path d="M1004 464V496H515V528"/>
+    <path d="M710 605H760"/>
+  </g>
+  <text x="620" y="490" font-size="13" fill="#d3c6ff">Read recorded facts only</text>
+  <text x="32" y="717" font-size="14" fill="#b7c8dd">No cloud inference. Setup/downloads require network. Camera accuracy and approved-SOP validation remain separate prerequisites.</text>
+  <text x="32" y="741" font-size="13" fill="#b7c8dd">Anomaly inference is a separate mode, not a second YOLO stage. Llama cannot rewrite stored QA decisions.</text>
+</g>
+</svg>

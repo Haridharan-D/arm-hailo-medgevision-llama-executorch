@@ -1,0 +1,8 @@
+Class,Images,Instances,Box-P,Box-R,Box-F1,mAP50,mAP50-95,source,source_pointer,scope
+black_dot,235,511,0.99489,0.99217,0.99353,0.99498,0.8995,evidence/historical/test_metrics.json,/per_class/0,Original FP32 evaluator; not frozen deployment thresholds
+broken,167,407,0.99505,0.99754,0.9963,0.995,0.89086,evidence/historical/test_metrics.json,/per_class/1,Original FP32 evaluator; not frozen deployment thresholds
+color_mismatch,218,420,0.99896,1.0,0.99948,0.995,0.89772,evidence/historical/test_metrics.json,/per_class/2,Original FP32 evaluator; not frozen deployment thresholds
+crack,204,432,0.99766,0.98903,0.99333,0.99435,0.89626,evidence/historical/test_metrics.json,/per_class/3,Original FP32 evaluator; not frozen deployment thresholds
+dual_cap,46,111,0.99986,0.97297,0.98623,0.98459,0.88672,evidence/historical/test_metrics.json,/per_class/4,Original FP32 evaluator; not frozen deployment thresholds
+empty,238,634,0.98234,0.99842,0.99032,0.98863,0.88586,evidence/historical/test_metrics.json,/per_class/5,Original FP32 evaluator; not frozen deployment thresholds
+foreign_particle,195,441,0.99323,0.99808,0.99565,0.99289,0.88613,evidence/historical/test_metrics.json,/per_class/6,Original FP32 evaluator; not frozen deployment thresholds

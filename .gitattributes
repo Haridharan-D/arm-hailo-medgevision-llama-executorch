@@ -13,3 +13,7 @@
 *.ttf binary
 assets/thresholds.json -text
 *.pdf binary
+# Preserve exact historical evidence bytes across platform line-ending settings.
+evidence/historical/*.json -text
+evidence/target_20261124/*.json -text
+models/anomaly/*/contract.json -text

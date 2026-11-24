@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="294" viewBox="0 0 1000 294" role="img" aria-labelledby="title description">
+<title id="title">YOLO detector latency: CPU vs Hailo-8</title><desc id="description">Actual Raspberry Pi benchmark | 21 November 2026 | lower is faster. Repeated-image detector path; unequal trials. Not camera FPS or complete line throughput.</desc>
+<rect width="1000" height="294" rx="16" fill="#101a2b"/>
+<g font-family="Arial, sans-serif" fill="#edf4ff">
+<text x="32" y="38" font-size="23" font-weight="700">YOLO detector latency: CPU vs Hailo-8</text>
+<text x="32" y="65" font-size="14" fill="#b3c5db">Actual Raspberry Pi benchmark | 21 November 2026 | lower is faster</text>
+<text x="32" y="112" font-size="16">ONNX CPU</text>
+<rect x="245" y="94" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="94" width="512.435" height="24" rx="6" fill="#98a7ff"/>
+<text x="795" y="112" font-size="17" font-weight="700">580.115 ms</text>
+<text x="245" y="137" font-size="13" fill="#b3c5db">35 calls / 20.30 s</text>
+<text x="32" y="179" font-size="16">Hailo-8 INT8</text>
+<rect x="245" y="161" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="161" width="13.424" height="24" rx="6" fill="#48d9ce"/>
+<text x="795" y="179" font-size="17" font-weight="700">15.197 ms</text>
+<text x="245" y="204" font-size="13" fill="#b3c5db">3,948 calls / 60.01 s</text>
+<text x="32" y="269" font-size="13" fill="#b3c5db">Repeated-image detector path; unequal trials. Not camera FPS or complete line throughput.</text>
+</g></svg>

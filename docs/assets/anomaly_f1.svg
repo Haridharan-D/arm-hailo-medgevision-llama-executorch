@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="361" viewBox="0 0 1000 361" role="img" aria-labelledby="title description">
+<title id="title">Anomaly image-level F1 at saved thresholds</title><desc id="description">Original labeled held-out category tests | higher is better. Category-specific models. Selected demos do not replace these full held-out results.</desc>
+<rect width="1000" height="361" rx="16" fill="#101a2b"/>
+<g font-family="Arial, sans-serif" fill="#edf4ff">
+<text x="32" y="38" font-size="23" font-weight="700">Anomaly image-level F1 at saved thresholds</text>
+<text x="32" y="65" font-size="14" fill="#b3c5db">Original labeled held-out category tests | higher is better</text>
+<text x="32" y="112" font-size="16">mvtec_pill</text>
+<rect x="245" y="94" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="94" width="489.542" height="24" rx="6" fill="#48d9ce"/>
+<text x="795" y="112" font-size="17" font-weight="700">92.366 %</text>
+<text x="245" y="137" font-size="13" fill="#b3c5db">167 images; recall 85.82%</text>
+<text x="32" y="179" font-size="16">mvtec_capsule</text>
+<rect x="245" y="161" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="161" width="468.122" height="24" rx="6" fill="#48d9ce"/>
+<text x="795" y="179" font-size="17" font-weight="700">88.325 %</text>
+<text x="245" y="204" font-size="13" fill="#b3c5db">132 images; recall 79.82%</text>
+<text x="32" y="246" font-size="16">visa_capsules</text>
+<rect x="245" y="228" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="228" width="203.520" height="24" rx="6" fill="#f1ba63"/>
+<text x="795" y="246" font-size="17" font-weight="700">38.400 %</text>
+<text x="245" y="271" font-size="13" fill="#b3c5db">160 images; recall 24.00%</text>
+<text x="32" y="336" font-size="13" fill="#b3c5db">Category-specific models. Selected demos do not replace these full held-out results.</text>
+</g></svg>

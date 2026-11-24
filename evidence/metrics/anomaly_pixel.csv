@@ -1,0 +1,4 @@
+profile,annotated_images,tn,fp,fn,tp,pixel_auroc,pixel_f1,dice,aupro,aupro_max_fpr,aupro_steps,source,source_pointer,scope
+mvtec_pill,167,10311026,266099,31816,335571,0.9849134047367899,0.6925722635510605,0.6925722635510605,0.9557222113880817,0.3,200,evidence/historical/METRICS.json,/anomaly_historical/mvtec_pill,Original mask-based evaluation; pixel F1 is separate from image F1
+mvtec_capsule,132,8386478,185102,12508,66664,0.9588387940773243,0.40287908913452064,0.40287908913452064,0.830766946322705,0.3,200,evidence/historical/METRICS.json,/anomaly_historical/mvtec_capsule,Original mask-based evaluation; pixel F1 is separate from image F1
+visa_capsules,160,10376322,73758,10769,24911,0.9778969728350375,0.37084012534518307,0.37084012534518307,0.6984590887255195,0.3,200,evidence/historical/METRICS.json,/anomaly_historical/visa_capsules,Original mask-based evaluation; pixel F1 is separate from image F1

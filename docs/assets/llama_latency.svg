@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="361" viewBox="0 0 1000 361" role="img" aria-labelledby="title description">
+<title id="title">Llama advisory: historical median elapsed time</title><desc id="description">Actual Arm ExecuTorch paired scenarios | lower is faster. Timings predate final JSON stop boundary. Guard acceptance is not semantic accuracy.</desc>
+<rect width="1000" height="361" rx="16" fill="#101a2b"/>
+<g font-family="Arial, sans-serif" fill="#edf4ff">
+<text x="32" y="38" font-size="23" font-weight="700">Llama advisory: historical median elapsed time</text>
+<text x="32" y="65" font-size="14" fill="#b3c5db">Actual Arm ExecuTorch paired scenarios | lower is faster</text>
+<text x="32" y="112" font-size="16">1b_baseline</text>
+<rect x="245" y="94" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="94" width="200.816" height="24" rx="6" fill="#b39dff"/>
+<text x="795" y="112" font-size="17" font-weight="700">15.156 s</text>
+<text x="245" y="137" font-size="13" fill="#b3c5db">38 latency samples; final guard replay 26/39</text>
+<text x="32" y="179" font-size="16">1b_adaptive_v1</text>
+<rect x="245" y="161" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="161" width="106.934" height="24" rx="6" fill="#48d9ce"/>
+<text x="795" y="179" font-size="17" font-weight="700">8.071 s</text>
+<text x="245" y="204" font-size="13" fill="#b3c5db">38 latency samples; final guard replay 36/39</text>
+<text x="32" y="246" font-size="16">3b_baseline</text>
+<rect x="245" y="228" width="530" height="24" rx="6" fill="#243249"/>
+<rect x="245" y="228" width="520.390" height="24" rx="6" fill="#b39dff"/>
+<text x="795" y="246" font-size="17" font-weight="700">39.275 s</text>
+<text x="245" y="271" font-size="13" fill="#b3c5db">38 latency samples; final guard replay 39/39</text>
+<text x="32" y="336" font-size="13" fill="#b3c5db">Timings predate final JSON stop boundary. Guard acceptance is not semantic accuracy.</text>
+</g></svg>

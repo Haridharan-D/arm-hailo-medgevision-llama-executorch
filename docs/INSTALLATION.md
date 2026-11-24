@@ -1,5 +1,7 @@
 # Installation and launch
 
+> For a new clone, follow [QUICKSTART.md](../QUICKSTART.md). This page retains migration notes for the original installed station; its usernames, service paths and IP examples are historical. The optional account instructions apply only if authentication is explicitly enabled, not to the supplied no-login configuration.
+
 **Current kiosk configuration:** station sign-in is disabled at the owner's request. `~/blistertrace` opens the fullscreen dashboard on HDMI1 and the verdict-only display on HDMI2, without entering credentials. See [dual-display setup](DUAL_DISPLAY_KIOSK.md). Saved accounts are retained but inactive in this configuration. The account provisioning section below is for optional future authenticated deployments.
 
 The existing environment is reused; installation is not training or model compilation. Tested platform inventory is in the initial audit and target runtime manifests. Python requirements are pinned/ranged in `requirements.txt`; native Llama uses ExecuTorch v1.0.0 and its shipped `libllama_runner.so`. HailoRT and Hailo driver versions must match the installed Hailo-8 system. No CSI commands are required.

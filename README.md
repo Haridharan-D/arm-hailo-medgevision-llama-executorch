@@ -1,72 +1,319 @@
-# Medge Vision
+<div align="center">
 
-Medge Vision is an offline visual inspection station for pharmaceutical blister packs. It detects configured defects, flags anomalies, records inspections in SQLite, and gives operators SOP-linked recommendations.
+<img src="web/assets/logo.svg" width="80" alt="Medge Vision optical capsule mark" />
 
-## Start here for PS5 judging
+<h1>MEDGE VISION</h1>
+<h3>Offline pharmaceutical visual inspection on Arm + Hailo</h3>
+<p><strong>YOLOv8s detection · EfficientAD-S anomaly maps · ExecuTorch Llama advisory</strong></p>
+<p>Bharat AI-SoC Challenge 2026–27 · Team Medge Vision</p>
+<p><a href="QUICKSTART.md">Get started</a> · <a href="docs/RESULTS.md">Complete results</a> · <a href="evidence/gallery/README.md">Actual Pi evidence</a> · <a href="docs/MODEL_CARDS.md">Model cards</a> · <a href="docs/EVIDENCE_GUIDE.md">Measurement guide</a></p>
 
-- [Quickstart](QUICKSTART.md) covers CPU reproduction and the Raspberry Pi 5 + Hailo-8 setup.
-- [24 November Raspberry Pi run](evidence/target_20261124/eight_test_report.json) contains the exact eight inspection records and timings. See the [run summary](evidence/target_20261124/summary.json) and [target status](evidence/target_20261124/target_status.json).
-- [Screenshot gallery](evidence/gallery/README.md) shows the Pi dashboard, saved inspections, and labeled terminal replay.
-- [Final project report (PDF)](docs/MEDGE_VISION_Final_Project_Report.pdf) covers methodology, hardware utilization, optimization, and results.
-- [Passing GitHub CI on the submission commit](https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/runs/45326193221) covers artifact verification, CPU regressions, backup restore, and CPU smoke inference.
+</div>
 
-The Raspberry Pi 5 uses **Hailo-8 via HailoRT** for the custom seven-class YOLOv8s detector. The **Pi Arm CPU** runs three EfficientAD-S models via ONNX Runtime and runs Llama 3.2 1B Instruct SpinQuant via ExecuTorch v1.0.0 for asynchronous advisory. Inference runs locally after provisioning.
+---
 
-The selected-image run matched all **8/8 visual outcomes** and returned **8/8 fresh validated Llama responses** with zero cache reuse. The Pi suite had **73 passing regression tests** at that stage. It reached **76 passing tests on the Pi and laptop** after the portable restore checks were added. See the [later Pi regression log](evidence/gallery/target_regression_with_restore.txt) and [engineering report](SUBMISSION_REPORT.md).
+Medge Vision is a local workstation for tablet, capsule and blister-pack inspection. A custom seven-class **YOLOv8s** detector runs on **Hailo-8**. Three independent **EfficientAD-S** profiles produce anomaly scores and heatmaps on the **Raspberry Pi CPU**. **Llama 3.2 1B Instruct**, running locally through **ExecuTorch**, provides asynchronous SOP-linked advice about the recorded findings.
 
-**Live-camera validation and sustained throughput: NOT TESTED.** The [historical detector benchmark](evidence/historical/METRICS.json) measures repeated-image backend performance. The eight-case run measures selected-image inspection and advisory separately. For a localized configured defect, the [QA severity rule](app/severity.py) assigns major inspection priority and calls for HOLD and human review. Anomaly profiles report a score and rule outcome. Clinical severity remains unvalidated.
+Models, the dashboard, SQLite history and advisory run offline after provisioning. **Vision and advice are separate pipelines. Llama cannot change the detector/QA decision.**
 
-See the [architecture](docs/architecture.svg), [model lifecycle](docs/MODEL_LIFECYCLE.md), and [portable backup and restore commands](backups/README.md) for deployment and evidence details.
+> **Release scope:** a measured research demonstrator with preserved artifacts, tests and recovery data. Visual **SAFE** means the configured model check is clear; it is not pharmaceutical safety certification or QA release approval. Unvalidated product profiles retain QA **REVIEW** even when the visual check is clear.
 
-![Actual measured Hailo defect and Llama advisory](evidence/gallery/dashboard/02_yolo_defective.png)
+![Actual Pi dashboard: Hailo crack detection and native Llama advisory](evidence/gallery/dashboard/02_yolo_defective.png)
 
-After setup, launch with `python run.py`. Read the [three-minute hackathon demo](docs/HACKATHON_DEMO.md), [recorded CPU smoke results](evidence/clone_cpu_smoke.json), and [verification report](docs/REPOSITORY_VERIFICATION.md).
+*Actual Pi Chromium capture of a saved measured inspection. The [gallery](evidence/gallery/README.md) connects all eight cases to original IDs, JSON outputs, heatmaps and advisory text. Terminal captures are explicitly labeled recorded-output replay.*
 
-For a distributable desktop folder, follow the [Windows EXE build guide](docs/WINDOWS_BUILD.md). Keep its model/runtime sidecars with the executable.
+## Project navigation
 
-## Quick start: CPU vision
+| Guide | Contents |
+| --- | --- |
+| [Quick start](QUICKSTART.md) | Clone, install, verify models, configure CPU/Hailo, test and launch |
+| [Full results and benchmarks](docs/RESULTS.md) | Per-class F1/mAP, confusion matrices, CPU/Hailo and Llama comparisons |
+| [Evidence guide](docs/EVIDENCE_GUIDE.md) | Where each metric was measured, source JSON pointers and rerun commands |
+| [Deployment model cards](docs/MODEL_CARDS.md) | Training, preprocessing, conversion, inputs/outputs and limitations |
+| [Machine-readable metrics](evidence/metrics/README.md) | Eight CSVs, full-precision JSON, source hashes and formulas |
+| [Actual Pi screenshot gallery](evidence/gallery/README.md) | 47 terminal/dashboard screenshots, inspection results and advice |
+| [Engineering acceptance report](SUBMISSION_REPORT.md) | Executed target checks and explicit PASS / NOT TESTED boundaries |
+| [Final project report — PDF](docs/MEDGE_VISION_Final_Project_Report.pdf) | Methodology, results, hardware utilization and optimization |
+| [Portable backup and restore](backups/README.md) | Eight measured inspections, images, heatmaps and stored advice |
 
-Python 3.11 is the tested Windows development interpreter. On a 64-bit Pi use the supported system Python and matching Hailo packages.
+## Verified release evidence
+
+| Check | Recorded outcome | Evidence |
+| --- | --- | --- |
+| Actual Pi 5 + Hailo-8 execution | **PASS** | [24 November records](evidence/target_20261124/eight_test_report.json) |
+| Two selected cases per visual pipeline | **8/8 outcomes matched** | [Run summary](evidence/target_20261124/summary.json) |
+| Actual Arm ExecuTorch advisory | **8/8 fresh `llama_validated`**, zero cache reuse | [Original responses and native statistics](evidence/target_20261124/eight_test_report.json) |
+| Python regression suite at evidence release | **76 passed** on Pi and laptop | [Pi log](evidence/gallery/target_regression_with_restore.txt) · [Laptop log](evidence/gallery/regression_with_restore.txt) |
+| Native JSON generation boundary | **PASS**, five C++ cases | [Test source](tests/json_boundary_test.cpp) |
+| Portable recovery through the actual app | **PASS** | [Restored API verification](evidence/gallery/restored_api_verification.json) |
+| New-camera accuracy / long-shift endurance | **NOT TESTED** | [Limitations](docs/SUBMISSION_LIMITATIONS.md) |
+
+Eight selected cases establish functional integration, not 100% model accuracy. Historical accuracy, timing experiments and final demonstrations are kept separate below.
+
+## Model accuracy
+
+### YOLOv8s: seven-class defect detection
+
+The original curated FP32 held-out test contains **1,303 images and 2,956 annotated defect instances**.
+
+| Metric | Result | Measurement scope |
+| --- | --- | --- |
+| Precision | **99.46%** | Original evaluator aggregate |
+| Recall | **99.26%** | Original evaluator aggregate |
+| mAP at IoU 0.50 | **99.22%** | Original evaluator AP sweep |
+| mAP at IoU 0.50–0.95 | **89.19%** | Original evaluator AP sweep |
+| Micro precision | **97.83%** | Frozen class thresholds; summed recorded counts |
+| Micro recall | **97.43%** | Frozen class thresholds; summed recorded counts |
+| **Micro F1** | **97.63%** | **Derived** from 2,880 TP / 64 FP / 76 FN |
+
+`F1 = 2TP / (2TP + FP + FN)`. Evaluator and frozen-threshold metrics have different operating points; they must not be merged into one claimed score. [All seven classes: precision, recall, F1, F2, mAP and counts](docs/RESULTS.md#1-yolov8s-original-fp32-held-out-evaluator) · [Original JSON](evidence/historical/test_metrics.json).
+
+**Dataset boundary:** there are **no normal-only test images**, so healthy-image specificity and false-reject rate were not established. Source-family/perceptual grouping does not prove independence of physical strips.
+
+### EfficientAD-S: category anomaly detection
+
+Three independently trained category models; each completed **70,000 FP32 steps**, batch size 1, using normal training images. These are the original full held-out results at saved thresholds, not selected demo scores.
+
+| Profile | Test images | Precision | Recall | **Image F1** | Image AUROC | Pixel F1 / Dice |
+| --- | --- | --- | --- | --- | --- | --- |
+| MVTec pill | 167 | 100.00% | 85.82% | **92.37%** | 0.9834 | 69.26% |
+| MVTec capsule | 132 | 98.86% | 79.82% | **88.32%** | 0.9485 | 40.29% |
+| VisA capsules | 160 | 96.00% | 24.00% | **38.40%** | 0.6502 | 37.08% |
+
+**VisA is a weak research profile:** 76/100 anomalous images were missed at its saved threshold. High pixel AUROC does not imply strong image-level detection. EfficientAD is not EfficientNet and runs on CPU, separately from the YOLO HEF.
+
+[Confusion matrices, AUPR, specificity, false alarms and pixel AUPRO](docs/RESULTS.md#3-efficientad-s-labeled-image-level-results) · [Original anomaly results](evidence/historical/METRICS.json) · [Full-precision CSV](evidence/metrics/anomaly_image.csv).
+
+![Original held-out anomaly image F1](docs/assets/anomaly_f1.svg)
+
+## CPU versus Hailo: actual target measurements
+
+Actual **21 November Raspberry Pi** repeated-image detector benchmark:
+
+| Backend | Calls | Mean latency | P95 latency | Throughput* | Mean RSS |
+| --- | --- | --- | --- | --- | --- |
+| ONNX Runtime CPU | 35 | 580.115 ms | 580.855 ms | 1.724 calls/s | 254.07 MiB |
+| Hailo-8 INT8 | 3,948 | 15.197 ms | 15.526 ms | 65.789 calls/s | 206.43 MiB |
+
+**38.17× mean detector-path latency ratio.** Trials have different sample counts/durations and use unannotated training-source demo images. *Throughput is repeated detector calls/s, not live-camera FPS, full inspection-plus-advice throughput or production-line capacity.*
+
+![Measured detector mean latency](docs/assets/cpu_vs_hailo.svg)
+
+[CPU, RAM, temperature, P99 and sampling scope](docs/RESULTS.md#5-actual-pi-detector-benchmark-cpu-versus-hailo-8) · [Original benchmark](evidence/historical/METRICS.json) · [Comparison CSV](evidence/metrics/cpu_vs_hailo.csv).
+
+### Export and quantization: before versus after
+
+| Stage | Measured evidence | Interpretation |
+| --- | --- | --- |
+| FP32 ONNX export | Eight-image raw-tensor parity passed; opset 11; `[1,11,8400]` output | Export check, not accuracy delta |
+| INT8 HEF deployment | Actual Hailo-8 load/inference passed | Target execution verified |
+| FP32/INT8 reference comparison | 18 images; 37 matched, two INT8-only and one FP32-only detection | Agreement precision 94.87%, recall 97.37%; **unannotated** |
+| Labeled quantized mAP/F1 delta | **NOT TESTED** | No post-quantization accuracy prediction substituted |
+
+Reference agreement is not ground-truth defect precision/recall. [Export evidence](evidence/historical/export_status.json) · [Conversion and preprocessing](docs/MODEL_LIFECYCLE.md) · [Complete interpretation](docs/RESULTS.md#6-quantization-and-export-what-was-verified).
+
+## Llama: candidate comparison and optimization
+
+The historical paired experiment uses 50 scenarios: 39 bounded advisory cases and 11 invalid inputs. Latency/TTFT summaries contain 38 samples; decode summaries contain 39. Acceptance means automated guard acceptance, **not expert recommendation accuracy**.
+
+| Candidate | Median elapsed | Median callback TTFT | Median decode rate | Peak RSS | Final guard replay |
+| --- | --- | --- | --- | --- | --- |
+| 1B baseline | 15.156 s | 8.136 s | 10.264 tokens/s | Not recorded | 26/39 |
+| **1B adaptive-v1 — selected** | **8.071 s** | **4.010 s** | **12.003 tokens/s** | **1,598.55 MiB** | **36/39** |
+| 3B baseline | 39.275 s | 21.220 s | 3.649 tokens/s | 3,223.77 MiB | 39/39 |
+
+These timings predate the final native JSON stop boundary. Adaptive-v1 accepted 37/39 under experimental guards; final stricter replay accepted **36/39**. Historical timing is retained under its original scope.
+
+![Historical Arm ExecuTorch advisory comparison](docs/assets/llama_latency.svg)
+
+The selected runtime keeps the existing 1B SpinQuant INT4 EO8 PTE and uses **three CPU threads**, **128 output tokens**, a **1,536-token prompt budget** and the artifact's actual **2,048-token context**. Persistent workers, bounded queues/cache and first-object JSON stopping reduce repeated work. Actual graph inspection found **180 XNNPACK delegate calls** and 490 remaining kernel calls; this is not per-kernel execution profiling.
+
+The separate **24 November final-worker demonstration** returned eight fresh validated responses: median **8.9669 s**, range **7.5518–11.7278 s**. Full service-tree peak RSS was **1,977.06 MiB** and summed CPU **302.6%** (100% = one core). Regression/dependency work overlapped; these are not isolated Llama measurements.
+
+[Native instrumentation and optimization](docs/LLAMA_EXECUTORCH_OPTIMIZATION.md) · [Original paired experiment](evidence/historical/BENCHMARKS.json) · [CSV](evidence/metrics/llama_comparison.csv).
+
+## Actual model outputs
+
+| Selected measured case | Visual check | QA | Measured observation | Actual screenshot |
+| --- | --- | --- | --- | --- |
+| YOLO clear | SAFE | REVIEW | No configured defect detected | [View](evidence/gallery/dashboard/01_yolo_safe.png) |
+| YOLO crack | DEFECTIVE | HOLD | Confidence **0.90241**; vision **15.04 ms** | [View](evidence/gallery/dashboard/02_yolo_defective.png) |
+| MVTec pill anomalous | DEFECTIVE | REVIEW | Score **0.637408** / threshold **0.350053** | [Heatmap + advice](evidence/gallery/dashboard/04_anomaly_defective.png) |
+| MVTec capsule anomalous | DEFECTIVE | REVIEW | Score **3.637529** / threshold **0.268284** | [Heatmap + advice](evidence/gallery/dashboard/06_anomaly_defective.png) |
+| VisA capsules anomalous | DEFECTIVE | REVIEW | Score **2.262270** / threshold **0.202819** | [Heatmap + advice](evidence/gallery/dashboard/08_anomaly_defective.png) |
+
+Actual crack inspection, selected fields:
+
+```json
+{
+  "inspection_id": "cf5cdda27c304cd9a47988165bc8fc99",
+  "backend": "hailo",
+  "decision": "HOLD",
+  "severity": "major",
+  "vision_ms": 15.04,
+  "detections": [{
+    "type": "crack",
+    "class_id": 3,
+    "confidence": 0.90241,
+    "box_xyxy": [309.44, 339.16, 372.01, 440.55]
+  }]
+}
+```
+
+Its actual Llama response used **BT-02 / ISOLATE_AND_REINSPECT** and said **“Preserve evidence and request QA review.”** It returned `llama_validated` in **9,970.1 ms**. “Major” is a conservative inspection-priority rule, not a clinical diagnosis.
+
+[All eight original records and runtime statistics](evidence/target_20261124/eight_test_report.json) · [Eight-case CSV](evidence/metrics/target_eight_cases.csv) · [Actual advisory messages](evidence/metrics/target_advisory_outputs.csv).
+
+## Architecture and inspection workflow
+
+![Offline Medge Vision architecture with independent vision and advisory lanes](docs/architecture.svg)
+
+1. **Acquire** an uploaded/local image or a fresh USB/CSI camera frame. Acquisition waits for a fresh frame before inspection.
+2. **Run the chosen visual pipeline:** YOLO on Hailo/CPU, or a category-specific CPU anomaly model. Anomaly is a separate mode, not an automatic second detection stage.
+3. **Record** findings, image/model/configuration hashes, rule explanations and QA disposition in SQLite.
+4. **Request advice asynchronously** using the recorded facts and versioned demo SOP. Vision remains independently usable; advisory errors become explicit fallbacks.
+5. **Review and export** evidence, JSON/CSV and append-only QA notes. The second HDMI display follows the current inspection's visual result.
+
+The offline UI includes intro entry, two designs, zoom/pan/loupe, original/annotated/split views, anomaly heatmaps, five-second result dialogs, history, SOP references, contextual questions and QA drafts. **SAFE/WARNING/DEFECTIVE visual labels and PASS/REVIEW/HOLD QA dispositions are separate fields.**
+
+[System design](docs/SYSTEM_ARCHITECTURE.md) · [QA workflow](docs/INDUSTRIAL_WORKFLOW.md) · [Database/audit](docs/DATABASE_AND_AUDIT.md) · [Dual HDMI](docs/DUAL_DISPLAY_KIOSK.md).
+
+## Run from a fresh clone
+
+### 1. CPU vision — Windows or Linux
+
+Python **3.11** is the tested Windows development interpreter. Initial installation needs network access; provisioned local inference does not.
 
 ```sh
+git clone https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch.git
+cd arm-hailo-medgevision-llama-executorch
 python -m venv .venv
-# Linux: source .venv/bin/activate
-# PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
+```
+
+Activate with `.venv\Scripts\Activate.ps1` in PowerShell, or `source .venv/bin/activate` on Linux. Then:
+
+```sh
+python -m pip install -r requirements.txt pytest httpx
+python tools/verify_repository_artifacts.py
+python tools/configure_station.py --backend onnx --no-advice
+python tools/smoke_models.py --output smoke_results.json
+python main.py --desktop
+```
+
+Open **http://127.0.0.1:8765/**; click the intro to enter. Alternate design: `/classic`; verdict screen: `/display`. Station sign-in is disabled. Keep the service loopback-bound.
+
+The verifier reconstructs included model/native parts and checks hashes. The smoke command runs **five selected images through all four CPU vision models**; it does not validate Hailo or Llama. `--no-advice` is intentional for this first CPU-only run.
+
+### 2. Raspberry Pi + Hailo-8 + genuine Llama
+
+Use a 64-bit Pi OS, active cooling, Hailo-8, and compatible vendor driver/HailoRT/Python bindings. The supplied HEF targets **Hailo-8, not Hailo-8L**. The final measured Pi used a **Pi 5 16 GB, aarch64 Debian Trixie**, Hailo firmware 4.23.0 and native Arm ExecuTorch v1.0.0. ABI compatibility still requires actual execution.
+
+From the cloned project on the Pi:
+
+```sh
+python3 -m venv --system-site-packages .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt pytest httpx
+python tools/verify_repository_artifacts.py
+hailortcli fw-control identify
+# Accept the applicable Llama license before downloading.
+python llama/download_model.py
+python tools/configure_station.py --backend hailo
 python tools/verify_repository_artifacts.py
 python main.py --desktop
 ```
 
-The dashboard is http://127.0.0.1:8765/ . Alternate design: /classic. Second verdict display: /display. The intro waits for a click. Authentication is disabled in the supplied configuration. Bind locally; use an SSH tunnel for remote access. CPU vision can run without Hailo or Llama. Missing advisory runtime is a fallback, never a successful Llama generation.
+The matching aarch64 worker/library are reconstructed from Git parts. Other platforms may need the [pinned native build](QUICKSTART.md#genuine-llama-advisory). The large PTE/tokenizer downloader uses a pinned upstream revision and expected hashes. Missing native advice is explicit fallback, not successful Llama generation.
 
-## Models and licenses
-
-YOLO ONNX, Hailo-8 HEF and three anomaly ONNX models are included. ONNX files are stored as small Git blobs under model_parts to tolerate interrupted uploads; `python tools/verify_repository_artifacts.py` automatically reassembles and verifies them without internet. ARTIFACT_MANIFEST.json records exact sizes/hashes. The original aarch64 worker/library are also included in verified parts. The 1.14 GB Llama PTE and tokenizer use the pinned external downloader; other native platforms require their own runtime build. Accept upstream Llama 3.2 license conditions before downloading. See llama/artifacts/README.md and llama/download_model.py. The tested PTE must match the manifest; another export is not interchangeable. Do not redistribute credentials.
-
-MVTec-derived models/samples retain CC BY-NC-SA 4.0 restrictions: this bundle is not licensed for unrestricted commercial use. VisA is CC BY 4.0; EfficientAD source attribution is in models/anomaly/ATTRIBUTION.md. Ultralytics-derived model use requires its applicable license (including AGPL/commercial terms); see THIRD_PARTY_NOTICES.md.
-
-## Native Pi advisory setup
-
-`llama/build_runtime.sh` is the pinned ExecuTorch v1.0.0 baseline build recipe. It requires Linux build tools and network access during installation. The final instrumented worker additionally uses native/blistertrace_instrumented.cpp, native/json_boundary.h and tools/build_instrumented_pi.py. The instrumented build now discovers the checkout and supports explicit --project/--executorch paths. **The original tested Arm binary and shared library are backed up and reconstructed by the artifact verifier.** Use them on the matching aarch64 Debian Trixie setup; a fresh native source build has not been verified on a clean Pi during this release. Configure the runtime with tools/configure_station.py. Windows Llama requires the Linux x86-64 worker under WSL; the EXE alone is not standalone.
-
-## Hailo
-
-The supplied HEF targets Hailo-8, not Hailo-8L. Install compatible vendor driver/HailoRT first. Follow docs/INSTALLATION.md and docs/TROUBLESHOOTING.md. Start on CPU, verify device identity, then activate the Hailo backend. Compilation is not required for the included frozen HEF. Camera and hardware testing require the actual board; do not interpret CPU tests as hardware validation.
-
-## Terminal and tests
+For a **new** Pi desktop installation, `python tools/install_clone_pi.py --install` creates a user service and launchers for the actual checkout. It refuses to overwrite an existing installation. With the service ready, run all eight cases and advisory:
 
 ```sh
-python main.py --inspect test_images/acceptance_demo/safe/safe_01.jpg --output inspection.json
-python -m pip install pytest httpx
-python -m pytest tests -q
+~/medge-test
 ```
 
-For a running installed clone, `~/medge-test` runs eight cases (two per pipeline) with advisory and summary; `~/medge-vision` opens the dashboard separately. See QUICKSTART.md. The older five-case guide is docs/TERMINAL_DEMO_MEDGE_VISION.md. Legacy station-specific automation under tools is retained for traceability; it is not all a portable installer. See docs/DISPLAY_SYNC_FIX.md for the two-monitor synchronization protocol.
+Launch the dashboard separately:
 
-## Results and limits
+```sh
+~/medge-vision
+```
 
-Detector test: 1,303 images, mAP50 0.992, mAP50-95 0.892; no normal-only test images. EfficientAD original held-out recall: pill 85.82%, capsule 79.82%, VisA capsules 24%. VisA is a weak candidate. Selected demo examples are not an unbiased accuracy benchmark. SAFE means configured visual check clear, not pharmaceutical release approval. QA disposition remains separate; Llama cannot override it. Demo SOP is not approved production SOP. See docs/SUBMISSION_LIMITATIONS.md.
+The desktop launcher needs Chromium/XWayland/display tools and a logged-in desktop session. Do not run an independent Hailo-owning inspector while the service owns the NPU. For a laptop, tunnel the loopback service with `ssh -L 8765:127.0.0.1:8765 saul@PI_ADDRESS`.
 
-## Backup status
+[Complete setup](QUICKSTART.md) · [Troubleshooting](docs/TROUBLESHOOTING.md) · [Windows EXE/WSL requirements](docs/WINDOWS_BUILD.md).
 
-See BACKUP_STATUS.md before erasing the original SD card. The repository includes a verified eight-record SQLite/image/advice demo backup with safe restore tooling. The complete private station archive remains on the laptop; neither is a bootable SD-sector image.
+## Training, conversion and model files
+
+| Artifact | Method | Deployment |
+| --- | --- | --- |
+| Custom YOLOv8s | 134 completed epochs; AdamW; 640 px | FP32 ONNX CPU or frozen INT8 Hailo-8 HEF |
+| MVTec pill EfficientAD-S | 70,000 FP32 steps; normal-only | CPU ONNX + saved image/map thresholds |
+| MVTec capsule EfficientAD-S | 70,000 FP32 steps; normal-only | CPU ONNX + saved image/map thresholds |
+| VisA capsules EfficientAD-S | 70,000 FP32 steps; normal-only; weak recall | CPU research/demo profile |
+| Llama 3.2 1B SpinQuant INT4 EO8 | Upstream pre-exported model; team integration/prompt optimization | Native Arm ExecuTorch |
+
+No retraining/compilation is needed for the included vision artifacts. [Original notebooks/export/compiler recipes](reproduction/README.md) support lifecycle inspection. Training reproduction additionally needs licensed original datasets, split manifests and calibration images; Git is not a full raw-dataset mirror. No team Llama fine-tuning or re-quantization is claimed.
+
+YOLO CPU/Hailo share RGB conversion, 640 px letterbox with padding 114 and reverse box mapping. CPU supplies NCHW float `/255`; Hailo supplies NHWC uint8 with normalization in the HEF. Do not normalize twice. [Model contracts and limitations](docs/MODEL_CARDS.md).
+
+[ARTIFACT_MANIFEST.json](ARTIFACT_MANIFEST.json) and the [part manifest](model_parts/manifest.json) specify exact model/runtime hashes. Large [Llama provisioning](llama/artifacts/README.md) is separate. A Drive mirror is **not claimed as published** without verified file IDs; the pinned upstream downloader is the documented path.
+
+## Verify tests, metric tables and recovery
+
+```sh
+python tools/verify_repository_artifacts.py
+python -m pytest tests -q
+python tools/build_results_docs.py --check
+python tools/smoke_models.py --output smoke_results.json
+python tools/restore_demo_backup.py --output ../medge-demo-restored
+```
+
+Restore requires a **new destination**, verifies part/archive/member hashes, SQLite integrity, audit chain and image identities, and restores stored advice rather than generating it again.
+
+[GitHub Actions](https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions) verifies artifacts, regressions, portable restore, CPU inference and native C++ boundary tests. **CI has no Hailo hardware.** [Workflow](.github/workflows/tests.yml).
+
+Rebuild all published metric tables/charts from preserved evidence with:
+
+```sh
+python tools/build_results_docs.py
+```
+
+## Repository structure
+
+```text
+app/                     API, model adapters, QA rules, persistence and integrity
+web/                     Offline dashboards, intro and secondary verdict display
+assets/                  YOLO thresholds and reconstructed ONNX
+models/                  Hailo HEF, anomaly models, contracts and sample libraries
+llama/                   Pinned downloader, native build recipe and licenses
+native/                  Instrumented ExecuTorch worker and JSON boundary
+model_parts/             Verified Git parts for models and original Arm runtime
+test_images/             Selected YOLO demonstration images and provenance
+tests/                   Python regressions and native C++ tests
+tools/                   Install, verify, test, benchmark, export and restore
+reproduction/            Original training/export notebooks and compiler recipe
+evidence/historical/     Preserved training, evaluation and historical benchmarks
+evidence/target_20261124/ Actual target outputs and process resource samples
+evidence/metrics/        Generated CSV/JSON results with source pointers
+evidence/gallery/        Actual Pi screenshots and validation logs
+backups/                 Portable measured-inspection bundle and manifest
+docs/                    Architecture, results, deployment and methodology
+```
+
+## Security, licenses and operational boundaries
+
+- **Local configuration:** authentication is disabled at the owner's request. Use loopback and SSH tunneling; this is not authenticated multi-user deployment.
+- **Traceability:** source/model/configuration hashes and append-only QA/advice interfaces preserve history. The SQLite hash chain is unkeyed and cannot prevent privileged replacement of the entire database.
+- **Authority:** advice is informational. The demo SOP is unapproved. Clinical severity, chemical/microbial safety, drug identity and production release are outside the evidence.
+- **Unmeasured:** labeled INT8 accuracy delta, healthy-only YOLO specificity, camera/product generalization, power/energy, NPU utilization and long-shift endurance.
+- **Licensing:** MVTec-derived models/samples retain **CC BY-NC-SA 4.0** noncommercial restrictions. VisA is **CC BY 4.0**. Ultralytics, Llama, ExecuTorch, EfficientAD and assets retain their individual terms. [Third-party notices](THIRD_PARTY_NOTICES.md).
+- **Recovery:** portable demo restore is verified. The complete private station archive remains outside Git and is not a bootable SD-sector image. Read [backup status](BACKUP_STATUS.md) before erasing original media.
+
+## Team
+
+**Medge Vision** — Bharat AI-SoC Challenge 2026–27
+
+- **Haridharan D** — Team leader
+- **Priyadharsan D**
+- **Jayaraj M**
+
+Some internal paths retain “BlisterTrace” for compatibility and historical traceability. The product is **Medge Vision**.
