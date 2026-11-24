@@ -14,7 +14,8 @@ def main():
     home = Path.home()
     unit = home/'.config/systemd/user/blistertrace.service'
     launchers = [(home/'medge-vision', root/'tools/launch_monitors.py'),
-                 (home/'medge-demo', root/'tools/medge_demo.py')]
+                 (home/'medge-demo', root/'tools/medge_demo.py'),
+                 (home/'medge-test', root/'tools/medge_eight_demo.py')]
     if not args.install:
         print('Checkout:', root, '\nService:', unit)
         print('Run with --install to install this checkout. Existing service/launchers are never overwritten.')

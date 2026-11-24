@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "92b0f80766b9b7d7391eb3a85f549a61ef80119201058a1b1d502e6d7c1256ba",
+  "verified_project_files": 1862,
+  "missing": [],
+  "corrupt": [],
+  "scope": "Consistent pre-audit project data, deployed source/configuration and native binaries; not full SD image",
+  "delta_sha256": "39c170ea34320fbd8c81b2fb2895000f9838a417e8249c080351808a259a093c",
+  "delta_files_verified": 49,
+  "project_recovery_verified": true,
+  "sd_sector_image": false
+}

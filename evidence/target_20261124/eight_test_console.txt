@@ -1,0 +1,847 @@
+All eight selected test images verified.
+
+MEDGE VISION | START LOCAL PIPELINE
+-----------------------------------------------------------------
+Service             READY; local loopback only
+Vision              hailo / YOLOv8s · 7 blister defect classes
+Advisory            ExecuTorch Llama / Arm CPU / idle
+Anomaly profiles    mvtec_capsule, mvtec_pill, visa_capsules
+Batch               TERMINAL-20261124-093134
+Reports             /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134
+No browser opened. Same persistent runtime; no second Hailo owner.
+
+MEDGE VISION | MODEL AND HARDWARE INVENTORY
+-----------------------------------------------------------------
+Vision backend      hailo
+Detector            YOLOv8s · 7 blister defect classes
+Device present      True
+Llama               Llama3.2 1B Instruct SpinQuant INT4 / ExecuTorch v1.0.0
+CPU threads         3
+Advisory state      idle
+Llama SHA256        8715cdba9e91f6bede00cc5f...
+Temperature C       51.8
+Available RAM MiB   15567
+mvtec_capsule       ONNX CPU | threshold 0.268284
+mvtec_pill          ONNX CPU | threshold 0.350053
+visa_capsules       ONNX CPU | threshold 0.202819
+Vision/HailoRT, anomaly/ONNX CPU and Llama/ExecuTorch CPU are separate.
+VisA is a low-recall research profile; these examples are selected demos.
+
+MEDGE VISION | TEST 1-1 | YOLO selected SAFE
+-----------------------------------------------------------------
+Inspection          8cfa5fe51aa5476a9dc14571f2f01cd6
+Input               acceptance_demo/safe/safe_01.jpg
+Backend             hailo
+Visual result       SAFE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        36.98
+Capture usable      True
+Finding: no configured defect detected.
+Waiting for local Llama / SOP advice.......
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Check camera alignment and lighting, recapture if needed, and request human review.
+QA draft            Preserve evidence. QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         11727.8
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    13.47
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_1-1_8cfa5fe51aa5476a9dc14571f2f01cd6.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "RECAPTURE_AND_REVIEW",
+    "clause_id": "BT-03",
+    "operator_message": "Check camera alignment and lighting, recapture if needed, and request human review.",
+    "qa_note": "Preserve evidence. QA review pending."
+  },
+  "decision": "REVIEW",
+  "elapsed_ms": 11727.8,
+  "facts_sha256": "962a3202d8f2fdb6a49c242dfd39a1aae1135ce6ddfabb6e6087f407f761b9ae",
+  "fallback_reason": null,
+  "inspection_id": "8cfa5fe51aa5476a9dc14571f2f01cd6",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 378,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 3,
+    "callback_ttft_ms": 4441.046345,
+    "first_token_ms": 1795492903524,
+    "generated_tokens": 48,
+    "inference_end_ms": 1795492907705,
+    "inference_start_ms": 1795492899083,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 4439,
+    "prompt_eval_end_ms": 1795492903524,
+    "prompt_tokens": 378,
+    "request_total_ms": 8621.869662,
+    "threads": 3,
+    "tokenization_ms": 2,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "unknown",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "8cfa5fe51aa5476a9dc14571f2f01cd6",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [],
+    "recommended_actions": [
+      "Check camera alignment and lighting, recapture if needed, and request human review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-03"
+      }
+    ],
+    "summary": "Check camera alignment and lighting, recapture if needed, and request human review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-03\",\"action_id\":\"RECAPTURE_AND_REVIEW\",\"operator_message\":\"Check camera alignment and lighting, recapture if needed, and request human review.\",\"qa_note\":\"Preserve evidence. QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | TEST 1-2 | YOLO selected DEFECTIVE
+-----------------------------------------------------------------
+Inspection          cf5cdda27c304cd9a47988165bc8fc99
+Input               acceptance_demo/defective/crack/crack.jpg
+Backend             hailo
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      HOLD (independent; original decision retained)
+Inference ms        15.04
+Capture usable      True
+Finding: crack | confidence 0.902 | bbox [309.44, 339.16, 372.01, 440.55]
+Waiting for local Llama / SOP advice.....
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Preserve evidence and request QA review.
+QA draft            Draft: observation and existing decision recorded. QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-02
+Advisory ms         9970.1
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    10.41
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_1-2_cf5cdda27c304cd9a47988165bc8fc99.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "ISOLATE_AND_REINSPECT",
+    "clause_id": "BT-02",
+    "operator_message": "Preserve evidence and request QA review.",
+    "qa_note": "Draft: observation and existing decision recorded. QA review pending."
+  },
+  "decision": "HOLD",
+  "elapsed_ms": 9970.1,
+  "facts_sha256": "3347ace977310074bbdb2c5be5261c2645f836920ae62386d02b3b896195edbc",
+  "fallback_reason": null,
+  "inspection_id": "cf5cdda27c304cd9a47988165bc8fc99",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 443,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 8,
+    "callback_ttft_ms": 5370.348624,
+    "first_token_ms": 1795492913308,
+    "generated_tokens": 45,
+    "inference_end_ms": 1795492917906,
+    "inference_start_ms": 1795492907938,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 5369,
+    "prompt_eval_end_ms": 1795492913308,
+    "prompt_tokens": 443,
+    "request_total_ms": 9968.5137,
+    "threads": 3,
+    "tokenization_ms": 1,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "major",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "cf5cdda27c304cd9a47988165bc8fc99",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [
+      {
+        "count": 1,
+        "type": "crack"
+      }
+    ],
+    "recommended_actions": [
+      "Preserve evidence and request QA review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-02"
+      }
+    ],
+    "summary": "Preserve evidence and request QA review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-02\",\"action_id\":\"ISOLATE_AND_REINSPECT\",\"operator_message\":\"Preserve evidence and request QA review.\",\"qa_note\":\"Draft: observation and existing decision recorded. QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | TEST 2-1 | MVTec pill selected SAFE
+-----------------------------------------------------------------
+Inspection          d9f0249c6b4b489b8ab8a108c04f9a94
+Input               demo/safe/safe_01.png
+Backend             anomaly_onnx_cpu
+Visual result       SAFE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        2086.81
+Capture usable      True
+Anomaly score       0.072969 / threshold 0.350053
+Flagged             False
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice....
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Preserve evidence and request human review.
+QA draft            QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         7551.8
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    10.05
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_2-1_d9f0249c6b4b489b8ab8a108c04f9a94.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "RECAPTURE_AND_REVIEW",
+    "clause_id": "BT-03",
+    "operator_message": "Preserve evidence and request human review.",
+    "qa_note": "QA review pending."
+  },
+  "decision": "REVIEW",
+  "elapsed_ms": 7551.8,
+  "facts_sha256": "4420a5bad66412396dd560721a91bb0b1c8d06c401b5b7ecef4224892dd9d32f",
+  "fallback_reason": null,
+  "inspection_id": "d9f0249c6b4b489b8ab8a108c04f9a94",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 385,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 1,
+    "callback_ttft_ms": 4472.510384,
+    "first_token_ms": 1795492924995,
+    "generated_tokens": 36,
+    "inference_end_ms": 1795492928073,
+    "inference_start_ms": 1795492920522,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 4471,
+    "prompt_eval_end_ms": 1795492924995,
+    "prompt_tokens": 385,
+    "request_total_ms": 7550.383837,
+    "threads": 3,
+    "tokenization_ms": 2,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "unknown",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "d9f0249c6b4b489b8ab8a108c04f9a94",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [],
+    "recommended_actions": [
+      "Preserve evidence and request human review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-03"
+      }
+    ],
+    "summary": "Preserve evidence and request human review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-03\",\"action_id\":\"RECAPTURE_AND_REVIEW\",\"operator_message\":\"Preserve evidence and request human review.\",\"qa_note\":\"QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | TEST 2-2 | MVTec pill selected DEFECTIVE
+-----------------------------------------------------------------
+Inspection          91eace7edcf6408ebbe06ce70c2ec309
+Input               demo/defective/defective_01.png
+Backend             anomaly_onnx_cpu
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        1321.32
+Capture usable      True
+Anomaly score       0.637408 / threshold 0.350053
+Flagged             True
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice.....
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Check camera alignment and lighting, recapture if needed, and request human review.
+QA draft            Preserve evidence. QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         8828.1
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    10.85
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_2-2_91eace7edcf6408ebbe06ce70c2ec309.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "RECAPTURE_AND_REVIEW",
+    "clause_id": "BT-03",
+    "operator_message": "Check camera alignment and lighting, recapture if needed, and request human review.",
+    "qa_note": "Preserve evidence. QA review pending."
+  },
+  "decision": "REVIEW",
+  "elapsed_ms": 8828.1,
+  "facts_sha256": "22c76847fbcacad4224d5e0bef59ed266369189facd13aeb18ffb6b0575615d9",
+  "fallback_reason": null,
+  "inspection_id": "91eace7edcf6408ebbe06ce70c2ec309",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 405,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 8,
+    "callback_ttft_ms": 4664.968124,
+    "first_token_ms": 1795492934448,
+    "generated_tokens": 48,
+    "inference_end_ms": 1795492938610,
+    "inference_start_ms": 1795492929784,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 4663,
+    "prompt_eval_end_ms": 1795492934448,
+    "prompt_tokens": 405,
+    "request_total_ms": 8826.59895,
+    "threads": 3,
+    "tokenization_ms": 1,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "unknown",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "91eace7edcf6408ebbe06ce70c2ec309",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [
+      {
+        "count": 1,
+        "type": "unknown_anomaly"
+      }
+    ],
+    "recommended_actions": [
+      "Check camera alignment and lighting, recapture if needed, and request human review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-03"
+      }
+    ],
+    "summary": "Check camera alignment and lighting, recapture if needed, and request human review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-03\",\"action_id\":\"RECAPTURE_AND_REVIEW\",\"operator_message\":\"Check camera alignment and lighting, recapture if needed, and request human review.\",\"qa_note\":\"Preserve evidence. QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | TEST 3-1 | MVTec capsule selected SAFE
+-----------------------------------------------------------------
+Inspection          3b033dd2ba7d45918c516737afb35d30
+Input               demo/safe/safe_01.png
+Backend             anomaly_onnx_cpu
+Visual result       SAFE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        1726.36
+Capture usable      True
+Anomaly score       0.048460 / threshold 0.268284
+Flagged             False
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice....
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Preserve evidence and request human review.
+QA draft            QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         7599.4
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    9.72
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_3-1_3b033dd2ba7d45918c516737afb35d30.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "RECAPTURE_AND_REVIEW",
+    "clause_id": "BT-03",
+    "operator_message": "Preserve evidence and request human review.",
+    "qa_note": "QA review pending."
+  },
+  "decision": "REVIEW",
+  "elapsed_ms": 7599.4,
+  "facts_sha256": "a97a85523286ebb3981c507c24f81b2715dfe386ed4c6cc79e55f920d7f838b9",
+  "fallback_reason": null,
+  "inspection_id": "3b033dd2ba7d45918c516737afb35d30",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 385,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 2,
+    "callback_ttft_ms": 4454.665478,
+    "first_token_ms": 1795492945534,
+    "generated_tokens": 36,
+    "inference_end_ms": 1795492948678,
+    "inference_start_ms": 1795492941080,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 4453,
+    "prompt_eval_end_ms": 1795492945534,
+    "prompt_tokens": 385,
+    "request_total_ms": 7598.001914,
+    "threads": 3,
+    "tokenization_ms": 1,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "unknown",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "3b033dd2ba7d45918c516737afb35d30",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [],
+    "recommended_actions": [
+      "Preserve evidence and request human review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-03"
+      }
+    ],
+    "summary": "Preserve evidence and request human review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-03\",\"action_id\":\"RECAPTURE_AND_REVIEW\",\"operator_message\":\"Preserve evidence and request human review.\",\"qa_note\":\"QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | TEST 3-2 | MVTec capsule selected DEFECTIVE
+-----------------------------------------------------------------
+Inspection          3014b011b7d24476afc250269b3a67af
+Input               demo/defective/defective_01.png
+Backend             anomaly_onnx_cpu
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        1327.58
+Capture usable      True
+Anomaly score       3.637529 / threshold 0.268284
+Flagged             True
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice.....
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Check camera alignment and lighting, recapture if needed, and request human review.
+QA draft            Preserve evidence. QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         9105.7
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    11.06
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_3-2_3014b011b7d24476afc250269b3a67af.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "RECAPTURE_AND_REVIEW",
+    "clause_id": "BT-03",
+    "operator_message": "Check camera alignment and lighting, recapture if needed, and request human review.",
+    "qa_note": "Preserve evidence. QA review pending."
+  },
+  "decision": "REVIEW",
+  "elapsed_ms": 9105.7,
+  "facts_sha256": "93e8a42533448b7852d067030a712a8816dd868eb85a1afd24486d69aea63b0a",
+  "fallback_reason": null,
+  "inspection_id": "3014b011b7d24476afc250269b3a67af",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 404,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 2,
+    "callback_ttft_ms": 4815.242201,
+    "first_token_ms": 1795492955319,
+    "generated_tokens": 48,
+    "inference_end_ms": 1795492959608,
+    "inference_start_ms": 1795492950504,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 4814,
+    "prompt_eval_end_ms": 1795492955319,
+    "prompt_tokens": 404,
+    "request_total_ms": 9104.274259,
+    "threads": 3,
+    "tokenization_ms": 1,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "unknown",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "3014b011b7d24476afc250269b3a67af",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [
+      {
+        "count": 1,
+        "type": "unknown_anomaly"
+      }
+    ],
+    "recommended_actions": [
+      "Check camera alignment and lighting, recapture if needed, and request human review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-03"
+      }
+    ],
+    "summary": "Check camera alignment and lighting, recapture if needed, and request human review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-03\",\"action_id\":\"RECAPTURE_AND_REVIEW\",\"operator_message\":\"Check camera alignment and lighting, recapture if needed, and request human review.\",\"qa_note\":\"Preserve evidence. QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | TEST 4-1 | VisA capsules selected SAFE
+-----------------------------------------------------------------
+Inspection          535a14f89cf54198a8f6c03c20f03e82
+Input               demo/safe/safe_01.png
+Backend             anomaly_onnx_cpu
+Visual result       SAFE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        1736.21
+Capture usable      True
+Anomaly score       0.124001 / threshold 0.202819
+Flagged             False
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice....
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Preserve evidence and request human review.
+QA draft            QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         8221.1
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    10.36
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_4-1_535a14f89cf54198a8f6c03c20f03e82.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "RECAPTURE_AND_REVIEW",
+    "clause_id": "BT-03",
+    "operator_message": "Preserve evidence and request human review.",
+    "qa_note": "QA review pending."
+  },
+  "decision": "REVIEW",
+  "elapsed_ms": 8221.1,
+  "facts_sha256": "3bda74132310b8f60d866a4a7e8777afcf3282a257f5a54e8bc936054e8c151e",
+  "fallback_reason": null,
+  "inspection_id": "535a14f89cf54198a8f6c03c20f03e82",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 385,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 5,
+    "callback_ttft_ms": 4999.749878,
+    "first_token_ms": 1795492966970,
+    "generated_tokens": 36,
+    "inference_end_ms": 1795492970190,
+    "inference_start_ms": 1795492961971,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 4998,
+    "prompt_eval_end_ms": 1795492966970,
+    "prompt_tokens": 385,
+    "request_total_ms": 8219.719362,
+    "threads": 3,
+    "tokenization_ms": 1,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "unknown",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "535a14f89cf54198a8f6c03c20f03e82",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [],
+    "recommended_actions": [
+      "Preserve evidence and request human review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-03"
+      }
+    ],
+    "summary": "Preserve evidence and request human review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-03\",\"action_id\":\"RECAPTURE_AND_REVIEW\",\"operator_message\":\"Preserve evidence and request human review.\",\"qa_note\":\"QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | TEST 4-2 | VisA capsules selected DEFECTIVE
+-----------------------------------------------------------------
+Inspection          7b9ab267a4c4469eb0137f4e7ca8318c
+Input               demo/defective/defective_01.png
+Backend             anomaly_onnx_cpu
+Visual result       DEFECTIVE | matched selected demo
+QA disposition      REVIEW (independent; original decision retained)
+Inference ms        1410.25
+Capture usable      True
+Anomaly score       2.262270 / threshold 0.202819
+Flagged             True
+Finding: image-level unknown visual anomaly; no classified defect type.
+Waiting for local Llama / SOP advice.....
+Advisory status     llama_validated
+Response cache      Fresh or recorded response; see saved provenance
+Llama action        Check camera alignment and lighting, recapture if needed, and request human review.
+QA draft            Preserve evidence. QA review pending.
+SOP citation        BT-DEMO-SOP-01 / BT-03
+Advisory ms         9830.6
+SOP is demonstration material; QA retains final disposition.
+Client elapsed s    12.11
+Saved evidence      /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134/test_4-2_7b9ab267a4c4469eb0137f4e7ca8318c.json
+
+FULL ADVISORY / SOP / QA DRAFT
+{
+  "advisor_version": "2026-11-22-json-v4",
+  "advisory": {
+    "action_id": "RECAPTURE_AND_REVIEW",
+    "clause_id": "BT-03",
+    "operator_message": "Check camera alignment and lighting, recapture if needed, and request human review.",
+    "qa_note": "Preserve evidence. QA review pending."
+  },
+  "decision": "REVIEW",
+  "elapsed_ms": 9830.6,
+  "facts_sha256": "429b3c1ff62c75b87c509d063c09fa5195fc5e395ef2e4417281640e5b9e8fb5",
+  "fallback_reason": null,
+  "inspection_id": "7b9ab267a4c4469eb0137f4e7ca8318c",
+  "model_sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
+  "operational_use": "General technical demonstration; consult an approved procedure and authorized QA.",
+  "prompt_mode": "adaptive-v1",
+  "prompt_tokens": 404,
+  "qa_signoff_required": true,
+  "runtime_metrics": {
+    "SCALING_FACTOR_UNITS_PER_SECOND": 1000,
+    "aggregate_sampling_time_ms": 8,
+    "callback_ttft_ms": 5394.366927,
+    "first_token_ms": 1795492977422,
+    "generated_tokens": 48,
+    "inference_end_ms": 1795492981857,
+    "inference_start_ms": 1795492972027,
+    "model_load_end_ms": 0,
+    "model_load_start_ms": 0,
+    "prefill_ms": 5393,
+    "prompt_eval_end_ms": 1795492977422,
+    "prompt_tokens": 404,
+    "request_total_ms": 9829.230182,
+    "threads": 3,
+    "tokenization_ms": 2,
+    "worker_load_ms": 3094.290618
+  },
+  "severity": "unknown",
+  "sop_approval_status": "Hackathon demonstration SOP; requires team/QA approval before operational use",
+  "sop_document": "BT-DEMO-SOP-01",
+  "sop_revision": "1",
+  "sop_sha256": "2f56e778e0607947489c113b5b10b1a72fbc803af68045665627ce61db4164b0",
+  "status": "llama_validated",
+  "structured_advisory": {
+    "defect_explanation": "Visual observations only; no chemical, microbial or root-cause conclusion.",
+    "escalation_required": true,
+    "generation_status": "llama_validated",
+    "inspection_id": "7b9ab267a4c4469eb0137f4e7ca8318c",
+    "limitations": [
+      "General technical demonstration; consult an approved SOP.",
+      "Authorized QA retains disposition authority."
+    ],
+    "observed_evidence": [
+      {
+        "count": 1,
+        "type": "unknown_anomaly"
+      }
+    ],
+    "recommended_actions": [
+      "Check camera alignment and lighting, recapture if needed, and request human review."
+    ],
+    "sop_references": [
+      {
+        "approval_status": "DEMONSTRATION_UNAPPROVED",
+        "document_id": "BT-DEMO-SOP-01",
+        "revision": "1",
+        "section": "BT-03"
+      }
+    ],
+    "summary": "Check camera alignment and lighting, recapture if needed, and request human review."
+  },
+  "validation_limit": "Schema, clause/action and bounded claim checks; free-text meaning still requires human review.",
+  "validation_trace": {
+    "raw_response": "{\"clause_id\":\"BT-03\",\"action_id\":\"RECAPTURE_AND_REVIEW\",\"operator_message\":\"Check camera alignment and lighting, recapture if needed, and request human review.\",\"qa_note\":\"Preserve evidence. QA review pending.\"}",
+    "rejection_detail": null,
+    "scope": "Untrusted model text for engineering audit only; UI advice uses only the validated advisory object or explicit fallback.",
+    "trusted_recommendation": false
+  }
+}
+
+MEDGE VISION | SAVED RESULTS AND AUDIT
+-----------------------------------------------------------------
+Test     1-1 | SAFE       | YOLO selected SAFE | 8cfa5fe51aa5
+Test     1-2 | DEFECTIVE  | YOLO selected DEFECTIVE | cf5cdda27c30
+Test     2-1 | SAFE       | MVTec pill selected SAFE | d9f0249c6b4b
+Test     2-2 | DEFECTIVE  | MVTec pill selected DEFECTIVE | 91eace7edcf6
+Test     3-1 | SAFE       | MVTec capsule selected SAFE | 3b033dd2ba7d
+Test     3-2 | DEFECTIVE  | MVTec capsule selected DEFECTIVE | 3014b011b7d2
+Test     4-1 | SAFE       | VisA capsules selected SAFE | 535a14f89cf5
+Test     4-2 | DEFECTIVE  | VisA capsules selected DEFECTIVE | 7b9ab267a4c4
+Audit chain         VERIFIED
+Checked events      565
+Evidence folder     /home/saul/BlisterTrace_Data/terminal_demos/TERMINAL-20261124-093134
+Selected demonstration outcomes only, not independent accuracy. SAFE = visual check.
+
+Selected demo matches: 8/8. Not an accuracy benchmark.
+Fallback or reused advice is explicitly identified; only llama_validated is validated model output.
+Dashboard command: ~/medge-vision

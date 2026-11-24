@@ -1,6 +1,6 @@
 import sys,json,hashlib
 from pathlib import Path
-ROOT=Path.home()/"BlisterTrace/releases/hardening_20261122"
+ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from tools import medge_demo as demo
 CASES=[("YOLO","yolo","acceptance_demo/safe/safe_01.jpg","acceptance_demo/defective/crack/crack.jpg"),("MVTec pill","mvtec_pill","demo/safe/safe_01.png","demo/defective/defective_01.png"),("MVTec capsule","mvtec_capsule","demo/safe/safe_01.png","demo/defective/defective_01.png"),("VisA capsules","visa_capsules","demo/safe/safe_01.png","demo/defective/defective_01.png")]

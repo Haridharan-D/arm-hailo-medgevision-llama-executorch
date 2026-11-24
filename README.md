@@ -1,5 +1,8 @@
 # Medge Vision
 
+**24 November target release:** [full submission report](SUBMISSION_REPORT.md), [eight-case target evidence](evidence/target_20261124/summary.json), [verified project backup status](BACKUP_STATUS.md). Actual Pi: 73 regressions passed, 8/8 selected outcomes and 8/8 genuine Llama responses; no cache reuse. Exact aarch64 runtime is now shipped as verified parts. Earlier pending-hardware statements below refer to the earlier release. Camera/endurance/Drive gaps remain explicit.
+
+
 Offline pharmaceutical optical-inspection research station: Raspberry Pi 5 + Hailo-8 YOLO, three EfficientAD CPU models, and ExecuTorch Llama advisory. Two dashboard designs, camera/upload/local-image inspection, anomaly heatmaps, SQLite evidence and a synchronized second HDMI verdict screen.
 
 **Current audit:** [PASS / FAIL / NOT TESTED report](docs/FINAL_RELEASE_AUDIT.md), [architecture](docs/architecture.svg), [model training-to-deployment dossier](docs/MODEL_LIFECYCLE.md), [historical benchmarks](evidence/historical/BENCHMARKS.json), [Drive mirror status](docs/DRIVE_MIRROR.md).

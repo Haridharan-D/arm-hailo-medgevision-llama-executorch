@@ -22,6 +22,8 @@ Open http://127.0.0.1:8765/ . Click the intro to enter. Alternate design: `/clas
 
 ## Genuine Llama advisory
 
+For the measured Raspberry Pi 5 aarch64 Debian Trixie setup, `python tools/verify_repository_artifacts.py` now reconstructs the original tested Arm worker and shared library as well as the vision models. Download the pinned Llama files, then run `python tools/configure_station.py --backend hailo`. A native rebuild is optional on the matching system; other architecture/OS/glibc combinations require the source-build path below. The PTE/tokenizer download remains separate because of size/licensing.
+
 Accept upstream Llama 3.2 license conditions. Download the pinned public conversion, then build on Linux/Arm (Pi) or Linux/x86-64 (WSL):
 
 ```sh
@@ -71,6 +73,8 @@ python tools/medge_demo.py summary
 ```
 
 These exercise two YOLO cases and all three EfficientAD profiles. Add `--help` to inspect options. The installed `~/medge-demo start` can start systemd automatically. Do not call fallback output successful Llama generation.
+
+The clone installer also creates `~/medge-test`: two cases per pipeline, eight total, full advisory output and final summary. Run `~/medge-vision` separately to open the dashboard. See SUBMISSION_REPORT.md for the actual 24 November Pi run and snapshot/recovery boundaries.
 
 ## Submission boundaries
 

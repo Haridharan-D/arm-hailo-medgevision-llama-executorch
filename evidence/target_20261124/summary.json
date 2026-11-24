@@ -1,0 +1,13 @@
+{
+  "cases": 8,
+  "matched": 8,
+  "llama_validated": 8,
+  "cache_reuse": 0,
+  "advisory_median_ms": 8966.900000000001,
+  "advisory_min_ms": 7551.8,
+  "advisory_max_ms": 11727.8,
+  "peak_service_tree_rss_mib": 1977.0625,
+  "peak_service_tree_cpu_percent": 302.6,
+  "resource_scope": "Actual target service and children including loaded vision and advisory; regression/dependency validation overlapped. Not an isolated performance comparison.",
+  "regressions_passed": 73
+}
