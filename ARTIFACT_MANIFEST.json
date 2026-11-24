@@ -40,5 +40,19 @@
     "bytes": 2183982,
     "sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
     "included_in_git": false
+  },
+  {
+    "path": "native/bin/aarch64/blistertrace_instrumented",
+    "bytes": 8708784,
+    "sha256": "db9f7014a9251896563bd6be60d05cf13114946d7c5d9a16c15c771df4df4804",
+    "included_in_git": true,
+    "executable": true
+  },
+  {
+    "path": "native/bin/aarch64/libllama_runner.so",
+    "bytes": 4070248,
+    "sha256": "54259931ef638f0f18d9bacb976d7bfbc80f55b4373cb179e118b65c4562ad1a",
+    "included_in_git": true,
+    "executable": false
   }
 ]

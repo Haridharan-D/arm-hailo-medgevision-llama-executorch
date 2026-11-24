@@ -11,6 +11,7 @@ def materialize(root):
         if destination.exists():
             with destination.open('rb') as stream:
                 if hashlib.file_digest(stream, 'sha256').hexdigest() == item['sha256']:
+                    if item.get('executable'):destination.chmod(0o755)
                     continue
         destination.parent.mkdir(parents=True, exist_ok=True)
         partial = destination.with_suffix('.onnx.partial')
@@ -27,6 +28,7 @@ def materialize(root):
         if digest.hexdigest() != item['sha256'] or partial.stat().st_size != item['bytes']:
             raise ValueError('Reassembled model checksum mismatch: '+item['path'])
         os.replace(partial, destination)
+        if item.get('executable'):destination.chmod(0o755)
         print('Reassembled:', item['path'])
 
 
