@@ -18,3 +18,5 @@ native/bin/
 *.json.before_setup
 smoke_results.json
 backups/demo_20261124/
+
+backups/*.zip

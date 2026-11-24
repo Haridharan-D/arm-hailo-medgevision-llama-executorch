@@ -127,3 +127,7 @@ Inspection `7b9ab267a4c4469eb0137f4e7ca8318c`. Actual vision 1410.25 ms; Llama 9
 ![Actual current secondary verdict](dashboard/secondary_actual_current_verdict.png)
 
 The second-display image shows the backend’s current pinned inspection, not each historical record selected in the main browser.
+
+## Restore validation
+
+The published demo bundle was restored into a new directory and loaded through the actual repository API. All eight record/image/original endpoints and six heatmap endpoints returned HTTP 200; original llama_validated advice was retained. See [API restore receipt](restored_api_verification.json).

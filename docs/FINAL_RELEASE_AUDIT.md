@@ -1,3 +1,5 @@
+> Historical 23 November audit. Current target validation, backups and screenshot acceptance supersede pending items in [SUBMISSION_REPORT.md](../SUBMISSION_REPORT.md).
+
 # Final reproducibility audit — 23 November 2026
 
 ## Acceptance status

@@ -3,7 +3,7 @@
   "status": "RESEARCH_DEMO_WITH_EXPLICIT_ACCEPTANCE_GAPS",
   "regression_tests": {
     "status": "PASS",
-    "passed": 73
+    "passed": 76
   },
   "cpu_smoke": {
     "status": "PASS",
@@ -36,6 +36,17 @@
   "ci_run": "https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/runs/45227285941",
   "target_regressions": {
     "status": "PASS",
-    "passed": 73
+    "passed": 76
+  },
+  "screenshots": {
+    "actual_pi_terminal_and_dashboard": 47,
+    "index": "evidence/gallery/README.md",
+    "terminal_scope": "Recorded original execution replay, explicitly labelled"
+  },
+  "portable_backup": {
+    "status": "PASS",
+    "records": 8,
+    "images_and_audit_verified": true,
+    "scope": "Credential-free recovery with new import chain"
   }
 }
