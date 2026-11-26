@@ -1,5 +1,7 @@
 # Llama / ExecuTorch engineering
 
+The repository workflow checks model hashes, CPU inference, and the native worker's JSON boundary. See the [current main-branch checks](https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/workflows/tests.yml?query=branch%3Amain) and the [Arm deployment instructions](QUICKSTART.md#genuine-llama-advisory).
+
 The methodological reference is [Arm course Module1](https://learn.arm.com/courses/executorch-on-arm/compare-transformer-inference/introduction/about-this-module/): prepare/export, lower, inspect delegation, measure on target, and validate application behavior before choosing the runtime. Its labs use GPT-2 and DistilBERT; they are not a Llama export recipe. The separate [Arm Raspberry Pi Llama path](https://learn.arm.com/learning-paths/embedded-and-microcontrollers/rpi-llama3/) supplies Llama deployment context. No Llama-8B recommendation or unrelated course quantization settings were blindly applied.
 
 ## Baseline identity

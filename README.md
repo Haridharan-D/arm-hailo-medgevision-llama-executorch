@@ -2,6 +2,8 @@
 
 # Medge Vision
 
+[![CPU regression tests on main](https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch/actions/workflows/tests.yml?query=branch%3Amain)
+
 An offline inspection station for pharmaceutical blister packs on Raspberry Pi 5. Hailo-8 finds known defects, Arm CPU anomaly models highlight unusual appearances, and ExecuTorch Llama explains recorded findings while QA retains the verdict.
 
 Built for the **Bharat AI-SoC Challenge 2026–27 (PS5)** by Haridharan D (team lead), Priyadharsan D and Jayaraj M.
