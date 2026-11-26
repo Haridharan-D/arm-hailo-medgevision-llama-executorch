@@ -26,14 +26,6 @@ Fresh CPU inference on selected examples using the shipped ONNX models. VisA rem
 
 Advisory panel cropped from the recorded Pi crack case. Llama returned “Preserve evidence and request QA review” and cited demo SOP clause **BT-02**. [Original target record](evidence/target_20261124/eight_test_report.json)
 
-### Live USB camera
-
-| Bench setup | Live dashboard result |
-| :---: | :---: |
-| [![USB camera aimed at blister-pack imagery displayed on a phone](evidence/judging/usb_camera_setup.png)](evidence/judging/usb_camera_setup.png) | [![Live USB video showing a color mismatch box and HOLD indicator](evidence/judging/usb_camera_live_detection.png)](evidence/judging/usb_camera_live_detection.png) |
-
-The camera viewed a blister-pack sample displayed on a phone. The live dashboard for `/dev/video0` shows a **color mismatch** box and **HOLD**. These photos document the bench demonstration. They do not provide measured frame rate, capture-to-verdict latency, or production accuracy.
-
 ## What it does
 
 - **Inspect stored images or USB/CSI camera captures.** YOLOv8s marks seven defect classes. Three EfficientAD-S profiles produce category-specific scores and heatmaps.
@@ -86,6 +78,14 @@ Open **http://127.0.0.1:8765/**. The verifier checks the included vision files a
 [![Animated architecture showing vision results flowing into the inspection record and separate Llama advice reaching the dashboard](docs/assets/architecture-motion.svg)](docs/architecture.svg)
 
 The teal path records vision results and the QA verdict. The violet path reads recorded findings and returns advisory text to the operator. The traceability panel shows what stays tied to each inspection ID. [Static architecture](docs/architecture.svg) · [Audit and records](docs/DATABASE_AND_AUDIT.md) · [Training and conversion](docs/MODEL_LIFECYCLE.md)
+
+### Live USB camera
+
+| Bench setup | Live dashboard result |
+| :---: | :---: |
+| [![USB camera aimed at blister-pack imagery displayed on a phone](evidence/judging/usb_camera_setup.png)](evidence/judging/usb_camera_setup.png) | [![Live USB video showing a color mismatch box and HOLD indicator](evidence/judging/usb_camera_live_detection.png)](evidence/judging/usb_camera_live_detection.png) |
+
+The camera viewed a blister-pack sample displayed on a phone. The live dashboard for `/dev/video0` shows a **color mismatch** box and **HOLD**. These photos document the bench demonstration. They do not provide measured frame rate, capture-to-verdict latency, or production accuracy.
 
 ## Validation and limits
 
