@@ -4,7 +4,7 @@
 
 ### One station. Three local inference paths. Evidence you can inspect.
 
-> **26 November engineering update:** [audit, measured before/after results and reproduction commands](docs/ENGINEERING_UPGRADE_20261126.md). 95 regression tests; paired CPU output parity; retained-data leakage checks; corrected anomaly configuration identity. Model accuracy claims and frozen thresholds are unchanged.
+> **26 November engineering update:** [PS5 engineering report (PDF)](docs/MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf) · [Audit, data and reproduction commands](docs/ENGINEERING_UPGRADE_20261126.md). The release passed 95 regression tests and matched detection outputs in all 12 paired CPU checks.
 
 | Understand the engineering | Inspect the evidence | Reproduce the system |
 | :--- | :--- | :--- |
