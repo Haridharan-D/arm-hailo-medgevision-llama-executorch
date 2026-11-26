@@ -32,7 +32,7 @@ The included frozen HEF avoids recompilation for inference. A new compile needs 
 
 The curated test excludes unresolved conflicts/invalid families and uses source-family/perceptual grouping. Physical strip independence was not verified. It has **zero normal-only images**: healthy specificity and false-reject rate cannot be estimated. Confidence is not pharmaceutical safety probability. Local-camera/product generalization and clinical severity are unvalidated. Reference INT8/FP32 agreement is a separate unannotated experiment.
 
-Ultralytics licensing applies; see [third-party notices](../THIRD_PARTY_NOTICES.md).
+Ultralytics licensing applies; see [third-party notices](THIRD_PARTY_NOTICES.md).
 
 ## EfficientAD-S: three independent anomaly profiles
 

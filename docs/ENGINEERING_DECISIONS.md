@@ -41,4 +41,4 @@ The separate historical CPU/Hailo experiment and historical Llama comparison ans
 
 These are **NOT TESTED / pending**, not hidden achievements. No models were retrained or thresholds changed for this presentation update.
 
-[Results](RESULTS.md) · [Model cards](MODEL_CARDS.md) · [Judge guide](../JUDGES_START_HERE.md)
+[Results](RESULTS.md) · [Model cards](MODEL_CARDS.md) · [Judge guide](JUDGES_START_HERE.md)

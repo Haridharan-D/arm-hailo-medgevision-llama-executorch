@@ -14,7 +14,7 @@ def main():
         for folder in ['app','web','tests']:
             for path in (ROOT/folder).rglob('*'):
                 if path.is_file() and '__pycache__' not in path.parts:zipped.write(path,path.relative_to(ROOT).as_posix())
-        for name in ['main.py','launch_pi.sh','install_pi.sh']:
+        for name in ['main.py','deploy/launch_pi.sh','deploy/install_pi.sh']:
             zipped.writestr(name,(ROOT/name).read_bytes().replace(b'\r\n',b'\n'))
     digest=hashlib.sha256(archive.read_bytes()).hexdigest()
     key=str(Path.home()/'.ssh/blistertrace_pi');host='saul@10.217.96.102'
@@ -39,13 +39,13 @@ with zipfile.ZipFile(archive) as source,zipfile.ZipFile(backup,'w',zipfile.ZIP_D
         if target.exists():dest.write(target,name)
     for name in source.namelist():
         target=root/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(source.read(name))
-(root/'launch_pi.sh').chmod(0o755)
+(root/'deploy/launch_pi.sh').chmod(0o755)
 launcher=Path.home()/'blistertrace'
 if launcher.exists() and 'BlisterTrace' not in launcher.read_text(errors='replace'):
     raise RuntimeError('A different home launcher exists; no overwrite performed')
-launcher.write_text('#!/usr/bin/env bash\\nexec bash "'+str(root/'launch_pi.sh')+'" "$@"\\n');launcher.chmod(0o755)
+launcher.write_text('#!/usr/bin/env bash\\nexec bash "'+str(root/'deploy/launch_pi.sh')+'" "$@"\\n');launcher.chmod(0o755)
 desktop=Path.home()/'Desktop/BlisterTrace.desktop'
-desktop.write_text('[Desktop Entry]\\nType=Application\\nName=BlisterTrace AOI\\nComment=Offline optical inspection workstation\\nExec=bash "'+str(root/'launch_pi.sh')+'"\\nTerminal=false\\nCategories=Science;\\n');desktop.chmod(0o755)
+desktop.write_text('[Desktop Entry]\\nType=Application\\nName=BlisterTrace AOI\\nComment=Offline optical inspection workstation\\nExec=bash "'+str(root/'deploy/launch_pi.sh')+'"\\nTerminal=false\\nCategories=Science;\\n');desktop.chmod(0o755)
 subprocess.run([str(root/'.venv/bin/python'),'-m','compileall','-q',str(root/'app'),str(root/'main.py')],check=True)
 began=time.monotonic()
 with (root/'application_server.log').open('ab') as log:

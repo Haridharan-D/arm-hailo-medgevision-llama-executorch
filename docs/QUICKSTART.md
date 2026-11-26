@@ -2,7 +2,7 @@
 
 ## CPU vision, Windows or Linux
 
-Clone this repository and use Python 3.11. The complete vision models are included and checked by SHA-256 before use. [Model files](models/README.md)
+Clone this repository and use Python 3.11. The complete vision models are included and checked by SHA-256 before use. [Model files](../models/README.md)
 
 ```sh
 git clone https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch.git
@@ -42,6 +42,8 @@ Windows advisory executes its Linux x86-64 worker through WSL. Build under WSL, 
 
 ## Hailo-8 vision
 
+Pi shell entry points are in [deploy/](../deploy/). From the repository root, use `bash deploy/install_pi.sh` for CPU setup or `bash deploy/launch_pi.sh` to start an existing setup. The Windows launcher is `deploy\start_windows.cmd`.
+
 Install matching vendor Hailo driver, HailoRT and Python bindings. On Pi create the virtual environment using `python3 -m venv --system-site-packages .venv`. Confirm `hailortcli fw-control identify`, then:
 
 ```sh
@@ -80,4 +82,4 @@ The clone installer also creates `~/medge-test`: two cases per pipeline, eight t
 
 ## Submission boundaries
 
-Selected demonstrations are not unbiased accuracy measurements. SAFE means a configured visual check is clear, not pharmaceutical release approval. QA disposition is separate, and Llama cannot override it. See [private recovery status](backups/PRIVATE_RECOVERY_STATUS.md), `THIRD_PARTY_NOTICES.md` and `docs/SUBMISSION_LIMITATIONS.md` before reuse or deployment.
+Selected demonstrations are not unbiased accuracy measurements. SAFE means a configured visual check is clear, not pharmaceutical release approval. QA disposition is separate, and Llama cannot override it. See [private recovery status](../backups/PRIVATE_RECOVERY_STATUS.md), `THIRD_PARTY_NOTICES.md` and [submission limitations](SUBMISSION_LIMITATIONS.md) before reuse or deployment.

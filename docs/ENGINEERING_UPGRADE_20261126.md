@@ -83,7 +83,7 @@ Synthetic unit fixtures test metric definitions and failure handling; they are n
 
 ## Exact reproduction commands
 
-From a clone with dependencies installed as in [QUICKSTART](../QUICKSTART.md):
+From a clone with dependencies installed as in [QUICKSTART](QUICKSTART.md):
 
 ```sh
 python tools/verify_repository_artifacts.py

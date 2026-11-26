@@ -6,7 +6,7 @@ An offline inspection station for pharmaceutical blister packs on Raspberry Pi 5
 
 Built for the **Bharat AI-SoC Challenge 2026–27 (PS5)** by Haridharan D (team lead), Priyadharsan D and Jayaraj M.
 
-**[Final report for judging (PDF)](docs/Final_MedgeVision_Report.pdf)** · [Judges' guide](JUDGES_START_HERE.md) · [Run it](QUICKSTART.md) · [Full results](docs/RESULTS.md)
+**[Final report for judging (PDF)](docs/Final_MedgeVision_Report.pdf)** · [Judges' guide](docs/JUDGES_START_HERE.md) · [Run it](docs/QUICKSTART.md) · [Full results](docs/RESULTS.md)
 
 ## See the models run
 
@@ -72,7 +72,7 @@ python tools/configure_station.py --backend onnx
 python main.py --desktop
 ```
 
-Open **http://127.0.0.1:8765/**. The verifier checks the included vision files and prepares the bundled Arm advisory runtime. The Pi uses the bundled Hailo-8 HEF and separately provisioned Llama artifacts. [Model files](models/README.md) · [Full setup and Pi deployment](QUICKSTART.md)
+Open **http://127.0.0.1:8765/**. The verifier checks the included vision files and prepares the bundled Arm advisory runtime. The Pi uses the bundled Hailo-8 HEF and separately provisioned Llama artifacts. [Model files](models/README.md) · [Full setup and Pi deployment](docs/QUICKSTART.md)
 
 ## Architecture
 
@@ -90,8 +90,8 @@ The camera viewed a blister-pack sample displayed on a phone. The live dashboard
 
 ## Validation and limits
 
-- **100 regression tests passed** in the local software run. Earlier release checks include CPU model smoke tests, native JSON-boundary checks and verified portable restore. [Tests](tests/) · [CI workflow](.github/workflows/tests.yml) · [Acceptance report](SUBMISSION_REPORT.md)
+- **100 regression tests passed** in the local software run. Earlier release checks include CPU model smoke tests, native JSON-boundary checks and verified portable restore. [Tests](tests/) · [CI workflow](.github/workflows/tests.yml) · [Acceptance report](docs/SUBMISSION_REPORT.md)
 - **Use the right comparison.** The FP32 holdout contains 1,303 defect images. The separate 18-image quantization experiment measures agreement with FP32 outputs. The USB photos cover a selected bench demonstration. [Evaluation scope and paired test procedure](docs/AUTOVI_COMPARISON.md)
 - **VisA missed 76 of 100 anomalies** and remains a research profile. Advisory is informational, and authorized QA retains release authority. [Limitations](docs/SUBMISSION_LIMITATIONS.md)
 
-[Documentation index and earlier reports](docs/README.md) · [Third-party terms](THIRD_PARTY_NOTICES.md)
+[Documentation index and earlier reports](docs/README.md) · [Third-party terms](docs/THIRD_PARTY_NOTICES.md)

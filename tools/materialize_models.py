@@ -6,7 +6,7 @@ import os
 
 
 def materialize(root):
-    for item in json.loads((root/'model_parts/manifest.json').read_text()):
+    for item in json.loads((root/'models/runtime-parts/manifest.json').read_text()):
         destination = root/item['path']
         if destination.exists():
             with destination.open('rb') as stream:

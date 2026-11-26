@@ -2,7 +2,7 @@ name: CPU regression tests
 on:
   push:
     paths-ignore:
-      - 'model_parts/**'
+      - 'models/runtime-parts/**'
   pull_request:
   workflow_dispatch:
 jobs:

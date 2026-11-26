@@ -2,7 +2,7 @@
 
 ## Reproduce and demonstrate
 
-- [Fresh-clone quick start](../QUICKSTART.md): CPU, matching Pi/Hailo, pinned Llama download and service setup.
+- [Fresh-clone quick start](QUICKSTART.md): CPU, matching Pi/Hailo, pinned Llama download and service setup.
 - [Model cards](MODEL_CARDS.md): frozen artifacts, training, normalization, outputs and limitations.
 - [Model lifecycle](MODEL_LIFECYCLE.md): notebooks, export, Hailo compilation and external prerequisites.
 - [Hackathon demonstration](HACKATHON_DEMO.md): operator-facing walkthrough.
@@ -18,7 +18,7 @@
 - [Evidence guide](EVIDENCE_GUIDE.md): original source files, exact experiment scopes and rerun commands.
 - [CSV/JSON exports](../evidence/metrics/README.md): full-precision values with provenance and source hashes.
 - [Actual Pi screenshot gallery](../evidence/gallery/README.md): all eight inspections, heatmaps/advice, terminal replay and application screens.
-- [Current engineering acceptance](../SUBMISSION_REPORT.md): final target/recovery checks and unresolved validation.
+- [Current engineering acceptance](SUBMISSION_REPORT.md): final target/recovery checks and unresolved validation.
 - [Final report for judging (PDF)](Final_MedgeVision_Report.pdf) and [fresh inference figures](../evidence/judging/README.md).
 - Earlier reports in `docs/archive/` · [Original project report](archive/MEDGE_VISION_Final_Project_Report.pdf) · [Engineering upgrade](archive/MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf) · [PS5 research paper](archive/MEDGE_VISION_PS5_Research_Paper.pdf) · [Previous judging draft](archive/Medge_Vision_Final_Report_for_Judging.pdf)
 
@@ -32,7 +32,7 @@
 - [QA workflow](INDUSTRIAL_WORKFLOW.md): visual observation versus authorized disposition.
 - [Database/audit](DATABASE_AND_AUDIT.md): evidence persistence and append-only review.
 - [Portable backup](../backups/README.md) and [private backup status](../backups/PRIVATE_RECOVERY_STATUS.md).
-- [Third-party licenses](../THIRD_PARTY_NOTICES.md) and [submission limitations](SUBMISSION_LIMITATIONS.md).
+- [Third-party licenses](THIRD_PARTY_NOTICES.md) and [submission limitations](SUBMISSION_LIMITATIONS.md).
 
 ## Historical engineering records
 

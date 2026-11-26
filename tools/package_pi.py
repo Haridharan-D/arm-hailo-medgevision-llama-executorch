@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def main():
     names=['main.py','config.json','requirements.txt','requirements-build.txt','README.md','TECHNICAL_REPORT.md',
-           'install_pi.sh','launch_pi.sh','install_hailo_pi.sh','BlisterTrace.spec','.gitignore','asset_hashes.json','TERMINAL_TESTS.md']
+           'deploy/install_pi.sh','deploy/launch_pi.sh','deploy/install_hailo_pi.sh','BlisterTrace.spec','.gitignore','asset_hashes.json','TERMINAL_TESTS.md']
     files=[ROOT/name for name in names]
     for folder in ['app','web','advisor_src','assets','test_images','tests','tools','models']:
         files.extend(p for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)

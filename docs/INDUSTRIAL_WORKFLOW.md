@@ -1,6 +1,6 @@
 # Operator workflow and offline demonstration
 
-1. After the clone installer has been run, start `~/medge-vision` (see [quick start](../QUICKSTART.md)) and enter the workspace deliberately. Show separate Hailo vision and ExecuTorch Arm advisory statuses.
+1. After the clone installer has been run, start `~/medge-vision` (see [quick start](QUICKSTART.md)) and enter the workspace deliberately. Show separate Hailo vision and ExecuTorch Arm advisory statuses.
 2. Open **Batch records · Audit · Accounts** or `/operations`; the shipped owner-requested configuration opens without a station login. Keep access on loopback or use an SSH tunnel; this is not authenticated multi-user deployment.
 3. Create a known demonstration batch with SKU, description, category and operator; select it for new inspections. Historical records stay attached to their original batch.
 4. Inspect one of the stored neutral CASE images using local input, or upload an existing image. USB camera0 is optional. No CSI is required.

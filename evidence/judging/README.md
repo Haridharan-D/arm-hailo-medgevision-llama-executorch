@@ -22,7 +22,7 @@ The team-provided [USB camera setup](usb_camera_setup.png) and [live dashboard p
 
 ## Reproduce
 
-From the repository root after [CPU setup](../../QUICKSTART.md):
+From the repository root after [CPU setup](../../docs/QUICKSTART.md):
 
 ```sh
 python tools/generate_judging_examples.py --output /path/to/new-output

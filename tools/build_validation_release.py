@@ -50,7 +50,7 @@ def main():
     package=OUTPUT/'BlisterTrace_Pi_Source_20261120.zip'
     files=[]
     for name in ['main.py','config.json','README.md','SUBMISSION_RUNBOOK.md',
-                 'TERMINAL_TESTS.md','install_pi.sh','launch_pi.sh','install_hailo_pi.sh','requirements.txt','asset_hashes.json']:
+                 'TERMINAL_TESTS.md','deploy/install_pi.sh','deploy/launch_pi.sh','deploy/install_hailo_pi.sh','requirements.txt','asset_hashes.json']:
         path=ROOT/name
         if path.is_file():files.append(path)
     for folder in ['app','web','advisor_src','assets','models','test_images','tools','tests']:

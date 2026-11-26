@@ -7,23 +7,23 @@
     "executable": true,
     "parts": [
       {
-        "path": "model_parts/pi_runtime/blistertrace_instrumented.000.small",
+        "path": "models/runtime-parts/pi_runtime/blistertrace_instrumented.000.small",
         "sha256": "1920d6087f0ac6b97764c8a6600774648a3518c6979f0d8311c9ca40347ca4a7"
       },
       {
-        "path": "model_parts/pi_runtime/blistertrace_instrumented.001.small",
+        "path": "models/runtime-parts/pi_runtime/blistertrace_instrumented.001.small",
         "sha256": "afd13493cc7a84f6c68aea1fa9c6d9948fb50776da8d15bc02aace9f9a2e5928"
       },
       {
-        "path": "model_parts/pi_runtime/blistertrace_instrumented.002.small",
+        "path": "models/runtime-parts/pi_runtime/blistertrace_instrumented.002.small",
         "sha256": "3904a35ced0af25cee7ff8f5ed4bd001a1e8d8d889ec7ca9ab155470bad2b575"
       },
       {
-        "path": "model_parts/pi_runtime/blistertrace_instrumented.003.small",
+        "path": "models/runtime-parts/pi_runtime/blistertrace_instrumented.003.small",
         "sha256": "24cf9de4fb87f8dc82a3c9e6768d6faca683e5a4388542a4b1667836f428cd7f"
       },
       {
-        "path": "model_parts/pi_runtime/blistertrace_instrumented.004.small",
+        "path": "models/runtime-parts/pi_runtime/blistertrace_instrumented.004.small",
         "sha256": "ccb1b8e51c825a44447af585f24dd9064ff4174bbabfaa7f46918a131815ce75"
       }
     ]
@@ -36,11 +36,11 @@
     "executable": false,
     "parts": [
       {
-        "path": "model_parts/pi_runtime/libllama_runner.so.000.small",
+        "path": "models/runtime-parts/pi_runtime/libllama_runner.so.000.small",
         "sha256": "20ecaa0e21df1c89a7922582720b7144a78ee397b6fd8ae09985e98bf0ad4855"
       },
       {
-        "path": "model_parts/pi_runtime/libllama_runner.so.001.small",
+        "path": "models/runtime-parts/pi_runtime/libllama_runner.so.001.small",
         "sha256": "b3f496213a78a230c6d1760bfc2a52e219fc8b6a13e006f25c8733b18016ff7a"
       }
     ]

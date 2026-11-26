@@ -4,4 +4,4 @@
 
 The private project archive and post-validation delta are on the laptop, verified by archive SHA256 and every included file hash. See the [backup verification record](../evidence/target_20261124/BACKUP_VERIFIED.json). Exact Arm runtime is included in Git parts; frozen deployment models remain preserved. Private data is not on GitHub.
 
-The project files are recoverable without the SD card at the snapshot boundary. This is not a sector image or identical OS restore. Keep C:/Arm_B_PS5/Arm_Hailo_Models/Pi_Recovery_20261124 and C:/arm_bharath_soc_2027 intact. New inspections after the snapshot need another backup. See the [engineering acceptance report](../SUBMISSION_REPORT.md).
+The project files are recoverable without the SD card at the snapshot boundary. This is not a sector image or identical OS restore. Keep C:/Arm_B_PS5/Arm_Hailo_Models/Pi_Recovery_20261124 and C:/arm_bharath_soc_2027 intact. New inspections after the snapshot need another backup. See the [engineering acceptance report](../docs/SUBMISSION_REPORT.md).

@@ -28,11 +28,11 @@ This is the source ledger for the [README](../README.md) and [full results](RESU
 | Exact final target outputs? | [eight_test_report.json](../evidence/target_20261124/eight_test_report.json) | `/selected_tests`, `/records`, `/samples`: eight IDs, detections, scores, actual advice and native/resource statistics |
 | Final target resource totals? | [summary.json](../evidence/target_20261124/summary.json) | Full service-tree RSS/CPU; overlapping validation work; not isolated Llama memory |
 | Visible model output/advice? | [Gallery](../evidence/gallery/README.md) | 47 captured screenshots linked to unchanged measured IDs |
-| Frozen artifact identity? | [ARTIFACT_MANIFEST.json](../ARTIFACT_MANIFEST.json), [part manifest](../model_parts/manifest.json) | Exact byte lengths and SHA-256 hashes |
+| Frozen artifact identity? | [ARTIFACT_MANIFEST.json](../ARTIFACT_MANIFEST.json), [part manifest](../models/runtime-parts/manifest.json) | Exact byte lengths and SHA-256 hashes |
 | Final evidence-release test count? | [Pi log](../evidence/gallery/target_regression_with_restore.txt), [laptop log](../evidence/gallery/regression_with_restore.txt) | 76 passing tests; older counts describe earlier stages |
 | Published recovery actually works? | [Restored API verification](../evidence/gallery/restored_api_verification.json) | Eight records, original/annotated images, six heatmaps and stored advice through the application |
 
-Historical documents retain their original dates, external paths and pending statements. The current [engineering report](../SUBMISSION_REPORT.md) and actual target/recovery logs supersede those pending items only where execution is recorded. No old benchmark is relabeled as a fresh measurement.
+Historical documents retain their original dates, external paths and pending statements. The current [engineering report](SUBMISSION_REPORT.md) and actual target/recovery logs supersede those pending items only where execution is recorded. No old benchmark is relabeled as a fresh measurement.
 
 ## Regenerate the evidence tables
 
@@ -47,7 +47,7 @@ Anomaly precision/recall/F1 are cross-checked against original confusion counts.
 
 ## Execute fresh selected-model tests
 
-After [installation](../QUICKSTART.md):
+After [installation](QUICKSTART.md):
 
 ```sh
 python tools/verify_repository_artifacts.py

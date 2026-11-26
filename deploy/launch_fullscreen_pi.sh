@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-APP="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+APP="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 URL="http://127.0.0.1:8765"
 cd "$APP"
 "$APP/.venv/bin/python" "$APP/tools/verify_repository_artifacts.py"
