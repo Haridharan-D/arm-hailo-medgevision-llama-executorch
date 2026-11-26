@@ -45,7 +45,7 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 | **YOLO vision quantization** | **INT8 post-training quantization** · Hailo-8 HEF · uint8 RGB input | Hailo DFC **3.34.0** · **512** training-only calibration images available. [Compile recipe](reproduction/hailo/compile_hef.sh) |
 | YOLO localization | **99.22% mAP50** · **89.19% mAP50–95** | FP32 holdout · 1,303 images / 2,956 boxes |
 | YOLO operating point | **97.63% micro F1** | Frozen class thresholds · 0.86–0.91 |
-| INT8 output agreement | **37 matched** · **2 INT8-only** · **1 FP32-only** | FP32 reference · 18 unlabeled images |
+| INT8 output agreement | **96.10% agreement F1** · **37 matched**, **2 INT8-only**, **1 FP32-only** | Derived from FP32 reference matching · 18 unlabeled images |
 | **EfficientAD-S vision precision** | **FP32 ONNX** on Arm CPU · no INT8 conversion applied | [Anomaly model contracts](docs/MODEL_CARDS.md) |
 | MVTec pill | **92.37% F1** · **0.9834 AUROC** · **0.9557 AUPRO** | EfficientAD-S holdout |
 | MVTec capsule | **88.32% F1** · **0.9485 AUROC** · **0.8308 AUPRO** | EfficientAD-S holdout |
@@ -54,11 +54,12 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 | Llama advisory latency | **15.156 → 8.071 s** median · **10.233 s** adaptive p95 | 1B INT4 baseline → adaptive-v1 |
 | Llama decode and guard replay | **12.003 tokens/s** median · **26/39 → 36/39** accepted | Historical advisory scenarios |
 | Station demonstration | **8/8** expected visual outcomes · **8/8** validated replies · **8.967 s** median advisory | Selected Pi cases · zero cache reuse |
-| **Live USB capture** | **MJPG · 1280 × 720 · 30 fps · 1-frame buffer** requested | OpenCV capture settings. Negotiated mode and delivered FPS were not measured in the pictured demo. [Camera implementation](app/camera.py) |
-| **Live USB performance estimate** | **Up to 30 FPS** software target. **18.14 ms/frame** mean budget left after Hailo detection. | Derived from the **33.33 ms** target frame interval minus **15.197 ms** measured mean detector time. Reaching 30 FPS requires capture, recording when triggered, and JPEG encoding to fit in the remainder. |
+| **Live USB capture configuration** | **MJPG · 1280 × 720 · 30 fps · 1-frame buffer** | Requested OpenCV settings. [Camera implementation](app/camera.py) |
+| **Live USB frame budget** | **18.14 ms/frame** available for capture and output work at **30 FPS** | Calculated as **33.33 ms** target period minus **15.197 ms** mean Hailo detector time. |
+| **Live USB throughput scenario** | **24.9–30 FPS** projected | Assumes **15–25 ms** of capture, encoding and other work per frame in addition to measured mean detector time. Capped at **30 FPS** by the camera loop. |
 | **USB snapshot** | Waits up to **2 s** for a frame captured after the request | Freeze / Snapshot uses the fresh-frame gate. [Camera implementation](app/camera.py) |
 
-Detector timing uses repeated stored images (35 CPU and 3,948 Hailo calls). AUPRO integrates to pixel FPR 0.30. Labeled INT8 accuracy and electrical power remain unmeasured. [Full benchmark evidence](docs/RESULTS.md) · [Model parameters](docs/MODEL_CARDS.md)
+Detector timing uses repeated stored images (35 CPU and 3,948 Hailo calls). AUPRO integrates to pixel FPR 0.30. The camera projection uses an assumed overhead range to show sensitivity. [Full benchmark evidence and measurement coverage](docs/RESULTS.md) · [Model parameters](docs/MODEL_CARDS.md)
 
 ## Run it
 
@@ -85,12 +86,12 @@ The teal path records vision results and the QA verdict. The violet path reads r
 | :---: | :---: |
 | [![USB camera aimed at blister-pack imagery displayed on a phone](evidence/judging/usb_camera_setup.png)](evidence/judging/usb_camera_setup.png) | [![Live USB video showing a color mismatch box and HOLD indicator](evidence/judging/usb_camera_live_detection.png)](evidence/judging/usb_camera_live_detection.png) |
 
-The camera viewed a blister-pack sample displayed on a phone. The live dashboard for `/dev/video0` shows a **color mismatch** box and **HOLD**. These photos document the bench demonstration. They do not provide measured frame rate, capture-to-verdict latency, or production accuracy.
+The camera viewed a blister-pack sample displayed on a phone. The live dashboard for `/dev/video0` shows a **color mismatch** box and **HOLD**. This bench demonstration verifies acquisition and visual output for the pictured input.
 
 ## Validation and limits
 
 - **100 regression tests passed** in the local software run. Earlier release checks include CPU model smoke tests, native JSON-boundary checks and verified portable restore. [Tests](tests/) · [CI workflow](.github/workflows/tests.yml) · [Acceptance report](SUBMISSION_REPORT.md)
-- **Labeled INT8 accuracy change, healthy-only YOLO specificity and production-camera generalization remain unmeasured.** The 18-image FP32/INT8 experiment measures output agreement. [Quantization evidence and paired test procedure](docs/AUTOVI_COMPARISON.md)
+- **Use the right comparison.** The FP32 holdout contains 1,303 defect images. The separate 18-image quantization experiment measures agreement with FP32 outputs. The USB photos cover a selected bench demonstration. [Evaluation scope and paired test procedure](docs/AUTOVI_COMPARISON.md)
 - **VisA missed 76 of 100 anomalies** and remains a research profile. Advisory is informational, and authorized QA retains release authority. [Limitations](docs/SUBMISSION_LIMITATIONS.md)
 
 [Documentation index and earlier reports](docs/README.md) · [Third-party terms](THIRD_PARTY_NOTICES.md)

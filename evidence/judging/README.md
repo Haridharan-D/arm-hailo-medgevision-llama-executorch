@@ -15,8 +15,8 @@ The team-provided [USB camera setup](usb_camera_setup.png) and [live dashboard p
 | Figure | Source and scope |
 | --- | --- |
 | [Profile comparison](fig2_macro_comparison.png) | Historical image AUROC and frozen-threshold F1 by category. [CSV](../metrics/anomaly_image.csv) |
-| [Latency](fig3_latency_breakdown.png) | Pi detector mean and p95 by backend. Stage timing is unavailable for this recorded Pi comparison. [CSV](../metrics/cpu_vs_hailo.csv) |
-| [Quantization agreement](fig4_quantization_parity.png) | Reference agreement counts across 18 unannotated images. Labeled INT8 accuracy remains unmeasured. [Source](../historical/METRICS.json) |
+| [Latency](fig3_latency_breakdown.png) | Pi detector-path mean and p95 by backend. [CSV](../metrics/cpu_vs_hailo.csv) |
+| [Quantization agreement](fig4_quantization_parity.png) | Detection counts matched against the FP32 reference across 18 unannotated images. [Source](../historical/METRICS.json) |
 | [Duplicate review](fig5_leakage_distribution.png) | Exact decoded duplicate groups in selected demo libraries. Full split leakage remains unverified. [Audit](../engineering_20261126/data_audit.json) |
 | [Operational tradeoff](fig6_operational_tradeoff.png) | Observed normal false-alarm rate versus defect recall at the frozen category-specific operating points. [CSV](../metrics/anomaly_image.csv) |
 
