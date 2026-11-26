@@ -26,6 +26,20 @@ Fresh CPU inference on selected examples using the shipped ONNX models. VisA rem
 
 Advisory panel cropped from the recorded Pi crack case. Llama returned “Preserve evidence and request QA review” and cited demo SOP clause **BT-02**. [Original target record](evidence/target_20261124/eight_test_report.json)
 
+[![Raspberry Pi terminal replay of the recorded Llama run with token counts, runtime and validation status](evidence/gallery/terminal/terminal_case_02_02.png)](evidence/gallery/terminal/terminal_case_02_02.png)
+
+**Terminal proof from the same case.** The Pi terminal replays the saved execution log showing `llama_validated`, **443 prompt tokens**, **45 generated tokens**, and **3 CPU threads**. The recorded application advisory took **9.970 s** and reported no cache reuse. [Full terminal and dashboard evidence](evidence/gallery/README.md)
+
+| Deployed Llama spec | Configuration |
+| --- | --- |
+| Model | **Llama 3.2 1B Instruct** · SpinQuant INT4 EO8 · **1.136 GB** PTE |
+| Quantization | **4-bit weights**, dynamic **8-bit activations**, group size **32**, **8-bit** embeddings and output projection |
+| Runtime | **ExecuTorch v1.0.0** on Raspberry Pi 5 Arm CPU · **3 threads** by default |
+| Token limits | **2,048** exported context · **1,536** prompt budget · **128** output cap |
+| Advisory policy | **adaptive-v1**, validated JSON and demo SOP references · QA retains the verdict |
+
+[Model card and artifact provenance](docs/MODEL_CARDS.md#llama-32-1b-instruct-spinquant-int4-eo8)
+
 ## What it does
 
 - **Inspect stored images or USB/CSI camera captures.** YOLOv8s marks seven defect classes. Three EfficientAD-S profiles produce category-specific scores and heatmaps.
