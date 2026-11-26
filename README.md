@@ -8,6 +8,8 @@ Built for the **Bharat AI-SoC Challenge 2026–27 (PS5)** by Haridharan D (team 
 
 **[Final report for judging (PDF)](docs/Final_MedgeVision_Report.pdf)** · [Judges' guide](docs/JUDGES_START_HERE.md) · [Run it](docs/QUICKSTART.md) · [Full results](docs/RESULTS.md)
 
+---
+
 ## See the models run
 
 | YOLOv8s crack detection | MVTec pill heatmap |
@@ -20,31 +22,33 @@ Built for the **Bharat AI-SoC Challenge 2026–27 (PS5)** by Haridharan D (team 
 
 Fresh CPU inference on selected examples using the shipped ONNX models. VisA remains a research profile with **24% held-out recall**. [Inference receipt](evidence/judging/inference_receipt.json) · [All examples and plots](evidence/judging/README.md)
 
-### ExecuTorch Llama proof
+---
 
-[![Cropped Raspberry Pi advisory panel showing a validated Llama response and BT-02 SOP citation](evidence/judging/llama_advisory_proof.png)](evidence/judging/llama_advisory_proof.png)
+## ExecuTorch Llama proof
 
-Advisory panel cropped from the recorded Pi crack case. Llama returned “Preserve evidence and request QA review” and cited demo SOP clause **BT-02**. [Original target record](evidence/target_20261124/eight_test_report.json)
-
-[![Raspberry Pi terminal replay of the recorded Llama run with token counts, runtime and validation status](evidence/gallery/terminal/terminal_case_02_02.png)](evidence/gallery/terminal/terminal_case_02_02.png)
-
-**Terminal proof from the same case.** The Pi terminal replays the saved execution log showing `llama_validated`, **443 prompt tokens**, **45 generated tokens**, and **3 CPU threads**. The recorded application advisory took **9.970 s** and reported no cache reuse. [Full terminal and dashboard evidence](evidence/gallery/README.md)
-
-| Deployed Llama spec | Configuration |
+| Dashboard advisory | Pi terminal replay |
 | --- | --- |
-| Model | **Llama 3.2 1B Instruct** · SpinQuant INT4 EO8 · **1.136 GB** PTE |
-| Quantization | **4-bit weights**, dynamic **8-bit activations**, group size **32**, **8-bit** embeddings and output projection |
-| Runtime | **ExecuTorch v1.0.0** on Raspberry Pi 5 Arm CPU · **3 threads** by default |
-| Token limits | **2,048** exported context · **1,536** prompt budget · **128** output cap |
-| Advisory policy | **adaptive-v1**, validated JSON and demo SOP references · QA retains the verdict |
+| [![Validated Llama advisory with the BT-02 SOP citation](evidence/judging/llama_advisory_proof.png)](evidence/judging/llama_advisory_proof.png) | [![Cropped terminal replay with token counts, thread count and validation status](evidence/judging/llama_terminal_proof.png)](evidence/gallery/terminal/terminal_case_02_02.png) |
 
-[Model card and artifact provenance](docs/MODEL_CARDS.md#llama-32-1b-instruct-spinquant-int4-eo8)
+Same recorded Pi case · **BT-02** · `llama_validated` · **443 prompt / 45 generated tokens** · **9.970 s** · zero cache reuse. [Original run record](evidence/target_20261124/eight_test_report.json)
+
+| Spec | Deployed setting |
+| --- | --- |
+| Model | **Llama 3.2 1B Instruct**, SpinQuant INT4 EO8 · **1.136 GB** |
+| Runtime | **ExecuTorch 1.0.0 + XNNPACK** on Pi 5 Arm CPU · **3 threads** by default |
+| Tokens | **2,048** context · **1,536** prompt budget · **128** output cap |
+
+The exported graph contains **180 XNNPACK delegate calls**. [Runtime and graph details](docs/LLAMA_EXECUTORCH_OPTIMIZATION.md#graphbuild-evidence)
+
+---
 
 ## What it does
 
 - **Inspect stored images or USB/CSI camera captures.** YOLOv8s marks seven defect classes. Three EfficientAD-S profiles produce category-specific scores and heatmaps.
 - **Record the verdict before asking Llama.** Advisory runs asynchronously against the recorded findings and demo SOP. It cannot alter the verdict.
 - **Keep a traceable QA record.** Images, model and configuration hashes, and append-only reviews stay tied to the inspection ID. Use the dashboard, verdict-only display or terminal tools.
+
+---
 
 ## Engineering scorecard
 
@@ -75,6 +79,8 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 
 Detector timing uses repeated stored images (35 CPU and 3,948 Hailo calls). AUPRO integrates to pixel FPR 0.30. The camera projection uses an assumed overhead range to show sensitivity. [Full benchmark evidence and measurement coverage](docs/RESULTS.md) · [Model parameters](docs/MODEL_CARDS.md)
 
+---
+
 ## Run it
 
 From a clone with a Python 3.11 virtual environment active, run CPU vision on Windows or Linux.
@@ -87,6 +93,8 @@ python main.py --desktop
 ```
 
 Open **http://127.0.0.1:8765/**. The verifier checks the included vision files and prepares the bundled Arm advisory runtime. The Pi uses the bundled Hailo-8 HEF and separately provisioned Llama artifacts. [Model files](models/README.md) · [Full setup and Pi deployment](docs/QUICKSTART.md)
+
+---
 
 ## Architecture
 
@@ -101,6 +109,8 @@ The teal path records vision results and the QA verdict. The violet path reads r
 | [![USB camera aimed at blister-pack imagery displayed on a phone](evidence/judging/usb_camera_setup.png)](evidence/judging/usb_camera_setup.png) | [![Live USB video showing a color mismatch box and HOLD indicator](evidence/judging/usb_camera_live_detection.png)](evidence/judging/usb_camera_live_detection.png) |
 
 The camera viewed a blister-pack sample displayed on a phone. The live dashboard for `/dev/video0` shows a **color mismatch** box and **HOLD**. This bench demonstration verifies acquisition and visual output for the pictured input.
+
+---
 
 ## Validation and limits
 
