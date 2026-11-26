@@ -1,0 +1,56 @@
+{
+  "mvtec_pill": {
+    "confusion_matrix_tn_fp_fn_tp": [
+      26,
+      0,
+      20,
+      121
+    ],
+    "images": 167,
+    "precision": 1.0,
+    "recall": 0.8581560283687943,
+    "f1": 0.9236641221374046,
+    "specificity": 1.0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.14184397163120568,
+    "accuracy": 0.8802395209580839,
+    "image_auroc": 0.9833606110201855,
+    "threshold": 0.35005301237106323
+  },
+  "mvtec_capsule": {
+    "confusion_matrix_tn_fp_fn_tp": [
+      22,
+      1,
+      22,
+      87
+    ],
+    "images": 132,
+    "precision": 0.9886363636363636,
+    "recall": 0.7981651376146789,
+    "f1": 0.883248730964467,
+    "specificity": 0.9565217391304348,
+    "false_positive_rate": 0.043478260869565216,
+    "false_negative_rate": 0.2018348623853211,
+    "accuracy": 0.8257575757575758,
+    "image_auroc": 0.9485440765855604,
+    "threshold": 0.2682838439941406
+  },
+  "visa_capsules": {
+    "confusion_matrix_tn_fp_fn_tp": [
+      59,
+      1,
+      76,
+      24
+    ],
+    "images": 160,
+    "precision": 0.96,
+    "recall": 0.24,
+    "f1": 0.384,
+    "specificity": 0.9833333333333333,
+    "false_positive_rate": 0.016666666666666666,
+    "false_negative_rate": 0.76,
+    "accuracy": 0.51875,
+    "image_auroc": 0.6501666666666667,
+    "threshold": 0.20281894505023956
+  }
+}

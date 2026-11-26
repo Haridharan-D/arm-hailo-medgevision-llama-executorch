@@ -1,0 +1,14 @@
+{
+  "restored": "C:\\MedgeVision_Engineering_Restore_20261126",
+  "records": 8,
+  "verification": {
+    "valid": true,
+    "checked_events": 18,
+    "invalid_sequences": [],
+    "head_sha256": "599715443cd8f2b88abb1e2f596bb25c81f700c26c8e765365b5b8c19e4ebc6d",
+    "sqlite_integrity": "ok",
+    "images_checked": 8,
+    "invalid_images": [],
+    "limitation": "Unkeyed chain; anchor backup hashes externally. Does not prevent privileged whole-DB replacement. Legacy unhashed images are outside image verification."
+  }
+}

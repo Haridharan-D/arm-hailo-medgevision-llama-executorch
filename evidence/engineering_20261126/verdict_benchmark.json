@@ -1,0 +1,66 @@
+{
+  "scope": "Measure decoded-image -> persisted verdict on CPU with advisory explicitly disabled.\n\nIncludes preprocessing, inference, QA policy, image encoding, SQLite and fallback\nrecording. Excludes camera acquisition, HTTP/browser and native Llama generation.\nUses a new temporary station; never modifies an existing operator database.\n",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "warmup_detector_calls": 2,
+  "rows": [
+    {
+      "sample": "defective/crack/crack.jpg",
+      "repeat": 0,
+      "elapsed_ms": 298.923599999398,
+      "detector_ms": 172.44,
+      "decision": "HOLD",
+      "advice_status": "fallback",
+      "persisted": true
+    },
+    {
+      "sample": "safe/safe_01.jpg",
+      "repeat": 0,
+      "elapsed_ms": 273.001599998679,
+      "detector_ms": 160.26,
+      "decision": "REVIEW",
+      "advice_status": "fallback",
+      "persisted": true
+    },
+    {
+      "sample": "defective/crack/crack.jpg",
+      "repeat": 1,
+      "elapsed_ms": 250.8866999996826,
+      "detector_ms": 171.85,
+      "decision": "HOLD",
+      "advice_status": "fallback",
+      "persisted": true
+    },
+    {
+      "sample": "safe/safe_01.jpg",
+      "repeat": 1,
+      "elapsed_ms": 277.23230000265175,
+      "detector_ms": 159.83,
+      "decision": "REVIEW",
+      "advice_status": "fallback",
+      "persisted": true
+    },
+    {
+      "sample": "defective/crack/crack.jpg",
+      "repeat": 2,
+      "elapsed_ms": 220.4517999998643,
+      "detector_ms": 164.93,
+      "decision": "HOLD",
+      "advice_status": "fallback",
+      "persisted": true
+    },
+    {
+      "sample": "safe/safe_01.jpg",
+      "repeat": 2,
+      "elapsed_ms": 301.44970000037574,
+      "detector_ms": 169.49,
+      "decision": "REVIEW",
+      "advice_status": "fallback",
+      "persisted": true
+    }
+  ],
+  "p50_ms": 275.1169500006654,
+  "p95_ms": 300.8181750001313,
+  "native_llama": "NOT TESTED",
+  "hailo": "NOT TESTED",
+  "dashboard_paint": "NOT TESTED"
+}

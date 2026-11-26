@@ -39,10 +39,14 @@ class AnomalyEngine:
 
     def predict(self,image,profile):
         if profile not in self.contracts:raise ValueError('Unknown anomaly profile')
+        if image is None or image.dtype!=np.uint8 or image.ndim!=3 or image.shape[2]!=3 or min(image.shape[:2])<1:
+            raise ValueError('Anomaly input must be a nonempty uint8 BGR image')
         started=time.perf_counter();contract=self.contracts[profile]
         rgb=Image.fromarray(cv2.cvtColor(image,cv2.COLOR_BGR2RGB)).resize((256,256),Image.Resampling.BILINEAR)
         tensor=np.ascontiguousarray(np.asarray(rgb,dtype=np.float32).transpose(2,0,1)[None]/255)
+        prepared=time.perf_counter()
         with self.lock:
+            acquired=time.perf_counter();cold=self.current!=profile
             if self.current!=profile:
                 import onnxruntime as ort
                 path=self.root/profile/'model.onnx'
@@ -52,7 +56,9 @@ class AnomalyEngine:
                 self.session=None  # Keep one category resident to bound memory.
                 self.session=ort.InferenceSession(str(path),sess_options=options,providers=['CPUExecutionProvider'])
                 self.current=profile
+            loaded=time.perf_counter()
             heatmap,score=self.session.run(['heatmap','score'],{'image':tensor})
+            inferred=time.perf_counter()
         if heatmap.shape!=(1,1,256,256) or score.shape!=(1,) or not np.isfinite(heatmap).all() or not np.isfinite(score).all():
             raise RuntimeError('Invalid anomaly output contract')
         threshold=contract['thresholds']['image'];pixel=contract['thresholds']['pixel']
@@ -69,4 +75,11 @@ class AnomalyEngine:
         alpha=(np.clip((scale-.12)/.88,0,1)*180).astype(np.uint8)
         rgba=cv2.cvtColor(color,cv2.COLOR_BGR2BGRA);rgba[:,:,3]=alpha
         overlay=(image.astype(np.float32)*(1-alpha[:,:,None]/255)+color.astype(np.float32)*(alpha[:,:,None]/255)).astype(np.uint8)
+        finished=time.perf_counter()
+        assessment['timings_ms']={'preprocess':(prepared-started)*1000,
+            'queue_wait':(acquired-prepared)*1000,'session_prepare':(loaded-acquired)*1000,
+            'model_inference':(inferred-loaded)*1000,'postprocess_and_overlay':(finished-inferred)*1000,
+            'total':(finished-started)*1000}
+        assessment['cold_profile_load']=cold
+        assessment['timing_scope']='In-process anomaly path including overlay; excludes capture, persistence and advisory. Legacy elapsed_ms excludes overlay.'
         return assessment,rgba,overlay,heatmap[0,0]

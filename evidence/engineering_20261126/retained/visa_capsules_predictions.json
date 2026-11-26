@@ -1,0 +1,962 @@
+[
+  {
+    "path": "capsules/Data/Images/Normal/062.JPG",
+    "label": 0,
+    "score": 0.12400109320878983,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/240.JPG",
+    "label": 0,
+    "score": 0.12862779200077057,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/179.JPG",
+    "label": 0,
+    "score": 0.08729153871536255,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/288.JPG",
+    "label": 0,
+    "score": 0.18137617409229279,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/324.JPG",
+    "label": 0,
+    "score": 0.02155453711748123,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/152.JPG",
+    "label": 0,
+    "score": 0.0662408396601677,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/576.JPG",
+    "label": 0,
+    "score": 0.02547983080148697,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/107.JPG",
+    "label": 0,
+    "score": 0.08492673188447952,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/484.JPG",
+    "label": 0,
+    "score": 0.04155499488115311,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/303.JPG",
+    "label": 0,
+    "score": 0.10319747775793076,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/237.JPG",
+    "label": 0,
+    "score": 0.0654112920165062,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/394.JPG",
+    "label": 0,
+    "score": 0.01696697250008583,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/214.JPG",
+    "label": 0,
+    "score": 0.06564860790967941,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/594.JPG",
+    "label": 0,
+    "score": 0.06978894770145416,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/377.JPG",
+    "label": 0,
+    "score": 0.030355092138051987,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/514.JPG",
+    "label": 0,
+    "score": 0.03067694790661335,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/172.JPG",
+    "label": 0,
+    "score": 0.15502455830574036,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/483.JPG",
+    "label": 0,
+    "score": 0.10351577401161194,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/400.JPG",
+    "label": 0,
+    "score": 0.08250684291124344,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/469.JPG",
+    "label": 0,
+    "score": 0.05127736181020737,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/525.JPG",
+    "label": 0,
+    "score": 0.05754324793815613,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/170.JPG",
+    "label": 0,
+    "score": 0.07185734063386917,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/320.JPG",
+    "label": 0,
+    "score": 0.11976377665996552,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/423.JPG",
+    "label": 0,
+    "score": 0.032595157623291016,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/417.JPG",
+    "label": 0,
+    "score": 0.08584818243980408,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/306.JPG",
+    "label": 0,
+    "score": 0.06542141735553741,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/011.JPG",
+    "label": 0,
+    "score": 0.0800904929637909,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/215.JPG",
+    "label": 0,
+    "score": 0.07794767618179321,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/159.JPG",
+    "label": 0,
+    "score": 0.04404357075691223,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/518.JPG",
+    "label": 0,
+    "score": 0.03524152562022209,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/026.JPG",
+    "label": 0,
+    "score": 0.06027545779943466,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/580.JPG",
+    "label": 0,
+    "score": 0.041200749576091766,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/402.JPG",
+    "label": 0,
+    "score": 0.07265180349349976,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/294.JPG",
+    "label": 0,
+    "score": 0.13249430060386658,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/016.JPG",
+    "label": 0,
+    "score": 0.056064411997795105,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/046.JPG",
+    "label": 0,
+    "score": 0.16516242921352386,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/208.JPG",
+    "label": 0,
+    "score": 0.0761328935623169,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/427.JPG",
+    "label": 0,
+    "score": 0.07279732078313828,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/552.JPG",
+    "label": 0,
+    "score": 0.062006667256355286,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/333.JPG",
+    "label": 0,
+    "score": 0.03836659714579582,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/027.JPG",
+    "label": 0,
+    "score": 0.05765034630894661,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/100.JPG",
+    "label": 0,
+    "score": 0.1059868335723877,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/013.JPG",
+    "label": 0,
+    "score": 0.05210436135530472,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/297.JPG",
+    "label": 0,
+    "score": 0.20755551755428314,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Normal/457.JPG",
+    "label": 0,
+    "score": 0.06347707659006119,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/520.JPG",
+    "label": 0,
+    "score": 0.06443069875240326,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/174.JPG",
+    "label": 0,
+    "score": 0.0544377863407135,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/261.JPG",
+    "label": 0,
+    "score": 0.03358563035726547,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/286.JPG",
+    "label": 0,
+    "score": 0.11793383955955505,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/363.JPG",
+    "label": 0,
+    "score": 0.0461965836584568,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/024.JPG",
+    "label": 0,
+    "score": 0.15307363867759705,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/178.JPG",
+    "label": 0,
+    "score": 0.1091385930776596,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/479.JPG",
+    "label": 0,
+    "score": 0.06267528980970383,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/569.JPG",
+    "label": 0,
+    "score": 0.07314442098140717,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/196.JPG",
+    "label": 0,
+    "score": 0.1181936264038086,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/187.JPG",
+    "label": 0,
+    "score": 0.1086735874414444,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/488.JPG",
+    "label": 0,
+    "score": 0.0876496210694313,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/545.JPG",
+    "label": 0,
+    "score": 0.07997071743011475,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/490.JPG",
+    "label": 0,
+    "score": 0.049015261232852936,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Normal/168.JPG",
+    "label": 0,
+    "score": 0.11552563309669495,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/000.JPG",
+    "label": 1,
+    "score": 0.05357643961906433,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/001.JPG",
+    "label": 1,
+    "score": 0.08945082873106003,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/002.JPG",
+    "label": 1,
+    "score": 0.02039170078933239,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/003.JPG",
+    "label": 1,
+    "score": 0.06417286396026611,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/004.JPG",
+    "label": 1,
+    "score": 0.058817677199840546,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/005.JPG",
+    "label": 1,
+    "score": 0.02731083706021309,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/006.JPG",
+    "label": 1,
+    "score": 0.05378805100917816,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/007.JPG",
+    "label": 1,
+    "score": 0.04297385364770889,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/008.JPG",
+    "label": 1,
+    "score": 0.04363375902175903,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/009.JPG",
+    "label": 1,
+    "score": 0.13152138888835907,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/010.JPG",
+    "label": 1,
+    "score": 0.0760556161403656,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/011.JPG",
+    "label": 1,
+    "score": 0.10857971012592316,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/012.JPG",
+    "label": 1,
+    "score": 0.07996970415115356,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/013.JPG",
+    "label": 1,
+    "score": 0.043168578296899796,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/014.JPG",
+    "label": 1,
+    "score": 0.06641501933336258,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/015.JPG",
+    "label": 1,
+    "score": 0.06367918848991394,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/016.JPG",
+    "label": 1,
+    "score": 0.09536698460578918,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/017.JPG",
+    "label": 1,
+    "score": 0.08758670836687088,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/018.JPG",
+    "label": 1,
+    "score": 0.08863824605941772,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/019.JPG",
+    "label": 1,
+    "score": 0.042103011161088943,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/020.JPG",
+    "label": 1,
+    "score": 0.09651760756969452,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/021.JPG",
+    "label": 1,
+    "score": 0.04186641797423363,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/022.JPG",
+    "label": 1,
+    "score": 0.07674063742160797,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/023.JPG",
+    "label": 1,
+    "score": 0.05817613750696182,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/024.JPG",
+    "label": 1,
+    "score": 0.06591775268316269,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/025.JPG",
+    "label": 1,
+    "score": 0.07561594992876053,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/026.JPG",
+    "label": 1,
+    "score": 0.14274144172668457,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/027.JPG",
+    "label": 1,
+    "score": 0.06559526920318604,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/028.JPG",
+    "label": 1,
+    "score": 0.14682914316654205,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/029.JPG",
+    "label": 1,
+    "score": 0.037227362394332886,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/030.JPG",
+    "label": 1,
+    "score": 0.06013859808444977,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/031.JPG",
+    "label": 1,
+    "score": 0.025704950094223022,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/032.JPG",
+    "label": 1,
+    "score": 0.04653124883770943,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/033.JPG",
+    "label": 1,
+    "score": 0.043919097632169724,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/034.JPG",
+    "label": 1,
+    "score": 0.043892230838537216,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/035.JPG",
+    "label": 1,
+    "score": 0.1417822539806366,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/036.JPG",
+    "label": 1,
+    "score": 0.03675052896142006,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/037.JPG",
+    "label": 1,
+    "score": 0.10534506291151047,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/038.JPG",
+    "label": 1,
+    "score": 0.03320332616567612,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/039.JPG",
+    "label": 1,
+    "score": 0.07612606883049011,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/040.JPG",
+    "label": 1,
+    "score": 0.0275566428899765,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/041.JPG",
+    "label": 1,
+    "score": 0.08475875109434128,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/042.JPG",
+    "label": 1,
+    "score": 0.0759623572230339,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/043.JPG",
+    "label": 1,
+    "score": 0.11172652244567871,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/044.JPG",
+    "label": 1,
+    "score": 0.0654904693365097,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/045.JPG",
+    "label": 1,
+    "score": 0.7287152409553528,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/046.JPG",
+    "label": 1,
+    "score": 0.7879401445388794,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/047.JPG",
+    "label": 1,
+    "score": 0.33109086751937866,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/048.JPG",
+    "label": 1,
+    "score": 0.4714774191379547,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/049.JPG",
+    "label": 1,
+    "score": 0.18519282341003418,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/050.JPG",
+    "label": 1,
+    "score": 0.20366042852401733,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/051.JPG",
+    "label": 1,
+    "score": 0.43991801142692566,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/052.JPG",
+    "label": 1,
+    "score": 0.587476909160614,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/053.JPG",
+    "label": 1,
+    "score": 0.8487297892570496,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/054.JPG",
+    "label": 1,
+    "score": 0.8209335207939148,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/055.JPG",
+    "label": 1,
+    "score": 0.7348029017448425,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/056.JPG",
+    "label": 1,
+    "score": 0.3836962878704071,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/057.JPG",
+    "label": 1,
+    "score": 0.40521907806396484,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/058.JPG",
+    "label": 1,
+    "score": 0.35511600971221924,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/059.JPG",
+    "label": 1,
+    "score": 0.13662226498126984,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/060.JPG",
+    "label": 1,
+    "score": 0.14092925190925598,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/061.JPG",
+    "label": 1,
+    "score": 0.3274373412132263,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/062.JPG",
+    "label": 1,
+    "score": 1.0804423093795776,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/063.JPG",
+    "label": 1,
+    "score": 1.1324416399002075,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/064.JPG",
+    "label": 1,
+    "score": 2.262270927429199,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/065.JPG",
+    "label": 1,
+    "score": 0.23596368730068207,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/066.JPG",
+    "label": 1,
+    "score": 0.05283793807029724,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/067.JPG",
+    "label": 1,
+    "score": 0.1641339659690857,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/068.JPG",
+    "label": 1,
+    "score": 0.18627114593982697,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/069.JPG",
+    "label": 1,
+    "score": 0.1730949729681015,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/070.JPG",
+    "label": 1,
+    "score": 0.5111569166183472,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/071.JPG",
+    "label": 1,
+    "score": 0.19337047636508942,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/072.JPG",
+    "label": 1,
+    "score": 0.19743862748146057,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/073.JPG",
+    "label": 1,
+    "score": 0.19616663455963135,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/074.JPG",
+    "label": 1,
+    "score": 0.165109783411026,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/075.JPG",
+    "label": 1,
+    "score": 0.22530622780323029,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/076.JPG",
+    "label": 1,
+    "score": 0.173557311296463,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/077.JPG",
+    "label": 1,
+    "score": 0.16975025832653046,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/078.JPG",
+    "label": 1,
+    "score": 1.8618547916412354,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/079.JPG",
+    "label": 1,
+    "score": 0.1171809583902359,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/080.JPG",
+    "label": 1,
+    "score": 0.21275168657302856,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/081.JPG",
+    "label": 1,
+    "score": 0.12902481853961945,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/082.JPG",
+    "label": 1,
+    "score": 0.1122702956199646,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/083.JPG",
+    "label": 1,
+    "score": 0.2688911557197571,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/084.JPG",
+    "label": 1,
+    "score": 0.30124765634536743,
+    "prediction": 1
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/085.JPG",
+    "label": 1,
+    "score": 0.051398612558841705,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/086.JPG",
+    "label": 1,
+    "score": 0.07511407136917114,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/087.JPG",
+    "label": 1,
+    "score": 0.04156167060136795,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/088.JPG",
+    "label": 1,
+    "score": 0.048013001680374146,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/089.JPG",
+    "label": 1,
+    "score": 0.08921153843402863,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/090.JPG",
+    "label": 1,
+    "score": 0.04892246425151825,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/091.JPG",
+    "label": 1,
+    "score": 0.0655565932393074,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/092.JPG",
+    "label": 1,
+    "score": 0.1349935084581375,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/093.JPG",
+    "label": 1,
+    "score": 0.051734160631895065,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/094.JPG",
+    "label": 1,
+    "score": 0.06394007056951523,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/095.JPG",
+    "label": 1,
+    "score": 0.08823861181735992,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/096.JPG",
+    "label": 1,
+    "score": 0.07790645956993103,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/097.JPG",
+    "label": 1,
+    "score": 0.07586201280355453,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/098.JPG",
+    "label": 1,
+    "score": 0.07864338159561157,
+    "prediction": 0
+  },
+  {
+    "path": "capsules/Data/Images/Anomaly/099.JPG",
+    "label": 1,
+    "score": 0.04845479503273964,
+    "prediction": 0
+  }
+]

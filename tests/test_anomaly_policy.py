@@ -35,3 +35,22 @@ def test_dataset_label_cannot_turn_model_miss_into_anomaly_observation(tmp_path)
     s=service(tmp_path,False)
     r=s.inspect_anomaly(np.zeros((80,80,3),np.uint8),'visa_capsules','test',sample={'label':1})
     assert r['anomaly']['flagged'] is False and r['defects']==[] and r['decision']=='REVIEW'
+
+
+def test_anomaly_configuration_identity_tracks_its_own_threshold(tmp_path):
+    s=service(tmp_path,False)
+    original=s.anomaly.predict
+    def predict(image,profile):
+        value,rgba,overlay,heatmap=original(image,profile)
+        value.update(threshold=predict.threshold,pixel_threshold=.1)
+        return value,rgba,overlay,heatmap
+    predict.threshold=.3;s.anomaly.predict=predict
+    image=np.zeros((80,80,3),np.uint8)
+    first=s.inspect_anomaly(image,'mvtec_pill','test')
+    predict.threshold=.4
+    second=s.inspect_anomaly(image,'mvtec_pill','test')
+    assert first['configuration_revision']!=second['configuration_revision']
+    assert first['frozen_configuration']['anomaly_contract']['image_threshold']==.3
+    assert first['frozen_configuration']['anomaly_contract']['model_sha256']=='ANOMALY'
+    assert first['frozen_configuration']['nms_iou'] is None
+    assert first['decision']==second['decision']=='REVIEW'

@@ -1,0 +1,44 @@
+[
+  {
+    "archive": "mvtec_pill_Submission.zip",
+    "archive_sha256": "7ef8f23ddce88dba3a9b0e0c91dff4e479f281a9f404f2f30651a5d8c4554f36",
+    "member": "evaluation/mvtec/pill/predictions.json",
+    "file": "mvtec_pill_predictions.json",
+    "sha256": "8f8785f5c6989969b9c6a80528047abc52eac4b58c7ab482a0acbf6706f02a1d"
+  },
+  {
+    "archive": "mvtec_pill_Submission.zip",
+    "archive_sha256": "7ef8f23ddce88dba3a9b0e0c91dff4e479f281a9f404f2f30651a5d8c4554f36",
+    "member": "evidence/data/mvtec/pill_manifest.json",
+    "file": "mvtec_pill_pill_manifest.json",
+    "sha256": "2b8a1df8bdb5caa521da4d07e83cdd2bd6512e19b1d8ec94e2e96f3da9bc99e7"
+  },
+  {
+    "archive": "mvtec_capsule_Submission.zip",
+    "archive_sha256": "650af43fd29ff0b5d4f01a8de6e4035b598ab484e1e09c59e0fba06a4fcb2123",
+    "member": "evaluation/mvtec/capsule/predictions.json",
+    "file": "mvtec_capsule_predictions.json",
+    "sha256": "de897cb8e0feb013242acde1447a851cc54a0b81525cc4c4d4245f860fda36a9"
+  },
+  {
+    "archive": "mvtec_capsule_Submission.zip",
+    "archive_sha256": "650af43fd29ff0b5d4f01a8de6e4035b598ab484e1e09c59e0fba06a4fcb2123",
+    "member": "evidence/data/mvtec/capsule_manifest.json",
+    "file": "mvtec_capsule_capsule_manifest.json",
+    "sha256": "caf5148e90b0aac4118294dab5526585e4bbbccbdf984bd1ba539611bc4e2963"
+  },
+  {
+    "archive": "visa_capsules_Submission.zip",
+    "archive_sha256": "6b76258012f45e12dca8bdf11b7771efc663d7881baa7bcfbef8762b4793fb9d",
+    "member": "evaluation/visa/capsules/predictions.json",
+    "file": "visa_capsules_predictions.json",
+    "sha256": "7205a06cbd188bd24fbbc1780cd40f5b7ff6ab12166eea1f9d3c62174f96e49c"
+  },
+  {
+    "archive": "visa_capsules_Submission.zip",
+    "archive_sha256": "6b76258012f45e12dca8bdf11b7771efc663d7881baa7bcfbef8762b4793fb9d",
+    "member": "evidence/data/visa/capsules_manifest.json",
+    "file": "visa_capsules_capsules_manifest.json",
+    "sha256": "686f49cddcc9bfaa012ee9b74bf9158cd2ecc4fdc710da3d959c7e20cf39044d"
+  }
+]

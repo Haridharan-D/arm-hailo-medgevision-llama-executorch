@@ -65,7 +65,8 @@ class Detector:
                 raw=self.session.run(None,{self.session.get_inputs()[0].name:tensor})[0]
                 if raw.shape!=(1,11,8400):raise RuntimeError(f'Unexpected YOLO output shape: {raw.shape}')
                 pred=raw[0].T;classes=pred[:,4:].argmax(axis=1);scores=pred[np.arange(len(pred)),classes+4]
-                thresholds=np.array([self.thresholds[NAMES[c]]['threshold'] for c in classes])
+                # Seven lookups rather than 8,400; retain float64 boundary semantics.
+                thresholds=np.array([self.thresholds[name]['threshold'] for name in NAMES],dtype=np.float64)[classes]
                 mask=np.isfinite(pred).all(axis=1)&(scores>=thresholds)
                 pred=pred[mask];scores=scores[mask];classes=classes[mask]
                 boxes=np.column_stack((pred[:,:2]-pred[:,2:4]/2,pred[:,:2]+pred[:,2:4]/2))

@@ -1,7 +1,7 @@
 """Evidence metadata around the frozen decision engine; never modifies it."""
 import hashlib,json,platform,shutil,os
 from pathlib import Path
-VERSION='2026.11.23-reproducibility-v2'
+VERSION='2026.11.26-evaluation-v3'
 def save_image(path,image):
     import cv2
     tmp=path.with_name(path.stem+'.tmp'+path.suffix)
@@ -36,6 +36,16 @@ def enrich(record,config,store):
     from .config import ROOT
     thresholds=(config.get('asset_dir',ROOT/'assets')/'thresholds.json').read_bytes()
     frozen={'thresholds_sha256':hashlib.sha256(thresholds).hexdigest(),'profile_validated':config.get('profile_validated',False),'policy':'frozen-v6','preprocess':'RGB letterbox640','nms_iou':.7}
+    if record.get('anomaly'):
+        a=record['anomaly']
+        # Preserve parent YOLO metadata, but bind auxiliary model and thresholds
+        # into the configuration identity instead of describing anomaly as YOLO.
+        frozen['anomaly_contract']={'profile':a['profile'],'model_sha256':a['model_sha256'],
+            'image_threshold':a.get('threshold'),'pixel_threshold':a.get('pixel_threshold'),
+            'preprocess':'RGB Pillow bilinear 256 /255; ImageNet normalization inside ONNX'}
+        if not record.get('parent_detector_reused'):
+            frozen['preprocess']=frozen['anomaly_contract']['preprocess']
+            frozen['nms_iou']=None
     revision=hashlib.sha256(json.dumps(frozen,sort_keys=True).encode()).hexdigest()
     batch=config.get('active_batch','LEGACY')
     value=store.batch(batch)

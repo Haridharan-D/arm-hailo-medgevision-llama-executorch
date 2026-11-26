@@ -12,6 +12,8 @@
 
 ## Assess results
 
+- [26 November software/evaluation upgrade](ENGINEERING_UPGRADE_20261126.md): repository audit, data availability, measured CPU experiment, 95 regressions and exact reproduction commands.
+
 - [Full results](RESULTS.md): YOLO class F1/mAP, anomaly confusion matrices, CPU/Hailo, Llama and final eight-case outputs.
 - [Evidence guide](EVIDENCE_GUIDE.md): original source files, exact experiment scopes and rerun commands.
 - [CSV/JSON exports](../evidence/metrics/README.md): full-precision values with provenance and source hashes.

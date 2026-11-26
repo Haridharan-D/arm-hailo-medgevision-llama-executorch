@@ -1,0 +1,794 @@
+[
+  {
+    "path": "capsule/test/crack/000.png",
+    "label": 1,
+    "score": 0.3498736619949341,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/001.png",
+    "label": 1,
+    "score": 3.6375279426574707,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/002.png",
+    "label": 1,
+    "score": 0.7624220848083496,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/003.png",
+    "label": 1,
+    "score": 1.9137756824493408,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/004.png",
+    "label": 1,
+    "score": 8.0708646774292,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/005.png",
+    "label": 1,
+    "score": 0.47764840722084045,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/006.png",
+    "label": 1,
+    "score": 2.7588937282562256,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/007.png",
+    "label": 1,
+    "score": 1.4400737285614014,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/008.png",
+    "label": 1,
+    "score": 0.2432899922132492,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/crack/009.png",
+    "label": 1,
+    "score": 1.1782586574554443,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/010.png",
+    "label": 1,
+    "score": 14.662788391113281,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/011.png",
+    "label": 1,
+    "score": 0.9258432388305664,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/012.png",
+    "label": 1,
+    "score": 0.7526049613952637,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/013.png",
+    "label": 1,
+    "score": 0.26316189765930176,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/crack/014.png",
+    "label": 1,
+    "score": 2.273573398590088,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/015.png",
+    "label": 1,
+    "score": 0.6699932217597961,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/016.png",
+    "label": 1,
+    "score": 0.22527587413787842,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/crack/017.png",
+    "label": 1,
+    "score": 12.358000755310059,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/018.png",
+    "label": 1,
+    "score": 1.8129730224609375,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/019.png",
+    "label": 1,
+    "score": 0.930941104888916,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/020.png",
+    "label": 1,
+    "score": 0.47975972294807434,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/crack/021.png",
+    "label": 1,
+    "score": 0.19196322560310364,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/crack/022.png",
+    "label": 1,
+    "score": 0.05078592151403427,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/faulty_imprint/000.png",
+    "label": 1,
+    "score": 0.19862529635429382,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/faulty_imprint/001.png",
+    "label": 1,
+    "score": 0.8404783606529236,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/002.png",
+    "label": 1,
+    "score": 0.5250152945518494,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/003.png",
+    "label": 1,
+    "score": 0.5127546787261963,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/004.png",
+    "label": 1,
+    "score": 7.777468681335449,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/005.png",
+    "label": 1,
+    "score": 6.525176525115967,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/006.png",
+    "label": 1,
+    "score": 0.3541812598705292,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/007.png",
+    "label": 1,
+    "score": 0.2824138402938843,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/008.png",
+    "label": 1,
+    "score": 1.5123628377914429,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/009.png",
+    "label": 1,
+    "score": 0.8266424536705017,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/010.png",
+    "label": 1,
+    "score": 0.5512464046478271,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/011.png",
+    "label": 1,
+    "score": 0.2842288017272949,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/012.png",
+    "label": 1,
+    "score": 0.1833302229642868,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/faulty_imprint/013.png",
+    "label": 1,
+    "score": 0.6066229343414307,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/014.png",
+    "label": 1,
+    "score": 0.719516932964325,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/015.png",
+    "label": 1,
+    "score": 1.121201753616333,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/016.png",
+    "label": 1,
+    "score": 0.7102322578430176,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/017.png",
+    "label": 1,
+    "score": 1.1236289739608765,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/018.png",
+    "label": 1,
+    "score": 0.16152337193489075,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/faulty_imprint/019.png",
+    "label": 1,
+    "score": 0.16717010736465454,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/faulty_imprint/020.png",
+    "label": 1,
+    "score": 2.0990495681762695,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/faulty_imprint/021.png",
+    "label": 1,
+    "score": 2.034048080444336,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/good/000.png",
+    "label": 0,
+    "score": 0.048460159450769424,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/001.png",
+    "label": 0,
+    "score": 0.018036363646388054,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/002.png",
+    "label": 0,
+    "score": 0.2345128208398819,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/003.png",
+    "label": 0,
+    "score": 0.003979523666203022,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/004.png",
+    "label": 0,
+    "score": 0.12776914238929749,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/005.png",
+    "label": 0,
+    "score": 0.0016628819284960628,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/006.png",
+    "label": 0,
+    "score": 0.1975676268339157,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/007.png",
+    "label": 0,
+    "score": 0.20040267705917358,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/008.png",
+    "label": 0,
+    "score": 0.07548879832029343,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/009.png",
+    "label": 0,
+    "score": 0.4135512411594391,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/good/010.png",
+    "label": 0,
+    "score": 0.23017287254333496,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/011.png",
+    "label": 0,
+    "score": 0.07560858130455017,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/012.png",
+    "label": 0,
+    "score": 0.04373932257294655,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/013.png",
+    "label": 0,
+    "score": 0.028060026466846466,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/014.png",
+    "label": 0,
+    "score": 0.04960458353161812,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/015.png",
+    "label": 0,
+    "score": 0.0737619698047638,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/016.png",
+    "label": 0,
+    "score": 0.016904499381780624,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/017.png",
+    "label": 0,
+    "score": 0.02482021413743496,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/018.png",
+    "label": 0,
+    "score": 0.04950166493654251,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/019.png",
+    "label": 0,
+    "score": 0.09776535630226135,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/020.png",
+    "label": 0,
+    "score": 0.04970049113035202,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/021.png",
+    "label": 0,
+    "score": 0.21639849245548248,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/good/022.png",
+    "label": 0,
+    "score": 0.019693506881594658,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/poke/000.png",
+    "label": 1,
+    "score": 10.790117263793945,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/001.png",
+    "label": 1,
+    "score": 0.3538917601108551,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/002.png",
+    "label": 1,
+    "score": 0.3438335955142975,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/003.png",
+    "label": 1,
+    "score": 0.4953681230545044,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/004.png",
+    "label": 1,
+    "score": 1.0945168733596802,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/005.png",
+    "label": 1,
+    "score": 0.09647101908922195,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/poke/006.png",
+    "label": 1,
+    "score": 0.15370340645313263,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/poke/007.png",
+    "label": 1,
+    "score": 0.22870738804340363,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/poke/008.png",
+    "label": 1,
+    "score": 2.2934799194335938,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/009.png",
+    "label": 1,
+    "score": 0.5789663791656494,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/010.png",
+    "label": 1,
+    "score": 0.7920348644256592,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/011.png",
+    "label": 1,
+    "score": 3.044707775115967,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/012.png",
+    "label": 1,
+    "score": 2.082458972930908,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/013.png",
+    "label": 1,
+    "score": 2.732409954071045,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/014.png",
+    "label": 1,
+    "score": 6.246989727020264,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/015.png",
+    "label": 1,
+    "score": 1.0236600637435913,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/016.png",
+    "label": 1,
+    "score": 1.0534619092941284,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/017.png",
+    "label": 1,
+    "score": 0.3413223922252655,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/018.png",
+    "label": 1,
+    "score": 1.302394151687622,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/019.png",
+    "label": 1,
+    "score": 0.41437700390815735,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/poke/020.png",
+    "label": 1,
+    "score": 0.4783073961734772,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/000.png",
+    "label": 1,
+    "score": 0.24844956398010254,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/001.png",
+    "label": 1,
+    "score": 0.5796612501144409,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/002.png",
+    "label": 1,
+    "score": 0.08423584699630737,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/003.png",
+    "label": 1,
+    "score": 0.3104737102985382,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/004.png",
+    "label": 1,
+    "score": 0.13727551698684692,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/005.png",
+    "label": 1,
+    "score": 0.3332129716873169,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/006.png",
+    "label": 1,
+    "score": 0.48182135820388794,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/007.png",
+    "label": 1,
+    "score": 0.6703304052352905,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/008.png",
+    "label": 1,
+    "score": 0.8351240158081055,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/009.png",
+    "label": 1,
+    "score": 0.11959432810544968,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/010.png",
+    "label": 1,
+    "score": 0.8920169472694397,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/011.png",
+    "label": 1,
+    "score": 0.303600937128067,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/012.png",
+    "label": 1,
+    "score": 0.2552221417427063,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/013.png",
+    "label": 1,
+    "score": 0.35882824659347534,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/014.png",
+    "label": 1,
+    "score": 0.16182640194892883,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/015.png",
+    "label": 1,
+    "score": 0.3377840220928192,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/016.png",
+    "label": 1,
+    "score": 0.182805597782135,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/017.png",
+    "label": 1,
+    "score": 0.1846880167722702,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/018.png",
+    "label": 1,
+    "score": 0.4237900972366333,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/019.png",
+    "label": 1,
+    "score": 0.6191595196723938,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/scratch/020.png",
+    "label": 1,
+    "score": 0.16060136258602142,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/021.png",
+    "label": 1,
+    "score": 0.08283496648073196,
+    "prediction": 0
+  },
+  {
+    "path": "capsule/test/scratch/022.png",
+    "label": 1,
+    "score": 0.5725700855255127,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/000.png",
+    "label": 1,
+    "score": 2.0242319107055664,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/001.png",
+    "label": 1,
+    "score": 3.9589059352874756,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/002.png",
+    "label": 1,
+    "score": 0.44620367884635925,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/003.png",
+    "label": 1,
+    "score": 2.1933112144470215,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/004.png",
+    "label": 1,
+    "score": 0.7727221250534058,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/005.png",
+    "label": 1,
+    "score": 0.9265652894973755,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/006.png",
+    "label": 1,
+    "score": 2.4764301776885986,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/007.png",
+    "label": 1,
+    "score": 2.5972087383270264,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/008.png",
+    "label": 1,
+    "score": 1.1538857221603394,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/009.png",
+    "label": 1,
+    "score": 1.4101771116256714,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/010.png",
+    "label": 1,
+    "score": 1.5788507461547852,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/011.png",
+    "label": 1,
+    "score": 1.1374821662902832,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/012.png",
+    "label": 1,
+    "score": 0.8740559816360474,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/013.png",
+    "label": 1,
+    "score": 1.7459642887115479,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/014.png",
+    "label": 1,
+    "score": 4.078081130981445,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/015.png",
+    "label": 1,
+    "score": 1.564341425895691,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/016.png",
+    "label": 1,
+    "score": 2.629077196121216,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/017.png",
+    "label": 1,
+    "score": 1.2217624187469482,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/018.png",
+    "label": 1,
+    "score": 4.650219440460205,
+    "prediction": 1
+  },
+  {
+    "path": "capsule/test/squeeze/019.png",
+    "label": 1,
+    "score": 2.794271469116211,
+    "prediction": 1
+  }
+]

@@ -1,0 +1,1004 @@
+[
+  {
+    "path": "pill/test/color/000.png",
+    "label": 1,
+    "score": 0.6260355710983276,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/001.png",
+    "label": 1,
+    "score": 2.1909608840942383,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/002.png",
+    "label": 1,
+    "score": 1.6364645957946777,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/003.png",
+    "label": 1,
+    "score": 2.2621281147003174,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/004.png",
+    "label": 1,
+    "score": 2.564255952835083,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/005.png",
+    "label": 1,
+    "score": 2.199199676513672,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/006.png",
+    "label": 1,
+    "score": 4.003641128540039,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/007.png",
+    "label": 1,
+    "score": 0.35609397292137146,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/008.png",
+    "label": 1,
+    "score": 5.091463088989258,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/009.png",
+    "label": 1,
+    "score": 2.427323579788208,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/010.png",
+    "label": 1,
+    "score": 0.5328832268714905,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/011.png",
+    "label": 1,
+    "score": 3.668858528137207,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/012.png",
+    "label": 1,
+    "score": 1.332668662071228,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/013.png",
+    "label": 1,
+    "score": 4.149259567260742,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/014.png",
+    "label": 1,
+    "score": 1.2689039707183838,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/015.png",
+    "label": 1,
+    "score": 3.3048901557922363,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/016.png",
+    "label": 1,
+    "score": 0.24809350073337555,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/color/017.png",
+    "label": 1,
+    "score": 0.5230354070663452,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/018.png",
+    "label": 1,
+    "score": 5.491608619689941,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/019.png",
+    "label": 1,
+    "score": 16.777740478515625,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/020.png",
+    "label": 1,
+    "score": 0.6511377692222595,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/021.png",
+    "label": 1,
+    "score": 0.43806055188179016,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/022.png",
+    "label": 1,
+    "score": 26.394506454467773,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/023.png",
+    "label": 1,
+    "score": 1.7625705003738403,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/color/024.png",
+    "label": 1,
+    "score": 2.1367716789245605,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/000.png",
+    "label": 1,
+    "score": 1.2617343664169312,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/001.png",
+    "label": 1,
+    "score": 1.7039530277252197,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/002.png",
+    "label": 1,
+    "score": 7.644689083099365,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/003.png",
+    "label": 1,
+    "score": 4.976381301879883,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/004.png",
+    "label": 1,
+    "score": 1.393847942352295,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/005.png",
+    "label": 1,
+    "score": 2.080620050430298,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/006.png",
+    "label": 1,
+    "score": 0.8704697489738464,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/007.png",
+    "label": 1,
+    "score": 0.5258461236953735,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/008.png",
+    "label": 1,
+    "score": 1.579434871673584,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/009.png",
+    "label": 1,
+    "score": 3.9400391578674316,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/010.png",
+    "label": 1,
+    "score": 1.0823826789855957,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/011.png",
+    "label": 1,
+    "score": 1.1461403369903564,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/012.png",
+    "label": 1,
+    "score": 2.655219078063965,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/013.png",
+    "label": 1,
+    "score": 1.9088691473007202,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/014.png",
+    "label": 1,
+    "score": 2.868082046508789,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/015.png",
+    "label": 1,
+    "score": 1.4502301216125488,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/combined/016.png",
+    "label": 1,
+    "score": 1.7490583658218384,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/000.png",
+    "label": 1,
+    "score": 0.5379482507705688,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/001.png",
+    "label": 1,
+    "score": 0.5020533800125122,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/002.png",
+    "label": 1,
+    "score": 0.3640773594379425,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/003.png",
+    "label": 1,
+    "score": 1.9455387592315674,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/004.png",
+    "label": 1,
+    "score": 0.2585277557373047,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/contamination/005.png",
+    "label": 1,
+    "score": 0.6127839684486389,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/006.png",
+    "label": 1,
+    "score": 0.42901188135147095,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/007.png",
+    "label": 1,
+    "score": 2.064866781234741,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/008.png",
+    "label": 1,
+    "score": 0.44292908906936646,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/009.png",
+    "label": 1,
+    "score": 0.4784351885318756,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/010.png",
+    "label": 1,
+    "score": 0.46908703446388245,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/011.png",
+    "label": 1,
+    "score": 1.6128886938095093,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/012.png",
+    "label": 1,
+    "score": 0.8945430517196655,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/013.png",
+    "label": 1,
+    "score": 0.29823997616767883,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/contamination/014.png",
+    "label": 1,
+    "score": 1.3312244415283203,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/015.png",
+    "label": 1,
+    "score": 1.123626470565796,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/016.png",
+    "label": 1,
+    "score": 1.5976707935333252,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/017.png",
+    "label": 1,
+    "score": 0.9804369807243347,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/018.png",
+    "label": 1,
+    "score": 0.545794665813446,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/019.png",
+    "label": 1,
+    "score": 0.5548957586288452,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/contamination/020.png",
+    "label": 1,
+    "score": 0.569130003452301,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/000.png",
+    "label": 1,
+    "score": 0.6374081373214722,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/001.png",
+    "label": 1,
+    "score": 0.12075027078390121,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/crack/002.png",
+    "label": 1,
+    "score": 0.5948306322097778,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/003.png",
+    "label": 1,
+    "score": 1.240525722503662,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/004.png",
+    "label": 1,
+    "score": 1.3308297395706177,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/005.png",
+    "label": 1,
+    "score": 1.8083600997924805,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/006.png",
+    "label": 1,
+    "score": 0.9739983081817627,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/007.png",
+    "label": 1,
+    "score": 0.8483867049217224,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/008.png",
+    "label": 1,
+    "score": 0.12522856891155243,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/crack/009.png",
+    "label": 1,
+    "score": 0.6963781714439392,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/010.png",
+    "label": 1,
+    "score": 0.24475373327732086,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/crack/011.png",
+    "label": 1,
+    "score": 1.6537245512008667,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/012.png",
+    "label": 1,
+    "score": 1.7522884607315063,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/013.png",
+    "label": 1,
+    "score": 0.3904339373111725,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/014.png",
+    "label": 1,
+    "score": 1.0376322269439697,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/015.png",
+    "label": 1,
+    "score": 0.7424526214599609,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/016.png",
+    "label": 1,
+    "score": 0.7196193933486938,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/017.png",
+    "label": 1,
+    "score": 1.2823331356048584,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/018.png",
+    "label": 1,
+    "score": 1.93111252784729,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/019.png",
+    "label": 1,
+    "score": 1.8611390590667725,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/020.png",
+    "label": 1,
+    "score": 0.5928433537483215,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/021.png",
+    "label": 1,
+    "score": 0.8075478076934814,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/022.png",
+    "label": 1,
+    "score": 0.8466591835021973,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/023.png",
+    "label": 1,
+    "score": 0.37819385528564453,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/crack/024.png",
+    "label": 1,
+    "score": 0.1463325321674347,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/crack/025.png",
+    "label": 1,
+    "score": 0.8690160512924194,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/000.png",
+    "label": 1,
+    "score": 0.49798300862312317,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/001.png",
+    "label": 1,
+    "score": 0.4108910858631134,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/002.png",
+    "label": 1,
+    "score": 0.3495212197303772,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/faulty_imprint/003.png",
+    "label": 1,
+    "score": 0.2384907305240631,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/faulty_imprint/004.png",
+    "label": 1,
+    "score": 0.2980847656726837,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/faulty_imprint/005.png",
+    "label": 1,
+    "score": 0.4865441620349884,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/006.png",
+    "label": 1,
+    "score": 0.48866039514541626,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/007.png",
+    "label": 1,
+    "score": 1.8566175699234009,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/008.png",
+    "label": 1,
+    "score": 0.5301231145858765,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/009.png",
+    "label": 1,
+    "score": 0.5162698030471802,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/010.png",
+    "label": 1,
+    "score": 0.8654956221580505,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/011.png",
+    "label": 1,
+    "score": 0.4460446238517761,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/012.png",
+    "label": 1,
+    "score": 0.3609785735607147,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/013.png",
+    "label": 1,
+    "score": 0.35649386048316956,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/014.png",
+    "label": 1,
+    "score": 0.37892669439315796,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/015.png",
+    "label": 1,
+    "score": 0.4766211211681366,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/016.png",
+    "label": 1,
+    "score": 0.41207873821258545,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/017.png",
+    "label": 1,
+    "score": 0.449312686920166,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/faulty_imprint/018.png",
+    "label": 1,
+    "score": 0.5055838227272034,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/good/000.png",
+    "label": 0,
+    "score": 0.0729692354798317,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/001.png",
+    "label": 0,
+    "score": 0.06844505667686462,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/002.png",
+    "label": 0,
+    "score": 0.10692818462848663,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/003.png",
+    "label": 0,
+    "score": 0.1086953729391098,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/004.png",
+    "label": 0,
+    "score": 0.04114638641476631,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/005.png",
+    "label": 0,
+    "score": 0.10728586465120316,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/006.png",
+    "label": 0,
+    "score": 0.15284833312034607,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/007.png",
+    "label": 0,
+    "score": 0.16408802568912506,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/008.png",
+    "label": 0,
+    "score": 0.08583065867424011,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/009.png",
+    "label": 0,
+    "score": 0.06043209880590439,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/010.png",
+    "label": 0,
+    "score": 0.20284000039100647,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/011.png",
+    "label": 0,
+    "score": 0.11704440414905548,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/012.png",
+    "label": 0,
+    "score": 0.08225216716527939,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/013.png",
+    "label": 0,
+    "score": 0.11930248886346817,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/014.png",
+    "label": 0,
+    "score": 0.14190952479839325,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/015.png",
+    "label": 0,
+    "score": 0.14736619591712952,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/016.png",
+    "label": 0,
+    "score": 0.08811728656291962,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/017.png",
+    "label": 0,
+    "score": 0.14849995076656342,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/018.png",
+    "label": 0,
+    "score": 0.07509536296129227,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/019.png",
+    "label": 0,
+    "score": 0.1868029683828354,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/020.png",
+    "label": 0,
+    "score": 0.14849355816841125,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/021.png",
+    "label": 0,
+    "score": 0.2716715633869171,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/022.png",
+    "label": 0,
+    "score": 0.1259891390800476,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/023.png",
+    "label": 0,
+    "score": 0.161010280251503,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/024.png",
+    "label": 0,
+    "score": 0.09028072655200958,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/good/025.png",
+    "label": 0,
+    "score": 0.06210893765091896,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/pill_type/000.png",
+    "label": 1,
+    "score": 3.121812582015991,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/001.png",
+    "label": 1,
+    "score": 3.6176352500915527,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/002.png",
+    "label": 1,
+    "score": 7.698891639709473,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/003.png",
+    "label": 1,
+    "score": 27.044994354248047,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/004.png",
+    "label": 1,
+    "score": 7.704320907592773,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/005.png",
+    "label": 1,
+    "score": 3.606165647506714,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/006.png",
+    "label": 1,
+    "score": 5.086670398712158,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/007.png",
+    "label": 1,
+    "score": 6.442518711090088,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/pill_type/008.png",
+    "label": 1,
+    "score": 24.511295318603516,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/000.png",
+    "label": 1,
+    "score": 0.5186526775360107,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/001.png",
+    "label": 1,
+    "score": 0.33814939856529236,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/002.png",
+    "label": 1,
+    "score": 0.19832071661949158,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/003.png",
+    "label": 1,
+    "score": 0.751121461391449,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/004.png",
+    "label": 1,
+    "score": 0.24652917683124542,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/005.png",
+    "label": 1,
+    "score": 0.14052119851112366,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/006.png",
+    "label": 1,
+    "score": 0.5060867667198181,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/007.png",
+    "label": 1,
+    "score": 0.3650538921356201,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/008.png",
+    "label": 1,
+    "score": 0.2787068784236908,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/009.png",
+    "label": 1,
+    "score": 0.47409752011299133,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/010.png",
+    "label": 1,
+    "score": 0.5216975212097168,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/011.png",
+    "label": 1,
+    "score": 0.7326469421386719,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/012.png",
+    "label": 1,
+    "score": 0.26859548687934875,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/013.png",
+    "label": 1,
+    "score": 0.36680012941360474,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/014.png",
+    "label": 1,
+    "score": 0.5278061628341675,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/015.png",
+    "label": 1,
+    "score": 0.4807025194168091,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/016.png",
+    "label": 1,
+    "score": 0.1364736407995224,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/017.png",
+    "label": 1,
+    "score": 0.3403433859348297,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/018.png",
+    "label": 1,
+    "score": 0.35015279054641724,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/019.png",
+    "label": 1,
+    "score": 0.26757684350013733,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/020.png",
+    "label": 1,
+    "score": 0.47394514083862305,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/021.png",
+    "label": 1,
+    "score": 0.6727688312530518,
+    "prediction": 1
+  },
+  {
+    "path": "pill/test/scratch/022.png",
+    "label": 1,
+    "score": 0.26495376229286194,
+    "prediction": 0
+  },
+  {
+    "path": "pill/test/scratch/023.png",
+    "label": 1,
+    "score": 0.5534994006156921,
+    "prediction": 1
+  }
+]

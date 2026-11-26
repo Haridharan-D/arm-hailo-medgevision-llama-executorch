@@ -4,6 +4,8 @@
 
 ### One station. Three local inference paths. Evidence you can inspect.
 
+> **26 November engineering update:** [audit, measured before/after results and reproduction commands](docs/ENGINEERING_UPGRADE_20261126.md). 95 regression tests; paired CPU output parity; retained-data leakage checks; corrected anomaly configuration identity. Model accuracy claims and frozen thresholds are unchanged.
+
 | Understand the engineering | Inspect the evidence | Reproduce the system |
 | :--- | :--- | :--- |
 | [Architecture](docs/architecture.svg) | [Actual Pi screenshots](evidence/gallery/README.md) | [Install, verify and launch](QUICKSTART.md) |

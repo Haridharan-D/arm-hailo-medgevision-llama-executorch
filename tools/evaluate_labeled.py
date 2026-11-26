@@ -43,6 +43,7 @@ def main():
     parser.add_argument('--dataset-note',required=True,help='Dataset origin, split and physical grouping limits')
     args=parser.parse_args()
     import cv2
+    import numpy as np
     from app.config import settings
     from app.vision import Detector,NAMES
     paths=sorted(p for p in args.images.iterdir() if p.suffix.lower() in {'.jpg','.jpeg','.png','.bmp','.webp'})
@@ -62,7 +63,7 @@ def main():
                 parts=line.split()
                 if len(parts)!=5:raise ValueError('Expected YOLO detection boxes in '+str(labelpath))
                 cls=int(parts[0]);x,y,bw,bh=map(float,parts[1:])
-                if not 0<=cls<len(NAMES) or not all(0<=v<=1 for v in [x,y,bw,bh]) or bw<=0 or bh<=0:
+                if not 0<=cls<len(NAMES) or not all(0<=v<=1 for v in [x,y,bw,bh]) or bw<=0 or bh<=0 or x-bw/2 < -1e-6 or y-bh/2 < -1e-6 or x+bw/2 > 1+1e-6 or y+bh/2 > 1+1e-6:
                     raise ValueError('Invalid normalized label in '+str(labelpath))
                 labels.append({'class_id':cls,'box_xyxy':[(x-bw/2)*w,(y-bh/2)*h,(x+bw/2)*w,(y+bh/2)*h]})
             predictions,latency=detector.predict(image)
@@ -80,16 +81,25 @@ def main():
     for name,counts in zip(NAMES,totals):
         tp,fp,fn=counts['tp'],counts['fp'],counts['fn']
         per_class[name]={**counts,'support':tp+fn,'precision':tp/(tp+fp) if tp+fp else None,
-            'recall':tp/(tp+fn) if tp+fn else None}
+            'recall':tp/(tp+fn) if tp+fn else None,
+            'f1':2*tp/(2*tp+fp+fn) if 2*tp+fp+fn else None,
+            'false_negative_rate':fn/(tp+fn) if tp+fn else None}
     artifact=Path(cfg['hef']) if args.backend=='hailo' else cfg['asset_dir']/'blistertrace_yolov8s.onnx'
     report={'created_utc':datetime.now(timezone.utc).isoformat(),'backend':args.backend,'images':len(rows),
         'model_sha256':hashlib.sha256(artifact.read_bytes()).hexdigest(),'dataset_note':args.dataset_note,
+        'thresholds_sha256':hashlib.sha256((cfg['asset_dir']/'thresholds.json').read_bytes()).hexdigest(),
+        'latency_ms':{'p50':float(np.percentile([r['vision_ms'] for r in rows],50)),
+                      'p95':float(np.percentile([r['vision_ms'] for r in rows],95)),
+                      'scope':'Detector predict; session constructed before timing, no warmup; excludes capture, QA, storage, Llama'},
+        'map50_95':None,'map_status':'NOT MEASURED: frozen-threshold predictions cannot establish a full confidence-sweep mAP',
         'independent_physical_grouping_verified_by_this_tool':False,
         'metric':'Per-class box precision/recall at frozen deployment thresholds and IoU 0.5; not mAP',
         'per_class':per_class,'image_level':{'defective':positive,'normal':negative,
         'false_no_defect_images':false_pass,'false_hold_images':false_hold,
         'false_no_defect_rate':false_pass/positive if positive else None,
-        'false_hold_rate':false_hold/negative if negative else None},
+        'false_hold_rate':false_hold/negative if negative else None,
+        'specificity':(negative-false_hold)/negative if negative else None,
+        'confusion_matrix_tn_fp_fn_tp':[negative-false_hold,false_hold,false_pass,positive-false_pass]},
         'decision_note':'Image-level no-defect is not application PASS while the capture profile is unvalidated',
         'rows':rows}
     args.output.parent.mkdir(parents=True,exist_ok=True)
