@@ -6,14 +6,14 @@ Offline optical inspection for pharmaceutical blister packs on Raspberry Pi 5. H
 
 Built for the **Bharat AI-SoC Challenge 2026–27 (PS5)** by Haridharan D (team lead), Priyadharsan D and Jayaraj M.
 
-**[Judges start here](JUDGES_START_HERE.md)** · [Technical paper (PDF)](docs/MEDGE_VISION_PS5_Research_Paper.pdf) · [Run it](QUICKSTART.md) · [Full results](docs/RESULTS.md)
+**[Final report for judging (PDF)](docs/Medge_Vision_Final_Report_for_Judging.pdf)** · [Judges' guide](JUDGES_START_HERE.md) · [Run it](QUICKSTART.md) · [Full results](docs/RESULTS.md)
 
-| Known-defect inspection | Anomaly inspection |
+| Fresh YOLO bounding boxes | Fresh EfficientAD-S heatmap |
 | :---: | :---: |
-| [![Actual Pi dashboard showing a crack and HOLD](evidence/gallery/dashboard/02_yolo_defective.png)](evidence/gallery/dashboard/02_yolo_defective.png) | [![Actual Pi dashboard showing a pill anomaly heatmap](evidence/gallery/dashboard/04_anomaly_defective.png)](evidence/gallery/dashboard/04_anomaly_defective.png) |
-| YOLOv8s on Hailo-8 | EfficientAD-S on Arm CPU |
+| [![Shipped YOLO CPU model detecting a crack](evidence/judging/yolo_crack_boxes.png)](evidence/judging/yolo_crack_boxes.png) | [![Shipped EfficientAD-S CPU model highlighting a pill anomaly](evidence/judging/mvtec_pill_heatmap.png)](evidence/judging/mvtec_pill_heatmap.png) |
+| YOLOv8s FP32 ONNX | MVTec pill EfficientAD-S ONNX |
 
-Actual Raspberry Pi captures. [See all eight cases and their saved outputs](evidence/gallery/README.md).
+Fresh CPU runs on selected samples. [All five examples, figures and receipt](evidence/judging/README.md) · [Actual Pi dashboard captures](evidence/gallery/README.md)
 
 ## What it does
 
@@ -64,4 +64,4 @@ Recorded inspection + demo SOP → ExecuTorch Llama → guarded advisory
 - **Labeled INT8 accuracy change, healthy-only YOLO specificity and production-camera generalization remain unmeasured.** The 18-image FP32/INT8 experiment measures output agreement. [Quantization evidence and paired test procedure](docs/AUTOVI_COMPARISON.md)
 - **VisA missed 76 of 100 anomalies** and remains a research profile. Advisory is informational, and authorized QA retains release authority. [Limitations](docs/SUBMISSION_LIMITATIONS.md)
 
-[Documentation index](docs/README.md) · [Engineering upgrade PDF](docs/MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf) · [Original project PDF](docs/MEDGE_VISION_Final_Project_Report.pdf) · [Third-party terms](THIRD_PARTY_NOTICES.md)
+[Documentation index and earlier reports](docs/README.md) · [Third-party terms](THIRD_PARTY_NOTICES.md)

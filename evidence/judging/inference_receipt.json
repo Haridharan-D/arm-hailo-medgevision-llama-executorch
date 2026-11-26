@@ -1,0 +1,144 @@
+{
+  "scope": "Fresh ONNX Runtime CPU inference on selected demo inputs. No test-set accuracy estimate.",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "onnxruntime": "1.30.0",
+  "opencv": "5.0.0",
+  "cases": [
+    {
+      "output": "yolo_crack_boxes.png",
+      "input": "test_images/acceptance_demo/defective/crack/crack.jpg",
+      "input_sha256": "9d95613e973a202fd55d29312ca01939cc6b7bf82726df5c8f206b8cd427c00d",
+      "model_sha256": "114bddd21ff853747036591cf7d76c5523a7d8dc95d770221795de8f36691db0",
+      "thresholds_sha256": "f6d92ab69317404610867347eb6268f493569ad908eeb02fc6eb7bc906331c27",
+      "decision": "HOLD",
+      "detections": [
+        {
+          "class_id": 3,
+          "type": "crack",
+          "confidence": 0.9353,
+          "box_xyxy": [
+            309.76,
+            339.91,
+            371.57,
+            440.22
+          ]
+        }
+      ],
+      "output_sha256": "9b38b2f74802c93b5525abf675b95584c7a72c8a0272a177f0cd0e271f227032"
+    },
+    {
+      "output": "yolo_empty_boxes.png",
+      "input": "test_images/acceptance_demo/defective/empty/empty.jpg",
+      "input_sha256": "71d2ab72706102cf6e62fa7302f8f85e778859026cfd333f76cfad430622c33b",
+      "model_sha256": "114bddd21ff853747036591cf7d76c5523a7d8dc95d770221795de8f36691db0",
+      "thresholds_sha256": "f6d92ab69317404610867347eb6268f493569ad908eeb02fc6eb7bc906331c27",
+      "decision": "HOLD",
+      "detections": [
+        {
+          "class_id": 5,
+          "type": "empty",
+          "confidence": 0.93493,
+          "box_xyxy": [
+            38.41,
+            360.47,
+            104.11,
+            469.62
+          ]
+        },
+        {
+          "class_id": 5,
+          "type": "empty",
+          "confidence": 0.92973,
+          "box_xyxy": [
+            101.61,
+            357.59,
+            165.89,
+            465.05
+          ]
+        }
+      ],
+      "output_sha256": "91e502651f3c645ed6ecb252da8da950544773345b4b015422088fb0cd409790"
+    },
+    {
+      "output": "mvtec_pill_heatmap.png",
+      "input": "models/anomaly/samples/mvtec_pill/demo/defective/defective_01.png",
+      "input_sha256": "1c7d586cc7fda1de60af544840ae4c6d0f4de9b3b93c0650f801e892cbfd3d7a",
+      "sample_manifest": {
+        "file": "demo/defective/defective_01.png",
+        "profile": "mvtec_pill",
+        "label": 1,
+        "label_name": "dataset anomaly",
+        "source_path": "pill/test/crack/000.png",
+        "sha256": "1c7d586cc7fda1de60af544840ae4c6d0f4de9b3b93c0650f801e892cbfd3d7a",
+        "source_url": "Retained dataset provenance",
+        "demo_suite": true,
+        "case_id": "DEMO DEFECTIVE \u00b7 defective_01",
+        "split": "selected demonstration",
+        "selection": "Original held-out anomaly actually exceeding the unchanged threshold; selected demo, not accuracy evidence",
+        "expected_visual": "DEFECTIVE"
+      },
+      "profile": "mvtec_pill",
+      "model_sha256": "4670cd45c0d465bfbcdbdea2ca2711dd21e0b1eb026beb308e484b4f2e99c220",
+      "score": 0.6374080777168274,
+      "threshold": 0.35005301237106323,
+      "pixel_threshold": 0.07457666099071503,
+      "flagged": true,
+      "color_scale_note": "Color scale is fixed at 0 to twice the saved pixel threshold; not a probability map",
+      "output_sha256": "f4a4cbbbca4072df43f951b639e6aa0a282666a16398ef587ae37dd5f57b5c0b"
+    },
+    {
+      "output": "mvtec_capsule_heatmap.png",
+      "input": "models/anomaly/samples/mvtec_capsule/demo/defective/defective_01.png",
+      "input_sha256": "10f84dda139bec14961ee3b70908a54693e0238ca5c75b26263bd74e2ca7f882",
+      "sample_manifest": {
+        "file": "demo/defective/defective_01.png",
+        "profile": "mvtec_capsule",
+        "label": 1,
+        "label_name": "dataset anomaly",
+        "source_path": "capsule/test/crack/001.png",
+        "sha256": "10f84dda139bec14961ee3b70908a54693e0238ca5c75b26263bd74e2ca7f882",
+        "source_url": "Retained dataset provenance",
+        "demo_suite": true,
+        "case_id": "DEMO DEFECTIVE \u00b7 defective_01",
+        "split": "selected demonstration",
+        "selection": "Original held-out anomaly actually exceeding the unchanged threshold; selected demo, not accuracy evidence",
+        "expected_visual": "DEFECTIVE"
+      },
+      "profile": "mvtec_capsule",
+      "model_sha256": "c8110349b6c52a148be7da5442445a32031911ebf64d8d1fbcad2afb0902a157",
+      "score": 3.637528657913208,
+      "threshold": 0.2682838439941406,
+      "pixel_threshold": 0.06018669530749321,
+      "flagged": true,
+      "color_scale_note": "Color scale is fixed at 0 to twice the saved pixel threshold; not a probability map",
+      "output_sha256": "ce5a05360dc0c46d1340fcf3dd73a933f6002a3a5d3fcd74d19a705e30dd63f1"
+    },
+    {
+      "output": "visa_capsules_heatmap.png",
+      "input": "models/anomaly/samples/visa_capsules/demo/defective/defective_01.png",
+      "input_sha256": "068bf2c1b6738b41355a69930a923a2b3a1438f2fc5a940419c1568affcbd92d",
+      "sample_manifest": {
+        "file": "demo/defective/defective_01.png",
+        "profile": "visa_capsules",
+        "label": 1,
+        "label_name": "dataset anomaly",
+        "source_path": "capsules/Data/Images/Anomaly/064.JPG",
+        "sha256": "068bf2c1b6738b41355a69930a923a2b3a1438f2fc5a940419c1568affcbd92d",
+        "source_url": "https://huggingface.co/datasets/imaadd05/visa-anomaly-detection/resolve/main/capsules/Data/Images/Anomaly/064.JPG",
+        "demo_suite": true,
+        "case_id": "DEMO DEFECTIVE \u00b7 defective_01",
+        "split": "selected demonstration",
+        "selection": "Chosen from saved true-positive predictions for demonstration, not an unbiased test; rerun on deployed model required",
+        "expected_visual": "DEFECTIVE"
+      },
+      "profile": "visa_capsules",
+      "model_sha256": "ff414f1e16b12f5a9eac9ac0b12886773645279eae61e2123c0a45ac70dcccbf",
+      "score": 2.262270212173462,
+      "threshold": 0.20281894505023956,
+      "pixel_threshold": 0.03946321830153465,
+      "flagged": true,
+      "color_scale_note": "Color scale is fixed at 0 to twice the saved pixel threshold; not a probability map",
+      "output_sha256": "64f329c6b30bc66f1e47d358774ae26cb956438cc0439ca2bf299adcafcd8f1d"
+    }
+  ]
+}
