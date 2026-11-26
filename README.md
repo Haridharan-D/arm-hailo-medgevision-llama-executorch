@@ -6,7 +6,7 @@ An offline inspection station for pharmaceutical blister packs on Raspberry Pi 5
 
 Built for the **Bharat AI-SoC Challenge 2026–27 (PS5)** by Haridharan D (team lead), Priyadharsan D and Jayaraj M.
 
-**[Final report for judging (PDF)](docs/Medge_Vision_Final_Report_for_Judging.pdf)** · [Judges' guide](JUDGES_START_HERE.md) · [Run it](QUICKSTART.md) · [Full results](docs/RESULTS.md)
+**[Final report for judging (PDF)](docs/Final_MedgeVision_Report.pdf)** · [Judges' guide](JUDGES_START_HERE.md) · [Run it](QUICKSTART.md) · [Full results](docs/RESULTS.md)
 
 ## See the models run
 

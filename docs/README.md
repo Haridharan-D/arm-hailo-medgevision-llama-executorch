@@ -19,7 +19,7 @@
 - [CSV/JSON exports](../evidence/metrics/README.md): full-precision values with provenance and source hashes.
 - [Actual Pi screenshot gallery](../evidence/gallery/README.md): all eight inspections, heatmaps/advice, terminal replay and application screens.
 - [Current engineering acceptance](../SUBMISSION_REPORT.md): final target/recovery checks and unresolved validation.
-- [Final report for judging (PDF)](Medge_Vision_Final_Report_for_Judging.pdf) and [fresh inference figures](../evidence/judging/README.md).
+- [Final report for judging (PDF)](Final_MedgeVision_Report.pdf) and [fresh inference figures](../evidence/judging/README.md).
 - Earlier reports: [original project report](MEDGE_VISION_Final_Project_Report.pdf), [engineering upgrade](MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf), and [PS5 research paper](MEDGE_VISION_PS5_Research_Paper.pdf).
 
 ## Understand the design

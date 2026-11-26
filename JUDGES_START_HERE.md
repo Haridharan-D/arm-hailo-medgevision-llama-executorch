@@ -5,7 +5,7 @@ Haridharan D (Team leader), Priyadharsan D, Jayaraj M
 
 ## Assess the project in three minutes
 
-Start with the [15-page final report for judging](docs/Medge_Vision_Final_Report_for_Judging.pdf). Its fresh boxed images, heatmaps and five benchmark figures are also available in the [judging evidence folder](evidence/judging/README.md).
+Start with the [final report for judging](docs/Final_MedgeVision_Report.pdf). See the boxed images, heatmaps and benchmark figures in the [judging evidence folder](evidence/judging/README.md).
 
 1. **Understand the system:** open the [architecture image](docs/architecture.svg). YOLO uses Hailo-8; category anomaly models use ONNX CPU; ExecuTorch Llama is a separate Arm advisory process. Llama cannot override the recorded QA decision.
 2. **See actual output:** open the [Hailo crack inspection](evidence/gallery/dashboard/02_yolo_defective.png), [anomaly heatmap and advice](evidence/gallery/dashboard/04_anomaly_defective.png), then the [complete 47-screenshot gallery](evidence/gallery/README.md).
