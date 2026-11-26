@@ -1,3 +1,26 @@
+![MEDGE VISION: Evidence at the edge](docs/assets/medge-hero.svg)
+
+<p align="center"><a href="JUDGES_START_HERE.md"><strong>JUDGES START HERE</strong></a> / <a href="QUICKSTART.md">RUN THE PROJECT</a> / <a href="docs/RESULTS.md">MEASURED RESULTS</a> / <a href="evidence/gallery/README.md">REAL OUTPUTS</a></p>
+
+### One station. Three local inference paths. Evidence you can inspect.
+
+| Understand the engineering | Inspect the evidence | Reproduce the system |
+| :--- | :--- | :--- |
+| [Architecture](docs/architecture.svg) | [Actual Pi screenshots](evidence/gallery/README.md) | [Install, verify and launch](QUICKSTART.md) |
+| [Training and deployment model cards](docs/MODEL_CARDS.md) | [F1, latency and quantization](docs/RESULTS.md) | [Artifacts and recovery](docs/STORAGE_AND_RECOVERY.md) |
+| [Acceptance and limitations](SUBMISSION_REPORT.md) | [Metrics and source hashes](evidence/metrics/README.md) | [Measurement and rerun guide](docs/EVIDENCE_GUIDE.md) |
+
+<details>
+<summary><strong>The project in 60 seconds</strong></summary>
+
+- **Problem:** bring pharmaceutical visual inspection evidence to the workstation without cloud inference.
+- **Implementation:** seven-class Hailo detection, three independent Arm anomaly profiles, and bounded on-device Llama advice.
+- **Demonstrated integration:** eight selected Pi cases with recorded visual outcomes and fresh validated advisory responses. This demonstrates functionality, not population accuracy.
+- **Distinctive engineering:** separate vision/advisory execution, SOP citations, preserved evidence, append-only QA reviews and model verification.
+- **Limits:** the VisA profile is weak; ground-truth INT8 accuracy loss and production endurance remain unmeasured. Results below preserve those boundaries.
+
+</details>
+
 <div align="center">
 
 <img src="web/assets/logo.svg" width="80" alt="Medge Vision optical capsule mark" />
