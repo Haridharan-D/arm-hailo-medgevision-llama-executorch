@@ -10,6 +10,8 @@
 
 </div>
 
+> **Judges: [start here for a three-minute evidence walkthrough](JUDGES_START_HERE.md).** Architecture, actual Pi outputs, full metrics, report and reproduction checks are linked in one place.
+
 ---
 
 Medge Vision is a local workstation for tablet, capsule and blister-pack inspection. A custom seven-class **YOLOv8s** detector runs on **Hailo-8**. Three independent **EfficientAD-S** profiles produce anomaly scores and heatmaps on the **Raspberry Pi CPU**. **Llama 3.2 1B Instruct**, running locally through **ExecuTorch**, provides asynchronous SOP-linked advice about the recorded findings.
