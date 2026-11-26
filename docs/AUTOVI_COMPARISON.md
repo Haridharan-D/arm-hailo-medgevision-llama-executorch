@@ -17,7 +17,7 @@ This comparison uses the AutoVI README from the supplied `ARM_Renault_AUTO_VI_De
 - **Integrated inspection:** the Pi report ties each selected case to visual output, runtime measurements and fresh advisory. The review workflow preserves the inspection verdict independently of Llama. [Original eight-case record](../evidence/target_20261124/eight_test_report.json) · [Actual dashboard captures](../evidence/gallery/README.md).
 - **Software upgrade:** the Windows experiment matched detections on all **12 paired CPU calls** and reduced the isolated threshold lookup p50 from **2.55645 to 0.03180 ms** using seeded class indices. [Scope, full timings and commands](ENGINEERING_UPGRADE_20261126.md) · [95-test regression run](../evidence/engineering_20261126/regression.txt).
 
-The comparisons above preserve the original benchmarks. The percentages are arithmetic on published Medge Vision measurements. [Raw benchmark records and methodology](RESULTS.md) · [CSV/JSON evidence](../evidence/metrics/README.md) · [Engineering report (PDF)](MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf).
+The comparisons above preserve the original benchmarks. The percentages are arithmetic on published Medge Vision measurements. [Raw benchmark records and methodology](RESULTS.md) · [CSV/JSON evidence](../evidence/metrics/README.md) · [Engineering report (PDF)](archive/MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf).
 
 ## Reproduce a paired labeled CPU-to-Hailo accuracy comparison
 

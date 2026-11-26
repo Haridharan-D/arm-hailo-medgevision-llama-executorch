@@ -11,7 +11,7 @@ Start with the [final report for judging](docs/Final_MedgeVision_Report.pdf). Se
 2. **See actual output:** open the [Hailo crack inspection](evidence/gallery/dashboard/02_yolo_defective.png), [anomaly heatmap and advice](evidence/gallery/dashboard/04_anomaly_defective.png), then the [complete 47-screenshot gallery](evidence/gallery/README.md).
 3. **Inspect measured results:** read [full accuracy and comparison tables](docs/RESULTS.md). Every table points to original records; [CSV/JSON exports](evidence/metrics/README.md) preserve full precision.
 4. **Check actual target execution:** the [eight-case report](evidence/target_20261124/eight_test_report.json) contains original inspection IDs, detections/scores, advice, native token statistics and resource samples. The [summary](evidence/target_20261124/summary.json) reports eight selected outcomes matched and eight fresh validated advisory responses, with zero cache reuse.
-5. **Review methodology:** read the [project PDF](docs/MEDGE_VISION_Final_Project_Report.pdf), [model cards](docs/MODEL_CARDS.md) and [engineering acceptance](SUBMISSION_REPORT.md).
+5. **Review methodology:** read the [project PDF](docs/Final_MedgeVision_Report.pdf), [model cards](docs/MODEL_CARDS.md) and [engineering acceptance](SUBMISSION_REPORT.md).
 
 ## Why these engineering choices?
 

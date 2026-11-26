@@ -20,7 +20,7 @@
 - [Actual Pi screenshot gallery](../evidence/gallery/README.md): all eight inspections, heatmaps/advice, terminal replay and application screens.
 - [Current engineering acceptance](../SUBMISSION_REPORT.md): final target/recovery checks and unresolved validation.
 - [Final report for judging (PDF)](Final_MedgeVision_Report.pdf) and [fresh inference figures](../evidence/judging/README.md).
-- Earlier reports: [original project report](MEDGE_VISION_Final_Project_Report.pdf), [engineering upgrade](MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf), and [PS5 research paper](MEDGE_VISION_PS5_Research_Paper.pdf).
+- Earlier reports in `docs/archive/` · [Original project report](archive/MEDGE_VISION_Final_Project_Report.pdf) · [Engineering upgrade](archive/MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf) · [PS5 research paper](archive/MEDGE_VISION_PS5_Research_Paper.pdf) · [Previous judging draft](archive/Medge_Vision_Final_Report_for_Judging.pdf)
 
 ## Understand the design
 
@@ -31,7 +31,7 @@
 - [Vision evaluation](VISION_EVALUATION.md): original evaluation and quantization boundaries.
 - [QA workflow](INDUSTRIAL_WORKFLOW.md): visual observation versus authorized disposition.
 - [Database/audit](DATABASE_AND_AUDIT.md): evidence persistence and append-only review.
-- [Portable backup](../backups/README.md) and [private backup status](../BACKUP_STATUS.md).
+- [Portable backup](../backups/README.md) and [private backup status](../backups/PRIVATE_RECOVERY_STATUS.md).
 - [Third-party licenses](../THIRD_PARTY_NOTICES.md) and [submission limitations](SUBMISSION_LIMITATIONS.md).
 
 ## Historical engineering records

@@ -80,4 +80,4 @@ The clone installer also creates `~/medge-test`: two cases per pipeline, eight t
 
 ## Submission boundaries
 
-Selected demonstrations are not unbiased accuracy measurements. SAFE means a configured visual check is clear, not pharmaceutical release approval. QA disposition is separate, and Llama cannot override it. See `BACKUP_STATUS.md`, `THIRD_PARTY_NOTICES.md` and `docs/SUBMISSION_LIMITATIONS.md` before reuse or deployment.
+Selected demonstrations are not unbiased accuracy measurements. SAFE means a configured visual check is clear, not pharmaceutical release approval. QA disposition is separate, and Llama cannot override it. See [private recovery status](backups/PRIVATE_RECOVERY_STATUS.md), `THIRD_PARTY_NOTICES.md` and `docs/SUBMISSION_LIMITATIONS.md` before reuse or deployment.
