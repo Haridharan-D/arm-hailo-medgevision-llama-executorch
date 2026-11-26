@@ -2,7 +2,7 @@
 
 ## CPU vision, Windows or Linux
 
-Clone this repository and use Python 3.11. The included vision models are reconstructed from verified parts; no training is needed for this path:
+Clone this repository and use Python 3.11. The complete vision models are included and checked by SHA-256 before use. [Model files](models/README.md)
 
 ```sh
 git clone https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch.git
@@ -24,7 +24,7 @@ Open http://127.0.0.1:8765/ . Click the intro to enter. Alternate design: `/clas
 
 ## Genuine Llama advisory
 
-For the measured Raspberry Pi 5 aarch64 Debian Trixie setup, `python tools/verify_repository_artifacts.py` now reconstructs the original tested Arm worker and shared library as well as the vision models. Download the pinned Llama files, then run `python tools/configure_station.py --backend hailo`. A native rebuild is optional on the matching system; other architecture/OS/glibc combinations require the source-build path below. The PTE/tokenizer download remains separate because of size/licensing.
+For the measured Raspberry Pi 5 aarch64 Debian Trixie setup, `python tools/verify_repository_artifacts.py` verifies the shipped vision models and reconstructs the tested Arm worker and shared library. Download the pinned Llama files, then run `python tools/configure_station.py --backend hailo`. A native rebuild is optional on the matching system. Other architecture/OS/glibc combinations require the source-build path below. The PTE/tokenizer download remains separate because of size and licensing.
 
 Accept upstream Llama 3.2 license conditions. Download the pinned public conversion, then build on Linux/Arm (Pi) or Linux/x86-64 (WSL):
 

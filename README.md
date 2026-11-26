@@ -45,7 +45,7 @@ python tools/configure_station.py --backend onnx
 python main.py --desktop
 ```
 
-Open **http://127.0.0.1:8765/**. The verifier reconstructs and checks the included vision models. The Pi uses the bundled Hailo-8 HEF and separately provisioned Llama artifacts. [Full setup and Pi deployment](QUICKSTART.md) · [Artifact manifest](ARTIFACT_MANIFEST.json)
+Open **http://127.0.0.1:8765/**. The verifier checks the included vision files and prepares the bundled Arm advisory runtime. The Pi uses the bundled Hailo-8 HEF and separately provisioned Llama artifacts. [Model files](models/README.md) · [Full setup and Pi deployment](QUICKSTART.md)
 
 ## Architecture
 

@@ -13,8 +13,10 @@ llama/artifacts/tokenizer.model
 llama/bin/
 native/bin/
 
-# ONNX models are reassembled from verified small Git blobs.
+# Ignore generated ONNX exports. Ship the four frozen vision models directly.
 *.onnx
+!assets/blistertrace_yolov8s.onnx
+!models/anomaly/*/model.onnx
 *.json.before_setup
 smoke_results.json
 backups/demo_20261124/

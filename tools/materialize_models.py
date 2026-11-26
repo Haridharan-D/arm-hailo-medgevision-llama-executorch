@@ -1,4 +1,4 @@
-"""Reassemble frozen ONNX files from small Git blobs, checking every SHA256."""
+"""Reassemble split deployment artifacts, checking every SHA-256."""
 from pathlib import Path
 import hashlib
 import json

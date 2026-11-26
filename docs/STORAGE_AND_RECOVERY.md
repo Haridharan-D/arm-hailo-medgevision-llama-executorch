@@ -5,7 +5,7 @@
 ## Available in this repository
 
 - Application/API/UI/native source, training/export notebooks and conversion recipes.
-- Five frozen visual deployment models and the original Arm runtime/library, reconstructed from verified Git parts where applicable.
+- Five complete frozen vision models in their deployment paths. The original Arm runtime and library are reconstructed from verified Git parts.
 - Model contracts, fixed thresholds, manifests, historical metric files and final eight-case target records.
 - Forty-seven actual Pi screenshots, final project PDF and measured output/advisory evidence.
 - A verified portable eight-record SQLite/image/advice backup with safe restore tooling.
