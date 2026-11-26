@@ -10,16 +10,21 @@ Built for the **Bharat AI-SoC Challenge 2026–27 (PS5)** by Haridharan D (team 
 
 ## See the models run
 
-[![Actual Raspberry Pi dashboard showing Hailo-8 crack detection, QA HOLD and a validated ExecuTorch Llama response](evidence/gallery/dashboard/02_yolo_defective_advice_bottom.png)](evidence/gallery/dashboard/02_yolo_defective_advice_bottom.png)
-
-**Recorded Pi case.** Hailo-8 localized a crack at **90.2% confidence** in **15.04 ms** of vision time. ExecuTorch Llama returned “Preserve evidence and request QA review” with demo SOP clause **BT-02**. QA remained **HOLD**. [Original target record](evidence/target_20261124/eight_test_report.json) · [Dashboard gallery](evidence/gallery/README.md)
-
-| MVTec pill test image | VisA capsules test image |
+| YOLOv8s crack detection | MVTec pill heatmap |
 | :---: | :---: |
-| [![MVTec pill input beside the EfficientAD-S heatmap](evidence/judging/mvtec_pill_heatmap.png)](evidence/judging/mvtec_pill_heatmap.png) | [![VisA capsules input beside the EfficientAD-S heatmap](evidence/judging/visa_capsules_heatmap.png)](evidence/judging/visa_capsules_heatmap.png) |
-| Score **0.6374**, threshold **0.3501** | Score **2.2623**, threshold **0.2028** |
+| [![YOLOv8s input beside the predicted crack box](evidence/judging/yolo_crack_boxes.png)](evidence/judging/yolo_crack_boxes.png) | [![MVTec pill input beside its EfficientAD-S heatmap](evidence/judging/mvtec_pill_heatmap.png)](evidence/judging/mvtec_pill_heatmap.png) |
+| Crack confidence **93.53%** | Score **0.6374**, threshold **0.3501** |
+| **MVTec capsule heatmap** | **VisA capsules heatmap** |
+| [![MVTec capsule input beside its EfficientAD-S heatmap](evidence/judging/mvtec_capsule_heatmap.png)](evidence/judging/mvtec_capsule_heatmap.png) | [![VisA capsules input beside its EfficientAD-S heatmap](evidence/judging/visa_capsules_heatmap.png)](evidence/judging/visa_capsules_heatmap.png) |
+| Score **3.6375**, threshold **0.2683** | Score **2.2623**, threshold **0.2028** |
 
-Both heatmaps came from fresh CPU inference on selected examples using the shipped ONNX models. VisA remains a research profile with **24% held-out recall**. [Fresh YOLO boxes](evidence/judging/yolo_crack_boxes.png) · [All five examples and plots](evidence/judging/README.md) · [Inference receipt](evidence/judging/inference_receipt.json)
+Fresh CPU inference on selected examples using the shipped ONNX models. VisA remains a research profile with **24% held-out recall**. [Inference receipt](evidence/judging/inference_receipt.json) · [All examples and plots](evidence/judging/README.md)
+
+### ExecuTorch Llama proof
+
+[![Cropped Raspberry Pi advisory panel showing a validated Llama response and BT-02 SOP citation](evidence/judging/llama_advisory_proof.png)](evidence/judging/llama_advisory_proof.png)
+
+Advisory panel cropped from the recorded Pi crack case. Llama returned “Preserve evidence and request QA review” and cited demo SOP clause **BT-02**. [Original target record](evidence/target_20261124/eight_test_report.json)
 
 ## What it does
 
