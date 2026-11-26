@@ -32,18 +32,22 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 - **Record the verdict before asking Llama.** Advisory runs asynchronously against the recorded findings and demo SOP. It cannot alter the verdict.
 - **Keep a traceable QA record.** Images, model and configuration hashes, and append-only reviews stay tied to the inspection ID. Use the dashboard, verdict-only display or terminal tools.
 
-## Measured performance
+## Engineering scorecard
 
-| Check | Recorded result | Scope |
+The target station uses a **Raspberry Pi 5 (BCM2712, Cortex-A76, aarch64 Debian Trixie)** and a **Hailo-8** accelerator. The measurements below cover four separate checks: labeled holdouts, repeated-image backend timing, advisory replay and selected station demonstrations.
+
+| Pipeline / parameter | Recorded result | How it was measured |
 | --- | --- | --- |
-| Detector latency | **580.115 → 15.197 ms mean** (38.17×); Hailo p95 **15.526 ms** | Pi 5 CPU vs Hailo-8, repeated stored images, detector path |
-| Detector file size | **44.74 → 10.11 MB** (77.41% smaller) | FP32 ONNX vs INT8 HEF, standalone detector |
-| Known-defect accuracy | **89.19% mAP50–95**, **99.22% mAP50** | Original FP32 holdout, 1,303 images and 2,956 labeled boxes |
-| Anomaly image F1 | **92.37%** pill, **88.32%** capsule, **38.40%** VisA | Separate category holdouts at frozen thresholds |
-| Advisory optimization | **15.156 → 8.071 s** median, **26/39 → 36/39** final guard acceptance | Historical 1B baseline vs adaptive-v1 on the same scenario protocol |
-| Integrated station | **8/8** expected visual outcomes, **8/8** fresh validated replies | Selected Pi cases, zero cache reuse, 8.967 s median advisory |
+| **Inspection quality** · YOLOv8s, 7 classes, 640 × 640 input | **89.19% mAP50–95** · **99.22% mAP50** · **97.63% micro F1** at the fixed operating point | FP32 holdout, 1,303 images and 2,956 boxes. Class thresholds **0.86–0.91**. |
+| **Image anomaly** · EfficientAD-S, 3 profiles, 256 × 256 input | Image AUROC / F1: **0.9834 / 92.37%** pill · **0.9485 / 88.32%** capsule · **0.6502 / 38.40%** VisA | Separate held-out category sets. Image thresholds **0.350053 / 0.268284 / 0.202819**. |
+| **Anomaly localization** · mask evaluation | AUPRO **0.9557 / 0.8308 / 0.6985** for pill / capsule / VisA | Per-region overlap integrated up to pixel FPR 0.30. |
+| **Edge latency** · ONNX CPU → Hailo-8 | **580.115 → 15.197 ms** mean (**38.17×** ratio), **15.526 ms** Hailo p95 | Pi detector path on repeated stored images. **35 CPU calls / 3,948 Hailo calls**. |
+| **Deployment footprint** · FP32 ONNX → INT8 HEF | **44.74 → 10.11 MB** (**77.41% smaller**) | Standalone YOLO detector file sizes. Mean detector-process RSS in the separate runtime trial was **254.07 → 206.43 MiB**. |
+| **Quantization check** · INT8 detection agreement | **37 matched · 2 INT8-only · 1 FP32-only** | 18 unannotated images, FP32 as reference. Labeled INT8 accuracy delta remains unmeasured. |
+| **On-device advisory** · Llama 3.2 1B INT4, 3 default CPU threads | **15.156 → 8.071 s** median, **10.233 s** adaptive p95, **12.003 tokens/s** median decode | Baseline → adaptive-v1 on the same historical protocol. Final guard replay **26/39 → 36/39**. Prompt/output budgets **1,536 / 128 tokens**. |
+| **Station demonstration** · recorded QA + fresh advisory | **8/8** expected visual outcomes · **8/8** fresh validated replies · **8.967 s** advisory median | Selected Pi cases with zero cache reuse. |
 
-[Detailed results and denominators](docs/RESULTS.md) · [Raw evidence](docs/EVIDENCE_GUIDE.md) · [AutoVI benchmark context](docs/AUTOVI_COMPARISON.md)
+The Hailo timing excludes camera acquisition and advisory. Electrical power and long-shift endurance remain unmeasured. [Benchmark methods and raw evidence](docs/RESULTS.md) · [Frozen model parameters](docs/MODEL_CARDS.md) · [AutoVI benchmark context](docs/AUTOVI_COMPARISON.md)
 
 ## Run it
 
@@ -60,14 +64,9 @@ Open **http://127.0.0.1:8765/**. The verifier checks the included vision files a
 
 ## Architecture
 
-```text
-Image or camera frame → YOLOv8s (Hailo-8 / CPU) or EfficientAD-S (CPU)
-                     → inspection rules → SQLite → dashboard + verdict display
+[![Animated architecture showing vision results flowing into the inspection record and separate Llama advice reaching the dashboard](docs/assets/architecture-motion.svg)](docs/architecture.svg)
 
-Recorded inspection + demo SOP → ExecuTorch Llama → guarded advisory
-```
-
-[Architecture diagram](docs/architecture.svg) · [Model cards](docs/MODEL_CARDS.md) · [Training and conversion](docs/MODEL_LIFECYCLE.md)
+The teal path records vision results and the QA verdict. The violet path reads recorded findings and returns advisory text to the operator. [Static architecture and details](docs/architecture.svg) · [Training and conversion](docs/MODEL_LIFECYCLE.md)
 
 ## Validation and limits
 

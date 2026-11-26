@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="464" viewBox="0 0 1120 464" role="img" aria-labelledby="title description">
+  <title id="title">Medge Vision: offline inspection and advisory flow</title>
+  <desc id="description">A stored image or camera frame goes to either YOLOv8s or EfficientAD-S. Inspection rules write the result and QA verdict to SQLite. The dashboard reads the stored verdict. ExecuTorch Llama receives recorded findings and returns advisory text to the dashboard without a path back to the verdict.</desc>
+  <defs>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#0c192a"/><stop offset="1" stop-color="#181c32"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#a5bedb" stroke-opacity=".055"/></pattern>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l8 4-8 4z" fill="#69e0ce"/></marker>
+    <marker id="advice-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l8 4-8 4z" fill="#c5b0ff"/></marker>
+    <mask id="rounded"><rect width="1120" height="464" rx="22" fill="#fff"/></mask>
+    <style>
+      text{font-family:system-ui,sans-serif}
+      .heading{font-size:26px;font-weight:720;fill:#f1f7ff}
+      .label{font-size:18px;font-weight:700;fill:#f1f7ff}
+      .detail{font-size:14px;fill:#b8cbe0}
+      .tag{font-size:11px;font-weight:760;letter-spacing:1.5px;fill:#86eede}
+      .violet{fill:#d3bfff}
+      .card{fill:#12263b;stroke:#36546a}
+      .advisory{fill:#25203c;stroke:#65548c}
+      .wire{fill:none;stroke:#69e0ce;stroke-width:1.6;marker-end:url(#arrow)}
+      .advice-wire{fill:none;stroke:#c5b0ff;stroke-width:1.6;marker-end:url(#advice-arrow)}
+      .icon{fill:none;stroke:#8de8db;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+      .purple-icon{stroke:#d3bfff}
+      .packet{fill:#e1fff9;stroke:#69e0ce;stroke-width:2}
+      .advice-packet{fill:#f3eaff;stroke:#c5b0ff;stroke-width:2}
+      @media(prefers-reduced-motion:reduce){.motion{display:none}}
+    </style>
+  </defs>
+  <g mask="url(#rounded)">
+    <rect width="1120" height="464" fill="url(#surface)"/>
+    <rect width="1120" height="464" fill="url(#grid)"/>
+  </g>
+  <text x="34" y="47" class="heading">From image to recorded verdict</text>
+  <text x="35" y="73" class="detail">Raspberry Pi 5 · Hailo-8 vision · Arm CPU anomaly detection and advisory</text>
+  <rect x="910" y="33" width="174" height="30" rx="15" fill="#102e35" stroke="#315564"/>
+  <text x="997" y="52" class="tag" text-anchor="middle">OFFLINE AFTER SETUP</text>
+
+  <path class="wire" d="M209 225H244V156H271"/>
+  <path class="wire" d="M209 225H244V295H271"/>
+  <path class="wire" d="M501 156H530V198H560"/>
+  <path class="wire" d="M501 295H530V255H560"/>
+  <path class="wire" d="M782 198H813V156H843"/>
+  <path class="advice-wire" d="M782 255H813V295H843"/>
+  <path class="advice-wire" d="M965 241V211"/>
+  <g class="motion" aria-hidden="true">
+    <circle r="4" class="packet"><animateMotion dur="3.8s" repeatCount="indefinite" path="M209 225H244V156H271"/></circle>
+    <circle r="4" class="packet"><animateMotion begin="1.1s" dur="3.8s" repeatCount="indefinite" path="M209 225H244V295H271"/></circle>
+    <circle r="4" class="packet"><animateMotion begin=".8s" dur="3s" repeatCount="indefinite" path="M501 156H530V198H560"/></circle>
+    <circle r="4" class="packet"><animateMotion begin="1.9s" dur="3s" repeatCount="indefinite" path="M501 295H530V255H560"/></circle>
+    <circle r="4" class="packet"><animateMotion begin="1.2s" dur="3.2s" repeatCount="indefinite" path="M782 198H813V156H843"/></circle>
+    <circle r="4" class="advice-packet"><animateMotion begin="2s" dur="3.6s" repeatCount="indefinite" path="M782 255H813V295H843"/></circle>
+    <circle r="3" class="advice-packet"><animateMotion begin="2.7s" dur="2.7s" repeatCount="indefinite" path="M965 241V211"/></circle>
+  </g>
+
+  <g transform="translate(34 169)">
+    <rect class="card" width="175" height="113" rx="14"/>
+    <g class="icon" transform="translate(15 18)"><path d="M1 6h5l2-3h8l2 3h5v14H1z"/><circle cx="12" cy="13" r="4"/></g>
+    <text x="48" y="34" class="tag">ACQUISITION</text>
+    <text x="15" y="64" class="label">Image input</text>
+    <text x="15" y="89" class="detail">Stored image / camera</text>
+  </g>
+  <g transform="translate(271 103)">
+    <rect class="card" width="230" height="106" rx="14"/>
+    <g class="icon" transform="translate(15 14)"><path d="M1 8V2h6m10 0h6v6m0 8v6h-6m-10 0H1v-6"/><rect x="7" y="7" width="10" height="10" rx="2"/></g>
+    <text x="50" y="30" class="tag">KNOWN DEFECTS</text>
+    <text x="15" y="58" class="label">YOLOv8s</text>
+    <text x="15" y="83" class="detail">Hailo-8 / CPU · boxes + scores</text>
+  </g>
+  <g transform="translate(271 242)">
+    <rect class="card" width="230" height="106" rx="14"/>
+    <g class="icon" transform="translate(15 14)"><path d="M1 19h22M3 15l5-6 5 3 4-7 4 4"/><circle cx="17" cy="5" r="2"/></g>
+    <text x="50" y="30" class="tag">APPEARANCE CHANGE</text>
+    <text x="15" y="58" class="label">EfficientAD-S</text>
+    <text x="15" y="83" class="detail">Arm CPU · profile score + map</text>
+  </g>
+  <g transform="translate(560 155)">
+    <rect class="card" width="222" height="142" rx="14"/>
+    <g class="icon" transform="translate(15 15)"><ellipse cx="12" cy="5" rx="10" ry="4"/><path d="M2 5v14c0 5 20 5 20 0V5M2 12c0 5 20 5 20 0"/></g>
+    <text x="50" y="33" class="tag">INSPECTION RECORD</text>
+    <text x="15" y="64" class="label">Rules → SQLite</text>
+    <text x="15" y="91" class="detail">Persist findings + verdict</text>
+    <text x="15" y="115" class="detail">Evidence and QA history</text>
+  </g>
+  <g transform="translate(843 103)">
+    <rect class="card" width="243" height="106" rx="14"/>
+    <g class="icon" transform="translate(15 14)"><rect x="1" y="2" width="23" height="16" rx="2"/><path d="M12 18v5m-6 0h12M6 10l3 3 7-7"/></g>
+    <text x="50" y="30" class="tag">OPERATOR VIEW</text>
+    <text x="15" y="58" class="label">Dashboard + display</text>
+    <text x="15" y="83" class="detail">Recorded QA status</text>
+  </g>
+  <g transform="translate(843 242)">
+    <rect class="advisory" width="243" height="106" rx="14"/>
+    <g class="icon purple-icon" transform="translate(15 14)"><path d="M2 2h21v15H11l-6 5v-5H2zM7 8h11m-11 4h8"/></g>
+    <text x="50" y="30" class="tag violet">ASYNC ADVISORY</text>
+    <text x="15" y="58" class="label">ExecuTorch Llama</text>
+    <text x="15" y="83" class="detail">Recorded findings + demo SOP</text>
+  </g>
+  <path d="M34 380h1052" stroke="#38516a"/>
+  <path d="M36 408h22" stroke="#69e0ce" stroke-width="2"/>
+  <text x="68" y="413" class="detail">Vision and recorded verdict</text>
+  <path d="M318 408h22" stroke="#c5b0ff" stroke-width="2"/>
+  <text x="350" y="413" class="detail">Advisory input and output</text>
+  <text x="1086" y="413" class="tag violet" text-anchor="end">QA RETAINS DISPOSITION AUTHORITY</text>
+  <text x="35" y="438" class="detail">Animated packets illustrate direction and sequence.</text>
+</svg>
