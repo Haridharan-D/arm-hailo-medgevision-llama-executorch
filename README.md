@@ -26,6 +26,14 @@ Fresh CPU inference on selected examples using the shipped ONNX models. VisA rem
 
 Advisory panel cropped from the recorded Pi crack case. Llama returned “Preserve evidence and request QA review” and cited demo SOP clause **BT-02**. [Original target record](evidence/target_20261124/eight_test_report.json)
 
+### Live USB camera
+
+| Bench setup | Live dashboard result |
+| :---: | :---: |
+| [![USB camera aimed at blister-pack imagery displayed on a phone](evidence/judging/usb_camera_setup.png)](evidence/judging/usb_camera_setup.png) | [![Live USB video showing a color mismatch box and HOLD indicator](evidence/judging/usb_camera_live_detection.png)](evidence/judging/usb_camera_live_detection.png) |
+
+The camera viewed a blister-pack sample displayed on a phone. The live dashboard for `/dev/video0` shows a **color mismatch** box and **HOLD**. These photos document the bench demonstration. They do not provide measured frame rate, capture-to-verdict latency, or production accuracy.
+
 ## What it does
 
 - **Inspect stored images or USB/CSI camera captures.** YOLOv8s marks seven defect classes. Three EfficientAD-S profiles produce category-specific scores and heatmaps.
@@ -54,6 +62,8 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 | Llama advisory latency | **15.156 → 8.071 s** median · **10.233 s** adaptive p95 | 1B INT4 baseline → adaptive-v1 |
 | Llama decode and guard replay | **12.003 tokens/s** median · **26/39 → 36/39** accepted | Historical advisory scenarios |
 | Station demonstration | **8/8** expected visual outcomes · **8/8** validated replies · **8.967 s** median advisory | Selected Pi cases · zero cache reuse |
+| **Live USB capture** | **MJPG · 1280 × 720 · 30 fps · 1-frame buffer** requested | OpenCV capture settings. Negotiated mode and delivered FPS were not measured in the pictured demo. [Camera implementation](app/camera.py) |
+| **USB snapshot** | Waits up to **2 s** for a frame captured after the request | Freeze / Snapshot uses the fresh-frame gate. [Camera implementation](app/camera.py) |
 
 Detector timing uses repeated stored images (35 CPU and 3,948 Hailo calls). AUPRO integrates to pixel FPR 0.30. Labeled INT8 accuracy and electrical power remain unmeasured. [Full benchmark evidence](docs/RESULTS.md) · [Model parameters](docs/MODEL_CARDS.md)
 
