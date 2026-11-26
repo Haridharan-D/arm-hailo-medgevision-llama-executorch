@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="464" viewBox="0 0 1120 464" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="600" viewBox="0 0 1120 600" role="img" aria-labelledby="title description">
   <title id="title">Medge Vision: offline inspection and advisory flow</title>
-  <desc id="description">A stored image or camera frame goes to either YOLOv8s or EfficientAD-S. Inspection rules write the result and QA verdict to SQLite. The dashboard reads the stored verdict. ExecuTorch Llama receives recorded findings and returns advisory text to the dashboard without a path back to the verdict.</desc>
+  <desc id="description">A stored image or camera frame goes to either YOLOv8s or EfficientAD-S. Inspection rules write the result and QA verdict to SQLite. The dashboard reads the stored verdict. ExecuTorch Llama receives recorded findings and returns advisory text to the dashboard without a path back to the verdict. Inspection IDs link the image hash, model and configuration fingerprints, verdict and QA review history.</desc>
+  <!-- Icons from Lucide 0.468.0. See lucide-LICENSE.txt. -->
   <defs>
     <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#0c192a"/><stop offset="1" stop-color="#181c32"/></linearGradient>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#a5bedb" stroke-opacity=".055"/></pattern>
     <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l8 4-8 4z" fill="#69e0ce"/></marker>
     <marker id="advice-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l8 4-8 4z" fill="#c5b0ff"/></marker>
-    <mask id="rounded"><rect width="1120" height="464" rx="22" fill="#fff"/></mask>
+    <mask id="rounded"><rect width="1120" height="600" rx="22" fill="#fff"/></mask>
     <style>
       text{font-family:system-ui,sans-serif}
       .heading{font-size:26px;font-weight:720;fill:#f1f7ff}
@@ -22,14 +23,18 @@
       .purple-icon{stroke:#d3bfff}
       .packet{fill:#e1fff9;stroke:#69e0ce;stroke-width:2}
       .advice-packet{fill:#f3eaff;stroke:#c5b0ff;stroke-width:2}
+      .flow{fill:none;stroke:#69e0ce;stroke-width:2.8;stroke-dasharray:3 20;stroke-linecap:round;opacity:.32;animation:flow 3.8s linear infinite}
+      .flow.advice{stroke:#c5b0ff;animation-duration:4.4s}
+      .tracing{stroke:#c5b0ff;stroke-width:1.5;stroke-dasharray:4 4;fill:none;marker-end:url(#advice-arrow)}
+      @keyframes flow{to{stroke-dashoffset:-46}}
       @media(prefers-reduced-motion:reduce){.motion{display:none}}
     </style>
   </defs>
   <g mask="url(#rounded)">
-    <rect width="1120" height="464" fill="url(#surface)"/>
-    <rect width="1120" height="464" fill="url(#grid)"/>
+    <rect width="1120" height="600" fill="url(#surface)"/>
+    <rect width="1120" height="600" fill="url(#grid)"/>
   </g>
-  <text x="34" y="47" class="heading">From image to recorded verdict</text>
+  <text x="34" y="47" class="heading">Offline AI pipeline and traceability</text>
   <text x="35" y="73" class="detail">Raspberry Pi 5 · Hailo-8 vision · Arm CPU anomaly detection and advisory</text>
   <rect x="910" y="33" width="174" height="30" rx="15" fill="#102e35" stroke="#315564"/>
   <text x="997" y="52" class="tag" text-anchor="middle">OFFLINE AFTER SETUP</text>
@@ -41,7 +46,16 @@
   <path class="wire" d="M782 198H813V156H843"/>
   <path class="advice-wire" d="M782 255H813V295H843"/>
   <path class="advice-wire" d="M965 241V211"/>
+  <path class="tracing" d="M671 297V374"/>
   <g class="motion" aria-hidden="true">
+    <path class="flow" d="M209 225H244V156H271"/>
+    <path class="flow" d="M209 225H244V295H271"/>
+    <path class="flow" d="M501 156H530V198H560"/>
+    <path class="flow" d="M501 295H530V255H560"/>
+    <path class="flow" d="M782 198H813V156H843"/>
+    <path class="flow advice" d="M782 255H813V295H843"/>
+    <path class="flow advice" d="M965 241V211"/>
+    <circle r="3.5" class="advice-packet"><animateMotion dur="3.6s" begin="1.6s" repeatCount="indefinite" path="M671 297V374"/></circle>
     <circle r="4" class="packet"><animateMotion dur="3.8s" repeatCount="indefinite" path="M209 225H244V156H271"/></circle>
     <circle r="4" class="packet"><animateMotion begin="1.1s" dur="3.8s" repeatCount="indefinite" path="M209 225H244V295H271"/></circle>
     <circle r="4" class="packet"><animateMotion begin=".8s" dur="3s" repeatCount="indefinite" path="M501 156H530V198H560"/></circle>
@@ -53,28 +67,28 @@
 
   <g transform="translate(34 169)">
     <rect class="card" width="175" height="113" rx="14"/>
-    <g class="icon" transform="translate(15 18)"><path d="M1 6h5l2-3h8l2 3h5v14H1z"/><circle cx="12" cy="13" r="4"/></g>
+    <g class="icon " transform="translate(15 18)"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />   <circle cx="12" cy="13" r="3" /></g>
     <text x="48" y="34" class="tag">ACQUISITION</text>
     <text x="15" y="64" class="label">Image input</text>
     <text x="15" y="89" class="detail">Stored image / camera</text>
   </g>
   <g transform="translate(271 103)">
     <rect class="card" width="230" height="106" rx="14"/>
-    <g class="icon" transform="translate(15 14)"><path d="M1 8V2h6m10 0h6v6m0 8v6h-6m-10 0H1v-6"/><rect x="7" y="7" width="10" height="10" rx="2"/></g>
+    <g class="icon " transform="translate(15 14)"><path d="M3 7V5a2 2 0 0 1 2-2h2" />   <path d="M17 3h2a2 2 0 0 1 2 2v2" />   <path d="M21 17v2a2 2 0 0 1-2 2h-2" />   <path d="M7 21H5a2 2 0 0 1-2-2v-2" />   <path d="M7 12h10" /></g>
     <text x="50" y="30" class="tag">KNOWN DEFECTS</text>
     <text x="15" y="58" class="label">YOLOv8s</text>
     <text x="15" y="83" class="detail">Hailo-8 / CPU · boxes + scores</text>
   </g>
   <g transform="translate(271 242)">
     <rect class="card" width="230" height="106" rx="14"/>
-    <g class="icon" transform="translate(15 14)"><path d="M1 19h22M3 15l5-6 5 3 4-7 4 4"/><circle cx="17" cy="5" r="2"/></g>
+    <g class="icon " transform="translate(15 14)"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></g>
     <text x="50" y="30" class="tag">APPEARANCE CHANGE</text>
     <text x="15" y="58" class="label">EfficientAD-S</text>
     <text x="15" y="83" class="detail">Arm CPU · profile score + map</text>
   </g>
   <g transform="translate(560 155)">
     <rect class="card" width="222" height="142" rx="14"/>
-    <g class="icon" transform="translate(15 15)"><ellipse cx="12" cy="5" rx="10" ry="4"/><path d="M2 5v14c0 5 20 5 20 0V5M2 12c0 5 20 5 20 0"/></g>
+    <g class="icon " transform="translate(15 15)"><ellipse cx="12" cy="5" rx="9" ry="3" />   <path d="M3 5V19A9 3 0 0 0 21 19V5" />   <path d="M3 12A9 3 0 0 0 21 12" /></g>
     <text x="50" y="33" class="tag">INSPECTION RECORD</text>
     <text x="15" y="64" class="label">Rules → SQLite</text>
     <text x="15" y="91" class="detail">Persist findings + verdict</text>
@@ -82,23 +96,51 @@
   </g>
   <g transform="translate(843 103)">
     <rect class="card" width="243" height="106" rx="14"/>
-    <g class="icon" transform="translate(15 14)"><rect x="1" y="2" width="23" height="16" rx="2"/><path d="M12 18v5m-6 0h12M6 10l3 3 7-7"/></g>
+    <g class="icon " transform="translate(15 14)"><path d="m9 10 2 2 4-4" />   <rect width="20" height="14" x="2" y="3" rx="2" />   <path d="M12 17v4" />   <path d="M8 21h8" /></g>
     <text x="50" y="30" class="tag">OPERATOR VIEW</text>
     <text x="15" y="58" class="label">Dashboard + display</text>
     <text x="15" y="83" class="detail">Recorded QA status</text>
   </g>
   <g transform="translate(843 242)">
     <rect class="advisory" width="243" height="106" rx="14"/>
-    <g class="icon purple-icon" transform="translate(15 14)"><path d="M2 2h21v15H11l-6 5v-5H2zM7 8h11m-11 4h8"/></g>
+    <g class="icon purple-icon" transform="translate(15 14)"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></g>
     <text x="50" y="30" class="tag violet">ASYNC ADVISORY</text>
     <text x="15" y="58" class="label">ExecuTorch Llama</text>
     <text x="15" y="83" class="detail">Recorded findings + demo SOP</text>
   </g>
-  <path d="M34 380h1052" stroke="#38516a"/>
-  <path d="M36 408h22" stroke="#69e0ce" stroke-width="2"/>
-  <text x="68" y="413" class="detail">Vision and recorded verdict</text>
-  <path d="M318 408h22" stroke="#c5b0ff" stroke-width="2"/>
-  <text x="350" y="413" class="detail">Advisory input and output</text>
-  <text x="1086" y="413" class="tag violet" text-anchor="end">QA RETAINS DISPOSITION AUTHORITY</text>
-  <text x="35" y="438" class="detail">Animated packets illustrate direction and sequence.</text>
+  <rect x="34" y="374" width="1052" height="139" rx="14" fill="#171f34" stroke="#574c75"/>
+  <text x="82" y="405" class="tag violet">TRACEABILITY &#183; LINKED BY INSPECTION ID</text>
+  <text x="1064" y="405" class="detail" text-anchor="end">Stored with the inspection</text>
+  <g class="icon purple-icon" transform="translate(49 387)"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />   <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />   <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />   <path d="M2 12a10 10 0 0 1 18-6" />   <path d="M2 16h.01" />   <path d="M21.8 16c.2-2 .131-5.354 0-6" />   <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />   <path d="M8.65 22c.21-.66.45-1.32.57-2" />   <path d="M9 6.8a6 6 0 0 1 9 5.2v2" /></g>
+  <g transform="translate(50 425)">
+    <rect width="244" height="70" rx="10" fill="#232941" stroke="#414e68"/>
+    <g class="icon purple-icon" transform="translate(13 23)"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />   <path d="M14 2v4a2 2 0 0 0 2 2h4" />   <circle cx="10" cy="12" r="2" />   <path d="m20 17-1.296-1.296a2.41 2.41 0 0 0-3.408 0L9 22" /></g>
+    <text x="49" y="28" class="label">Input evidence</text>
+    <text x="49" y="51" class="detail">Image + SHA-256</text>
+  </g>
+  <g transform="translate(306 425)">
+    <rect width="244" height="70" rx="10" fill="#232941" stroke="#414e68"/>
+    <g class="icon purple-icon" transform="translate(13 23)"><rect width="16" height="16" x="4" y="4" rx="2" />   <rect width="6" height="6" x="9" y="9" rx="1" />   <path d="M15 2v2" />   <path d="M15 20v2" />   <path d="M2 15h2" />   <path d="M2 9h2" />   <path d="M20 15h2" />   <path d="M20 9h2" />   <path d="M9 2v2" />   <path d="M9 20v2" /></g>
+    <text x="49" y="28" class="label">Model identity</text>
+    <text x="49" y="51" class="detail">Model hash + configuration</text>
+  </g>
+  <g transform="translate(562 425)">
+    <rect width="244" height="70" rx="10" fill="#232941" stroke="#414e68"/>
+    <g class="icon purple-icon" transform="translate(13 23)"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" />   <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />   <path d="m9 14 2 2 4-4" /></g>
+    <text x="49" y="28" class="label">Decision record</text>
+    <text x="49" y="51" class="detail">Findings + recorded verdict</text>
+  </g>
+  <g transform="translate(818 425)">
+    <rect width="244" height="70" rx="10" fill="#232941" stroke="#414e68"/>
+    <g class="icon purple-icon" transform="translate(13 23)"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />   <path d="m9 12 2 2 4-4" /></g>
+    <text x="49" y="28" class="label">QA history</text>
+    <text x="49" y="51" class="detail">Review events + audit chain</text>
+  </g>
+  <path d="M34 529h1052" stroke="#38516a"/>
+  <path d="M36 551h22" stroke="#69e0ce" stroke-width="2"/>
+  <text x="68" y="556" class="detail">Vision and recorded verdict</text>
+  <path d="M318 551h22" stroke="#c5b0ff" stroke-width="2"/>
+  <text x="350" y="556" class="detail">Advisory input and output</text>
+  <text x="1086" y="556" class="tag violet" text-anchor="end">QA RETAINS DISPOSITION AUTHORITY</text>
+  <text x="35" y="577" class="detail">Animated packets illustrate direction and sequence.</text>
 </svg>

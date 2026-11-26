@@ -32,25 +32,25 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 - **Record the verdict before asking Llama.** Advisory runs asynchronously against the recorded findings and demo SOP. It cannot alter the verdict.
 - **Keep a traceable QA record.** Images, model and configuration hashes, and append-only reviews stay tied to the inspection ID. Use the dashboard, verdict-only display or terminal tools.
 
-## Measured performance
+## Engineering scorecard
 
 **Target hardware:** Raspberry Pi 5 · BCM2712 / Cortex-A76 · aarch64 Debian Trixie · Hailo-8.
 
-| Metric | Measured value |
-| --- | --- |
-| Pi detector mean · CPU → Hailo-8 | **580.115 → 15.197 ms** · **38.17×** lower latency |
-| Hailo-8 detector tail latency | **15.526 ms p95** · **15.635 ms p99** |
-| Detector process memory · CPU → Hailo-8 | **254.07 → 206.43 MiB** mean RSS |
-| YOLO detector file · FP32 ONNX → INT8 HEF | **44.74 → 10.11 MB** · **77.41% smaller** |
-| YOLO FP32 holdout · 1,303 images / 2,956 boxes | **99.22% mAP50** · **89.19% mAP50–95** |
-| YOLO fixed thresholds · 0.86–0.91 | **97.63% micro F1** |
-| INT8 vs FP32 output agreement · 18 unlabeled images | **37 matched** · **2 INT8-only** · **1 FP32-only** |
-| EfficientAD-S · MVTec pill | **92.37% F1** · **0.9834 AUROC** · **0.9557 AUPRO** |
-| EfficientAD-S · MVTec capsule | **88.32% F1** · **0.9485 AUROC** · **0.8308 AUPRO** |
-| EfficientAD-S · VisA capsules | **38.40% F1** · **0.6502 AUROC** · **0.6985 AUPRO** |
-| Llama 3.2 1B INT4 · baseline → adaptive-v1 | **15.156 → 8.071 s** median · **10.233 s p95** |
-| Adaptive-v1 decode and final guard replay | **12.003 tokens/s** median · **26/39 → 36/39** accepted |
-| Selected Pi station cases · zero cache reuse | **8/8** expected visual outcomes · **8/8** validated replies · **8.967 s** median advisory |
+| Engineering check | Measured result | Test basis |
+| --- | --- | --- |
+| Detector speed | **580.115 → 15.197 ms** mean · **38.17×** ratio | Pi CPU → Hailo-8 |
+| Detector tail latency | **15.526 ms p95** · **15.635 ms p99** | Hailo-8 detector path |
+| Detector process memory | **254.07 → 206.43 MiB** mean RSS | Pi CPU → Hailo-8 |
+| Detector model size | **44.74 → 10.11 MB** · **77.41% smaller** | FP32 ONNX → INT8 HEF |
+| YOLO localization | **99.22% mAP50** · **89.19% mAP50–95** | FP32 holdout · 1,303 images / 2,956 boxes |
+| YOLO operating point | **97.63% micro F1** | Frozen class thresholds · 0.86–0.91 |
+| INT8 output agreement | **37 matched** · **2 INT8-only** · **1 FP32-only** | FP32 reference · 18 unlabeled images |
+| MVTec pill | **92.37% F1** · **0.9834 AUROC** · **0.9557 AUPRO** | EfficientAD-S holdout |
+| MVTec capsule | **88.32% F1** · **0.9485 AUROC** · **0.8308 AUPRO** | EfficientAD-S holdout |
+| VisA capsules | **38.40% F1** · **0.6502 AUROC** · **0.6985 AUPRO** | EfficientAD-S holdout |
+| Llama advisory latency | **15.156 → 8.071 s** median · **10.233 s** adaptive p95 | 1B INT4 baseline → adaptive-v1 |
+| Llama decode and guard replay | **12.003 tokens/s** median · **26/39 → 36/39** accepted | Historical advisory scenarios |
+| Station demonstration | **8/8** expected visual outcomes · **8/8** validated replies · **8.967 s** median advisory | Selected Pi cases · zero cache reuse |
 
 Detector timing uses repeated stored images (35 CPU and 3,948 Hailo calls). AUPRO integrates to pixel FPR 0.30. Labeled INT8 accuracy and electrical power remain unmeasured. [Full benchmark evidence](docs/RESULTS.md) · [Model parameters](docs/MODEL_CARDS.md)
 
@@ -71,7 +71,7 @@ Open **http://127.0.0.1:8765/**. The verifier checks the included vision files a
 
 [![Animated architecture showing vision results flowing into the inspection record and separate Llama advice reaching the dashboard](docs/assets/architecture-motion.svg)](docs/architecture.svg)
 
-The teal path records vision results and the QA verdict. The violet path reads recorded findings and returns advisory text to the operator. [Static architecture and details](docs/architecture.svg) · [Training and conversion](docs/MODEL_LIFECYCLE.md)
+The teal path records vision results and the QA verdict. The violet path reads recorded findings and returns advisory text to the operator. The traceability panel shows what stays tied to each inspection ID. [Static architecture](docs/architecture.svg) · [Audit and records](docs/DATABASE_AND_AUDIT.md) · [Training and conversion](docs/MODEL_LIFECYCLE.md)
 
 ## Validation and limits
 
