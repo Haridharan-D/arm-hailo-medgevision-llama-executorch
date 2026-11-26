@@ -32,22 +32,27 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 - **Record the verdict before asking Llama.** Advisory runs asynchronously against the recorded findings and demo SOP. It cannot alter the verdict.
 - **Keep a traceable QA record.** Images, model and configuration hashes, and append-only reviews stay tied to the inspection ID. Use the dashboard, verdict-only display or terminal tools.
 
-## Engineering scorecard
+## Measured performance
 
-The target station uses a **Raspberry Pi 5 (BCM2712, Cortex-A76, aarch64 Debian Trixie)** and a **Hailo-8** accelerator. The measurements below cover four separate checks: labeled holdouts, repeated-image backend timing, advisory replay and selected station demonstrations.
+**Target hardware:** Raspberry Pi 5 · BCM2712 / Cortex-A76 · aarch64 Debian Trixie · Hailo-8.
 
-| Pipeline / parameter | Recorded result | How it was measured |
-| --- | --- | --- |
-| **Inspection quality** · YOLOv8s, 7 classes, 640 × 640 input | **89.19% mAP50–95** · **99.22% mAP50** · **97.63% micro F1** at the fixed operating point | FP32 holdout, 1,303 images and 2,956 boxes. Class thresholds **0.86–0.91**. |
-| **Image anomaly** · EfficientAD-S, 3 profiles, 256 × 256 input | Image AUROC / F1: **0.9834 / 92.37%** pill · **0.9485 / 88.32%** capsule · **0.6502 / 38.40%** VisA | Separate held-out category sets. Image thresholds **0.350053 / 0.268284 / 0.202819**. |
-| **Anomaly localization** · mask evaluation | AUPRO **0.9557 / 0.8308 / 0.6985** for pill / capsule / VisA | Per-region overlap integrated up to pixel FPR 0.30. |
-| **Edge latency** · ONNX CPU → Hailo-8 | **580.115 → 15.197 ms** mean (**38.17×** ratio), **15.526 ms** Hailo p95 | Pi detector path on repeated stored images. **35 CPU calls / 3,948 Hailo calls**. |
-| **Deployment footprint** · FP32 ONNX → INT8 HEF | **44.74 → 10.11 MB** (**77.41% smaller**) | Standalone YOLO detector file sizes. Mean detector-process RSS in the separate runtime trial was **254.07 → 206.43 MiB**. |
-| **Quantization check** · INT8 detection agreement | **37 matched · 2 INT8-only · 1 FP32-only** | 18 unannotated images, FP32 as reference. Labeled INT8 accuracy delta remains unmeasured. |
-| **On-device advisory** · Llama 3.2 1B INT4, 3 default CPU threads | **15.156 → 8.071 s** median, **10.233 s** adaptive p95, **12.003 tokens/s** median decode | Baseline → adaptive-v1 on the same historical protocol. Final guard replay **26/39 → 36/39**. Prompt/output budgets **1,536 / 128 tokens**. |
-| **Station demonstration** · recorded QA + fresh advisory | **8/8** expected visual outcomes · **8/8** fresh validated replies · **8.967 s** advisory median | Selected Pi cases with zero cache reuse. |
+| Metric | Measured value |
+| --- | --- |
+| Pi detector mean · CPU → Hailo-8 | **580.115 → 15.197 ms** · **38.17×** lower latency |
+| Hailo-8 detector tail latency | **15.526 ms p95** · **15.635 ms p99** |
+| Detector process memory · CPU → Hailo-8 | **254.07 → 206.43 MiB** mean RSS |
+| YOLO detector file · FP32 ONNX → INT8 HEF | **44.74 → 10.11 MB** · **77.41% smaller** |
+| YOLO FP32 holdout · 1,303 images / 2,956 boxes | **99.22% mAP50** · **89.19% mAP50–95** |
+| YOLO fixed thresholds · 0.86–0.91 | **97.63% micro F1** |
+| INT8 vs FP32 output agreement · 18 unlabeled images | **37 matched** · **2 INT8-only** · **1 FP32-only** |
+| EfficientAD-S · MVTec pill | **92.37% F1** · **0.9834 AUROC** · **0.9557 AUPRO** |
+| EfficientAD-S · MVTec capsule | **88.32% F1** · **0.9485 AUROC** · **0.8308 AUPRO** |
+| EfficientAD-S · VisA capsules | **38.40% F1** · **0.6502 AUROC** · **0.6985 AUPRO** |
+| Llama 3.2 1B INT4 · baseline → adaptive-v1 | **15.156 → 8.071 s** median · **10.233 s p95** |
+| Adaptive-v1 decode and final guard replay | **12.003 tokens/s** median · **26/39 → 36/39** accepted |
+| Selected Pi station cases · zero cache reuse | **8/8** expected visual outcomes · **8/8** validated replies · **8.967 s** median advisory |
 
-The Hailo timing excludes camera acquisition and advisory. Electrical power and long-shift endurance remain unmeasured. [Benchmark methods and raw evidence](docs/RESULTS.md) · [Frozen model parameters](docs/MODEL_CARDS.md) · [AutoVI benchmark context](docs/AUTOVI_COMPARISON.md)
+Detector timing uses repeated stored images (35 CPU and 3,948 Hailo calls). AUPRO integrates to pixel FPR 0.30. Labeled INT8 accuracy and electrical power remain unmeasured. [Full benchmark evidence](docs/RESULTS.md) · [Model parameters](docs/MODEL_CARDS.md)
 
 ## Run it
 
