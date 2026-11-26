@@ -63,6 +63,7 @@ The camera viewed a blister-pack sample displayed on a phone. The live dashboard
 | Llama decode and guard replay | **12.003 tokens/s** median · **26/39 → 36/39** accepted | Historical advisory scenarios |
 | Station demonstration | **8/8** expected visual outcomes · **8/8** validated replies · **8.967 s** median advisory | Selected Pi cases · zero cache reuse |
 | **Live USB capture** | **MJPG · 1280 × 720 · 30 fps · 1-frame buffer** requested | OpenCV capture settings. Negotiated mode and delivered FPS were not measured in the pictured demo. [Camera implementation](app/camera.py) |
+| **Live USB performance estimate** | **Up to 30 FPS** software target. **18.14 ms/frame** mean budget left after Hailo detection. | Derived from the **33.33 ms** target frame interval minus **15.197 ms** measured mean detector time. Reaching 30 FPS requires capture, recording when triggered, and JPEG encoding to fit in the remainder. |
 | **USB snapshot** | Waits up to **2 s** for a frame captured after the request | Freeze / Snapshot uses the fresh-frame gate. [Camera implementation](app/camera.py) |
 
 Detector timing uses repeated stored images (35 CPU and 3,948 Hailo calls). AUPRO integrates to pixel FPR 0.30. Labeled INT8 accuracy and electrical power remain unmeasured. [Full benchmark evidence](docs/RESULTS.md) · [Model parameters](docs/MODEL_CARDS.md)
