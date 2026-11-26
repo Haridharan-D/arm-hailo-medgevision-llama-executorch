@@ -36,18 +36,21 @@ Advisory panel cropped from the recorded Pi crack case. Llama returned “Preser
 
 **Target hardware:** Raspberry Pi 5 · BCM2712 / Cortex-A76 · aarch64 Debian Trixie · Hailo-8.
 
-| Engineering check | Measured result | Test basis |
+| Engineering check | Measured result or setting | Test basis or source |
 | --- | --- | --- |
 | Detector speed | **580.115 → 15.197 ms** mean · **38.17×** ratio | Pi CPU → Hailo-8 |
 | Detector tail latency | **15.526 ms p95** · **15.635 ms p99** | Hailo-8 detector path |
 | Detector process memory | **254.07 → 206.43 MiB** mean RSS | Pi CPU → Hailo-8 |
 | Detector model size | **44.74 → 10.11 MB** · **77.41% smaller** | FP32 ONNX → INT8 HEF |
+| **YOLO vision quantization** | **INT8 post-training quantization** · Hailo-8 HEF · uint8 RGB input | Hailo DFC **3.34.0** · **512** training-only calibration images available. [Compile recipe](reproduction/hailo/compile_hef.sh) |
 | YOLO localization | **99.22% mAP50** · **89.19% mAP50–95** | FP32 holdout · 1,303 images / 2,956 boxes |
 | YOLO operating point | **97.63% micro F1** | Frozen class thresholds · 0.86–0.91 |
 | INT8 output agreement | **37 matched** · **2 INT8-only** · **1 FP32-only** | FP32 reference · 18 unlabeled images |
+| **EfficientAD-S vision precision** | **FP32 ONNX** on Arm CPU · no INT8 conversion applied | [Anomaly model contracts](docs/MODEL_CARDS.md) |
 | MVTec pill | **92.37% F1** · **0.9834 AUROC** · **0.9557 AUPRO** | EfficientAD-S holdout |
 | MVTec capsule | **88.32% F1** · **0.9485 AUROC** · **0.8308 AUPRO** | EfficientAD-S holdout |
 | VisA capsules | **38.40% F1** · **0.6502 AUROC** · **0.6985 AUPRO** | EfficientAD-S holdout |
+| **Llama quantization** | **SpinQuant INT4 EO8** · 4-bit weights / dynamic 8-bit activations · group size **32** · 8-bit embeddings and 8-bit output projection | Upstream Llama 3.2 1B Instruct PTE · `8da4w_output_8da8w`. [Export settings](docs/LLAMA_EXECUTORCH_OPTIMIZATION.md) |
 | Llama advisory latency | **15.156 → 8.071 s** median · **10.233 s** adaptive p95 | 1B INT4 baseline → adaptive-v1 |
 | Llama decode and guard replay | **12.003 tokens/s** median · **26/39 → 36/39** accepted | Historical advisory scenarios |
 | Station demonstration | **8/8** expected visual outcomes · **8/8** validated replies · **8.967 s** median advisory | Selected Pi cases · zero cache reuse |
