@@ -5,6 +5,8 @@ Haridharan D (Team leader), Priyadharsan D, Jayaraj M
 
 ## Assess the project in three minutes
 
+For the full technical account, read the [PS5 research paper](docs/MEDGE_VISION_PS5_Research_Paper.pdf). The earlier project and engineering reports remain available separately.
+
 1. **Understand the system:** open the [architecture image](docs/architecture.svg). YOLO uses Hailo-8; category anomaly models use ONNX CPU; ExecuTorch Llama is a separate Arm advisory process. Llama cannot override the recorded QA decision.
 2. **See actual output:** open the [Hailo crack inspection](evidence/gallery/dashboard/02_yolo_defective.png), [anomaly heatmap and advice](evidence/gallery/dashboard/04_anomaly_defective.png), then the [complete 47-screenshot gallery](evidence/gallery/README.md).
 3. **Inspect measured results:** read [full accuracy and comparison tables](docs/RESULTS.md). Every table points to original records; [CSV/JSON exports](evidence/metrics/README.md) preserve full precision.

@@ -4,6 +4,8 @@
 
 ### One station. Three local inference paths. Evidence you can inspect.
 
+**PS5 technical paper:** [Offline Pharmaceutical Inspection on Arm and Hailo (PDF)](docs/MEDGE_VISION_PS5_Research_Paper.pdf). The paper covers model and data methods, per-class results, VisA failure analysis, Pi measurements and reproduction.
+
 **Measured on Medge Vision:** Pi detector mean latency fell from **580.115 ms on CPU to 15.197 ms on Hailo-8** (38.17x). Adaptive-v1 reduced historical median advisory latency from **15.156 s to 8.071 s** on its own workload. [AutoVI comparison and measurement boundaries](docs/AUTOVI_COMPARISON.md).
 
 > **26 November engineering update:** [PS5 engineering report (PDF)](docs/MEDGE_VISION_PS5_Engineering_Upgrade_Report.pdf) · [Audit, data and reproduction commands](docs/ENGINEERING_UPGRADE_20261126.md). The release passed 95 regression tests and matched detection outputs in all 12 paired CPU checks.
