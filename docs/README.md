@@ -21,6 +21,8 @@
 
 ## Understand the design
 
+- [Engineering decision ledger](ENGINEERING_DECISIONS.md): deployed choices, evidence, tradeoffs and unmeasured next steps.
+
 - [System architecture](SYSTEM_ARCHITECTURE.md) and [architecture image](architecture.svg).
 - [Llama/ExecuTorch optimization](LLAMA_EXECUTORCH_OPTIMIZATION.md): artifacts, native instrumentation and candidate selection.
 - [Vision evaluation](VISION_EVALUATION.md): original evaluation and quantization boundaries.

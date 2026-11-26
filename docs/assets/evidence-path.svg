@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="330" viewBox="0 0 1280 330" role="img" aria-labelledby="title desc">
+<title id="title">From optical observation to accountable review</title>
+<desc id="desc">Capture produces a recorded visual result. Llama advises from that evidence without overwriting it. Authorized QA review is appended to the record. Decorative motion illustrates direction only.</desc>
+<style>.packet{animation:travel 6s ease-in-out infinite}@keyframes travel{0%,100%{opacity:0;transform:translateX(0)}25%{opacity:1}75%{opacity:1;transform:translateX(28px)}}@media(prefers-reduced-motion:reduce){.packet{animation:none;opacity:1}}</style>
+<rect width="1280" height="330" rx="20" fill="#0c1722"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="36" y="43" fill="#f3f7fb" font-size="24" font-weight="600">The model observes. The record persists. QA decides.</text>
+<text x="36" y="71" fill="#a9bbcd" font-size="15">An inspection is evidence, not a language-model verdict.</text>
+<g fill="#122c35" stroke="#36717b"><rect x="36" y="106" width="266" height="134" rx="16"/><rect x="350" y="106" width="266" height="134" rx="16"/></g>
+<rect x="664" y="106" width="266" height="134" rx="16" fill="#271f3a" stroke="#746095"/>
+<rect x="978" y="106" width="266" height="134" rx="16" fill="#212c35" stroke="#607589"/>
+<g fill="#61e4d0" font-size="12" letter-spacing="2"><text x="56" y="136">01 / CAPTURE</text><text x="370" y="136">02 / RECORD</text></g>
+<text x="684" y="136" fill="#ceb5ff" font-size="12" letter-spacing="2">03 / ADVISE</text><text x="998" y="136" fill="#c5d3e1" font-size="12" letter-spacing="2">04 / REVIEW</text>
+<g fill="#f3f7fb" font-size="21" font-weight="600"><text x="56" y="171">Image + identity</text><text x="370" y="171">Visual finding</text><text x="684" y="171">Bounded Llama</text><text x="998" y="171">Authorized QA</text></g>
+<g fill="#b9c8d8" font-size="14"><text x="56" y="200">Local image / USB / CSI</text><text x="56" y="221">Preserve source evidence</text><text x="370" y="200">Boxes or anomaly heatmap</text><text x="370" y="221">Persist rule-based decision</text><text x="684" y="200">SOP-linked advisory only</text><text x="684" y="221">Cannot override decision</text><text x="998" y="200">Append review and rationale</text><text x="998" y="221">Keep original result intact</text></g>
+<g fill="none" stroke="#7897ac" stroke-width="2"><path d="M308 173h32m-7-6 7 6-7 6M622 173h32m-7-6 7 6-7 6M936 173h32m-7-6 7 6-7 6"/></g>
+<g fill="#61e4d0"><circle class="packet" cx="308" cy="173" r="3"/><circle class="packet" cx="622" cy="173" r="3"/></g>
+<path d="M52 271h1176" stroke="#304354"/>
+<text x="36" y="301" fill="#a9bbcd" font-size="14">Traceability: inspection ID + image/model/configuration hashes + recorded output + advisory validation + review history</text>
+</g></svg>

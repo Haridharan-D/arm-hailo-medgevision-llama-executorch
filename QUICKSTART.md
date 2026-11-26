@@ -2,9 +2,11 @@
 
 ## CPU vision, Windows or Linux
 
-Clone this repository, open a terminal in the checkout, and use Python 3.11:
+Clone this repository and use Python 3.11. The included vision models are reconstructed from verified parts; no training is needed for this path:
 
 ```sh
+git clone https://github.com/Haridharan-D/arm-hailo-medgevision-llama-executorch.git
+cd arm-hailo-medgevision-llama-executorch
 python -m venv .venv
 ```
 

@@ -21,17 +21,7 @@
 
 </details>
 
-<div align="center">
 
-<img src="web/assets/logo.svg" width="80" alt="Medge Vision optical capsule mark" />
-
-<h1>MEDGE VISION</h1>
-<h3>Offline pharmaceutical visual inspection on Arm + Hailo</h3>
-<p><strong>YOLOv8s detection · EfficientAD-S anomaly maps · ExecuTorch Llama advisory</strong></p>
-<p>Bharat AI-SoC Challenge 2026–27 · Team Medge Vision</p>
-<p><a href="QUICKSTART.md">Get started</a> · <a href="docs/RESULTS.md">Complete results</a> · <a href="evidence/gallery/README.md">Actual Pi evidence</a> · <a href="docs/MODEL_CARDS.md">Model cards</a> · <a href="docs/EVIDENCE_GUIDE.md">Measurement guide</a></p>
-
-</div>
 
 > **Judges: [start here for a three-minute evidence walkthrough](JUDGES_START_HERE.md).** Architecture, actual Pi outputs, full metrics, report and reproduction checks are linked in one place.
 
@@ -43,9 +33,36 @@ Models, the dashboard, SQLite history and advisory run offline after provisionin
 
 > **Release scope:** a measured research demonstrator with preserved artifacts, tests and recovery data. Visual **SAFE** means the configured model check is clear; it is not pharmaceutical safety certification or QA release approval. Unvalidated product profiles retain QA **REVIEW** even when the visual check is clear.
 
-![Actual Pi dashboard: Hailo crack detection and native Llama advisory](evidence/gallery/dashboard/02_yolo_defective.png)
+## See the workstation, then inspect the evidence
 
-*Actual Pi Chromium capture of a saved measured inspection. The [gallery](evidence/gallery/README.md) connects all eight cases to original IDs, JSON outputs, heatmaps and advisory text. Terminal captures are explicitly labeled recorded-output replay.*
+| Hailo defect localization + Llama | Arm anomaly heatmap + Llama |
+| :---: | :---: |
+| [![Actual Hailo crack inspection](evidence/gallery/dashboard/02_yolo_defective.png)](evidence/gallery/dashboard/02_yolo_defective.png) | [![Actual pill anomaly inspection](evidence/gallery/dashboard/04_anomaly_defective.png)](evidence/gallery/dashboard/04_anomaly_defective.png) |
+| Recorded crack detection; QA **HOLD** | Recorded appearance deviation; QA **REVIEW** |
+
+Actual Pi Chromium captures displaying saved, measured inspections. Click to inspect at full size. The [47-screenshot gallery](evidence/gallery/README.md) connects images to inspection IDs, raw outputs, heatmaps and advice. Terminal screenshots are explicitly labelled recorded-output replay.
+
+### Four numbers, four explicit scopes
+
+| **99.22% mAP50** | **15.197 ms** | **8.071 s** | **8/8 selected cases** |
+| :--- | :--- | :--- | :--- |
+| Original YOLO FP32 held-out test | Historical Hailo detector-path mean | Historical adaptive-v1 advisory median | Actual complete-station integration |
+| 1,303 images / 2,956 defect boxes | CPU mean 580.115 ms; derived **38.17x** ratio | Baseline 15.156 s; final guard replay **36/39** | Eight fresh validated responses; zero cache reuse |
+| No healthy-only test images | Repeated-image trials, not camera FPS | Guard acceptance is not semantic accuracy | Selected demonstration, not population accuracy |
+
+[Full measurements and denominators](docs/RESULTS.md) · [Source-linked CSV/JSON](evidence/metrics/README.md) · [Engineering decisions and tradeoffs](docs/ENGINEERING_DECISIONS.md)
+
+## What makes Medge Vision distinctive
+
+![Inspection evidence and independent advisory workflow](docs/assets/evidence-path.svg)
+
+- **Specialized visual paths:** known-defect localization on Hailo and category-specific anomaly maps on Arm, with independent model contracts and evaluation.
+- **Advice without decision authority:** the native ExecuTorch assistant receives a pinned inspection and bounded SOP context. It cannot turn a stored HOLD into PASS.
+- **Reviewable evidence:** original images, model/configuration identity, detections, native advisory statistics and QA history stay linked to the inspection.
+- **A workstation, not just a notebook:** offline dashboard, local-image and camera input, terminal inspection, dual-display verdict view and portable evidence restore.
+- **An inspectable engineering record:** source-linked metrics, preserved weak results, regression checks and explicit unmeasured limits.
+
+The diagrams animate only for presentation; they are not live hardware indicators. Reduced-motion preferences disable their animation.
 
 ## Project navigation
 
